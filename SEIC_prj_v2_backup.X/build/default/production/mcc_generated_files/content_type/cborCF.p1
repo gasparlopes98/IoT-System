@@ -1,0 +1,359 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"17 mcc_generated_files/content_type/cborCF.c
+[; ;mcc_generated_files/content_type/cborCF.c: 17: void CBOREncoder(long data, ContentDataType_t type)
+[c E1098 0 1 2 3 4 .. ]
+[n E1098 . SIGNED_INTEGER UNSIGNED_INTEGER BYTE_STRING TEXT_STRING BOOLEAN  ]
+"29 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"138 mcc_generated_files/content_type/../cbor/cbor.h
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 138: void CBOR_Encode_Signed_Int(int32_t val);
+[v _CBOR_Encode_Signed_Int `(v ~T0 @X0 0 ef1`l ]
+"151
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 151: void CBOR_Encode_Unsigned_Int(uint32_t val);
+[v _CBOR_Encode_Unsigned_Int `(v ~T0 @X0 0 ef1`ul ]
+"222
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 222: void CBOR_Encode_Bool(_Bool boolvalue);
+[v _CBOR_Encode_Bool `(v ~T0 @X0 0 ef1`a ]
+"164
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 164: void CBOR_Encode_Byte_String(char *byteString);
+[v _CBOR_Encode_Byte_String `(v ~T0 @X0 0 ef1`*uc ]
+"177
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 177: void CBOR_Encode_Text_String(const char *textString);
+[v _CBOR_Encode_Text_String `(v ~T0 @X0 0 ef1`*Cuc ]
+"238
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 238: uint8_t CBOR_Decode_Read_Data(char *readPtr);
+[v _CBOR_Decode_Read_Data `(uc ~T0 @X0 0 ef1`*uc ]
+"40 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 40: int strncmp (const char *, const char *, size_t);
+[v _strncmp `(i ~T0 @X0 0 ef3`*Cuc`*Cuc`ui ]
+"66 mcc_generated_files/content_type/contentFormat.h
+[; ;mcc_generated_files/content_type/contentFormat.h: 66: {
+[s S35 `uc 1 `uc 1 `uc 1 ]
+[n S35 . object_map_elements array_map_elements array_elements ]
+"73
+[; ;mcc_generated_files/content_type/contentFormat.h: 73: extern elements_t CfElements;
+[v _CfElements `S35 ~T0 @X0 0 e ]
+"316 mcc_generated_files/content_type/../cbor/cbor.h
+[; ;mcc_generated_files/content_type/../cbor/cbor.h: 316: uint8_t cbor_elements();
+[v _cbor_elements `(uc ~T0 @X0 0 e? ]
+"84 mcc_generated_files/content_type/cborCF.c
+[; ;mcc_generated_files/content_type/cborCF.c: 84: void CBORWriteData(void *data,cFMenuItems items)
+[c E1111 0 1 2 .. ]
+[n E1111 . MAP ARRAY UN_KNOWN  ]
+"128 mcc_generated_files/content_type/../TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/content_type/../TCPIPLibrary/ethernet_driver.h: 128: void ETH_Write8(uint8_t);
+[v _ETH_Write8 `(v ~T0 @X0 0 ef1`uc ]
+[v F1134 `(v ~T0 @X0 0 tf2`l`E1098 ]
+[v F1138 `(v ~T0 @X0 0 tf3`*uc`*v`E1098 ]
+[v F1143 `(uc ~T0 @X0 0 tf1`*uc ]
+[v F1146 `(v ~T0 @X0 0 tf2`*v`E1111 ]
+"57 mcc_generated_files/content_type/contentFormat.h
+[; ;mcc_generated_files/content_type/contentFormat.h: 57: {
+[s S34 `*F1134 1 `*F1138 1 `*F1143 1 `*F1146 1 ]
+[n S34 . encodeFormatter decodeFormatter parseDataHandler writeDataHandler ]
+"17 mcc_generated_files/content_type/cborCF.c
+[; ;mcc_generated_files/content_type/cborCF.c: 17: void CBOREncoder(long data, ContentDataType_t type)
+[v _CBOREncoder `(v ~T0 @X0 1 ef2`l`E1098 ]
+"18
+[; ;mcc_generated_files/content_type/cborCF.c: 18: {
+{
+[e :U _CBOREncoder ]
+"17
+[; ;mcc_generated_files/content_type/cborCF.c: 17: void CBOREncoder(long data, ContentDataType_t type)
+[v _data `l ~T0 @X0 1 r1 ]
+[v _type `E1098 ~T0 @X0 1 r2 ]
+"18
+[; ;mcc_generated_files/content_type/cborCF.c: 18: {
+[f ]
+"19
+[; ;mcc_generated_files/content_type/cborCF.c: 19:     uint8_t i =0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"20
+[; ;mcc_generated_files/content_type/cborCF.c: 20:     char str_val[11];
+[v _str_val `uc ~T0 @X0 -> 11 `i a ]
+"21
+[; ;mcc_generated_files/content_type/cborCF.c: 21:     memset(str_val,0,11);
+[e ( _memset (3 , , -> &U _str_val `*v -> 0 `i -> -> 11 `i `ui ]
+"23
+[; ;mcc_generated_files/content_type/cborCF.c: 23:     switch(type)
+[e $U 41  ]
+"24
+[; ;mcc_generated_files/content_type/cborCF.c: 24:     {
+{
+"25
+[; ;mcc_generated_files/content_type/cborCF.c: 25:         case SIGNED_INTEGER:
+[e :U 42 ]
+"26
+[; ;mcc_generated_files/content_type/cborCF.c: 26:             CBOR_Encode_Signed_Int((int32_t)data);
+[e ( _CBOR_Encode_Signed_Int (1 _data ]
+"27
+[; ;mcc_generated_files/content_type/cborCF.c: 27:             break;
+[e $U 40  ]
+"28
+[; ;mcc_generated_files/content_type/cborCF.c: 28:         case UNSIGNED_INTEGER:
+[e :U 43 ]
+"29
+[; ;mcc_generated_files/content_type/cborCF.c: 29:             CBOR_Encode_Unsigned_Int((uint32_t)data);
+[e ( _CBOR_Encode_Unsigned_Int (1 -> _data `ul ]
+"30
+[; ;mcc_generated_files/content_type/cborCF.c: 30:             break;
+[e $U 40  ]
+"31
+[; ;mcc_generated_files/content_type/cborCF.c: 31:         case BOOLEAN:
+[e :U 44 ]
+"32
+[; ;mcc_generated_files/content_type/cborCF.c: 32:             CBOR_Encode_Bool((_Bool)data);
+[e ( _CBOR_Encode_Bool (1 -> _data `a ]
+"33
+[; ;mcc_generated_files/content_type/cborCF.c: 33:             break;
+[e $U 40  ]
+"34
+[; ;mcc_generated_files/content_type/cborCF.c: 34:         case BYTE_STRING:
+[e :U 45 ]
+"35
+[; ;mcc_generated_files/content_type/cborCF.c: 35:             CBOR_Encode_Byte_String((char *)data);
+[e ( _CBOR_Encode_Byte_String (1 -> _data `*uc ]
+"36
+[; ;mcc_generated_files/content_type/cborCF.c: 36:             break;
+[e $U 40  ]
+"37
+[; ;mcc_generated_files/content_type/cborCF.c: 37:         case TEXT_STRING:
+[e :U 46 ]
+"38
+[; ;mcc_generated_files/content_type/cborCF.c: 38:             CBOR_Encode_Text_String((char *)data);
+[e ( _CBOR_Encode_Text_String (1 -> -> _data `*uc `*Cuc ]
+"39
+[; ;mcc_generated_files/content_type/cborCF.c: 39:             break;
+[e $U 40  ]
+"40
+[; ;mcc_generated_files/content_type/cborCF.c: 40:         default:
+[e :U 47 ]
+"41
+[; ;mcc_generated_files/content_type/cborCF.c: 41:             break;
+[e $U 40  ]
+"42
+[; ;mcc_generated_files/content_type/cborCF.c: 42:     }
+}
+[e $U 40  ]
+[e :U 41 ]
+[e [\ -> _type `ui , $ -> . `E1098 0 `ui 42
+ , $ -> . `E1098 1 `ui 43
+ , $ -> . `E1098 4 `ui 44
+ , $ -> . `E1098 2 `ui 45
+ , $ -> . `E1098 3 `ui 46
+ 47 ]
+[e :U 40 ]
+"44
+[; ;mcc_generated_files/content_type/cborCF.c: 44: }
+[e :UE 39 ]
+}
+"46
+[; ;mcc_generated_files/content_type/cborCF.c: 46: void CBORDecoder(char * data ,void *variable, ContentDataType_t type)
+[v _CBORDecoder `(v ~T0 @X0 1 ef3`*uc`*v`E1098 ]
+"47
+[; ;mcc_generated_files/content_type/cborCF.c: 47: {
+{
+[e :U _CBORDecoder ]
+"46
+[; ;mcc_generated_files/content_type/cborCF.c: 46: void CBORDecoder(char * data ,void *variable, ContentDataType_t type)
+[v _data `*uc ~T0 @X0 1 r1 ]
+[v _variable `*v ~T0 @X0 1 r2 ]
+[v _type `E1098 ~T0 @X0 1 r3 ]
+"47
+[; ;mcc_generated_files/content_type/cborCF.c: 47: {
+[f ]
+"48
+[; ;mcc_generated_files/content_type/cborCF.c: 48:     uint8_t i =0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"49
+[; ;mcc_generated_files/content_type/cborCF.c: 49:     char *x = variable;
+[v _x `*uc ~T0 @X0 1 a ]
+[e = _x -> _variable `*uc ]
+"50
+[; ;mcc_generated_files/content_type/cborCF.c: 50:      switch(type)
+[e $U 50  ]
+"51
+[; ;mcc_generated_files/content_type/cborCF.c: 51:     {
+{
+"52
+[; ;mcc_generated_files/content_type/cborCF.c: 52:         case SIGNED_INTEGER:
+[e :U 51 ]
+"53
+[; ;mcc_generated_files/content_type/cborCF.c: 53:         case UNSIGNED_INTEGER:
+[e :U 52 ]
+"54
+[; ;mcc_generated_files/content_type/cborCF.c: 54:         case BOOLEAN:
+[e :U 53 ]
+"55
+[; ;mcc_generated_files/content_type/cborCF.c: 55:         case BYTE_STRING:
+[e :U 54 ]
+"56
+[; ;mcc_generated_files/content_type/cborCF.c: 56:         case TEXT_STRING:
+[e :U 55 ]
+"57
+[; ;mcc_generated_files/content_type/cborCF.c: 57:             *x = *data;
+[e = *U _x *U _data ]
+"58
+[; ;mcc_generated_files/content_type/cborCF.c: 58:             break;
+[e $U 49  ]
+"60
+[; ;mcc_generated_files/content_type/cborCF.c: 60:         default:
+[e :U 56 ]
+"61
+[; ;mcc_generated_files/content_type/cborCF.c: 61:             break;
+[e $U 49  ]
+"62
+[; ;mcc_generated_files/content_type/cborCF.c: 62:     }
+}
+[e $U 49  ]
+[e :U 50 ]
+[e [\ -> _type `ui , $ -> . `E1098 0 `ui 51
+ , $ -> . `E1098 1 `ui 52
+ , $ -> . `E1098 4 `ui 53
+ , $ -> . `E1098 2 `ui 54
+ , $ -> . `E1098 3 `ui 55
+ 56 ]
+[e :U 49 ]
+"64
+[; ;mcc_generated_files/content_type/cborCF.c: 64: }
+[e :UE 48 ]
+}
+"66
+[; ;mcc_generated_files/content_type/cborCF.c: 66: uint8_t CBORParseData(char * data)
+[v _CBORParseData `(uc ~T0 @X0 1 ef1`*uc ]
+"67
+[; ;mcc_generated_files/content_type/cborCF.c: 67: {
+{
+[e :U _CBORParseData ]
+"66
+[; ;mcc_generated_files/content_type/cborCF.c: 66: uint8_t CBORParseData(char * data)
+[v _data `*uc ~T0 @X0 1 r1 ]
+"67
+[; ;mcc_generated_files/content_type/cborCF.c: 67: {
+[f ]
+"68
+[; ;mcc_generated_files/content_type/cborCF.c: 68:     uint8_t len =0;
+[v _len `uc ~T0 @X0 1 a ]
+[e = _len -> -> 0 `i `uc ]
+"70
+[; ;mcc_generated_files/content_type/cborCF.c: 70:     len = CBOR_Decode_Read_Data(data);
+[e = _len ( _CBOR_Decode_Read_Data (1 _data ]
+"72
+[; ;mcc_generated_files/content_type/cborCF.c: 72:     if(strncmp(data,"MAP",4)==0)
+[e $ ! == ( _strncmp (3 , , -> _data `*Cuc :s 1C -> -> 4 `i `ui -> 0 `i 58  ]
+"73
+[; ;mcc_generated_files/content_type/cborCF.c: 73:     {
+{
+"74
+[; ;mcc_generated_files/content_type/cborCF.c: 74:         CfElements.array_map_elements = cbor_elements();
+[e = . _CfElements 1 ( _cbor_elements ..  ]
+"75
+[; ;mcc_generated_files/content_type/cborCF.c: 75:     }
+}
+[e $U 59  ]
+"76
+[; ;mcc_generated_files/content_type/cborCF.c: 76:     else if(strncmp(data,"ARRAY",6)==0)
+[e :U 58 ]
+[e $ ! == ( _strncmp (3 , , -> _data `*Cuc :s 2C -> -> 6 `i `ui -> 0 `i 60  ]
+"77
+[; ;mcc_generated_files/content_type/cborCF.c: 77:     {
+{
+"78
+[; ;mcc_generated_files/content_type/cborCF.c: 78:         CfElements.array_elements = cbor_elements();
+[e = . _CfElements 2 ( _cbor_elements ..  ]
+"79
+[; ;mcc_generated_files/content_type/cborCF.c: 79:     }
+}
+[e :U 60 ]
+[e :U 59 ]
+"81
+[; ;mcc_generated_files/content_type/cborCF.c: 81:     return len;
+[e ) _len ]
+[e $UE 57  ]
+"82
+[; ;mcc_generated_files/content_type/cborCF.c: 82: }
+[e :UE 57 ]
+}
+"84
+[; ;mcc_generated_files/content_type/cborCF.c: 84: void CBORWriteData(void *data,cFMenuItems items)
+[v _CBORWriteData `(v ~T0 @X0 1 ef2`*v`E1111 ]
+"85
+[; ;mcc_generated_files/content_type/cborCF.c: 85: {
+{
+[e :U _CBORWriteData ]
+"84
+[; ;mcc_generated_files/content_type/cborCF.c: 84: void CBORWriteData(void *data,cFMenuItems items)
+[v _data `*v ~T0 @X0 1 r1 ]
+[v _items `E1111 ~T0 @X0 1 r2 ]
+"85
+[; ;mcc_generated_files/content_type/cborCF.c: 85: {
+[f ]
+"86
+[; ;mcc_generated_files/content_type/cborCF.c: 86:     volatile uint8_t x =0;
+[v _x `Vuc ~T0 @X0 1 a ]
+[e = _x -> -> 0 `i `uc ]
+"87
+[; ;mcc_generated_files/content_type/cborCF.c: 87:     char *value = data;
+[v _value `*uc ~T0 @X0 1 a ]
+[e = _value -> _data `*uc ]
+"89
+[; ;mcc_generated_files/content_type/cborCF.c: 89:     switch(items)
+[e $U 63  ]
+"90
+[; ;mcc_generated_files/content_type/cborCF.c: 90:     {
+{
+"91
+[; ;mcc_generated_files/content_type/cborCF.c: 91:         case MAP:
+[e :U 64 ]
+"92
+[; ;mcc_generated_files/content_type/cborCF.c: 92:             ETH_Write8(0xA0 | *value);
+[e ( _ETH_Write8 (1 -> | -> 160 `i -> *U _value `i `uc ]
+"93
+[; ;mcc_generated_files/content_type/cborCF.c: 93:             break;
+[e $U 62  ]
+"94
+[; ;mcc_generated_files/content_type/cborCF.c: 94:         case ARRAY:
+[e :U 65 ]
+"95
+[; ;mcc_generated_files/content_type/cborCF.c: 95:              ETH_Write8(0x80 | *value);
+[e ( _ETH_Write8 (1 -> | -> 128 `i -> *U _value `i `uc ]
+"96
+[; ;mcc_generated_files/content_type/cborCF.c: 96:             break;
+[e $U 62  ]
+"97
+[; ;mcc_generated_files/content_type/cborCF.c: 97:         default:
+[e :U 66 ]
+"98
+[; ;mcc_generated_files/content_type/cborCF.c: 98:             break;
+[e $U 62  ]
+"99
+[; ;mcc_generated_files/content_type/cborCF.c: 99:     }
+}
+[e $U 62  ]
+[e :U 63 ]
+[e [\ -> _items `ui , $ -> . `E1111 0 `ui 64
+ , $ -> . `E1111 1 `ui 65
+ 66 ]
+[e :U 62 ]
+"100
+[; ;mcc_generated_files/content_type/cborCF.c: 100: }
+[e :UE 61 ]
+}
+"102
+[; ;mcc_generated_files/content_type/cborCF.c: 102: const contentFormatHandlers_t CBORdataHandlers = {CBOREncoder,CBORDecoder, CBORParseData, CBORWriteData};
+[v _CBORdataHandlers `CS34 ~T0 @X0 1 e ]
+[i _CBORdataHandlers
+:U ..
+:U ..
+&U _CBOREncoder
+&U _CBORDecoder
+&U _CBORParseData
+&U _CBORWriteData
+..
+..
+]
+[a 2C 65 82 82 65 89 0 ]
+[a 1C 77 65 80 0 ]

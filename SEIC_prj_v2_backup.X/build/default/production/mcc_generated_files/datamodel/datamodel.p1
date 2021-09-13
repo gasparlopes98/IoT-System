@@ -1,0 +1,1157 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"78 mcc_generated_files/datamodel/datamodel.c
+[; ;mcc_generated_files/datamodel/datamodel.c: 78: static coapResourceTypes_t resourceType;
+[c E1471 0 .. ]
+[n E1471 . Led_TYPE  ]
+"164 mcc_generated_files/datamodel/../CoAP/coap.h
+[; ;mcc_generated_files/datamodel/../CoAP/coap.h: 164: {
+[s S38 `uc 1 `ul 1 ]
+[n S38 . name value ]
+"59 mcc_generated_files/datamodel/datamodel.c
+[; ;mcc_generated_files/datamodel/datamodel.c: 59: {
+[s S46 `uc 1 `uc -> 32 `i ]
+[n S46 . strIdx String ]
+"52
+[; ;mcc_generated_files/datamodel/datamodel.c: 52: {
+[s S45 `uc -> 4 `i `E1471 1 `uc 1 ]
+[n S45 . validPath type dataID ]
+"46
+[; ;mcc_generated_files/datamodel/datamodel.c: 46: {
+[s S44 `uc -> 4 `i `uc 1 ]
+[n S44 . discoveryPath heightOftheNode ]
+[v F1432 `(a ~T0 @X0 0 tf1`uc ]
+[v F1435 `(a ~T0 @X0 0 tf1`uc ]
+[v F1438 `(a ~T0 @X0 0 tf1`uc ]
+[v F1441 `(a ~T0 @X0 0 tf1`uc ]
+[v F1444 `(a ~T0 @X0 0 tf1`uc ]
+[v F1447 `(a ~T0 @X0 0 tf1`uc ]
+"52 mcc_generated_files/datamodel/../CoAP/coap_resources.h
+[; ;mcc_generated_files/datamodel/../CoAP/coap_resources.h: 52: {
+[s S43 `*F1432 1 `*F1435 1 `*F1438 1 `*F1441 1 `*F1444 1 `*F1447 1 ]
+[n S43 . initializer getter putter patcher deleter poster ]
+"13 mcc_generated_files/datamodel/datamodel.h
+[; ;mcc_generated_files/datamodel/datamodel.h: 13: extern restfulMethodStructure_t LedMethods;
+[v _LedMethods `S43 ~T0 @X0 0 e ]
+"8
+[; ;mcc_generated_files/datamodel/datamodel.h: 8: int getIdxFromString(char *str);
+[v _getIdxFromString `(i ~T0 @X0 0 ef1`*uc ]
+"39 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 39: int strcmp (const char *, const char *);
+[v _strcmp `(i ~T0 @X0 0 ef2`*Cuc`*Cuc ]
+"52
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 52: char *strtok (char *restrict, const char *restrict);
+[v _strtok `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"23 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h: 23: int atoi (const char *);
+[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
+"10 mcc_generated_files/datamodel/datamodel.h
+[; ;mcc_generated_files/datamodel/datamodel.h: 10: void setResourceDataID(uint8_t id);
+[v _setResourceDataID `(v ~T0 @X0 0 ef1`uc ]
+"29 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"36
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 36: char *strcat (char *restrict, const char *restrict);
+[v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"7 mcc_generated_files/datamodel/datamodel.h
+[; ;mcc_generated_files/datamodel/datamodel.h: 7: char *getStingFromIdx(uint8_t idx);
+[v _getStingFromIdx `(*uc ~T0 @X0 0 ef1`uc ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"342 mcc_generated_files/datamodel/datamodel.c
+[; ;mcc_generated_files/datamodel/datamodel.c: 342:     writeAuxData(&numOfResources,MAP);
+[c E675 0 1 2 .. ]
+[n E675 . MAP ARRAY UN_KNOWN  ]
+"78 mcc_generated_files/datamodel/../content_type/contentFormat.h
+[v _writeAuxData `(v ~T0 @X0 0 ef2`*v`E675 ]
+"345 mcc_generated_files/datamodel/datamodel.c
+[; ;mcc_generated_files/datamodel/datamodel.c: 345: int16_t processPayloadOverHead( uint8_t receivedPayloadLength, content_format_t cfType)
+[c E669 0 40 50 60 .. ]
+[n E669 . TEXT_PLAIN LINK_FORMAT APPLICATION_JSON CBOR  ]
+"30
+[; ;mcc_generated_files/datamodel/datamodel.c: 30: static uint8_t TEXT_PLAINProcessPayloadOverHead(uint8_t receivedPayloadLength);
+[v _TEXT_PLAINProcessPayloadOverHead `(uc ~T0 @X0 0 sf1`uc ]
+"31
+[; ;mcc_generated_files/datamodel/datamodel.c: 31: static uint8_t CBORProcessPayloadOverHead(uint8_t receivedPayloadLength);
+[v _CBORProcessPayloadOverHead `(uc ~T0 @X0 0 sf1`uc ]
+"33 mcc_generated_files/datamodel/datamodel.c
+[; ;mcc_generated_files/datamodel/datamodel.c: 33: static char resourcePathName[160];
+[v _resourcePathName `uc ~T0 @X0 -> 160 `i s ]
+"34
+[; ;mcc_generated_files/datamodel/datamodel.c: 34: static _Bool queryValid = 1;
+[v _queryValid `a ~T0 @X0 1 s ]
+[i _queryValid
+-> -> 1 `i `a
+]
+"35
+[; ;mcc_generated_files/datamodel/datamodel.c: 35: static char resourceStr[(32)];
+[v _resourceStr `uc ~T0 @X0 -> 32 `i s ]
+"78
+[; ;mcc_generated_files/datamodel/datamodel.c: 78: static coapResourceTypes_t resourceType;
+[v _resourceType `E1471 ~T0 @X0 1 s ]
+"79
+[; ;mcc_generated_files/datamodel/datamodel.c: 79: static uint8_t resourceDataID;
+[v _resourceDataID `uc ~T0 @X0 1 s ]
+"80
+[; ;mcc_generated_files/datamodel/datamodel.c: 80: static queryNameValuePair query;
+[v _query `S38 ~T0 @X0 1 s ]
+"81
+[; ;mcc_generated_files/datamodel/datamodel.c: 81: static uint8_t leafIdx =0;
+[v _leafIdx `uc ~T0 @X0 1 s ]
+[i _leafIdx
+-> -> 0 `i `uc
+]
+"82
+[; ;mcc_generated_files/datamodel/datamodel.c: 82: static uint8_t pathIdx =0;
+[v _pathIdx `uc ~T0 @X0 1 s ]
+[i _pathIdx
+-> -> 0 `i `uc
+]
+"86
+[; ;mcc_generated_files/datamodel/datamodel.c: 86: const String_t StringTable[] =
+[v _StringTable `CS46 ~T0 @X0 -> 6 `i e ]
+[i _StringTable
+:U ..
+:U ..
+-> -> 2 `i `uc
+:U ..
+-> 76 `c
+-> 101 `c
+-> 100 `c
+-> 49 `c
+-> 0 `c
+..
+..
+:U ..
+-> -> 3 `i `uc
+:U ..
+-> 76 `c
+-> 101 `c
+-> 100 `c
+-> 50 `c
+-> 0 `c
+..
+..
+:U ..
+-> -> 4 `i `uc
+:U ..
+-> 76 `c
+-> 101 `c
+-> 100 `c
+-> 51 `c
+-> 0 `c
+..
+..
+:U ..
+-> -> 1 `i `uc
+:U ..
+-> 109 `c
+-> 99 `c
+-> 104 `c
+-> 112 `c
+-> 0 `c
+..
+..
+:U ..
+-> -> 5 `i `uc
+:U ..
+-> 76 `c
+-> 101 `c
+-> 100 `c
+-> 52 `c
+-> 0 `c
+..
+..
+:U ..
+-> -> 6 `i `uc
+:U ..
+-> 76 `c
+-> 101 `c
+-> 100 `c
+-> 53 `c
+-> 0 `c
+..
+..
+..
+]
+"95
+[; ;mcc_generated_files/datamodel/datamodel.c: 95: const validPath_t validPath[] =
+[v _validPath `CS45 ~T0 @X0 -> 5 `i e ]
+[i _validPath
+:U ..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 50 `c
+-> 0 `c
+..
+. `E1471 0
+-> -> 0 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 51 `c
+-> 0 `c
+..
+. `E1471 0
+-> -> 1 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 52 `c
+-> 0 `c
+..
+. `E1471 0
+-> -> 2 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 53 `c
+-> 0 `c
+..
+. `E1471 0
+-> -> 3 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 54 `c
+-> 0 `c
+..
+. `E1471 0
+-> -> 4 `i `uc
+..
+..
+]
+"103
+[; ;mcc_generated_files/datamodel/datamodel.c: 103: const resourcePath_t discoveryPath[] =
+[v _discoveryPath `CS44 ~T0 @X0 -> 5 `i e ]
+[i _discoveryPath
+:U ..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 50 `c
+-> 0 `c
+..
+-> -> 2 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 51 `c
+-> 0 `c
+..
+-> -> 2 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 52 `c
+-> 0 `c
+..
+-> -> 2 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 53 `c
+-> 0 `c
+..
+-> -> 2 `i `uc
+..
+:U ..
+:U ..
+-> 49 `c
+-> 47 `c
+-> 54 `c
+-> 0 `c
+..
+-> -> 2 `i `uc
+..
+..
+]
+"111
+[; ;mcc_generated_files/datamodel/datamodel.c: 111: const restfulMethodStructure_t *restfulHandler[] =
+[v _restfulHandler `*CS43 ~T0 @X0 -> -> 1 `i `ux e ]
+[i _restfulHandler
+:U ..
+-> &U _LedMethods `*CS43
+..
+]
+"116
+[; ;mcc_generated_files/datamodel/datamodel.c: 116: void resetOptions()
+[v _resetOptions `(v ~T0 @X0 1 ef ]
+"117
+[; ;mcc_generated_files/datamodel/datamodel.c: 117: {
+{
+[e :U _resetOptions ]
+[f ]
+"118
+[; ;mcc_generated_files/datamodel/datamodel.c: 118:     queryValid = 1;
+[e = _queryValid -> -> 1 `i `a ]
+"119
+[; ;mcc_generated_files/datamodel/datamodel.c: 119: }
+[e :UE 48 ]
+}
+"121
+[; ;mcc_generated_files/datamodel/datamodel.c: 121: uint8_t getResourceType()
+[v _getResourceType `(uc ~T0 @X0 1 ef ]
+"122
+[; ;mcc_generated_files/datamodel/datamodel.c: 122: {
+{
+[e :U _getResourceType ]
+[f ]
+"123
+[; ;mcc_generated_files/datamodel/datamodel.c: 123:     return (uint8_t)resourceType;
+[e ) -> _resourceType `uc ]
+[e $UE 49  ]
+"124
+[; ;mcc_generated_files/datamodel/datamodel.c: 124: }
+[e :UE 49 ]
+}
+"127
+[; ;mcc_generated_files/datamodel/datamodel.c: 127: int setURIPath(char *uriPath)
+[v _setURIPath `(i ~T0 @X0 1 ef1`*uc ]
+"128
+[; ;mcc_generated_files/datamodel/datamodel.c: 128: {
+{
+[e :U _setURIPath ]
+"127
+[; ;mcc_generated_files/datamodel/datamodel.c: 127: int setURIPath(char *uriPath)
+[v _uriPath `*uc ~T0 @X0 1 r1 ]
+"128
+[; ;mcc_generated_files/datamodel/datamodel.c: 128: {
+[f ]
+"129
+[; ;mcc_generated_files/datamodel/datamodel.c: 129:    return getIdxFromString(uriPath);
+[e ) ( _getIdxFromString (1 _uriPath ]
+[e $UE 50  ]
+"130
+[; ;mcc_generated_files/datamodel/datamodel.c: 130: }
+[e :UE 50 ]
+}
+"132
+[; ;mcc_generated_files/datamodel/datamodel.c: 132: void setURIQuery(char *uriQuery)
+[v _setURIQuery `(v ~T0 @X0 1 ef1`*uc ]
+"133
+[; ;mcc_generated_files/datamodel/datamodel.c: 133: {
+{
+[e :U _setURIQuery ]
+"132
+[; ;mcc_generated_files/datamodel/datamodel.c: 132: void setURIQuery(char *uriQuery)
+[v _uriQuery `*uc ~T0 @X0 1 r1 ]
+"133
+[; ;mcc_generated_files/datamodel/datamodel.c: 133: {
+[f ]
+"134
+[; ;mcc_generated_files/datamodel/datamodel.c: 134:     if(strcmp(uriQuery,"mchp")==0)
+[e $ ! == ( _strcmp (2 , -> _uriQuery `*Cuc :s 1C -> 0 `i 52  ]
+"135
+[; ;mcc_generated_files/datamodel/datamodel.c: 135:         queryValid = 1;
+[e = _queryValid -> -> 1 `i `a ]
+[e $U 53  ]
+"136
+[; ;mcc_generated_files/datamodel/datamodel.c: 136:     else
+[e :U 52 ]
+"137
+[; ;mcc_generated_files/datamodel/datamodel.c: 137:         queryValid = 0;
+[e = _queryValid -> -> 0 `i `a ]
+[e :U 53 ]
+"139
+[; ;mcc_generated_files/datamodel/datamodel.c: 139: }
+[e :UE 51 ]
+}
+"142
+[; ;mcc_generated_files/datamodel/datamodel.c: 142: _Bool isURIPathValid(int8_t *uri_path, uint8_t count)
+[v _isURIPathValid `(a ~T0 @X0 1 ef2`*c`uc ]
+"143
+[; ;mcc_generated_files/datamodel/datamodel.c: 143: {
+{
+[e :U _isURIPathValid ]
+"142
+[; ;mcc_generated_files/datamodel/datamodel.c: 142: _Bool isURIPathValid(int8_t *uri_path, uint8_t count)
+[v _uri_path `*c ~T0 @X0 1 r1 ]
+[v _count `uc ~T0 @X0 1 r2 ]
+"143
+[; ;mcc_generated_files/datamodel/datamodel.c: 143: {
+[f ]
+"144
+[; ;mcc_generated_files/datamodel/datamodel.c: 144:     _Bool ret = 0;
+[v _ret `a ~T0 @X0 1 a ]
+[e = _ret -> -> 0 `i `a ]
+"145
+[; ;mcc_generated_files/datamodel/datamodel.c: 145:     validPath_t *hptr;
+[v _hptr `*S45 ~T0 @X0 1 a ]
+"146
+[; ;mcc_generated_files/datamodel/datamodel.c: 146:     uint8_t path =0;
+[v _path `uc ~T0 @X0 1 a ]
+[e = _path -> -> 0 `i `uc ]
+"148
+[; ;mcc_generated_files/datamodel/datamodel.c: 148:     int8_t *temp;
+[v _temp `*c ~T0 @X0 1 a ]
+"150
+[; ;mcc_generated_files/datamodel/datamodel.c: 150:     uint8_t temp_count = count;
+[v _temp_count `uc ~T0 @X0 1 a ]
+[e = _temp_count _count ]
+"152
+[; ;mcc_generated_files/datamodel/datamodel.c: 152:     temp = uri_path;
+[e = _temp _uri_path ]
+"153
+[; ;mcc_generated_files/datamodel/datamodel.c: 153:     hptr = validPath;
+[e = _hptr -> &U _validPath `*S45 ]
+"154
+[; ;mcc_generated_files/datamodel/datamodel.c: 154:     char *pch;
+[v _pch `*uc ~T0 @X0 1 a ]
+"156
+[; ;mcc_generated_files/datamodel/datamodel.c: 156:     for(uint8_t i = 0; i< (sizeof(validPath)/sizeof(*validPath)); i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `ui / -> # _validPath `ui -> # *U &U _validPath `ui 55  ]
+[e $U 56  ]
+[e :U 55 ]
+"157
+[; ;mcc_generated_files/datamodel/datamodel.c: 157:     {
+{
+"158
+[; ;mcc_generated_files/datamodel/datamodel.c: 158:         pch = strtok(hptr->validPath,"/");
+[e = _pch ( _strtok (2 , &U . *U _hptr 0 :s 2C ]
+"159
+[; ;mcc_generated_files/datamodel/datamodel.c: 159:         while(count--)
+[e $U 58  ]
+[e :U 59 ]
+"160
+[; ;mcc_generated_files/datamodel/datamodel.c: 160:         {
+{
+"161
+[; ;mcc_generated_files/datamodel/datamodel.c: 161:             path = atoi(pch);
+[e = _path -> ( _atoi (1 -> _pch `*Cuc `uc ]
+"162
+[; ;mcc_generated_files/datamodel/datamodel.c: 162:             if(path == *uri_path++)
+[e $ ! == -> _path `i -> *U ++ _uri_path * -> -> 1 `i `x -> -> # *U _uri_path `i `x `i 61  ]
+"163
+[; ;mcc_generated_files/datamodel/datamodel.c: 163:             {
+{
+"164
+[; ;mcc_generated_files/datamodel/datamodel.c: 164:                 pch = strtok(((void*)0),"/");
+[e = _pch ( _strtok (2 , -> -> -> 0 `i `*v `*uc :s 3C ]
+"165
+[; ;mcc_generated_files/datamodel/datamodel.c: 165:                 ret = 1;
+[e = _ret -> -> 1 `i `a ]
+"166
+[; ;mcc_generated_files/datamodel/datamodel.c: 166:             }
+}
+[e $U 62  ]
+"167
+[; ;mcc_generated_files/datamodel/datamodel.c: 167:             else
+[e :U 61 ]
+"168
+[; ;mcc_generated_files/datamodel/datamodel.c: 168:             {
+{
+"169
+[; ;mcc_generated_files/datamodel/datamodel.c: 169:                 ret = 0;
+[e = _ret -> -> 0 `i `a ]
+"170
+[; ;mcc_generated_files/datamodel/datamodel.c: 170:                 pch = ((void*)0);
+[e = _pch -> -> -> 0 `i `*v `*uc ]
+"171
+[; ;mcc_generated_files/datamodel/datamodel.c: 171:                 break;
+[e $U 60  ]
+"172
+[; ;mcc_generated_files/datamodel/datamodel.c: 172:             }
+}
+[e :U 62 ]
+"173
+[; ;mcc_generated_files/datamodel/datamodel.c: 173:         }
+}
+[e :U 58 ]
+"159
+[; ;mcc_generated_files/datamodel/datamodel.c: 159:         while(count--)
+[e $ != -> -- _count -> -> 1 `i `uc `i -> 0 `i 59  ]
+[e :U 60 ]
+"174
+[; ;mcc_generated_files/datamodel/datamodel.c: 174:         if(ret == 1)
+[e $ ! == -> _ret `i -> 1 `i 63  ]
+"175
+[; ;mcc_generated_files/datamodel/datamodel.c: 175:         {
+{
+"176
+[; ;mcc_generated_files/datamodel/datamodel.c: 176:             resourceType = hptr->type;
+[e = _resourceType . *U _hptr 1 ]
+"177
+[; ;mcc_generated_files/datamodel/datamodel.c: 177:             setResourceDataID(hptr->dataID);
+[e ( _setResourceDataID (1 . *U _hptr 2 ]
+"178
+[; ;mcc_generated_files/datamodel/datamodel.c: 178:             break;
+[e $U 56  ]
+"179
+[; ;mcc_generated_files/datamodel/datamodel.c: 179:         }
+}
+[e $U 64  ]
+"180
+[; ;mcc_generated_files/datamodel/datamodel.c: 180:         else
+[e :U 63 ]
+"181
+[; ;mcc_generated_files/datamodel/datamodel.c: 181:         {
+{
+"182
+[; ;mcc_generated_files/datamodel/datamodel.c: 182:             uri_path = temp;
+[e = _uri_path _temp ]
+"183
+[; ;mcc_generated_files/datamodel/datamodel.c: 183:             count = temp_count;
+[e = _count _temp_count ]
+"184
+[; ;mcc_generated_files/datamodel/datamodel.c: 184:             hptr++;
+[e ++ _hptr * -> -> 1 `i `x -> -> # *U _hptr `i `x ]
+"185
+[; ;mcc_generated_files/datamodel/datamodel.c: 185:         }
+}
+[e :U 64 ]
+"186
+[; ;mcc_generated_files/datamodel/datamodel.c: 186:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `ui / -> # _validPath `ui -> # *U &U _validPath `ui 55  ]
+[e :U 56 ]
+}
+"187
+[; ;mcc_generated_files/datamodel/datamodel.c: 187:     return ret;
+[e ) _ret ]
+[e $UE 54  ]
+"188
+[; ;mcc_generated_files/datamodel/datamodel.c: 188: }
+[e :UE 54 ]
+}
+"191
+[; ;mcc_generated_files/datamodel/datamodel.c: 191: _Bool isURIQueryValid()
+[v _isURIQueryValid `(a ~T0 @X0 1 ef ]
+"192
+[; ;mcc_generated_files/datamodel/datamodel.c: 192: {
+{
+[e :U _isURIQueryValid ]
+[f ]
+"193
+[; ;mcc_generated_files/datamodel/datamodel.c: 193:     return queryValid;
+[e ) _queryValid ]
+[e $UE 65  ]
+"194
+[; ;mcc_generated_files/datamodel/datamodel.c: 194: }
+[e :UE 65 ]
+}
+"196
+[; ;mcc_generated_files/datamodel/datamodel.c: 196: uint8_t getRootToLeafPathCount()
+[v _getRootToLeafPathCount `(uc ~T0 @X0 1 ef ]
+"197
+[; ;mcc_generated_files/datamodel/datamodel.c: 197: {
+{
+[e :U _getRootToLeafPathCount ]
+[f ]
+"198
+[; ;mcc_generated_files/datamodel/datamodel.c: 198:     uint8_t count;
+[v _count `uc ~T0 @X0 1 a ]
+"200
+[; ;mcc_generated_files/datamodel/datamodel.c: 200:     count = (sizeof(discoveryPath)/sizeof(*discoveryPath));
+[e = _count -> / -> # _discoveryPath `ui -> # *U &U _discoveryPath `ui `uc ]
+"202
+[; ;mcc_generated_files/datamodel/datamodel.c: 202:     return count;
+[e ) _count ]
+[e $UE 66  ]
+"203
+[; ;mcc_generated_files/datamodel/datamodel.c: 203: }
+[e :UE 66 ]
+}
+"205
+[; ;mcc_generated_files/datamodel/datamodel.c: 205: char *getDiscoveryPath(uint8_t idx)
+[v _getDiscoveryPath `(*uc ~T0 @X0 1 ef1`uc ]
+"206
+[; ;mcc_generated_files/datamodel/datamodel.c: 206: {
+{
+[e :U _getDiscoveryPath ]
+"205
+[; ;mcc_generated_files/datamodel/datamodel.c: 205: char *getDiscoveryPath(uint8_t idx)
+[v _idx `uc ~T0 @X0 1 r1 ]
+"206
+[; ;mcc_generated_files/datamodel/datamodel.c: 206: {
+[f ]
+"207
+[; ;mcc_generated_files/datamodel/datamodel.c: 207:     uint8_t strIdx = 0;
+[v _strIdx `uc ~T0 @X0 1 a ]
+[e = _strIdx -> -> 0 `i `uc ]
+"208
+[; ;mcc_generated_files/datamodel/datamodel.c: 208:     char *pch;
+[v _pch `*uc ~T0 @X0 1 a ]
+"210
+[; ;mcc_generated_files/datamodel/datamodel.c: 210:     memset(resourcePathName,0,sizeof(resourcePathName));
+[e ( _memset (3 , , -> &U _resourcePathName `*v -> 0 `i -> # _resourcePathName `ui ]
+"211
+[; ;mcc_generated_files/datamodel/datamodel.c: 211:     if(idx < (sizeof(discoveryPath)/sizeof(*discoveryPath)))
+[e $ ! < -> _idx `ui / -> # _discoveryPath `ui -> # *U &U _discoveryPath `ui 68  ]
+"212
+[; ;mcc_generated_files/datamodel/datamodel.c: 212:     {
+{
+"213
+[; ;mcc_generated_files/datamodel/datamodel.c: 213:         pch = strtok(discoveryPath[idx].discoveryPath,"/");
+[e = _pch ( _strtok (2 , -> &U . *U + &U _discoveryPath * -> _idx `ux -> -> # *U &U _discoveryPath `ui `ux 0 `*uc :s 4C ]
+"214
+[; ;mcc_generated_files/datamodel/datamodel.c: 214:         while(pch != ((void*)0))
+[e $U 69  ]
+[e :U 70 ]
+"215
+[; ;mcc_generated_files/datamodel/datamodel.c: 215:         {
+{
+"216
+[; ;mcc_generated_files/datamodel/datamodel.c: 216:             strIdx = atoi(pch);
+[e = _strIdx -> ( _atoi (1 -> _pch `*Cuc `uc ]
+"217
+[; ;mcc_generated_files/datamodel/datamodel.c: 217:             strcat(resourcePathName,getStingFromIdx(strIdx));
+[e ( _strcat (2 , &U _resourcePathName -> ( _getStingFromIdx (1 _strIdx `*Cuc ]
+"218
+[; ;mcc_generated_files/datamodel/datamodel.c: 218:             strcat(resourcePathName,"/");
+[e ( _strcat (2 , &U _resourcePathName :s 5C ]
+"219
+[; ;mcc_generated_files/datamodel/datamodel.c: 219:             pch = strtok(((void*)0),"/");
+[e = _pch ( _strtok (2 , -> -> -> 0 `i `*v `*uc :s 6C ]
+"220
+[; ;mcc_generated_files/datamodel/datamodel.c: 220:         }
+}
+[e :U 69 ]
+"214
+[; ;mcc_generated_files/datamodel/datamodel.c: 214:         while(pch != ((void*)0))
+[e $ != _pch -> -> -> 0 `i `*v `*uc 70  ]
+[e :U 71 ]
+"221
+[; ;mcc_generated_files/datamodel/datamodel.c: 221:     }
+}
+[e :U 68 ]
+"222
+[; ;mcc_generated_files/datamodel/datamodel.c: 222:     return resourcePathName;
+[e ) &U _resourcePathName ]
+[e $UE 67  ]
+"223
+[; ;mcc_generated_files/datamodel/datamodel.c: 223: }
+[e :UE 67 ]
+}
+"225
+[; ;mcc_generated_files/datamodel/datamodel.c: 225: int8_t getLeafResourceIdx(void)
+[v _getLeafResourceIdx `(c ~T0 @X0 1 ef ]
+"226
+[; ;mcc_generated_files/datamodel/datamodel.c: 226: {
+{
+[e :U _getLeafResourceIdx ]
+[f ]
+"227
+[; ;mcc_generated_files/datamodel/datamodel.c: 227:     if(leafIdx < (sizeof(discoveryPath)/sizeof(*discoveryPath)))
+[e $ ! < -> _leafIdx `ui / -> # _discoveryPath `ui -> # *U &U _discoveryPath `ui 73  ]
+"228
+[; ;mcc_generated_files/datamodel/datamodel.c: 228:         return leafIdx;
+[e ) -> _leafIdx `c ]
+[e $UE 72  ]
+[e :U 73 ]
+"230
+[; ;mcc_generated_files/datamodel/datamodel.c: 230:     return -1;
+[e ) -> -U -> 1 `i `c ]
+[e $UE 72  ]
+"231
+[; ;mcc_generated_files/datamodel/datamodel.c: 231: }
+[e :UE 72 ]
+}
+"233
+[; ;mcc_generated_files/datamodel/datamodel.c: 233: int8_t getPathResourceIdx(void)
+[v _getPathResourceIdx `(c ~T0 @X0 1 ef ]
+"234
+[; ;mcc_generated_files/datamodel/datamodel.c: 234: {
+{
+[e :U _getPathResourceIdx ]
+[f ]
+"235
+[; ;mcc_generated_files/datamodel/datamodel.c: 235:     int8_t pathResourceIdx = -1;
+[v _pathResourceIdx `c ~T0 @X0 1 a ]
+[e = _pathResourceIdx -> -U -> 1 `i `c ]
+"236
+[; ;mcc_generated_files/datamodel/datamodel.c: 236:     char *pch;
+[v _pch `*uc ~T0 @X0 1 a ]
+"238
+[; ;mcc_generated_files/datamodel/datamodel.c: 238:     if(leafIdx < getRootToLeafPathCount())
+[e $ ! < -> _leafIdx `i -> ( _getRootToLeafPathCount ..  `i 75  ]
+"239
+[; ;mcc_generated_files/datamodel/datamodel.c: 239:     {
+{
+"240
+[; ;mcc_generated_files/datamodel/datamodel.c: 240:         if(pathIdx < discoveryPath[leafIdx].heightOftheNode)
+[e $ ! < -> _pathIdx `i -> . *U + &U _discoveryPath * -> _leafIdx `ux -> -> # *U &U _discoveryPath `ui `ux 1 `i 76  ]
+"241
+[; ;mcc_generated_files/datamodel/datamodel.c: 241:         {
+{
+"242
+[; ;mcc_generated_files/datamodel/datamodel.c: 242:             pch = strtok(discoveryPath[leafIdx].discoveryPath,"/");
+[e = _pch ( _strtok (2 , -> &U . *U + &U _discoveryPath * -> _leafIdx `ux -> -> # *U &U _discoveryPath `ui `ux 0 `*uc :s 7C ]
+"243
+[; ;mcc_generated_files/datamodel/datamodel.c: 243:             for(uint8_t i=0; i< discoveryPath[leafIdx].heightOftheNode;i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $U 80  ]
+[e :U 77 ]
+"244
+[; ;mcc_generated_files/datamodel/datamodel.c: 244:             {
+{
+"245
+[; ;mcc_generated_files/datamodel/datamodel.c: 245:                 if(pch == ((void*)0))
+[e $ ! == _pch -> -> -> 0 `i `*v `*uc 81  ]
+"246
+[; ;mcc_generated_files/datamodel/datamodel.c: 246:                 {
+{
+"247
+[; ;mcc_generated_files/datamodel/datamodel.c: 247:                     leafIdx++;
+[e ++ _leafIdx -> -> 1 `i `uc ]
+"248
+[; ;mcc_generated_files/datamodel/datamodel.c: 248:                 }
+}
+[e :U 81 ]
+"249
+[; ;mcc_generated_files/datamodel/datamodel.c: 249:                 if(i==pathIdx)
+[e $ ! == -> _i `i -> _pathIdx `i 82  ]
+"250
+[; ;mcc_generated_files/datamodel/datamodel.c: 250:                 {
+{
+"251
+[; ;mcc_generated_files/datamodel/datamodel.c: 251:                     pathIdx++;
+[e ++ _pathIdx -> -> 1 `i `uc ]
+"252
+[; ;mcc_generated_files/datamodel/datamodel.c: 252:                     pathResourceIdx = atoi(pch);
+[e = _pathResourceIdx -> ( _atoi (1 -> _pch `*Cuc `c ]
+"253
+[; ;mcc_generated_files/datamodel/datamodel.c: 253:                     pch = ((void*)0);
+[e = _pch -> -> -> 0 `i `*v `*uc ]
+"254
+[; ;mcc_generated_files/datamodel/datamodel.c: 254:                     break;
+[e $U 78  ]
+"255
+[; ;mcc_generated_files/datamodel/datamodel.c: 255:                 }
+}
+[e :U 82 ]
+"256
+[; ;mcc_generated_files/datamodel/datamodel.c: 256:                 pch = strtok(((void*)0),"/");
+[e = _pch ( _strtok (2 , -> -> -> 0 `i `*v `*uc :s 8C ]
+"258
+[; ;mcc_generated_files/datamodel/datamodel.c: 258:             }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 80 ]
+[e $ < -> _i `i -> . *U + &U _discoveryPath * -> _leafIdx `ux -> -> # *U &U _discoveryPath `ui `ux 1 `i 77  ]
+[e :U 78 ]
+}
+"259
+[; ;mcc_generated_files/datamodel/datamodel.c: 259:         }
+}
+[e $U 83  ]
+"260
+[; ;mcc_generated_files/datamodel/datamodel.c: 260:         else
+[e :U 76 ]
+"261
+[; ;mcc_generated_files/datamodel/datamodel.c: 261:         {
+{
+"262
+[; ;mcc_generated_files/datamodel/datamodel.c: 262:             leafIdx = leafIdx + 1;
+[e = _leafIdx -> + -> _leafIdx `i -> 1 `i `uc ]
+"263
+[; ;mcc_generated_files/datamodel/datamodel.c: 263:             pathIdx = 0;
+[e = _pathIdx -> -> 0 `i `uc ]
+"264
+[; ;mcc_generated_files/datamodel/datamodel.c: 264:         }
+}
+[e :U 83 ]
+"265
+[; ;mcc_generated_files/datamodel/datamodel.c: 265:     }
+}
+[e :U 75 ]
+"268
+[; ;mcc_generated_files/datamodel/datamodel.c: 268:     return pathResourceIdx;
+[e ) _pathResourceIdx ]
+[e $UE 74  ]
+"269
+[; ;mcc_generated_files/datamodel/datamodel.c: 269: }
+[e :UE 74 ]
+}
+"271
+[; ;mcc_generated_files/datamodel/datamodel.c: 271: void resetLeafAndPathResourceIdices(void)
+[v _resetLeafAndPathResourceIdices `(v ~T0 @X0 1 ef ]
+"272
+[; ;mcc_generated_files/datamodel/datamodel.c: 272: {
+{
+[e :U _resetLeafAndPathResourceIdices ]
+[f ]
+"273
+[; ;mcc_generated_files/datamodel/datamodel.c: 273:     leafIdx = 0;
+[e = _leafIdx -> -> 0 `i `uc ]
+"274
+[; ;mcc_generated_files/datamodel/datamodel.c: 274:     pathIdx = 0;
+[e = _pathIdx -> -> 0 `i `uc ]
+"275
+[; ;mcc_generated_files/datamodel/datamodel.c: 275: }
+[e :UE 84 ]
+}
+"277
+[; ;mcc_generated_files/datamodel/datamodel.c: 277: uint8_t getPathLength(uint8_t idx)
+[v _getPathLength `(uc ~T0 @X0 1 ef1`uc ]
+"278
+[; ;mcc_generated_files/datamodel/datamodel.c: 278: {
+{
+[e :U _getPathLength ]
+"277
+[; ;mcc_generated_files/datamodel/datamodel.c: 277: uint8_t getPathLength(uint8_t idx)
+[v _idx `uc ~T0 @X0 1 r1 ]
+"278
+[; ;mcc_generated_files/datamodel/datamodel.c: 278: {
+[f ]
+"279
+[; ;mcc_generated_files/datamodel/datamodel.c: 279:     if(idx < (sizeof(discoveryPath)/sizeof(*discoveryPath)))
+[e $ ! < -> _idx `ui / -> # _discoveryPath `ui -> # *U &U _discoveryPath `ui 86  ]
+"280
+[; ;mcc_generated_files/datamodel/datamodel.c: 280:         return strlen(resourcePathName);
+[e ) -> ( _strlen (1 -> &U _resourcePathName `*Cuc `uc ]
+[e $UE 85  ]
+[e :U 86 ]
+"281
+[; ;mcc_generated_files/datamodel/datamodel.c: 281: }
+[e :UE 85 ]
+}
+"284
+[; ;mcc_generated_files/datamodel/datamodel.c: 284: char *getStingFromIdx(uint8_t idx)
+[v _getStingFromIdx `(*uc ~T0 @X0 1 ef1`uc ]
+"285
+[; ;mcc_generated_files/datamodel/datamodel.c: 285: {
+{
+[e :U _getStingFromIdx ]
+"284
+[; ;mcc_generated_files/datamodel/datamodel.c: 284: char *getStingFromIdx(uint8_t idx)
+[v _idx `uc ~T0 @X0 1 r1 ]
+"285
+[; ;mcc_generated_files/datamodel/datamodel.c: 285: {
+[f ]
+"286
+[; ;mcc_generated_files/datamodel/datamodel.c: 286:     String_t *hptr;
+[v _hptr `*S46 ~T0 @X0 1 a ]
+"288
+[; ;mcc_generated_files/datamodel/datamodel.c: 288:     hptr= StringTable;
+[e = _hptr -> &U _StringTable `*S46 ]
+"290
+[; ;mcc_generated_files/datamodel/datamodel.c: 290:     for(uint8_t i = 0; i< (sizeof(StringTable)/sizeof(*StringTable)); i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `ui / -> # _StringTable `ui -> # *U &U _StringTable `ui 88  ]
+[e $U 89  ]
+[e :U 88 ]
+"291
+[; ;mcc_generated_files/datamodel/datamodel.c: 291:     {
+{
+"292
+[; ;mcc_generated_files/datamodel/datamodel.c: 292:         if(idx == hptr->strIdx)
+[e $ ! == -> _idx `i -> . *U _hptr 0 `i 91  ]
+"293
+[; ;mcc_generated_files/datamodel/datamodel.c: 293:             return hptr->String;
+[e ) &U . *U _hptr 1 ]
+[e $UE 87  ]
+[e :U 91 ]
+"294
+[; ;mcc_generated_files/datamodel/datamodel.c: 294:         hptr++;
+[e ++ _hptr * -> -> 1 `i `x -> -> # *U _hptr `i `x ]
+"295
+[; ;mcc_generated_files/datamodel/datamodel.c: 295:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `ui / -> # _StringTable `ui -> # *U &U _StringTable `ui 88  ]
+[e :U 89 ]
+}
+"296
+[; ;mcc_generated_files/datamodel/datamodel.c: 296: }
+[e :UE 87 ]
+}
+"298
+[; ;mcc_generated_files/datamodel/datamodel.c: 298: int getIdxFromString(char *str)
+[v _getIdxFromString `(i ~T0 @X0 1 ef1`*uc ]
+"299
+[; ;mcc_generated_files/datamodel/datamodel.c: 299: {
+{
+[e :U _getIdxFromString ]
+"298
+[; ;mcc_generated_files/datamodel/datamodel.c: 298: int getIdxFromString(char *str)
+[v _str `*uc ~T0 @X0 1 r1 ]
+"299
+[; ;mcc_generated_files/datamodel/datamodel.c: 299: {
+[f ]
+"300
+[; ;mcc_generated_files/datamodel/datamodel.c: 300:     String_t *hptr;
+[v _hptr `*S46 ~T0 @X0 1 a ]
+"302
+[; ;mcc_generated_files/datamodel/datamodel.c: 302:     hptr= StringTable;
+[e = _hptr -> &U _StringTable `*S46 ]
+"304
+[; ;mcc_generated_files/datamodel/datamodel.c: 304:     for(uint8_t i = 0; i< (sizeof(StringTable)/sizeof(*StringTable)); i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `ui / -> # _StringTable `ui -> # *U &U _StringTable `ui 93  ]
+[e $U 94  ]
+[e :U 93 ]
+"305
+[; ;mcc_generated_files/datamodel/datamodel.c: 305:     {
+{
+"306
+[; ;mcc_generated_files/datamodel/datamodel.c: 306:         if(strcmp(hptr->String,str)==0)
+[e $ ! == ( _strcmp (2 , -> &U . *U _hptr 1 `*Cuc -> _str `*Cuc -> 0 `i 96  ]
+"307
+[; ;mcc_generated_files/datamodel/datamodel.c: 307:             return hptr->strIdx;
+[e ) -> . *U _hptr 0 `i ]
+[e $UE 92  ]
+[e :U 96 ]
+"308
+[; ;mcc_generated_files/datamodel/datamodel.c: 308:         hptr++;
+[e ++ _hptr * -> -> 1 `i `x -> -> # *U _hptr `i `x ]
+"309
+[; ;mcc_generated_files/datamodel/datamodel.c: 309:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `ui / -> # _StringTable `ui -> # *U &U _StringTable `ui 93  ]
+[e :U 94 ]
+}
+"310
+[; ;mcc_generated_files/datamodel/datamodel.c: 310:     return -1;
+[e ) -U -> 1 `i ]
+[e $UE 92  ]
+"311
+[; ;mcc_generated_files/datamodel/datamodel.c: 311: }
+[e :UE 92 ]
+}
+"315
+[; ;mcc_generated_files/datamodel/datamodel.c: 315: uint32_t getDiscoveryLength(void)
+[v _getDiscoveryLength `(ul ~T0 @X0 1 ef ]
+"316
+[; ;mcc_generated_files/datamodel/datamodel.c: 316: {
+{
+[e :U _getDiscoveryLength ]
+[f ]
+"317
+[; ;mcc_generated_files/datamodel/datamodel.c: 317:     return (60);
+[e ) -> -> -> 60 `i `l `ul ]
+[e $UE 97  ]
+"318
+[; ;mcc_generated_files/datamodel/datamodel.c: 318: }
+[e :UE 97 ]
+}
+"322
+[; ;mcc_generated_files/datamodel/datamodel.c: 322: void setResourceDataID(uint8_t id)
+[v _setResourceDataID `(v ~T0 @X0 1 ef1`uc ]
+"323
+[; ;mcc_generated_files/datamodel/datamodel.c: 323: {
+{
+[e :U _setResourceDataID ]
+"322
+[; ;mcc_generated_files/datamodel/datamodel.c: 322: void setResourceDataID(uint8_t id)
+[v _id `uc ~T0 @X0 1 r1 ]
+"323
+[; ;mcc_generated_files/datamodel/datamodel.c: 323: {
+[f ]
+"324
+[; ;mcc_generated_files/datamodel/datamodel.c: 324:     resourceDataID = id;
+[e = _resourceDataID _id ]
+"325
+[; ;mcc_generated_files/datamodel/datamodel.c: 325: }
+[e :UE 98 ]
+}
+"327
+[; ;mcc_generated_files/datamodel/datamodel.c: 327: uint8_t getResourceDataID()
+[v _getResourceDataID `(uc ~T0 @X0 1 ef ]
+"328
+[; ;mcc_generated_files/datamodel/datamodel.c: 328: {
+{
+[e :U _getResourceDataID ]
+[f ]
+"329
+[; ;mcc_generated_files/datamodel/datamodel.c: 329:     return resourceDataID;
+[e ) _resourceDataID ]
+[e $UE 99  ]
+"330
+[; ;mcc_generated_files/datamodel/datamodel.c: 330: }
+[e :UE 99 ]
+}
+"332
+[; ;mcc_generated_files/datamodel/datamodel.c: 332: void ResourcesInit()
+[v _ResourcesInit `(v ~T0 @X0 1 ef ]
+"333
+[; ;mcc_generated_files/datamodel/datamodel.c: 333: {
+{
+[e :U _ResourcesInit ]
+[f ]
+"334
+[; ;mcc_generated_files/datamodel/datamodel.c: 334:     for(uint8_t i = 0; i< (5); i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 5 `i 101  ]
+[e $U 102  ]
+[e :U 101 ]
+"335
+[; ;mcc_generated_files/datamodel/datamodel.c: 335:     {
+{
+"336
+[; ;mcc_generated_files/datamodel/datamodel.c: 336:         restfulHandler[Led_TYPE]->initializer(i);
+[e ( *U . *U *U + &U _restfulHandler * -> . `E1471 0 `ux -> -> # *U &U _restfulHandler `ui `ux 0 (1 _i ]
+"337
+[; ;mcc_generated_files/datamodel/datamodel.c: 337:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 101  ]
+[e :U 102 ]
+}
+"338
+[; ;mcc_generated_files/datamodel/datamodel.c: 338: }
+[e :UE 100 ]
+}
+"340
+[; ;mcc_generated_files/datamodel/datamodel.c: 340: void addPayloadOverHead(uint8_t idx, uint8_t numOfResources)
+[v _addPayloadOverHead `(v ~T0 @X0 1 ef2`uc`uc ]
+"341
+[; ;mcc_generated_files/datamodel/datamodel.c: 341: {
+{
+[e :U _addPayloadOverHead ]
+"340
+[; ;mcc_generated_files/datamodel/datamodel.c: 340: void addPayloadOverHead(uint8_t idx, uint8_t numOfResources)
+[v _idx `uc ~T0 @X0 1 r1 ]
+[v _numOfResources `uc ~T0 @X0 1 r2 ]
+"341
+[; ;mcc_generated_files/datamodel/datamodel.c: 341: {
+[f ]
+"342
+[; ;mcc_generated_files/datamodel/datamodel.c: 342:     writeAuxData(&numOfResources,MAP);
+[e ( _writeAuxData (2 , -> &U _numOfResources `*v . `E675 0 ]
+"343
+[; ;mcc_generated_files/datamodel/datamodel.c: 343: }
+[e :UE 104 ]
+}
+"345
+[; ;mcc_generated_files/datamodel/datamodel.c: 345: int16_t processPayloadOverHead( uint8_t receivedPayloadLength, content_format_t cfType)
+[v _processPayloadOverHead `(s ~T0 @X0 1 ef2`uc`E669 ]
+"346
+[; ;mcc_generated_files/datamodel/datamodel.c: 346: {
+{
+[e :U _processPayloadOverHead ]
+"345
+[; ;mcc_generated_files/datamodel/datamodel.c: 345: int16_t processPayloadOverHead( uint8_t receivedPayloadLength, content_format_t cfType)
+[v _receivedPayloadLength `uc ~T0 @X0 1 r1 ]
+[v _cfType `E669 ~T0 @X0 1 r2 ]
+"346
+[; ;mcc_generated_files/datamodel/datamodel.c: 346: {
+[f ]
+"348
+[; ;mcc_generated_files/datamodel/datamodel.c: 348:     switch(cfType)
+[e $U 107  ]
+"349
+[; ;mcc_generated_files/datamodel/datamodel.c: 349:     {
+{
+"350
+[; ;mcc_generated_files/datamodel/datamodel.c: 350:         case TEXT_PLAIN:
+[e :U 108 ]
+"351
+[; ;mcc_generated_files/datamodel/datamodel.c: 351:             receivedPayloadLength = TEXT_PLAINProcessPayloadOverHead(receivedPayloadLength);
+[e = _receivedPayloadLength ( _TEXT_PLAINProcessPayloadOverHead (1 _receivedPayloadLength ]
+"352
+[; ;mcc_generated_files/datamodel/datamodel.c: 352:             break;
+[e $U 106  ]
+"353
+[; ;mcc_generated_files/datamodel/datamodel.c: 353:         case CBOR:
+[e :U 109 ]
+"354
+[; ;mcc_generated_files/datamodel/datamodel.c: 354:             receivedPayloadLength = CBORProcessPayloadOverHead(receivedPayloadLength);
+[e = _receivedPayloadLength ( _CBORProcessPayloadOverHead (1 _receivedPayloadLength ]
+"355
+[; ;mcc_generated_files/datamodel/datamodel.c: 355:             break;
+[e $U 106  ]
+"356
+[; ;mcc_generated_files/datamodel/datamodel.c: 356:         default:
+[e :U 110 ]
+"357
+[; ;mcc_generated_files/datamodel/datamodel.c: 357:             break;
+[e $U 106  ]
+"358
+[; ;mcc_generated_files/datamodel/datamodel.c: 358:     }
+}
+[e $U 106  ]
+[e :U 107 ]
+[e [\ -> _cfType `ui , $ -> . `E669 0 `ui 108
+ , $ -> . `E669 3 `ui 109
+ 110 ]
+[e :U 106 ]
+"359
+[; ;mcc_generated_files/datamodel/datamodel.c: 359:     return receivedPayloadLength;
+[e ) -> _receivedPayloadLength `s ]
+[e $UE 105  ]
+"360
+[; ;mcc_generated_files/datamodel/datamodel.c: 360: }
+[e :UE 105 ]
+}
+"362
+[; ;mcc_generated_files/datamodel/datamodel.c: 362: static uint8_t TEXT_PLAINProcessPayloadOverHead(uint8_t receivedPayloadLength)
+[v _TEXT_PLAINProcessPayloadOverHead `(uc ~T0 @X0 1 sf1`uc ]
+"363
+[; ;mcc_generated_files/datamodel/datamodel.c: 363: {
+{
+[e :U _TEXT_PLAINProcessPayloadOverHead ]
+"362
+[; ;mcc_generated_files/datamodel/datamodel.c: 362: static uint8_t TEXT_PLAINProcessPayloadOverHead(uint8_t receivedPayloadLength)
+[v _receivedPayloadLength `uc ~T0 @X0 1 r1 ]
+"363
+[; ;mcc_generated_files/datamodel/datamodel.c: 363: {
+[f ]
+"365
+[; ;mcc_generated_files/datamodel/datamodel.c: 365:     return receivedPayloadLength;
+[e ) _receivedPayloadLength ]
+[e $UE 111  ]
+"366
+[; ;mcc_generated_files/datamodel/datamodel.c: 366: }
+[e :UE 111 ]
+}
+"367
+[; ;mcc_generated_files/datamodel/datamodel.c: 367: static uint8_t CBORProcessPayloadOverHead(uint8_t receivedPayloadLength)
+[v _CBORProcessPayloadOverHead `(uc ~T0 @X0 1 sf1`uc ]
+"368
+[; ;mcc_generated_files/datamodel/datamodel.c: 368: {
+{
+[e :U _CBORProcessPayloadOverHead ]
+"367
+[; ;mcc_generated_files/datamodel/datamodel.c: 367: static uint8_t CBORProcessPayloadOverHead(uint8_t receivedPayloadLength)
+[v _receivedPayloadLength `uc ~T0 @X0 1 r1 ]
+"368
+[; ;mcc_generated_files/datamodel/datamodel.c: 368: {
+[f ]
+"370
+[; ;mcc_generated_files/datamodel/datamodel.c: 370:     return receivedPayloadLength;
+[e ) _receivedPayloadLength ]
+[e $UE 112  ]
+"371
+[; ;mcc_generated_files/datamodel/datamodel.c: 371: }
+[e :UE 112 ]
+}
+[a 1C 109 99 104 112 0 ]
+[a 2C 47 0 ]
+[a 3C 47 0 ]
+[a 4C 47 0 ]
+[a 5C 47 0 ]
+[a 6C 47 0 ]
+[a 7C 47 0 ]
+[a 8C 47 0 ]

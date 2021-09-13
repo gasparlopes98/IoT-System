@@ -1,0 +1,253 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"66 mcc_generated_files/content_type/../datamodel/../content_type/contentFormat.h
+[s S3 `uc 1 `uc 1 `uc 1 ]
+[n S3 . object_map_elements array_map_elements array_elements ]
+"14 mcc_generated_files/content_type/contentFormat.c
+[; ;mcc_generated_files/content_type/contentFormat.c: 14: static contentFormatHandlers_t *theContentFormatHandler;
+[c E206 0 1 2 3 4 .. ]
+[n E206 . SIGNED_INTEGER UNSIGNED_INTEGER BYTE_STRING TEXT_STRING BOOLEAN  ]
+[v F242 `(v ~T0 @X0 0 tf2`l`E206 ]
+[v F246 `(v ~T0 @X0 0 tf3`*uc`*v`E206 ]
+[v F251 `(uc ~T0 @X0 0 tf1`*uc ]
+[c E219 0 1 2 .. ]
+[n E219 . MAP ARRAY UN_KNOWN  ]
+[v F254 `(v ~T0 @X0 0 tf2`*v`E219 ]
+"57 mcc_generated_files/content_type/../datamodel/../content_type/contentFormat.h
+[s S2 `*F242 1 `*F246 1 `*F251 1 `*F254 1 ]
+[n S2 . encodeFormatter decodeFormatter parseDataHandler writeDataHandler ]
+"21 mcc_generated_files/content_type/contentFormat.c
+[; ;mcc_generated_files/content_type/contentFormat.c: 21: const supportedTypes_t supportedCFType[(2)] =
+[c E213 0 40 50 60 .. ]
+[n E213 . TEXT_PLAIN LINK_FORMAT APPLICATION_JSON CBOR  ]
+"17
+[; ;mcc_generated_files/content_type/contentFormat.c: 17: {
+[s S44 `E213 1 ]
+[n S44 . contentFormatType ]
+"28 mcc_generated_files/content_type/textPlainCF.h
+[; ;mcc_generated_files/content_type/textPlainCF.h: 28: extern const contentFormatHandlers_t TEXT_PLAINdataHandlers;
+[v _TEXT_PLAINdataHandlers `CS2 ~T0 @X0 0 e ]
+"27 mcc_generated_files/content_type/cborCF.h
+[; ;mcc_generated_files/content_type/cborCF.h: 27: extern const contentFormatHandlers_t CBORdataHandlers;
+[v _CBORdataHandlers `CS2 ~T0 @X0 0 e ]
+"79 mcc_generated_files/content_type/../datamodel/../content_type/contentFormat.h
+[v _setContentFormatDataHandlers `(v ~T0 @X0 0 ef1`uc ]
+"29 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"13 mcc_generated_files/content_type/contentFormat.c
+[; ;mcc_generated_files/content_type/contentFormat.c: 13: elements_t CfElements;
+[v _CfElements `S3 ~T0 @X0 1 e ]
+"14
+[; ;mcc_generated_files/content_type/contentFormat.c: 14: static contentFormatHandlers_t *theContentFormatHandler;
+[v _theContentFormatHandler `*S2 ~T0 @X0 1 s ]
+"21
+[; ;mcc_generated_files/content_type/contentFormat.c: 21: const supportedTypes_t supportedCFType[(2)] =
+[v _supportedCFType `CS44 ~T0 @X0 -> 2 `i e ]
+[i _supportedCFType
+:U ..
+:U ..
+-> . `E213 0 `E213
+..
+:U ..
+-> . `E213 3 `E213
+..
+..
+]
+"26
+[; ;mcc_generated_files/content_type/contentFormat.c: 26: const contentFormatHandlers_t *contentFormatHandlers[(2)] =
+[v _contentFormatHandlers `*CS2 ~T0 @X0 -> 2 `i e ]
+[i _contentFormatHandlers
+:U ..
+&U _TEXT_PLAINdataHandlers
+&U _CBORdataHandlers
+..
+]
+"31
+[; ;mcc_generated_files/content_type/contentFormat.c: 31: _Bool iscfMatched(content_format_t cfType)
+[v _iscfMatched `(a ~T0 @X0 1 ef1`E213 ]
+"32
+[; ;mcc_generated_files/content_type/contentFormat.c: 32: {
+{
+[e :U _iscfMatched ]
+"31
+[; ;mcc_generated_files/content_type/contentFormat.c: 31: _Bool iscfMatched(content_format_t cfType)
+[v _cfType `E213 ~T0 @X0 1 r1 ]
+"32
+[; ;mcc_generated_files/content_type/contentFormat.c: 32: {
+[f ]
+"33
+[; ;mcc_generated_files/content_type/contentFormat.c: 33:     const supportedTypes_t *hptr;
+[v _hptr `*CS44 ~T0 @X0 1 a ]
+"35
+[; ;mcc_generated_files/content_type/contentFormat.c: 35:     hptr = supportedCFType;
+[e = _hptr &U _supportedCFType ]
+"37
+[; ;mcc_generated_files/content_type/contentFormat.c: 37:     for(uint8_t i = 0; i < (sizeof(contentFormatHandlers)/sizeof(*contentFormatHandlers)); i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `ui / -> # _contentFormatHandlers `ui -> # *U &U _contentFormatHandlers `ui 46  ]
+[e $U 47  ]
+[e :U 46 ]
+"38
+[; ;mcc_generated_files/content_type/contentFormat.c: 38:     {
+{
+"39
+[; ;mcc_generated_files/content_type/contentFormat.c: 39:         if(hptr->contentFormatType == cfType)
+[e $ ! == -> . *U _hptr 0 `ui -> _cfType `ui 49  ]
+"40
+[; ;mcc_generated_files/content_type/contentFormat.c: 40:         {
+{
+"41
+[; ;mcc_generated_files/content_type/contentFormat.c: 41:             setContentFormatDataHandlers(i);
+[e ( _setContentFormatDataHandlers (1 _i ]
+"42
+[; ;mcc_generated_files/content_type/contentFormat.c: 42:             return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 45  ]
+"43
+[; ;mcc_generated_files/content_type/contentFormat.c: 43:         }
+}
+[e :U 49 ]
+"44
+[; ;mcc_generated_files/content_type/contentFormat.c: 44:         hptr++;
+[e ++ _hptr * -> -> 1 `i `x -> -> # *U _hptr `i `x ]
+"45
+[; ;mcc_generated_files/content_type/contentFormat.c: 45:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `ui / -> # _contentFormatHandlers `ui -> # *U &U _contentFormatHandlers `ui 46  ]
+[e :U 47 ]
+}
+"46
+[; ;mcc_generated_files/content_type/contentFormat.c: 46:     return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 45  ]
+"47
+[; ;mcc_generated_files/content_type/contentFormat.c: 47: }
+[e :UE 45 ]
+}
+"49
+[; ;mcc_generated_files/content_type/contentFormat.c: 49: void setContentFormatDataHandlers(uint8_t index)
+[v _setContentFormatDataHandlers `(v ~T0 @X0 1 ef1`uc ]
+"50
+[; ;mcc_generated_files/content_type/contentFormat.c: 50: {
+{
+[e :U _setContentFormatDataHandlers ]
+"49
+[; ;mcc_generated_files/content_type/contentFormat.c: 49: void setContentFormatDataHandlers(uint8_t index)
+[v _index `uc ~T0 @X0 1 r1 ]
+"50
+[; ;mcc_generated_files/content_type/contentFormat.c: 50: {
+[f ]
+"51
+[; ;mcc_generated_files/content_type/contentFormat.c: 51:     theContentFormatHandler = contentFormatHandlers[index];
+[e = _theContentFormatHandler -> *U + &U _contentFormatHandlers * -> _index `ux -> -> # *U &U _contentFormatHandlers `ui `ux `*S2 ]
+"52
+[; ;mcc_generated_files/content_type/contentFormat.c: 52: }
+[e :UE 50 ]
+}
+"54
+[; ;mcc_generated_files/content_type/contentFormat.c: 54: void Get_ToEthernet(long data, ContentDataType_t type)
+[v _Get_ToEthernet `(v ~T0 @X0 1 ef2`l`E206 ]
+"55
+[; ;mcc_generated_files/content_type/contentFormat.c: 55: {
+{
+[e :U _Get_ToEthernet ]
+"54
+[; ;mcc_generated_files/content_type/contentFormat.c: 54: void Get_ToEthernet(long data, ContentDataType_t type)
+[v _data `l ~T0 @X0 1 r1 ]
+[v _type `E206 ~T0 @X0 1 r2 ]
+"55
+[; ;mcc_generated_files/content_type/contentFormat.c: 55: {
+[f ]
+"56
+[; ;mcc_generated_files/content_type/contentFormat.c: 56:       theContentFormatHandler->encodeFormatter(data,type);
+[e ( *U . *U _theContentFormatHandler 0 (2 , _data _type ]
+"57
+[; ;mcc_generated_files/content_type/contentFormat.c: 57: }
+[e :UE 51 ]
+}
+"59
+[; ;mcc_generated_files/content_type/contentFormat.c: 59: void Put_ToResource(char *data, void *variable, ContentDataType_t type)
+[v _Put_ToResource `(v ~T0 @X0 1 ef3`*uc`*v`E206 ]
+"60
+[; ;mcc_generated_files/content_type/contentFormat.c: 60: {
+{
+[e :U _Put_ToResource ]
+"59
+[; ;mcc_generated_files/content_type/contentFormat.c: 59: void Put_ToResource(char *data, void *variable, ContentDataType_t type)
+[v _data `*uc ~T0 @X0 1 r1 ]
+[v _variable `*v ~T0 @X0 1 r2 ]
+[v _type `E206 ~T0 @X0 1 r3 ]
+"60
+[; ;mcc_generated_files/content_type/contentFormat.c: 60: {
+[f ]
+"61
+[; ;mcc_generated_files/content_type/contentFormat.c: 61:     theContentFormatHandler->decodeFormatter(data,variable,type);
+[e ( *U . *U _theContentFormatHandler 1 (3 , , _data _variable _type ]
+"62
+[; ;mcc_generated_files/content_type/contentFormat.c: 62: }
+[e :UE 52 ]
+}
+"64
+[; ;mcc_generated_files/content_type/contentFormat.c: 64: uint8_t parseData(char *data,uint8_t sizeOfData)
+[v _parseData `(uc ~T0 @X0 1 ef2`*uc`uc ]
+"65
+[; ;mcc_generated_files/content_type/contentFormat.c: 65: {
+{
+[e :U _parseData ]
+"64
+[; ;mcc_generated_files/content_type/contentFormat.c: 64: uint8_t parseData(char *data,uint8_t sizeOfData)
+[v _data `*uc ~T0 @X0 1 r1 ]
+[v _sizeOfData `uc ~T0 @X0 1 r2 ]
+"65
+[; ;mcc_generated_files/content_type/contentFormat.c: 65: {
+[f ]
+"66
+[; ;mcc_generated_files/content_type/contentFormat.c: 66:     uint8_t len = 0;
+[v _len `uc ~T0 @X0 1 a ]
+[e = _len -> -> 0 `i `uc ]
+"68
+[; ;mcc_generated_files/content_type/contentFormat.c: 68:     if(sizeOfData > (32))
+[e $ ! > -> _sizeOfData `i -> 32 `i 54  ]
+"69
+[; ;mcc_generated_files/content_type/contentFormat.c: 69:         return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 53  ]
+[e :U 54 ]
+"70
+[; ;mcc_generated_files/content_type/contentFormat.c: 70:     memset(data,0,sizeOfData);
+[e ( _memset (3 , , -> _data `*v -> 0 `i -> _sizeOfData `ui ]
+"71
+[; ;mcc_generated_files/content_type/contentFormat.c: 71:     len = theContentFormatHandler->parseDataHandler(data);
+[e = _len ( *U . *U _theContentFormatHandler 2 (1 _data ]
+"73
+[; ;mcc_generated_files/content_type/contentFormat.c: 73:       return len;
+[e ) _len ]
+[e $UE 53  ]
+"74
+[; ;mcc_generated_files/content_type/contentFormat.c: 74: }
+[e :UE 53 ]
+}
+"76
+[; ;mcc_generated_files/content_type/contentFormat.c: 76: void writeAuxData(void *data,cFMenuItems items)
+[v _writeAuxData `(v ~T0 @X0 1 ef2`*v`E219 ]
+"77
+[; ;mcc_generated_files/content_type/contentFormat.c: 77: {
+{
+[e :U _writeAuxData ]
+"76
+[; ;mcc_generated_files/content_type/contentFormat.c: 76: void writeAuxData(void *data,cFMenuItems items)
+[v _data `*v ~T0 @X0 1 r1 ]
+[v _items `E219 ~T0 @X0 1 r2 ]
+"77
+[; ;mcc_generated_files/content_type/contentFormat.c: 77: {
+[f ]
+"78
+[; ;mcc_generated_files/content_type/contentFormat.c: 78:     theContentFormatHandler->writeDataHandler(data,items);
+[e ( *U . *U _theContentFormatHandler 3 (2 , _data _items ]
+"79
+[; ;mcc_generated_files/content_type/contentFormat.c: 79: }
+[e :UE 55 ]
+}

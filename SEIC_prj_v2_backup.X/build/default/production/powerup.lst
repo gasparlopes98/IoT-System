@@ -1,0 +1,81 @@
+
+
+Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
+                                                                                                           Fri Jun 25 10:49:27 2021
+
+
+     1                           	processor	18F26K40
+     2                           	pagewidth 132
+     3                           	opt	flic
+     4                           	psect	powerup,global,reloc=2,class=CODE,delta=1
+     5                           
+     6                           ;
+     7                           ;
+     8                           ; From Errata document DS80000713A for the PIC168F27K40
+     9                           ;
+    10  0000                     stk_offset	set	0
+    11  0000                     auto_size	set	0
+    12                           
+    13                           ; stack_auto defines a symbol /name/_offset which equates to the
+    14                           ; stack offset of the auto object in question
+    15  0000                     
+    16                           ; stack_param defines a symbol /name/_offset which equates to the
+    17                           ; stack offset of the parameter object in question
+    18  0000                     
+    19                           ; alloc_stack adjusts the SP to allocate space for auto objects
+    20                           ; it also links in to the btemp symbol so that can be used
+    21  0000                     
+    22                           ; restore_stack adjusts the SP to remove all auto and parameter
+    23                           ; objects from the stack prior to returning from a function
+    24  0000                     
+    25                           	psect	powerup
+    26  000076                     powerup:
+    27                           	callstack 0
+    28  000076  8E81               	bsf	3969,7,c	; From errata document DS80000713A
+    29                           
+    30                           ;nop ; Suggested Microchip errata workaround
+    31  000078  EF3E  F000         	goto	start
+    32                           tosu	equ	0xFFF
+    33                           tosh	equ	0xFFE
+    34                           tosl	equ	0xFFD
+    35                           stkptr	equ	0xFFC
+    36                           pclatu	equ	0xFFB
+    37                           pclath	equ	0xFFA
+    38                           pcl	equ	0xFF9
+    39                           tblptru	equ	0xFF8
+    40                           tblptrh	equ	0xFF7
+    41                           tblptrl	equ	0xFF6
+    42                           tablat	equ	0xFF5
+    43                           prodh	equ	0xFF4
+    44                           prodl	equ	0xFF3
+    45                           indf0	equ	0xFEF
+    46                           postinc0	equ	0xFEE
+    47                           postdec0	equ	0xFED
+    48                           preinc0	equ	0xFEC
+    49                           plusw0	equ	0xFEB
+    50                           fsr0h	equ	0xFEA
+    51                           fsr0l	equ	0xFE9
+    52                           wreg	equ	0xFE8
+    53                           indf1	equ	0xFE7
+    54                           postinc1	equ	0xFE6
+    55                           postdec1	equ	0xFE5
+    56                           preinc1	equ	0xFE4
+    57                           plusw1	equ	0xFE3
+    58                           fsr1h	equ	0xFE2
+    59                           fsr1l	equ	0xFE1
+    60                           bsr	equ	0xFE0
+    61                           indf2	equ	0xFDF
+    62                           postinc2	equ	0xFDE
+    63                           postdec2	equ	0xFDD
+    64                           preinc2	equ	0xFDC
+    65                           plusw2	equ	0xFDB
+    66                           fsr2h	equ	0xFDA
+    67                           fsr2l	equ	0xFD9
+    68                           status	equ	0xFD8
+
+
+Microchip Technology PIC18 Macro Assembler V2.32 build 20210201212658 
+Symbol Table                                                                                               Fri Jun 25 10:49:27 2021
+
+                          start 007C                          NVMCON1 000F81                          isa$std 000001  
+                        powerup 0076                        isa$xinst 000000  

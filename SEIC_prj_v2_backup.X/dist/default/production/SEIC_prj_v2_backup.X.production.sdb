@@ -1,0 +1,5509 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F26K40 ]
+[d frameptr 4065 ]
+"260 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[e E9577 . `uc
+MAJOR_UINT 0
+MAJOR_NEGINT 32
+MAJOR_BYTE_STRING 64
+MAJOR_TEXT_STRING 96
+MAJOR_ARRAY 128
+MAJOR_MAP 160
+MAJOR_TAG 192
+MAJOR_FLOATNMORE 224
+]
+"185 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[e E1706 . `uc
+IF_MATCH 1
+URI_HOST 3
+ETAG 4
+IF_NONE_MATCH 5
+OBSERVE 6
+URI_PORT 7
+LOCATION_PATH 8
+URI_PATH 11
+CONTENT_FORMAT 12
+MAX_AGE 14
+URI_QUERY 15
+ACCEPT 17
+LOCATION_QUERY 20
+BLOCK2 23
+BLOCK1 27
+PROXY_URI 35
+PROXY_SCHEME 39
+SIZE1 60
+]
+[e E1726 . `uc
+INTEGER 0
+STRING 1
+]
+"248
+[e E1341 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+"274
+[e E1472 . `uc
+CON_TYPE 0
+NON_TYPE 1
+ACK_TYPE 2
+RST_TYPE 3
+]
+"316
+[e E1478 . `uc
+EMPTY 0
+GET 1
+POST 2
+PUT 3
+DELETE 4
+PATCH 5
+CREATED 65
+DELETED 66
+VALID 67
+CHANGED 68
+CONTENT 69
+CONTINUE 95
+BAD_REQUEST 128
+UNAUTHORIZED 129
+BAD_OPTION 130
+FORBIDDEN 131
+NOT_FOUND 132
+METHOD_NOT_ALLOWED 133
+NOT_ACCEPTABLE 134
+REQUEST_ENTITY_INCOMPLETE 136
+PRECONDITION_FAILED 140
+REQUEST_ENTITY_TOO_LARGE 141
+UNSUPPORTED_CONTENT_FORMAT 143
+INTERNAL_SERVER_ERROR 160
+NOT_IMPLEMENTED 161
+BAD_GATEWAY 162
+SERVICE_UNAVAILABLE 163
+GATEWAY_TIMEOUT 164
+PROXY_NOT_SUPPORTED 165
+]
+"72 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_resources.c
+[e E1115 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+[e E1246 . `uc
+CON_TYPE 0
+NON_TYPE 1
+ACK_TYPE 2
+RST_TYPE 3
+]
+"75
+[e E1252 . `uc
+EMPTY 0
+GET 1
+POST 2
+PUT 3
+DELETE 4
+PATCH 5
+CREATED 65
+DELETED 66
+VALID 67
+CHANGED 68
+CONTENT 69
+CONTINUE 95
+BAD_REQUEST 128
+UNAUTHORIZED 129
+BAD_OPTION 130
+FORBIDDEN 131
+NOT_FOUND 132
+METHOD_NOT_ALLOWED 133
+NOT_ACCEPTABLE 134
+REQUEST_ENTITY_INCOMPLETE 136
+PRECONDITION_FAILED 140
+REQUEST_ENTITY_TOO_LARGE 141
+UNSUPPORTED_CONTENT_FORMAT 143
+INTERNAL_SERVER_ERROR 160
+NOT_IMPLEMENTED 161
+BAD_GATEWAY 162
+SERVICE_UNAVAILABLE 163
+GATEWAY_TIMEOUT 164
+PROXY_NOT_SUPPORTED 165
+]
+"107
+[e E930 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"67 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[e E1634 . `uc
+COAP_BLOCK_SIZE_16_BYTE 0
+COAP_BLOCK_SIZE_32_BYTE 1
+COAP_BLOCK_SIZE_64_BYTE 2
+COAP_BLOCK_SIZE_128_BYTE 3
+COAP_BLOCK_SIZE_256_BYTE 4
+COAP_BLOCK_SIZE_512_BYTE 5
+COAP_BLOCK_SIZE_1024_BYTE 6
+]
+"119
+[e E1116 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+[e E1247 . `uc
+CON_TYPE 0
+NON_TYPE 1
+ACK_TYPE 2
+RST_TYPE 3
+]
+"51 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[e E1267 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+[e E1398 . `uc
+CON_TYPE 0
+NON_TYPE 1
+ACK_TYPE 2
+RST_TYPE 3
+]
+"198
+[e E1070 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"267
+[e E1404 . `uc
+EMPTY 0
+GET 1
+POST 2
+PUT 3
+DELETE 4
+PATCH 5
+CREATED 65
+DELETED 66
+VALID 67
+CHANGED 68
+CONTENT 69
+CONTINUE 95
+BAD_REQUEST 128
+UNAUTHORIZED 129
+BAD_OPTION 130
+FORBIDDEN 131
+NOT_FOUND 132
+METHOD_NOT_ALLOWED 133
+NOT_ACCEPTABLE 134
+REQUEST_ENTITY_INCOMPLETE 136
+PRECONDITION_FAILED 140
+REQUEST_ENTITY_TOO_LARGE 141
+UNSUPPORTED_CONTENT_FORMAT 143
+INTERNAL_SERVER_ERROR 160
+NOT_IMPLEMENTED 161
+BAD_GATEWAY 162
+SERVICE_UNAVAILABLE 163
+GATEWAY_TIMEOUT 164
+PROXY_NOT_SUPPORTED 165
+]
+"101 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[e E1268 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+[e E1611 . `uc
+INIT 0
+RETRANSMISSION 1
+MAX_RETRANSMISSION 2
+LIFETIME 3
+RESET 4
+]
+"198
+[e E1399 . `uc
+CON_TYPE 0
+NON_TYPE 1
+ACK_TYPE 2
+RST_TYPE 3
+]
+"319
+[e E1070 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"339
+[e E1405 . `uc
+EMPTY 0
+GET 1
+POST 2
+PUT 3
+DELETE 4
+PATCH 5
+CREATED 65
+DELETED 66
+VALID 67
+CHANGED 68
+CONTENT 69
+CONTINUE 95
+BAD_REQUEST 128
+UNAUTHORIZED 129
+BAD_OPTION 130
+FORBIDDEN 131
+NOT_FOUND 132
+METHOD_NOT_ALLOWED 133
+NOT_ACCEPTABLE 134
+REQUEST_ENTITY_INCOMPLETE 136
+PRECONDITION_FAILED 140
+REQUEST_ENTITY_TOO_LARGE 141
+UNSUPPORTED_CONTENT_FORMAT 143
+INTERNAL_SERVER_ERROR 160
+NOT_IMPLEMENTED 161
+BAD_GATEWAY 162
+SERVICE_UNAVAILABLE 163
+GATEWAY_TIMEOUT 164
+PROXY_NOT_SUPPORTED 165
+]
+"17 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[e E1098 . `uc
+SIGNED_INTEGER 0
+UNSIGNED_INTEGER 1
+BYTE_STRING 2
+TEXT_STRING 3
+BOOLEAN 4
+]
+"115
+[e E1111 . `uc
+MAP 0
+ARRAY 1
+UN_KNOWN 2
+]
+"14 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[e E206 . `uc
+SIGNED_INTEGER 0
+UNSIGNED_INTEGER 1
+BYTE_STRING 2
+TEXT_STRING 3
+BOOLEAN 4
+]
+[e E219 . `uc
+MAP 0
+ARRAY 1
+UN_KNOWN 2
+]
+"21
+[e E213 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+"17 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[e E1098 . `uc
+SIGNED_INTEGER 0
+UNSIGNED_INTEGER 1
+BYTE_STRING 2
+TEXT_STRING 3
+BOOLEAN 4
+]
+"84
+[e E1111 . `uc
+MAP 0
+ARRAY 1
+UN_KNOWN 2
+]
+"78 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[e E1471 . `uc
+Led_TYPE 0
+]
+"342
+[e E675 . `uc
+MAP 0
+ARRAY 1
+UN_KNOWN 2
+]
+"345
+[e E669 . `uc
+TEXT_PLAIN 0
+LINK_FORMAT 40
+APPLICATION_JSON 50
+CBOR 60
+]
+"83 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[e E662 . `uc
+SIGNED_INTEGER 0
+UNSIGNED_INTEGER 1
+BYTE_STRING 2
+TEXT_STRING 3
+BOOLEAN 4
+]
+"41 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/drivers/spi_master.c
+[e E355 . `uc
+SPI1_DEFAULT 0
+MAC_CONFIG 1
+]
+"53
+[e E377 . `uc
+MAC 0
+]
+"63 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[e E10031 . `uc
+sfr_bank0 0
+sfr_bank1 64
+sfr_bank2 128
+sfr_bank3 192
+sfr_common 224
+]
+"139
+[e E10038 . `uc
+J60_ERDPTL 0
+J60_ERDPTH 1
+J60_EWRPTL 2
+J60_EWRPTH 3
+J60_ETXSTL 4
+J60_ETXSTH 5
+J60_ETXNDL 6
+J60_ETXNDH 7
+J60_ERXSTL 8
+J60_ERXSTH 9
+J60_ERXNDL 10
+J60_ERXNDH 11
+J60_ERXRDPTL 12
+J60_ERXRDPTH 13
+J60_ERXWRPTL 14
+J60_ERXWRPTH 15
+J60_EDMASTL 16
+J60_EDMASTH 17
+J60_EDMANDL 18
+J60_EDMANDH 19
+J60_EDMADSTL 20
+J60_EDMADSTH 21
+J60_EDMACSL 22
+J60_EDMACSH 23
+RSRV_018 24
+RSRV_019 25
+RSRV_01A 26
+J60_EHT0 64
+J60_EHT1 65
+J60_EHT2 66
+J60_EHT3 67
+J60_EHT4 68
+J60_EHT5 69
+J60_EHT6 70
+J60_EHT7 71
+J60_EPMM0 72
+J60_EPMM1 73
+J60_EPMM2 74
+J60_EPMM3 75
+J60_EPMM4 76
+J60_EPMM5 77
+J60_EPMM6 78
+J60_EPMM7 79
+J60_EPMCSL 80
+J60_EPMCSH 81
+RSRV_112 82
+RSRV_113 83
+J60_EPMOL 84
+J60_EPMOH 85
+RSRV_116 86
+RSRV_117 87
+J60_ERXFCON 88
+J60_EPKTCNT 89
+RSRV_11A 90
+J60_MACON1 128
+RSRV_201 129
+J60_MACON3 130
+J60_MACON4 131
+J60_MABBIPG 132
+RSRV_205 133
+J60_MAIPGL 134
+J60_MAIPGH 135
+J60_MACLCON1 136
+J60_MACLCON2 137
+J60_MAMXFLL 138
+J60_MAMXFLH 139
+RSRV_20C 140
+RSRV_20D 141
+RSRV_20E 142
+RSRV_20F 143
+RSRV_210 144
+RSRV_211 145
+J60_MICMD 146
+RSRV_213 147
+J60_MIREGADR 148
+RSRV_215 149
+J60_MIWRL 150
+J60_MIWRH 151
+J60_MIRDL 152
+J60_MIRDH 153
+RSRV_21A 154
+J60_MAADR5 192
+J60_MAADR6 193
+J60_MAADR3 194
+J60_MAADR4 195
+J60_MAADR1 196
+J60_MAADR2 197
+J60_EBSTSD 198
+J60_EBSTCON 199
+J60_EBSTCSL 200
+J60_EBSTCSH 201
+J60_MISTAT 202
+RSRV_30B 203
+RSRV_30C 204
+RSRV_30D 205
+RSRV_30E 206
+RSRV_30F 207
+RSRV_310 208
+RSRV_311 209
+J60_EREVID 210
+RSRV_313 211
+RSRV_314 212
+J60_ECOCON 213
+RSRV_316 214
+J60_EFLOCON 215
+J60_EPAUSL 216
+J60_EPAUSH 217
+RSRV_31A 218
+J60_EIE 251
+J60_EIR 252
+J60_ESTAT 253
+J60_ECON2 254
+J60_ECON1 255
+]
+"148
+[e E10022 . `uc
+rcr_inst 0
+rbm_inst 58
+wcr_inst 64
+wbm_inst 122
+bfs_inst 128
+bfc_inst 160
+src_inst 255
+]
+"169
+[e E10153 . `uc
+J60_PHCON1 0
+J60_PHSTAT1 1
+J60_PHID1 2
+J60_PHID2 3
+J60_PHCON2 16
+J60_PHSTAT2 17
+J60_PHIE 18
+J60_PHIR 19
+J60_PHLCON 20
+]
+"329
+[e E10620 . `uc
+MAC 0
+]
+"452
+[e E9844 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"143 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[e E10466 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"101 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[e E779 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"67 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log.c
+[e E10218 . `uc
+LOG_EMERGENCY 0
+LOG_ALERTS 1
+LOG_CRITICAL 2
+LOG_ERROR 3
+LOG_WARNING 4
+LOG_NOTICE 5
+LOG_INFO 6
+LOG_DEBUG 7
+]
+"69
+[e E10228 . `uc
+LOG_KERN 0
+LOG_DTLS 1
+LOG_ECC 2
+LOG_DAEMON 3
+LOG_AUTH 4
+LOG_SYSLOG 5
+LOG_LPR 6
+LOG_NEWS 7
+LOG_TFTP 8
+LOG_UUID 9
+LOG_COAP 10
+LOG_FTP 11
+LOG_NTP 12
+LOG_HTTP 13
+LOG_SNMP 14
+LOG_RTCC 15
+LOG_CBOR 16
+LOG_UDP 17
+LOG_TCP 18
+LOG_DHCP 19
+LOG_DNS 20
+LOG_LLDP 21
+LOG_LINK 22
+LOG_LAST 23
+]
+"120
+[e E10526 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"69 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4.c
+[e E627 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"75
+[e E484 . `uc
+HOPOPT_TCPIP 0
+ICMP_TCPIP 1
+IGMP_TCPIP 2
+GGP_TCPIP 3
+IPV4_TCPIP 4
+ST_TCPIP 5
+TCP_TCPIP 6
+CBT_TCPIP 7
+EGP_TCPIP 8
+IGP_TCPIP 9
+BBN_RCC_MON_TCPIP 10
+NVP_II_TCPIP 11
+PUP_TCPIP 12
+ARGUS_TCPIP 13
+EMCON_TCPIP 14
+XNET_TCPIP 15
+CHAOS_TCPIP 16
+UDP_TCPIP 17
+MUX_TCPIP 18
+DCN_MEAS_TCPIP 19
+HMP_TCPIP 20
+PRM_TCPIP 21
+XNS_IDP_TCPIP 22
+TRUNK_1_TCPIP 23
+TRUNK_2_TCPIP 24
+LEAF_1_TCPIP 25
+LEAF_2_TCPIP 26
+RDP_TCPIP 27
+IRTP_TCPIP 28
+ISO_TP4_TCPIP 29
+NETBLT_TCPIP 30
+MFE_NSP_TCPIP 31
+MERIT_INP_TCPIP 32
+DCCP_TCPIP 33
+THREEPC_TCPIP 34
+IDPR_TCPIP 35
+XTP_TCPIP 36
+DDP_TCPIP 37
+IDPR_CMTP_TCPIP 38
+TPpp_TCPIP 39
+IL_TCPIP 40
+IPV6_TUNNEL_TCPIP 41
+SDRP_TCPIP 42
+IPV6_Route_TCPIP 43
+IPV6_Frag_TCPIP 44
+IDRP_TCPIP 45
+RSVP_TCPIP 46
+GRE_TCPIP 47
+DSR_TCPIP 48
+BNA_TCPIP 49
+ESP_TCPIP 50
+AH_TCPIP 51
+I_NLSP_TCPIP 52
+SWIPE_TCPIP 53
+NARP_TCPIP 54
+MOBILE_TCPIP 55
+TLSP_TCPIP 56
+SKIP_TCPIP 57
+IPV6_ICMP_TCPIP 58
+IPV6_NoNxt_TCPIP 59
+IPV6_Opts_TCPIP 60
+CFTP_TCPIP 62
+SAT_EXPAK_TCPIP 64
+KRYPTOLAN_TCPIP 65
+RVD_TCPIP 66
+IPPC_TCPIP 67
+SAT_MON_TCPIP 69
+VISA_TCPIP 70
+IPCV_TCPIP 71
+CPNX_TCPIP 72
+CPHB_TCPIP 73
+WSN_TCPIP 74
+PVP_TCPIP 75
+BR_SAT_MON_TCPIP 76
+SUN_ND_TCPIP 77
+WB_MON_TCPIP 78
+WB_EXPAK_TCPIP 79
+ISO_IP_TCPIP 80
+VMTP_TCPIP 81
+SECURE_VMTP_TCPIP 82
+VINES_TCPIP 83
+TTP_TCPIP 84
+IPTM_TCPIP 84
+NSFNET_IGP_TCPIP 85
+DGP_TCPIP 86
+TCF_TCPIP 87
+EIGRP_TCPIP 88
+OSPFIGP_TCPIP 89
+Sprite_RPC_TCPIP 90
+LARP_TCPIP 91
+MTP_TCPIP 92
+AX25_TCPIP 93
+IPIP_TCPIP 94
+MICP_TCPIP 95
+SCC_SP_TCPIP 96
+ETHERIP_TCPIP 97
+ENCAP_TCPIP 98
+GMTP_TCPIP 100
+IFMP_TCPIP 101
+PNNI_TCPIP 102
+PIM_TCPIP 103
+ARIS_TCPIP 104
+SCPS_TCPIP 105
+QNX_TCPIP 106
+A_N_TCPIP 107
+IPComp_TCPIP 108
+SNP_TCPIP 109
+Compaq_Peer_TCPIP 110
+IPX_in_IP_TCPIP 111
+VRRP_TCPIP 112
+PGM_TCPIP 113
+L2TP_TCPIP 115
+DDX_TCPIP 116
+IATP_TCPIP 117
+STP_TCPIP 118
+SRP_TCPIP 119
+UTI_TCPIP 120
+SMP_TCPIP 121
+SM_TCPIP 122
+PTP_TCPIP 123
+ISIS_TCPIP 124
+FIRE_TCPIP 125
+CRTP_TCPIP 126
+CRUDP_TCPIP 127
+SSCOPMCE_TCPIP 128
+IPLT_TCPIP 129
+SPS_TCPIP 130
+PIPE_TCPIP 131
+SCTP_TCPIP 132
+FC_TCPIP 133
+]
+"114 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[e E614 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"198
+[e E471 . `uc
+HOPOPT_TCPIP 0
+ICMP_TCPIP 1
+IGMP_TCPIP 2
+GGP_TCPIP 3
+IPV4_TCPIP 4
+ST_TCPIP 5
+TCP_TCPIP 6
+CBT_TCPIP 7
+EGP_TCPIP 8
+IGP_TCPIP 9
+BBN_RCC_MON_TCPIP 10
+NVP_II_TCPIP 11
+PUP_TCPIP 12
+ARGUS_TCPIP 13
+EMCON_TCPIP 14
+XNET_TCPIP 15
+CHAOS_TCPIP 16
+UDP_TCPIP 17
+MUX_TCPIP 18
+DCN_MEAS_TCPIP 19
+HMP_TCPIP 20
+PRM_TCPIP 21
+XNS_IDP_TCPIP 22
+TRUNK_1_TCPIP 23
+TRUNK_2_TCPIP 24
+LEAF_1_TCPIP 25
+LEAF_2_TCPIP 26
+RDP_TCPIP 27
+IRTP_TCPIP 28
+ISO_TP4_TCPIP 29
+NETBLT_TCPIP 30
+MFE_NSP_TCPIP 31
+MERIT_INP_TCPIP 32
+DCCP_TCPIP 33
+THREEPC_TCPIP 34
+IDPR_TCPIP 35
+XTP_TCPIP 36
+DDP_TCPIP 37
+IDPR_CMTP_TCPIP 38
+TPpp_TCPIP 39
+IL_TCPIP 40
+IPV6_TUNNEL_TCPIP 41
+SDRP_TCPIP 42
+IPV6_Route_TCPIP 43
+IPV6_Frag_TCPIP 44
+IDRP_TCPIP 45
+RSVP_TCPIP 46
+GRE_TCPIP 47
+DSR_TCPIP 48
+BNA_TCPIP 49
+ESP_TCPIP 50
+AH_TCPIP 51
+I_NLSP_TCPIP 52
+SWIPE_TCPIP 53
+NARP_TCPIP 54
+MOBILE_TCPIP 55
+TLSP_TCPIP 56
+SKIP_TCPIP 57
+IPV6_ICMP_TCPIP 58
+IPV6_NoNxt_TCPIP 59
+IPV6_Opts_TCPIP 60
+CFTP_TCPIP 62
+SAT_EXPAK_TCPIP 64
+KRYPTOLAN_TCPIP 65
+RVD_TCPIP 66
+IPPC_TCPIP 67
+SAT_MON_TCPIP 69
+VISA_TCPIP 70
+IPCV_TCPIP 71
+CPNX_TCPIP 72
+CPHB_TCPIP 73
+WSN_TCPIP 74
+PVP_TCPIP 75
+BR_SAT_MON_TCPIP 76
+SUN_ND_TCPIP 77
+WB_MON_TCPIP 78
+WB_EXPAK_TCPIP 79
+ISO_IP_TCPIP 80
+VMTP_TCPIP 81
+SECURE_VMTP_TCPIP 82
+VINES_TCPIP 83
+TTP_TCPIP 84
+IPTM_TCPIP 84
+NSFNET_IGP_TCPIP 85
+DGP_TCPIP 86
+TCF_TCPIP 87
+EIGRP_TCPIP 88
+OSPFIGP_TCPIP 89
+Sprite_RPC_TCPIP 90
+LARP_TCPIP 91
+MTP_TCPIP 92
+AX25_TCPIP 93
+IPIP_TCPIP 94
+MICP_TCPIP 95
+SCC_SP_TCPIP 96
+ETHERIP_TCPIP 97
+ENCAP_TCPIP 98
+GMTP_TCPIP 100
+IFMP_TCPIP 101
+PNNI_TCPIP 102
+PIM_TCPIP 103
+ARIS_TCPIP 104
+SCPS_TCPIP 105
+QNX_TCPIP 106
+A_N_TCPIP 107
+IPComp_TCPIP 108
+SNP_TCPIP 109
+Compaq_Peer_TCPIP 110
+IPX_in_IP_TCPIP 111
+VRRP_TCPIP 112
+PGM_TCPIP 113
+L2TP_TCPIP 115
+DDX_TCPIP 116
+IATP_TCPIP 117
+STP_TCPIP 118
+SRP_TCPIP 119
+UTI_TCPIP 120
+SMP_TCPIP 121
+SM_TCPIP 122
+PTP_TCPIP 123
+ISIS_TCPIP 124
+FIRE_TCPIP 125
+CRTP_TCPIP 126
+CRUDP_TCPIP 127
+SSCOPMCE_TCPIP 128
+IPLT_TCPIP 129
+SPS_TCPIP 130
+PIPE_TCPIP 131
+SCTP_TCPIP 132
+FC_TCPIP 133
+]
+"56 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log_syslog.c
+[e E10349 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"58 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[e E614 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"85
+[e E405 . `ui
+ECHO_REPLY 0
+DEST_NETWORK_UNREACHABLE 768
+DEST_HOST_UNREACHABLE 769
+DEST_PROTOCOL_UNREACHABLE 770
+DEST_PORT_UNREACHABLE 771
+FRAGMENTATION_REQUIRED 772
+SOURCE_ROUTE_FAILED 773
+DESTINATION_NETWORK_UNKNOWN 774
+SOURCE_HOST_ISOLATED 775
+NETWORK_ADMINISTRATIVELY_PROHIBITED 776
+HOST_ADMINISTRATIVELY_PROHIBITED 777
+NETWORK_UNREACHABLE_FOR_TOS 778
+HOST_UNREACHABLE_FOR_TOS 779
+COMMUNICATION_ADMINISTRATIVELY_PROHIBITED 780
+HOST_PRECEDENCE_VIOLATION 781
+PRECEDENCE_CUTOFF_IN_EFFECT 782
+SOURCE_QUENCH 1024
+REDIRECT_DATAGRAM_FOR_THE_NETWORK 1280
+REDIRECT_DATAGRAM_FOR_THE_HOST 1281
+REDIRECT_DATAGRAM_FOR_THE_TOS_AND_NETWORK 1282
+REDIRECT_DATAGRAM_FOR_THE_TOS_AND_HOST 1283
+ALTERNATE_HOST_ADDRESS 1536
+ECHO_REQUEST 2048
+UNASSIGNED_ECHO_TYPE_CODE_REQUEST_1 2090
+UNASSIGNED_ECHO_TYPE_CODE_REQUEST_2 2300
+ROUTER_ADVERTISEMENT 2304
+ROUTER_SOLICITATION 2560
+TRACEROUTE 12288
+]
+"108
+[e E471 . `uc
+HOPOPT_TCPIP 0
+ICMP_TCPIP 1
+IGMP_TCPIP 2
+GGP_TCPIP 3
+IPV4_TCPIP 4
+ST_TCPIP 5
+TCP_TCPIP 6
+CBT_TCPIP 7
+EGP_TCPIP 8
+IGP_TCPIP 9
+BBN_RCC_MON_TCPIP 10
+NVP_II_TCPIP 11
+PUP_TCPIP 12
+ARGUS_TCPIP 13
+EMCON_TCPIP 14
+XNET_TCPIP 15
+CHAOS_TCPIP 16
+UDP_TCPIP 17
+MUX_TCPIP 18
+DCN_MEAS_TCPIP 19
+HMP_TCPIP 20
+PRM_TCPIP 21
+XNS_IDP_TCPIP 22
+TRUNK_1_TCPIP 23
+TRUNK_2_TCPIP 24
+LEAF_1_TCPIP 25
+LEAF_2_TCPIP 26
+RDP_TCPIP 27
+IRTP_TCPIP 28
+ISO_TP4_TCPIP 29
+NETBLT_TCPIP 30
+MFE_NSP_TCPIP 31
+MERIT_INP_TCPIP 32
+DCCP_TCPIP 33
+THREEPC_TCPIP 34
+IDPR_TCPIP 35
+XTP_TCPIP 36
+DDP_TCPIP 37
+IDPR_CMTP_TCPIP 38
+TPpp_TCPIP 39
+IL_TCPIP 40
+IPV6_TUNNEL_TCPIP 41
+SDRP_TCPIP 42
+IPV6_Route_TCPIP 43
+IPV6_Frag_TCPIP 44
+IDRP_TCPIP 45
+RSVP_TCPIP 46
+GRE_TCPIP 47
+DSR_TCPIP 48
+BNA_TCPIP 49
+ESP_TCPIP 50
+AH_TCPIP 51
+I_NLSP_TCPIP 52
+SWIPE_TCPIP 53
+NARP_TCPIP 54
+MOBILE_TCPIP 55
+TLSP_TCPIP 56
+SKIP_TCPIP 57
+IPV6_ICMP_TCPIP 58
+IPV6_NoNxt_TCPIP 59
+IPV6_Opts_TCPIP 60
+CFTP_TCPIP 62
+SAT_EXPAK_TCPIP 64
+KRYPTOLAN_TCPIP 65
+RVD_TCPIP 66
+IPPC_TCPIP 67
+SAT_MON_TCPIP 69
+VISA_TCPIP 70
+IPCV_TCPIP 71
+CPNX_TCPIP 72
+CPHB_TCPIP 73
+WSN_TCPIP 74
+PVP_TCPIP 75
+BR_SAT_MON_TCPIP 76
+SUN_ND_TCPIP 77
+WB_MON_TCPIP 78
+WB_EXPAK_TCPIP 79
+ISO_IP_TCPIP 80
+VMTP_TCPIP 81
+SECURE_VMTP_TCPIP 82
+VINES_TCPIP 83
+TTP_TCPIP 84
+IPTM_TCPIP 84
+NSFNET_IGP_TCPIP 85
+DGP_TCPIP 86
+TCF_TCPIP 87
+EIGRP_TCPIP 88
+OSPFIGP_TCPIP 89
+Sprite_RPC_TCPIP 90
+LARP_TCPIP 91
+MTP_TCPIP 92
+AX25_TCPIP 93
+IPIP_TCPIP 94
+MICP_TCPIP 95
+SCC_SP_TCPIP 96
+ETHERIP_TCPIP 97
+ENCAP_TCPIP 98
+GMTP_TCPIP 100
+IFMP_TCPIP 101
+PNNI_TCPIP 102
+PIM_TCPIP 103
+ARIS_TCPIP 104
+SCPS_TCPIP 105
+QNX_TCPIP 106
+A_N_TCPIP 107
+IPComp_TCPIP 108
+SNP_TCPIP 109
+Compaq_Peer_TCPIP 110
+IPX_in_IP_TCPIP 111
+VRRP_TCPIP 112
+PGM_TCPIP 113
+L2TP_TCPIP 115
+DDX_TCPIP 116
+IATP_TCPIP 117
+STP_TCPIP 118
+SRP_TCPIP 119
+UTI_TCPIP 120
+SMP_TCPIP 121
+SM_TCPIP 122
+PTP_TCPIP 123
+ISIS_TCPIP 124
+FIRE_TCPIP 125
+CRTP_TCPIP 126
+CRUDP_TCPIP 127
+SSCOPMCE_TCPIP 128
+IPLT_TCPIP 129
+SPS_TCPIP 130
+PIPE_TCPIP 131
+SCTP_TCPIP 132
+FC_TCPIP 133
+]
+"120 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[e E1250 . `uc
+SELECTING 0
+REQUESTING 1
+RENEWLEASE 2
+BOUND 3
+]
+[e E1256 . `uc
+INIT_TIMER 0
+WAITFORTIMER 1
+STARTDISCOVER 2
+STARTREQUEST 3
+]
+"134
+[e E1233 . `uc
+DHCP_DISCOVER 1
+DHCP_OFFER 2
+DHCP_REQUEST 3
+DHCP_DECLINE 4
+DHCP_ACK 5
+DHCP_NACK 6
+DHCP_RELEASE 7
+DHCP_INFORM 8
+DHCP_FORCERENEW 9
+DHCP_LEASEQUERY 10
+DHCP_LEASEUNASSIGNED 11
+DHCP_LEASEUNKNOWN 12
+DHCP_LEASEACTIVE 13
+DHCP_BULKLEASEQUERY 14
+DHCP_LEASEQUERYDONE 15
+]
+"151
+[e E978 . `uc
+ERROR 0
+SUCCESS 1
+LINK_NOT_FOUND 2
+BUFFER_BUSY 3
+TX_LOGIC_NOT_IDLE 4
+MAC_NOT_FOUND 5
+IP_WRONG_VERSION 6
+IPV4_CHECKSUM_FAILS 7
+DEST_IP_NOT_MATCHED 8
+ICMP_CHECKSUM_FAILS 9
+UDP_CHECKSUM_FAILS 10
+TCP_CHECKSUM_FAILS 11
+DMA_TIMEOUT 12
+PORT_NOT_AVAILABLE 13
+ARP_IP_NOT_MATCHED 14
+EAPoL_PACKET_FAILURE 15
+INCORRECT_IPV4_HLEN 16
+IPV4_NO_OPTIONS 17
+TX_QUEUED 18
+IPV6_CHECKSUM_FAILS 19
+IPV6_LOCAL_ADDR_RESOLVE 20
+IPV6_LOCAL_ADDR_INVALID 21
+NO_GATEWAY 22
+ADDRESS_RESOLUTION 23
+GLOBAL_DESTINATION 24
+ARP_WRONG_HARDWARE_ADDR_TYPE 25
+ARP_WRONG_PROTOCOL_TYPE 26
+ARP_WRONG_HARDWARE_ADDR_LEN 27
+ARP_WRONG_PROTOCOL_LEN 28
+]
+"78 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/spi1.c
+[e E355 . `uc
+SPI1_DEFAULT 0
+MAC_CONFIG 1
+]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__month_to_secs.c
+[v ___month_to_secs __month_to_secs `(l  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__secs_to_tm.c
+[v ___secs_to_tm __secs_to_tm `(l  1 e 4 0 ]
+"32 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__tz.c
+[v _getint getint `(i  1 s 2 getint ]
+"39
+[v _getoff getoff `(i  1 s 2 getoff ]
+"60
+[v _getrule getrule `(v  1 s 1 getrule ]
+"82
+[v _getname getname `(v  1 s 1 getname ]
+"100
+[v _zi_read32 zi_read32 `(ul  1 s 4 zi_read32 ]
+"118
+[v _do_tzset do_tzset `(v  1 s 1 do_tzset ]
+"145
+[v _scan_trans scan_trans `(ui  1 s 2 scan_trans ]
+"210
+[v _days_in_month days_in_month `(i  1 s 2 days_in_month ]
+"218
+[v _rule_to_secs rule_to_secs `(o  1 s 8 rule_to_secs ]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__year_to_secs.c
+[v ___year_to_secs __year_to_secs `(o  1 e 8 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atol.c
+[v _atol atol `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"568
+[v _stoa stoa `(i  1 s 2 stoa ]
+"615
+[v _utoa utoa `(i  1 s 2 utoa ]
+"645
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"40 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h
+[s S4734 tm 24 `i 1 tm_sec 2 0 `i 1 tm_min 2 2 `i 1 tm_hour 2 4 `i 1 tm_mday 2 6 `i 1 tm_mon 2 8 `i 1 tm_year 2 10 `i 1 tm_wday 2 12 `i 1 tm_yday 2 14 `i 1 tm_isdst 2 16 `l 1 __tm_gmtoff 4 18 `*.32Cuc 1 __tm_zone 2 22 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\gmtime.c
+[v _gmtime gmtime `(*.39S4734  1 e 2 0 ]
+"40 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h
+[s S4734 tm 24 `i 1 tm_sec 2 0 `i 1 tm_min 2 2 `i 1 tm_hour 2 4 `i 1 tm_mday 2 6 `i 1 tm_mon 2 8 `i 1 tm_year 2 10 `i 1 tm_wday 2 12 `i 1 tm_yday 2 14 `i 1 tm_isdst 2 16 `l 1 __tm_gmtoff 4 18 `*.32Cuc 1 __tm_zone 2 22 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\gmtime_r.c
+[v ___gmtime_r __gmtime_r `(*.39S4734  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+[v _islower islower `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcmp.c
+[v _memcmp memcmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c
+[v _memset memset `(*.34v  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncat.c
+[v _strncat strncat `(*.39uc  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncpy.c
+[v _strncpy strncpy `(*.39uc  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strtok.c
+[v _strtok strtok `(*.34uc  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"75 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"153
+[v _movInterrupt movInterrupt `(v  1 e 1 0 ]
+"168
+[v _alarme alarme `(v  1 e 1 0 ]
+"173
+[v _btnB5Interrupt btnB5Interrupt `(v  1 e 1 0 ]
+"180
+[v _btnB3Interrupt btnB3Interrupt `(v  1 e 1 0 ]
+"187
+[v _btnA0Interrupt btnA0Interrupt `(v  1 e 1 0 ]
+"101 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[v _cbor_uint_additional_info cbor_uint_additional_info `(uc  1 s 1 cbor_uint_additional_info ]
+"109
+[v _encode_byte_follows_helper encode_byte_follows_helper `(uc  1 s 1 encode_byte_follows_helper ]
+"128
+[v _int8_encodehandler int8_encodehandler `(v  1 s 1 int8_encodehandler ]
+"132
+[v _int16_encodehandler int16_encodehandler `(v  1 s 1 int16_encodehandler ]
+"137
+[v _int32_encodehandler int32_encodehandler `(v  1 s 1 int32_encodehandler ]
+"142
+[v _uint8_encodehandler uint8_encodehandler `(v  1 s 1 uint8_encodehandler ]
+"146
+[v _uint16_encodehandler uint16_encodehandler `(v  1 s 1 uint16_encodehandler ]
+"151
+[v _uint32_encodehandler uint32_encodehandler `(v  1 s 1 uint32_encodehandler ]
+"166
+[v _CBOR_Encode_Signed_Int CBOR_Encode_Signed_Int `(v  1 e 1 0 ]
+"187
+[v _CBOR_Encode_Unsigned_Int CBOR_Encode_Unsigned_Int `(v  1 e 1 0 ]
+"198
+[v _CBOR_Encode_Byte_String CBOR_Encode_Byte_String `(v  1 e 1 0 ]
+"229
+[v _CBOR_Encode_Text_String CBOR_Encode_Text_String `(v  1 e 1 0 ]
+"312
+[v _CBOR_Encode_ArrayHelper CBOR_Encode_ArrayHelper `(v  1 s 1 CBOR_Encode_ArrayHelper ]
+"404
+[v _CBOR_Encode_MapsHelper CBOR_Encode_MapsHelper `(v  1 s 1 CBOR_Encode_MapsHelper ]
+"442
+[v _CBOR_Encode_Bool CBOR_Encode_Bool `(v  1 e 1 0 ]
+"467
+[v _CBOR_Decode_Read_Data CBOR_Decode_Read_Data `(uc  1 e 1 0 ]
+"505
+[v _cbor_decode_read_int cbor_decode_read_int `(uc  1 e 1 0 ]
+"557
+[v _cbor_decode_read_string cbor_decode_read_string `(uc  1 e 1 0 ]
+"617
+[v _cbor_elements cbor_elements `(uc  1 e 1 0 ]
+"622
+[v _cbor_decode_tags cbor_decode_tags `(uc  1 e 1 0 ]
+"658
+[v _cbor_decode_bool cbor_decode_bool `(uc  1 e 1 0 ]
+"96 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _writeBlockOfBody writeBlockOfBody `(a  1 s 1 writeBlockOfBody ]
+"119
+[v _COAP_DiscoveryBlockTransmit COAP_DiscoveryBlockTransmit `(v  1 e 1 0 ]
+"252
+[v _COAP_ProcessBlock2Option COAP_ProcessBlock2Option `(a  1 e 1 0 ]
+"285
+[v _COAP_FindClientIdxOrAddBlockClient COAP_FindClientIdxOrAddBlockClient `(i  1 s 2 COAP_FindClientIdxOrAddBlockClient ]
+"309
+[v _COAP_FreeBlockClient COAP_FreeBlockClient `(v  1 s 1 COAP_FreeBlockClient ]
+"340
+[v _setBlockSzx setBlockSzx `(v  1 s 1 setBlockSzx ]
+"345
+[v _setBlockNum setBlockNum `(v  1 s 1 setBlockNum ]
+"350
+[v _setMBit setMBit `(v  1 s 1 setMBit ]
+"355
+[v _setBlockInBytes setBlockInBytes `(v  1 s 1 setBlockInBytes ]
+"373
+[v _getMBit getMBit `(a  1 s 1 getMBit ]
+"378
+[v _getCoAPBlockOptionValue getCoAPBlockOptionValue `(ul  1 s 4 getCoAPBlockOptionValue ]
+"399
+[v _COAP_ConvertBlockOptionToNetworkOrder COAP_ConvertBlockOptionToNetworkOrder `(ul  1 s 4 COAP_ConvertBlockOptionToNetworkOrder ]
+"420
+[v _COAP_ConfigDefaultBlockParams COAP_ConfigDefaultBlockParams `(v  1 e 1 0 ]
+"431
+[v _COAP_ResetBlockParams COAP_ResetBlockParams `(v  1 s 1 COAP_ResetBlockParams ]
+"443
+[v _COAP_ResetDiscoveryParams COAP_ResetDiscoveryParams `(v  1 s 1 COAP_ResetDiscoveryParams ]
+"458
+[v _COAP_ConfigBlockParams COAP_ConfigBlockParams `(a  1 s 1 COAP_ConfigBlockParams ]
+"524
+[v _COAP_BlockClientManage COAP_BlockClientManage `(v  1 e 1 0 ]
+"529
+[v _isBlockOptionRequired isBlockOptionRequired `(a  1 e 1 0 ]
+"142 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_DeltaLength COAP_DeltaLength `(v  1 s 1 COAP_DeltaLength ]
+"172
+[v _getOptionNibble getOptionNibble `(uc  1 s 1 getOptionNibble ]
+"185
+[v _COAP_AddOptions COAP_AddOptions `(v  1 s 1 COAP_AddOptions ]
+"236
+[v _COAP_AddWellKnownURIPathOptions COAP_AddWellKnownURIPathOptions `(v  1 e 1 0 ]
+"242
+[v _COAP_AddBlock2Options COAP_AddBlock2Options `(v  1 e 1 0 ]
+"255
+[v _COAP_AddContentFormatOption COAP_AddContentFormatOption `(v  1 e 1 0 ]
+"274
+[v _COAP_DecodeOptions COAP_DecodeOptions `(a  1 s 1 COAP_DecodeOptions ]
+"359
+[v _COAP_ParseOptions COAP_ParseOptions `(a  1 e 1 0 ]
+"457
+[v _COAP_ResetLastOptionNumber COAP_ResetLastOptionNumber `(v  1 e 1 0 ]
+"463
+[v _COAP_GetNumberOfOptionsAdded COAP_GetNumberOfOptionsAdded `(uc  1 e 1 0 ]
+"468
+[v _COAP_GetLengthOfIntegerOptionValue COAP_GetLengthOfIntegerOptionValue `(uc  1 e 1 0 ]
+"489
+[v _COAP_TraverseToResource COAP_TraverseToResource `(a  1 e 1 0 ]
+"62 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _COAP_ReadRecivedHeaderAndToken COAP_ReadRecivedHeaderAndToken `(c  1 s 1 COAP_ReadRecivedHeaderAndToken ]
+"99
+[v _COAP_setReceivedClientToken COAP_setReceivedClientToken `(v  1 s 1 COAP_setReceivedClientToken ]
+"105
+[v _COAP_ReceiveCONMessage COAP_ReceiveCONMessage `(a  1 s 1 COAP_ReceiveCONMessage ]
+"126
+[v _COAP_ReceiveNONMessage COAP_ReceiveNONMessage `(a  1 s 1 COAP_ReceiveNONMessage ]
+"146
+[v _COAP_ReceiveACKMessage COAP_ReceiveACKMessage `(a  1 s 1 COAP_ReceiveACKMessage ]
+"171
+[v _COAP_ReceiveRSTMessage COAP_ReceiveRSTMessage `(a  1 s 1 COAP_ReceiveRSTMessage ]
+"196
+[v _COAP_MessageResponse COAP_MessageResponse `(a  1 e 1 0 ]
+"236
+[v _COAP_Receive COAP_Receive `(v  1 e 1 0 ]
+"293
+[v _COAP_InsertLastOptionValue COAP_InsertLastOptionValue `(v  1 e 1 0 ]
+"72 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_resources.c
+[v _coapwellknownHandler coapwellknownHandler `(a  1 e 1 0 ]
+"125
+[v _COAP_ResourceHandler COAP_ResourceHandler `(a  1 e 1 0 ]
+"239
+[v _COAP_StartGetResponse COAP_StartGetResponse `(a  1 s 1 COAP_StartGetResponse ]
+"129 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_Init COAP_Init `(v  1 e 1 0 ]
+"135
+[v _COAP_Manage COAP_Manage `(v  1 e 1 0 ]
+"141
+[v _COAP_TransmitInit COAP_TransmitInit `(v  1 s 1 COAP_TransmitInit ]
+"154
+[v _CreateNewToken CreateNewToken `(v  1 s 1 CreateNewToken ]
+"167
+[v _CreateNewMID CreateNewMID `(v  1 s 1 CreateNewMID ]
+"175
+[v _COAP_AllocateClient COAP_AllocateClient `(s  1 s 2 COAP_AllocateClient ]
+"190
+[v _COAP_FreeClient COAP_FreeClient `(v  1 s 1 COAP_FreeClient ]
+"198
+[v _COAP_FreeEndpointMessageIDTokenPairIfMatched COAP_FreeEndpointMessageIDTokenPairIfMatched `(a  1 e 1 0 ]
+"249
+[v _COAP_InitTimers COAP_InitTimers `(a  1 s 1 COAP_InitTimers ]
+"305
+[v _COAP_TransmitMessageManage COAP_TransmitMessageManage `(v  1 s 1 COAP_TransmitMessageManage ]
+"339
+[v _COAP_Transmit COAP_Transmit `(E1070  1 e 1 0 ]
+"364
+[v _COAP_SendMessage COAP_SendMessage `(E1070  1 s 1 COAP_SendMessage ]
+"460
+[v _COAP_Request COAP_Request `(E1070  1 s 1 COAP_Request ]
+"481
+[v _COAP_Options COAP_Options `(v  1 s 1 COAP_Options ]
+"496
+[v _CoAP_Payload CoAP_Payload `(v  1 s 1 CoAP_Payload ]
+"512
+[v _CoAP_ObservePayload CoAP_ObservePayload `(v  1 s 1 CoAP_ObservePayload ]
+"527
+[v _COAP_EndofOptions COAP_EndofOptions `(v  1 e 1 0 ]
+"532
+[v _COAP_Send COAP_Send `(E930  1 e 1 0 ]
+"17 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[v _CBOREncoder CBOREncoder `(v  1 e 1 0 ]
+"46
+[v _CBORDecoder CBORDecoder `(v  1 e 1 0 ]
+"66
+[v _CBORParseData CBORParseData `(uc  1 e 1 0 ]
+"84
+[v _CBORWriteData CBORWriteData `(v  1 e 1 0 ]
+"31 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _iscfMatched iscfMatched `(a  1 e 1 0 ]
+"49
+[v _setContentFormatDataHandlers setContentFormatDataHandlers `(v  1 e 1 0 ]
+"54
+[v _Get_ToEthernet Get_ToEthernet `(v  1 e 1 0 ]
+"59
+[v _Put_ToResource Put_ToResource `(v  1 e 1 0 ]
+"64
+[v _parseData parseData `(uc  1 e 1 0 ]
+"76
+[v _writeAuxData writeAuxData `(v  1 e 1 0 ]
+"17 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[v _TEXT_PLAINEncoder TEXT_PLAINEncoder `(v  1 e 1 0 ]
+"51
+[v _TEXT_PLAINDecoder TEXT_PLAINDecoder `(v  1 e 1 0 ]
+"73
+[v _TEXT_PLAINParseData TEXT_PLAINParseData `(uc  1 e 1 0 ]
+"115
+[v _TEXT_PLAINWriteData TEXT_PLAINWriteData `(v  1 e 1 0 ]
+"116 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _resetOptions resetOptions `(v  1 e 1 0 ]
+"121
+[v _getResourceType getResourceType `(uc  1 e 1 0 ]
+"127
+[v _setURIPath setURIPath `(i  1 e 2 0 ]
+"132
+[v _setURIQuery setURIQuery `(v  1 e 1 0 ]
+"142
+[v _isURIPathValid isURIPathValid `(a  1 e 1 0 ]
+"191
+[v _isURIQueryValid isURIQueryValid `(a  1 e 1 0 ]
+"196
+[v _getRootToLeafPathCount getRootToLeafPathCount `(uc  1 e 1 0 ]
+"205
+[v _getDiscoveryPath getDiscoveryPath `(*.39uc  1 e 2 0 ]
+"225
+[v _getLeafResourceIdx getLeafResourceIdx `(c  1 e 1 0 ]
+"233
+[v _getPathResourceIdx getPathResourceIdx `(c  1 e 1 0 ]
+"271
+[v _resetLeafAndPathResourceIdices resetLeafAndPathResourceIdices `(v  1 e 1 0 ]
+"277
+[v _getPathLength getPathLength `(uc  1 e 1 0 ]
+"284
+[v _getStingFromIdx getStingFromIdx `(*.32uc  1 e 2 0 ]
+"298
+[v _getIdxFromString getIdxFromString `(i  1 e 2 0 ]
+"315
+[v _getDiscoveryLength getDiscoveryLength `(ul  1 e 4 0 ]
+"322
+[v _setResourceDataID setResourceDataID `(v  1 e 1 0 ]
+"327
+[v _getResourceDataID getResourceDataID `(uc  1 e 1 0 ]
+"332
+[v _ResourcesInit ResourcesInit `(v  1 e 1 0 ]
+"340
+[v _addPayloadOverHead addPayloadOverHead `(v  1 e 1 0 ]
+"345
+[v _processPayloadOverHead processPayloadOverHead `(s  1 e 2 0 ]
+"362
+[v _TEXT_PLAINProcessPayloadOverHead TEXT_PLAINProcessPayloadOverHead `(uc  1 s 1 TEXT_PLAINProcessPayloadOverHead ]
+"367
+[v _CBORProcessPayloadOverHead CBORProcessPayloadOverHead `(uc  1 s 1 CBORProcessPayloadOverHead ]
+"46 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[v _LedInit LedInit `(a  1 e 1 0 ]
+"51
+[v _LedGetter LedGetter `(a  1 e 1 0 ]
+"89
+[v _LedPutter LedPutter `(a  1 e 1 0 ]
+"156
+[v _LedPatcher LedPatcher `(a  1 e 1 0 ]
+"164
+[v _LedPoster LedPoster `(a  1 e 1 0 ]
+"172
+[v _LedDeleter LedDeleter `(a  1 e 1 0 ]
+"40 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/drivers/spi_master.c
+[v _MAC_open MAC_open `(a  1 e 1 0 ]
+"53
+[v _spi_master_open spi_master_open `(a  1 e 1 0 ]
+"66 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"113
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+"146
+[v _putch putch `(v  1 e 1 0 ]
+"153
+[v _EUSART1_DefaultFramingErrorHandler EUSART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"155
+[v _EUSART1_DefaultOverrunErrorHandler EUSART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"163
+[v _EUSART1_DefaultErrorHandler EUSART1_DefaultErrorHandler `(v  1 e 1 0 ]
+"166
+[v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+"170
+[v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"174
+[v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
+"52 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"63
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"77
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"60 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"162
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"189
+[v _IOCAF0_ISR IOCAF0_ISR `(v  1 e 1 0 ]
+"204
+[v _IOCAF0_SetInterruptHandler IOCAF0_SetInterruptHandler `(v  1 e 1 0 ]
+"211
+[v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"219
+[v _IOCBF3_ISR IOCBF3_ISR `(v  1 e 1 0 ]
+"234
+[v _IOCBF3_SetInterruptHandler IOCBF3_SetInterruptHandler `(v  1 e 1 0 ]
+"241
+[v _IOCBF3_DefaultInterruptHandler IOCBF3_DefaultInterruptHandler `(v  1 e 1 0 ]
+"249
+[v _IOCBF4_ISR IOCBF4_ISR `(v  1 e 1 0 ]
+"264
+[v _IOCBF4_SetInterruptHandler IOCBF4_SetInterruptHandler `(v  1 e 1 0 ]
+"271
+[v _IOCBF4_DefaultInterruptHandler IOCBF4_DefaultInterruptHandler `(v  1 e 1 0 ]
+"279
+[v _IOCBF5_ISR IOCBF5_ISR `(v  1 e 1 0 ]
+"294
+[v _IOCBF5_SetInterruptHandler IOCBF5_SetInterruptHandler `(v  1 e 1 0 ]
+"301
+[v _IOCBF5_DefaultInterruptHandler IOCBF5_DefaultInterruptHandler `(v  1 e 1 0 ]
+"63 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"78
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"93
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+"98
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+"106
+[v _SPI1_ExchangeBlock SPI1_ExchangeBlock `(v  1 e 1 0 ]
+"119
+[v _SPI1_WriteBlock SPI1_WriteBlock `(v  1 e 1 0 ]
+"128
+[v _SPI1_ReadBlock SPI1_ReadBlock `(v  1 e 1 0 ]
+"137
+[v _SPI1_WriteByte SPI1_WriteByte `(v  1 e 1 0 ]
+"142
+[v _SPI1_ReadByte SPI1_ReadByte `(uc  1 e 1 0 ]
+"87 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Init ARPV4_Init `(v  1 e 1 0 ]
+"101
+[v _ARPV4_Packet ARPV4_Packet `(E10466  1 e 1 0 ]
+"187
+[v _ARPV4_Update ARPV4_Update `(v  1 e 1 0 ]
+"202
+[v _ARPV4_Request ARPV4_Request `(E779  1 e 1 0 ]
+"49 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"242 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v _ARPV4_Lookup ARPV4_Lookup `(*.39S2968  1 e 2 0 ]
+"124 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[v _sendDHCPDISCOVER sendDHCPDISCOVER `(a  1 e 1 0 ]
+"137
+[v _sendDHCPREQUEST sendDHCPREQUEST `(a  1 e 1 0 ]
+"143
+[v _sendDHCPDECLINE sendDHCPDECLINE `(a  1 e 1 0 ]
+"148
+[v _sendRequest sendRequest `(a  1 e 1 0 ]
+"205
+[v _DHCP_init DHCP_init `(v  1 e 1 0 ]
+"210
+[v _DHCP_Manage DHCP_Manage `(v  1 e 1 0 ]
+"273
+[v _DHCP_Handler DHCP_Handler `(v  1 e 1 0 ]
+"524
+[v _DHCP_WriteZeros DHCP_WriteZeros `(v  1 e 1 0 ]
+"139 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ENC28_BankSel ENC28_BankSel `(v  1 s 1 ENC28_BankSel ]
+"165
+[v _ETH_CheckLinkUp ETH_CheckLinkUp `(a  1 e 1 0 ]
+"90 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[s S2998 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"185 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_NewPacket ETH_NewPacket `(*.39S2998  1 e 2 0 ]
+"240
+[v _ETH_PacketListReset ETH_PacketListReset `(v  1 e 1 0 ]
+"261
+[v _ETH_RemovePacket ETH_RemovePacket `(v  1 e 1 0 ]
+"327
+[v _ETH_OpenSPI ETH_OpenSPI `(v  1 e 1 0 ]
+"335
+[v _ETH_Init ETH_Init `(v  1 e 1 0 ]
+"414
+[v _ETH_EventHandler ETH_EventHandler `(v  1 e 1 0 ]
+"470
+[v _ETH_NextPacketUpdate ETH_NextPacketUpdate `(v  1 e 1 0 ]
+"507
+[v _ENC28_Rcr8 ENC28_Rcr8 `(uc  1 s 1 ENC28_Rcr8 ]
+"525
+[v _ENC28_Rcr16 ENC28_Rcr16 `(us  1 s 2 ENC28_Rcr16 ]
+"550
+[v _ENC28_Wcr8 ENC28_Wcr8 `(v  1 s 1 ENC28_Wcr8 ]
+"564
+[v _ENC28_Wcr16 ENC28_Wcr16 `(v  1 s 1 ENC28_Wcr16 ]
+"585
+[v _ENC28_Bfs ENC28_Bfs `(v  1 s 1 ENC28_Bfs ]
+"599
+[v _ENC28_Bfc ENC28_Bfc `(v  1 s 1 ENC28_Bfc ]
+"613
+[v _ENC28_PhyWrite ENC28_PhyWrite `(v  1 s 1 ENC28_PhyWrite ]
+"630
+[v _ENC28_PhyRead ENC28_PhyRead `(us  1 s 2 ENC28_PhyRead ]
+"643
+[v _ETH_SendSystemReset ETH_SendSystemReset `(v  1 e 1 0 ]
+"656
+[v _ETH_Read8 ETH_Read8 `(uc  1 e 1 0 ]
+"672
+[v _ETH_Read16 ETH_Read16 `(us  1 e 2 0 ]
+"689
+[v _ETH_Read32 ETH_Read32 `(ul  1 e 4 0 ]
+"710
+[v _ETH_ReadBlock ETH_ReadBlock `(us  1 e 2 0 ]
+"730
+[v _ETH_Write8 ETH_Write8 `(v  1 e 1 0 ]
+"743
+[v _ETH_Write16 ETH_Write16 `(v  1 e 1 0 ]
+"757
+[v _ETH_Write32 ETH_Write32 `(v  1 e 1 0 ]
+"769
+[v _ETH_Write24 ETH_Write24 `(v  1 e 1 0 ]
+"780
+[v _ETH_WriteString ETH_WriteString `(us  1 e 2 0 ]
+"802
+[v _ETH_WriteBlock ETH_WriteBlock `(us  1 e 2 0 ]
+"833
+[v _ETH_WriteStart ETH_WriteStart `(E9844  1 e 1 0 ]
+"902
+[v _ETH_SendQueued ETH_SendQueued `(E9844  1 e 1 0 ]
+"932
+[v _ETH_Send ETH_Send `(E9844  1 e 1 0 ]
+"964
+[v _ETH_Dump ETH_Dump `(v  1 e 1 0 ]
+"982
+[v _ETH_Flush ETH_Flush `(v  1 e 1 0 ]
+"998
+[v _ETH_Insert ETH_Insert `(v  1 e 1 0 ]
+"1020
+[v _ETH_Copy ETH_Copy `(E9844  1 e 1 0 ]
+"1074
+[v _ETH_Shift_Tx_Packets ETH_Shift_Tx_Packets `(E9844  1 e 1 0 ]
+"1121
+[v _ETH_ComputeChecksum ETH_ComputeChecksum `(us  1 s 2 ETH_ComputeChecksum ]
+"1164
+[v _ETH_TxComputeChecksum ETH_TxComputeChecksum `(us  1 e 2 0 ]
+"1204
+[v _ETH_RxComputeChecksum ETH_RxComputeChecksum `(us  1 e 2 0 ]
+"1225
+[v _ETH_GetMAC ETH_GetMAC `(v  1 e 1 0 ]
+"1249
+[v _ETH_SaveRDPT ETH_SaveRDPT `(v  1 e 1 0 ]
+"1254
+[v _ETH_GetReadPtr ETH_GetReadPtr `(us  1 e 2 0 ]
+"1259
+[v _ETH_SetReadPtr ETH_SetReadPtr `(v  1 e 1 0 ]
+"1284
+[v _ETH_GetRxByteCount ETH_GetRxByteCount `(us  1 e 2 0 ]
+"1289
+[v _ETH_SetRxByteCount ETH_SetRxByteCount `(v  1 e 1 0 ]
+"1294
+[v _ETH_ResetByteCount ETH_ResetByteCount `(v  1 e 1 0 ]
+"1299
+[v _ETH_GetByteCount ETH_GetByteCount `(us  1 e 2 0 ]
+"1330
+[v _ETH_TxReset ETH_TxReset `(v  1 e 1 0 ]
+"58 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _ICMP_Receive ICMP_Receive `(E614  1 e 1 0 ]
+"99
+[v _ICMP_EchoReply ICMP_EchoReply `(E614  1 e 1 0 ]
+"137
+[v _ICMP_PortUnreachable ICMP_PortUnreachable `(E627  1 e 1 0 ]
+"31 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _ipdb_init ipdb_init `(v  1 e 1 0 ]
+"43
+[v _makeStrToIpv4Address makeStrToIpv4Address `(ul  1 e 4 0 ]
+"58
+[v _makeIpv4AddresstoStr makeIpv4AddresstoStr `(*.39uc  1 e 2 0 ]
+"65 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Init IPV4_Init `(v  1 e 1 0 ]
+"70
+[v _IPV4_PseudoHeaderChecksum IPV4_PseudoHeaderChecksum `(us  1 e 2 0 ]
+"103
+[v _getHeaderLen getHeaderLen `(uc  1 s 1 getHeaderLen ]
+"114
+[v _IPV4_Packet IPV4_Packet `(E10466  1 e 1 0 ]
+"207
+[v _IPv4_Start IPv4_Start `(E627  1 e 1 0 ]
+"263
+[v _IPV4_Send IPV4_Send `(E627  1 e 1 0 ]
+"283
+[v _IPV4_GetDatagramLength IPV4_GetDatagramLength `(us  1 e 2 0 ]
+"71 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/lfsr.c
+[v _lfsr lfsr `(uc  1 e 1 0 ]
+"80
+[v _lfsrWithSeed lfsrWithSeed `(uc  1 e 1 0 ]
+"98 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log.c
+[v _LOG_Init LOG_Init `(v  1 e 1 0 ]
+"53 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log_console.c
+[v _logConsole logConsole `(uc  1 e 1 0 ]
+"56 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log_syslog.c
+[v _logSyslog logSyslog `(E10526  1 e 1 0 ]
+"49 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"48 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.c
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v _MAC_getAddress MAC_getAddress `(*.39CS2968  1 e 2 0 ]
+"77 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Init Network_Init `(v  1 e 1 0 ]
+"90
+[v _timersInit timersInit `(v  1 e 1 0 ]
+"96
+[v _Network_WaitForLink Network_WaitForLink `(v  1 e 1 0 ]
+"101
+[v _Network_Manage Network_Manage `(v  1 e 1 0 ]
+"125
+[v _Network_Read Network_Read `(v  1 e 1 0 ]
+"170
+[v _Network_SaveStartPosition Network_SaveStartPosition `(v  1 s 1 Network_SaveStartPosition ]
+"175
+[v _Network_GetStartPosition Network_GetStartPosition `(us  1 e 2 0 ]
+"60 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _rtcc_init rtcc_init `(v  1 e 1 0 ]
+"93
+[v _rtcc_handler rtcc_handler `(v  1 e 1 0 ]
+"161
+[v _time time `(o  1 e 8 0 ]
+"69 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4.c
+[v _UDP_Start UDP_Start `(E1070  1 e 1 0 ]
+"97
+[v _UDP_Send UDP_Send `(E1070  1 e 1 0 ]
+"124
+[v _UDP_Receive UDP_Receive `(E627  1 e 1 0 ]
+"47 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.h
+[s S4355 . 4 `us 1 portNumber 2 0 `*.37(v 1 callBack 2 2 ]
+"56 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.c
+[v _udp_table_getIterator udp_table_getIterator `(*.32S4355  1 e 2 0 ]
+"47 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.h
+[s S4355 . 4 `us 1 portNumber 2 0 `*.37(v 1 callBack 2 2 ]
+"61 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.c
+[v _udp_table_nextEntry udp_table_nextEntry `(*.32S4355  1 e 2 0 ]
+"64 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"127
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"164
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"176
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+"185
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"189
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"62 C:\micro\SEIC_prj_v2_backup.X/mcc_generated_files/TCPIPLibrary/tcpip_config.h
+[v _dhcpName dhcpName `C[20]uc  1 e 20 0 ]
+"3599 C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h
+[v _RX1PPS RX1PPS `VEuc  1 e 1 @3765 ]
+"3791
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3767 ]
+"3857
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3768 ]
+[s S5809 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 INT1IE 1 0 :1:1 
+`uc 1 INT2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"4400
+[u S5816 . 1 `S5809 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES5816  1 e 1 @3778 ]
+[s S6218 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR6IE 1 0 :1:5 
+]
+"4651
+[u S6225 . 1 `S6218 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES6225  1 e 1 @3782 ]
+[s S6445 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 INT1IF 1 0 :1:1 
+`uc 1 INT2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"4806
+[u S6452 . 1 `S6445 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES6452  1 e 1 @3786 ]
+[s S5493 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 TX2IF 1 0 :1:6 
+`uc 1 RC2IF 1 0 :1:7 
+]
+"4955
+[s S5502 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S5507 . 1 `S5493 1 . 1 0 `S5502 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES5507  1 e 1 @3789 ]
+[s S6201 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"5025
+[u S6208 . 1 `S6201 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES6208  1 e 1 @3790 ]
+"5743
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3800 ]
+"5883
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @3802 ]
+"6035
+[v _OSCEN OSCEN `VEuc  1 e 1 @3804 ]
+"6086
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3805 ]
+"6144
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3806 ]
+"6251
+[v _PMD0 PMD0 `VEuc  1 e 1 @3809 ]
+"6328
+[v _PMD1 PMD1 `VEuc  1 e 1 @3810 ]
+"6392
+[v _PMD2 PMD2 `VEuc  1 e 1 @3811 ]
+"6437
+[v _PMD3 PMD3 `VEuc  1 e 1 @3812 ]
+"6475
+[v _PMD4 PMD4 `VEuc  1 e 1 @3813 ]
+"6528
+[v _PMD5 PMD5 `VEuc  1 e 1 @3814 ]
+"7384
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3834 ]
+"7428
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3835 ]
+"7472
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @3836 ]
+"7516
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @3837 ]
+[s S5643 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+`uc 1 IOCAF4 1 0 :1:4 
+`uc 1 IOCAF5 1 0 :1:5 
+`uc 1 IOCAF6 1 0 :1:6 
+`uc 1 IOCAF7 1 0 :1:7 
+]
+"7621
+[u S5652 . 1 `S5643 1 . 1 0 ]
+[v _IOCAFbits IOCAFbits `VES5652  1 e 1 @3850 ]
+[s S5664 . 1 `uc 1 IOCAN0 1 0 :1:0 
+`uc 1 IOCAN1 1 0 :1:1 
+`uc 1 IOCAN2 1 0 :1:2 
+`uc 1 IOCAN3 1 0 :1:3 
+`uc 1 IOCAN4 1 0 :1:4 
+`uc 1 IOCAN5 1 0 :1:5 
+`uc 1 IOCAN6 1 0 :1:6 
+`uc 1 IOCAN7 1 0 :1:7 
+]
+"7683
+[u S5673 . 1 `S5664 1 . 1 0 ]
+[v _IOCANbits IOCANbits `VES5673  1 e 1 @3851 ]
+[s S5685 . 1 `uc 1 IOCAP0 1 0 :1:0 
+`uc 1 IOCAP1 1 0 :1:1 
+`uc 1 IOCAP2 1 0 :1:2 
+`uc 1 IOCAP3 1 0 :1:3 
+`uc 1 IOCAP4 1 0 :1:4 
+`uc 1 IOCAP5 1 0 :1:5 
+`uc 1 IOCAP6 1 0 :1:6 
+`uc 1 IOCAP7 1 0 :1:7 
+]
+"7745
+[u S5694 . 1 `S5685 1 . 1 0 ]
+[v _IOCAPbits IOCAPbits `VES5694  1 e 1 @3852 ]
+"7790
+[v _INLVLA INLVLA `VEuc  1 e 1 @3853 ]
+"7852
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3854 ]
+"7914
+[v _ODCONA ODCONA `VEuc  1 e 1 @3855 ]
+"7976
+[v _WPUA WPUA `VEuc  1 e 1 @3856 ]
+"8038
+[v _ANSELA ANSELA `VEuc  1 e 1 @3857 ]
+[s S5706 . 1 `uc 1 IOCBF0 1 0 :1:0 
+`uc 1 IOCBF1 1 0 :1:1 
+`uc 1 IOCBF2 1 0 :1:2 
+`uc 1 IOCBF3 1 0 :1:3 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"8117
+[u S5715 . 1 `S5706 1 . 1 0 ]
+[v _IOCBFbits IOCBFbits `VES5715  1 e 1 @3858 ]
+[s S5727 . 1 `uc 1 IOCBN0 1 0 :1:0 
+`uc 1 IOCBN1 1 0 :1:1 
+`uc 1 IOCBN2 1 0 :1:2 
+`uc 1 IOCBN3 1 0 :1:3 
+`uc 1 IOCBN4 1 0 :1:4 
+`uc 1 IOCBN5 1 0 :1:5 
+`uc 1 IOCBN6 1 0 :1:6 
+`uc 1 IOCBN7 1 0 :1:7 
+]
+"8179
+[u S5736 . 1 `S5727 1 . 1 0 ]
+[v _IOCBNbits IOCBNbits `VES5736  1 e 1 @3859 ]
+[s S5748 . 1 `uc 1 IOCBP0 1 0 :1:0 
+`uc 1 IOCBP1 1 0 :1:1 
+`uc 1 IOCBP2 1 0 :1:2 
+`uc 1 IOCBP3 1 0 :1:3 
+`uc 1 IOCBP4 1 0 :1:4 
+`uc 1 IOCBP5 1 0 :1:5 
+`uc 1 IOCBP6 1 0 :1:6 
+`uc 1 IOCBP7 1 0 :1:7 
+]
+"8241
+[u S5757 . 1 `S5748 1 . 1 0 ]
+[v _IOCBPbits IOCBPbits `VES5757  1 e 1 @3860 ]
+"8286
+[v _INLVLB INLVLB `VEuc  1 e 1 @3861 ]
+"8348
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3862 ]
+"8410
+[v _ODCONB ODCONB `VEuc  1 e 1 @3863 ]
+"8472
+[v _WPUB WPUB `VEuc  1 e 1 @3864 ]
+"8534
+[v _ANSELB ANSELB `VEuc  1 e 1 @3865 ]
+"8782
+[v _INLVLC INLVLC `VEuc  1 e 1 @3869 ]
+"8844
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3870 ]
+"8906
+[v _ODCONC ODCONC `VEuc  1 e 1 @3871 ]
+"8968
+[v _WPUC WPUC `VEuc  1 e 1 @3872 ]
+"9030
+[v _ANSELC ANSELC `VEuc  1 e 1 @3873 ]
+"9155
+[v _INLVLE INLVLE `VEuc  1 e 1 @3882 ]
+"9176
+[v _WPUE WPUE `VEuc  1 e 1 @3885 ]
+"15463
+[v _LATA LATA `VEuc  1 e 1 @3971 ]
+[s S2662 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"15490
+[s S2671 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S2680 . 1 `S2662 1 . 1 0 `S2671 1 . 1 0 ]
+[v _LATAbits LATAbits `VES2680  1 e 1 @3971 ]
+"15575
+[v _LATB LATB `VEuc  1 e 1 @3972 ]
+"15687
+[v _LATC LATC `VEuc  1 e 1 @3973 ]
+"15799
+[v _TRISA TRISA `VEuc  1 e 1 @3976 ]
+"15921
+[v _TRISB TRISB `VEuc  1 e 1 @3977 ]
+"16043
+[v _TRISC TRISC `VEuc  1 e 1 @3978 ]
+[s S5422 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"16065
+[u S5431 . 1 `S5422 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES5431  1 e 1 @3978 ]
+"16640
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @3986 ]
+"16660
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @3987 ]
+"16850
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @3989 ]
+"17304
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @3990 ]
+[s S5443 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"17334
+[s S5449 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S5454 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S5463 . 1 `S5443 1 . 1 0 `S5449 1 . 1 0 `S5454 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES5463  1 e 1 @3990 ]
+"17424
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @3991 ]
+"17673
+[v _RC1REG RC1REG `VEuc  1 e 1 @3993 ]
+"17727
+[v _TX1REG TX1REG `VEuc  1 e 1 @3994 ]
+"17788
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @3995 ]
+"17858
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @3996 ]
+"17912
+[v _RC1STA RC1STA `VEuc  1 e 1 @3997 ]
+[s S6091 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"17953
+[s S6100 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S6103 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S6106 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[s S6108 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[u S6111 . 1 `S6091 1 . 1 0 `S6100 1 . 1 0 `S6103 1 . 1 0 `S6106 1 . 1 0 `S6108 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES6111  1 e 1 @3997 ]
+"18197
+[v _TX1STA TX1STA `VEuc  1 e 1 @3998 ]
+[s S6004 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"18261
+[s S6013 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S6016 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[s S6018 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 BRGH1 1 0 :1:2 
+]
+[s S6021 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S6024 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SENDB1 1 0 :1:3 
+]
+[s S6027 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SYNC1 1 0 :1:4 
+]
+[s S6030 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+]
+[s S6033 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX91 1 0 :1:6 
+]
+[s S6036 . 1 `uc 1 TX9D1 1 0 :1:0 
+]
+[s S6038 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 TXEN1 1 0 :1:5 
+]
+[u S6041 . 1 `S6004 1 . 1 0 `S6013 1 . 1 0 `S6016 1 . 1 0 `S6018 1 . 1 0 `S6021 1 . 1 0 `S6024 1 . 1 0 `S6027 1 . 1 0 `S6030 1 . 1 0 `S6033 1 . 1 0 `S6036 1 . 1 0 `S6038 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES6041  1 e 1 @3998 ]
+"18641
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @3999 ]
+"24193
+[v _TMR1L TMR1L `VEuc  1 e 1 @4045 ]
+"24363
+[v _TMR1H TMR1H `VEuc  1 e 1 @4046 ]
+"24483
+[v _T1CON T1CON `VEuc  1 e 1 @4047 ]
+[s S6242 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_SYNC 1 0 :1:2 
+]
+"24522
+[s S6245 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+[s S6251 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+]
+[s S6254 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S6261 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S6265 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S6268 . 1 `S6242 1 . 1 0 `S6245 1 . 1 0 `S6251 1 . 1 0 `S6254 1 . 1 0 `S6261 1 . 1 0 `S6265 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES6268  1 e 1 @4047 ]
+"24597
+[v _T1GCON T1GCON `VEuc  1 e 1 @4048 ]
+[s S6302 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 GGO_NOT_DONE 1 0 :1:3 
+]
+"24639
+[s S6305 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO_nDONE 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+[s S6313 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_DONE 1 0 :1:3 
+]
+[s S6316 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+[s S6324 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO 1 0 :1:3 
+]
+[u S6327 . 1 `S6302 1 . 1 0 `S6305 1 . 1 0 `S6313 1 . 1 0 `S6316 1 . 1 0 `S6324 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES6327  1 e 1 @4048 ]
+"24829
+[v _T1GATE T1GATE `VEuc  1 e 1 @4049 ]
+"24971
+[v _T1CLK T1CLK `VEuc  1 e 1 @4050 ]
+[s S4000 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"26423
+[s S4008 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S4012 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S4016 . 1 `S4000 1 . 1 0 `S4008 1 . 1 0 `S4012 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES4016  1 e 1 @4082 ]
+"28738
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"29431
+[v _LATC1 LATC1 `VEb  1 e 0 @31785 ]
+"18 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__tz.c
+[v ___gmt __gmt `C[4]uc  1 e 4 0 ]
+"30
+[v _lock lock `VE[2]i  1 s 4 lock ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+[s S24 . 4 `uc 1 dataType 1 0 `us 1 dataBytes 2 1 `uc 1 additionalInfo 1 3 ]
+"77 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[v _data_tli data_tli `S24  1 e 4 0 ]
+"159
+[v _encodefunctptr_int_t encodefunctptr_int_t `C[3]*.37(v  1 e 6 0 ]
+"160
+[v _encodefunctptr_uint_t encodefunctptr_uint_t `C[3]*.37(v  1 e 6 0 ]
+"22 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _COAP_BlockMapSzxToBlockInBytes COAP_BlockMapSzxToBlockInBytes `C[7]us  1 e 14 0 ]
+[s S911 . 7 `c 1 lastLeafVertex 1 0 `c 1 lastPathVertex 1 1 `c 1 leafVertex 1 2 `c 1 pathVertex 1 3 `a 1 endflag 1 4 `us 1 discoveryOffset 2 5 ]
+"63
+[v _prevDisc prevDisc `[2]S911  1 e 14 0 ]
+"64
+[v _nowDisc nowDisc `[2]S911  1 e 14 0 ]
+"65
+[v _now now `*.39S911  1 e 2 0 ]
+[v _prev prev `*.39S911  1 e 2 0 ]
+[s S926 . 31 `ul 1 destinationIpAddress 4 0 `us 1 blockSizeInBytes 2 4 `E1634 1 szx 1 6 `a 1 mBit 1 7 `ul 1 blockNum 4 8 `us 1 totalLength 2 12 `us 1 lengthToBeTransmitted 2 14 `o 1 packetTimeout 8 16 `a 1 retransmission 1 24 `us 1 offset 2 25 `*.39v 1 prev 2 27 `*.39v 1 now 2 29 ]
+"67
+[v _blockOptionParams blockOptionParams `[2]S926  1 s 62 blockOptionParams ]
+"68
+[v _blockClientIndex blockClientIndex `i  1 s 2 blockClientIndex ]
+"69
+[v _currentTime currentTime `o  1 s 8 currentTime ]
+"70
+[v _rsrcDirtyFlag rsrcDirtyFlag `us  1 s 2 rsrcDirtyFlag ]
+"113 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _WellKnown WellKnown `C[12]uc  1 e 12 0 ]
+"114
+[v _Core Core `C[5]uc  1 e 5 0 ]
+[u S273 . 2 `us 1 opt_delta_ext_16 2 0 `uc 1 opt_delta_ext_8 1 0 ]
+"117
+[u S276 . 2 `us 1 opt_length_ext_16 2 0 `uc 1 opt_length_ext_8 1 0 ]
+[s S279 . 5 `uc 1 opt_delta 1 0 :4:0 
+`uc 1 opt_length 1 0 :4:4 
+`S273 1 opt_delta_ext 2 1 `S276 1 opt_length_ext 2 3 ]
+[v _Options Options `S279  1 s 5 Options ]
+"118
+[v _optionDelta optionDelta `ul  1 s 4 optionDelta ]
+[v _optionLength optionLength `ul  1 s 4 optionLength ]
+"119
+[v _numOfOptionsAdded numOfOptionsAdded `uc  1 s 1 numOfOptionsAdded ]
+"120
+[v _IsWellKnown IsWellKnown `a  1 s 1 IsWellKnown ]
+"121
+[v _IsCore IsCore `a  1 s 1 IsCore ]
+"122
+[v _lastOptionNumber lastOptionNumber `uc  1 s 1 lastOptionNumber ]
+[u S284 . 2 `uc 1 length_8 1 0 `us 1 length_16 2 0 ]
+"123
+[s S287 . 35 `uc 1 type 1 0 `S284 1 len 2 1 `[32]uc 1 opt_value 32 3 ]
+[v _opt_ptr opt_ptr `S287  1 s 35 opt_ptr ]
+"124
+[v _optionStr optionStr `[11]uc  1 s 11 optionStr ]
+"127
+[v _coapObserveOptionRecvd coapObserveOptionRecvd `a  1 e 1 0 ]
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+"50 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _coapReceiveHeader coapReceiveHeader `S1205  1 s 2 coapReceiveHeader ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"51
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v _coapRecv coapRecv `S373  1 e 73 0 ]
+"52
+[v _recvdClientToken recvdClientToken `[8]uc  1 s 8 recvdClientToken ]
+"56 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_resources.c
+[v _firstPutEntry firstPutEntry `a  1 e 1 0 ]
+"100 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _coapHeader coapHeader `S1205  1 s 2 coapHeader ]
+"101
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v _coapRetransmitClients coapRetransmitClients `[2]S1571  1 s 166 coapRetransmitClients ]
+"102
+[v _txCoapClient txCoapClient `S1571  1 s 83 txCoapClient ]
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+"104
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v _coapClientList coapClientList `*.2S1571  1 e 2 0 ]
+"105
+[v _timerIdx timerIdx `uc  1 s 1 timerIdx ]
+"121
+[v _null null `[1]uc  1 e 1 0 ]
+"122
+[s S1588 . 26 `ul 1 destIP 4 0 `[8]uc 1 clientToken 8 4 `*.32S1536 1 clientOption 2 12 `*.2S1539 1 clientPayload 2 14 `*.2S1547 1 observePayload 2 16 `us 1 destPort 2 18 `us 1 srcPort 2 20 `S1567 1 observeNotifiers 4 22 ]
+[v _coapDiscPtr coapDiscPtr `S1588  1 e 26 0 ]
+"124
+[v _CoAPWellKnownOptions CoAPWellKnownOptions `C[1]S1536  1 e 2 0 ]
+[s S2208 . 8 `*.37(v 1 encodeFormatter 2 0 `*.37(v 1 decodeFormatter 2 2 `*.37(uc 1 parseDataHandler 2 4 `*.37(v 1 writeDataHandler 2 6 ]
+"102 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[v _CBORdataHandlers CBORdataHandlers `CS2208  1 e 8 0 ]
+[s S2192 . 3 `uc 1 object_map_elements 1 0 `uc 1 array_map_elements 1 1 `uc 1 array_elements 1 2 ]
+"13 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _CfElements CfElements `S2192  1 e 3 0 ]
+"14
+[v _theContentFormatHandler theContentFormatHandler `*.32S2208  1 s 2 theContentFormatHandler ]
+[s S2315 . 1 `E213 1 contentFormatType 1 0 ]
+"21
+[v _supportedCFType supportedCFType `C[2]S2315  1 e 2 0 ]
+"26
+[v _contentFormatHandlers contentFormatHandlers `[2]*.32CS2208  1 e 4 0 ]
+"126 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[v _TEXT_PLAINdataHandlers TEXT_PLAINdataHandlers `CS2208  1 e 8 0 ]
+"33 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _resourcePathName resourcePathName `[160]uc  1 s 160 resourcePathName ]
+"34
+[v _queryValid queryValid `a  1 s 1 queryValid ]
+"78
+[v _resourceType resourceType `E1471  1 s 1 resourceType ]
+"79
+[v _resourceDataID resourceDataID `uc  1 s 1 resourceDataID ]
+"81
+[v _leafIdx leafIdx `uc  1 s 1 leafIdx ]
+"82
+[v _pathIdx pathIdx `uc  1 s 1 pathIdx ]
+[s S2443 . 33 `uc 1 strIdx 1 0 `[32]uc 1 String 32 1 ]
+"86
+[v _StringTable StringTable `C[6]S2443  1 e 198 0 ]
+[s S2446 . 6 `[4]uc 1 validPath 4 0 `E1471 1 type 1 4 `uc 1 dataID 1 5 ]
+"95
+[v _validPath validPath `C[5]S2446  1 e 30 0 ]
+[s S2450 . 5 `[4]uc 1 discoveryPath 4 0 `uc 1 heightOftheNode 1 4 ]
+"103
+[v _discoveryPath discoveryPath `C[5]S2450  1 e 25 0 ]
+[s S783 . 12 `*.37(a 1 initializer 2 0 `*.37(a 1 getter 2 2 `*.37(a 1 putter 2 4 `*.37(a 1 patcher 2 6 `*.37(a 1 deleter 2 8 `*.37(a 1 poster 2 10 ]
+"111
+[v _restfulHandler restfulHandler `[1]*.39CS783  1 e 2 0 ]
+"29 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[v _sistEn sistEn `a  1 e 1 0 ]
+"30
+[v _alarmeAt alarmeAt `a  1 e 1 0 ]
+"36
+[v _janAberta janAberta `a  1 e 1 0 ]
+"37
+[v _portAberta portAberta `a  1 e 1 0 ]
+"38
+[v _movdet movdet `a  1 e 1 0 ]
+[s S2645 . 1 `uc 1 ledStatus 1 0 ]
+"44
+[v _Led Led `[5]S2645  1 e 5 0 ]
+"181
+[v _LedMethods LedMethods `S783  1 e 12 0 ]
+[s S5940 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/eusart1.c
+[u S5945 . 1 `S5940 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES5945  1 e 1 0 ]
+"58
+[v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
+"54 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _IOCAF0_InterruptHandler IOCAF0_InterruptHandler `*.37(v  1 e 2 0 ]
+"55
+[v _IOCBF3_InterruptHandler IOCBF3_InterruptHandler `*.37(v  1 e 2 0 ]
+"56
+[v _IOCBF4_InterruptHandler IOCBF4_InterruptHandler `*.37(v  1 e 2 0 ]
+"57
+[v _IOCBF5_InterruptHandler IOCBF5_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S5410 . 4 `uc 1 con1 1 0 `uc 1 stat 1 1 `uc 1 add 1 2 `uc 1 operation 1 3 ]
+"58 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/spi1.c
+[v _spi1_configuration spi1_configuration `C[2]S5410  1 s 8 spi1_configuration ]
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"79 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v _hostMacAddress hostMacAddress `S2968  1 e 6 0 ]
+"81
+[s S3753 . 13 `S2968 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v _arpMap arpMap `[8]S3753  1 e 104 0 ]
+"74 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[v _ethMAC ethMAC `S2968  1 s 6 ethMAC ]
+[s S5217 . 48 `ul 1 dhcpIPAddress 4 0 `ul 1 subnetMask 4 4 `ul 1 routerAddress 4 8 `[2]ul 1 dnsAddress 8 12 `[2]ul 1 ntpAddress 8 20 `ul 1 gatewayAddress 4 28 `ul 1 xidValue 4 32 `ul 1 t1 4 36 `ul 1 t2 4 40 `ul 1 dhcpServerIdentifier 4 44 ]
+"119
+[v _dhcpData dhcpData `S5217  1 e 48 0 ]
+[s S5238 . 2 `E1250 1 rxClientState 1 0 `E1256 1 tmrClientState 1 1 ]
+"120
+[v _dhcpState dhcpState `S5238  1 e 2 0 ]
+[s S2951 . 6 `uc 1 error 1 0 :1:0 
+`uc 1 pktReady 1 0 :1:1 
+`uc 1 up 1 0 :1:2 
+`uc 1 idle 1 0 :1:3 
+`uc 1 linkChange 1 0 :1:4 
+`uc 1 bufferBusy 1 0 :1:5 
+`uc 1 . 1 1 :3:0 
+`us 1 saveRDPT 2 2 `us 1 saveWRPT 2 4 ]
+"59 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ethData ethData `VES2951  1 e 6 0 ]
+"60
+[v _eth_MAC eth_MAC `*.39CS2968  1 e 2 0 ]
+"61
+[v _nextPacketPointer nextPacketPointer `us  1 s 2 nextPacketPointer ]
+[s S2971 . 4 `us 1 byteCount 2 0 `uc 1 long_drop_event 1 2 :1:0 
+`uc 1 . 1 2 :1:1 
+`uc 1 excessCarrierEvent 1 2 :1:2 
+`uc 1 . 1 2 :1:3 
+`uc 1 crcError 1 2 :1:4 
+`uc 1 lengthCheckError 1 2 :1:5 
+`uc 1 lengthLongError 1 2 :1:6 
+`uc 1 rxOK 1 2 :1:7 
+`uc 1 rxMulticast 1 3 :1:0 
+`uc 1 rxBroadcast 1 3 :1:1 
+`uc 1 dribbleNibble 1 3 :1:2 
+`uc 1 controlFrame 1 3 :1:3 
+`uc 1 pauseControlFrame 1 3 :1:4 
+`uc 1 unknownContrlFrame 1 3 :1:5 
+`uc 1 vlanTagPresent 1 3 :1:6 
+`uc 1 zero 1 3 :1:7 
+]
+"62
+[u S2989 . 4 `[4]uc 1 v 4 0 `S2971 1 . 4 0 ]
+[v _rxPacketStatusVector rxPacketStatusVector `S2989  1 s 4 rxPacketStatusVector ]
+"63
+[v _lastBank lastBank `E10031  1 e 1 0 ]
+"100
+[v _ethListSize ethListSize `uc  1 e 1 0 ]
+[s S2998 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"102
+[v _txData txData `[20]S2998  1 s 200 txData ]
+"104
+[v _pHead pHead `*.39S2998  1 s 2 pHead ]
+"105
+[v _pTail pTail `*.39S2998  1 s 2 pTail ]
+"131
+[v _TXPacketSize TXPacketSize `us  1 e 2 0 ]
+"246 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.h
+[v _Control_Byte Control_Byte `uc  1 e 1 0 ]
+"51 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _portUnreachable portUnreachable `us  1 e 2 0 ]
+[s S1708 . 36 `ul 1 ipv4_myAddress 4 0 `[2]ul 1 ipv4_dns 8 4 `ul 1 ipv4_subnetMask 4 12 `ul 1 ipv4_router 4 16 `ul 1 ipv4_gateway 4 20 `[2]ul 1 ipv4_ntpAddress 8 24 `ul 1 ipv4_tftpAddress 4 32 ]
+"29 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _ip_database_info ip_database_info `S1708  1 e 36 0 ]
+[s S1248 . 20 `uc 1 ihl 1 0 :4:0 
+`uc 1 version 1 0 :4:4 
+`uc 1 ecn 1 1 :2:0 
+`uc 1 dscp 1 1 :6:2 
+`us 1 length 2 2 `us 1 identifcation 2 4 `uc 1 fragmentOffsetHigh 1 6 :5:0 
+`uc 1 . 1 6 :1:5 
+`uc 1 dontFragment 1 6 :1:6 
+`uc 1 moreFragments 1 6 :1:7 
+`uc 1 fragmentOffsetLow 1 7 `uc 1 timeToLive 1 8 `uc 1 protocol 1 9 `us 1 headerCksm 2 10 `ul 1 srcIpAddress 4 12 `ul 1 dstIpAddress 4 16 ]
+"61 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _ipv4Header ipv4Header `S1248  1 e 20 0 ]
+"46 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/lfsr.c
+[v _xorSequences xorSequences `C[18]uc  1 e 18 0 ]
+"47
+[v _xor_mask xor_mask `uc  1 e 1 0 ]
+"48
+[v _lfsr_value lfsr_value `uc  1 e 1 0 ]
+"67 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log.c
+[v _limit limit `[23]E10218  1 e 23 0 ]
+[s S4086 . 2 `E10228 1 logFacility 1 0 `E10218 1 severityThreshold 1 1 ]
+"69
+[v _severityThresholdTable severityThresholdTable `C[24]S4086  1 e 48 0 ]
+"45 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.c
+[v _macAddress macAddress `S2968  1 e 6 0 ]
+"46
+[v _broadcastMAC broadcastMAC `CS2968  1 e 6 0 ]
+"65 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _arpTimer arpTimer `o  1 e 8 0 ]
+"67
+[v _networkStartPosition networkStartPosition `us  1 e 2 0 ]
+"31 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _deviceTime deviceTime `VEo  1 e 8 0 ]
+"32
+[v _dirtyTime dirtyTime `VEa  1 e 1 0 ]
+"34
+[v _seconds_counter seconds_counter `VEus  1 e 2 0 ]
+"62 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4.c
+[v _destPort destPort `us  1 e 2 0 ]
+[s S1283 . 8 `us 1 srcPort 2 0 `us 1 dstPort 2 2 `us 1 length 2 4 `us 1 checksum 2 6 ]
+"63
+[v _udpHeader udpHeader `S1283  1 e 8 0 ]
+[s S4355 . 4 `us 1 portNumber 2 0 `*.37(v 1 callBack 2 2 ]
+"47 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.c
+[v _UDP_CallBackTable UDP_CallBackTable `C[3]S4355  1 e 12 0 ]
+"57 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"75 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"78
+[v main@ip ip `ul  1 a 4 187 ]
+[v main@old_ip old_ip `ul  1 a 4 183 ]
+"79
+[v main@ip_str ip_str `*.39uc  1 a 2 181 ]
+"149
+} 0
+"58 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _makeIpv4AddresstoStr makeIpv4AddresstoStr `(*.39uc  1 e 2 0 ]
+{
+[v makeIpv4AddresstoStr@addr addr `ul  1 p 4 67 ]
+"60
+[v makeIpv4AddresstoStr@ip_str ip_str `[15]uc  1 s 15 ip_str ]
+"65
+} 0
+"168 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _alarme alarme `(v  1 e 1 0 ]
+{
+"171
+} 0
+"50 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"61
+} 0
+"64 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"63 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"332 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _ResourcesInit ResourcesInit `(v  1 e 1 0 ]
+{
+"334
+[v ResourcesInit@i i `uc  1 a 1 7 ]
+"338
+} 0
+"46 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[v _LedInit LedInit `(a  1 e 1 0 ]
+{
+[v LedInit@id id `uc  1 a 1 wreg ]
+[v LedInit@id id `uc  1 a 1 wreg ]
+[v LedInit@id id `uc  1 a 1 4 ]
+"48
+} 0
+"77 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"60 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"160
+} 0
+"294
+[v _IOCBF5_SetInterruptHandler IOCBF5_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCBF5_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"296
+} 0
+"264
+[v _IOCBF4_SetInterruptHandler IOCBF4_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCBF4_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"266
+} 0
+"234
+[v _IOCBF3_SetInterruptHandler IOCBF3_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCBF3_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"236
+} 0
+"204
+[v _IOCAF0_SetInterruptHandler IOCAF0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCAF0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"206
+} 0
+"63 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"77 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Init Network_Init `(v  1 e 1 0 ]
+{
+"88
+} 0
+"90
+[v _timersInit timersInit `(v  1 e 1 0 ]
+{
+"94
+} 0
+"60 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _rtcc_init rtcc_init `(v  1 e 1 0 ]
+{
+"64
+} 0
+"185 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/tmr1.c
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 4 ]
+"187
+} 0
+"96 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_WaitForLink Network_WaitForLink `(v  1 e 1 0 ]
+{
+"99
+} 0
+"98 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/log.c
+[v _LOG_Init LOG_Init `(v  1 e 1 0 ]
+{
+"102
+[v LOG_Init@x x `uc  1 a 1 95 ]
+"100
+[v LOG_Init@t t `ul  1 a 4 91 ]
+"106
+} 0
+"65 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Init IPV4_Init `(v  1 e 1 0 ]
+{
+"68
+} 0
+"31 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _ipdb_init ipdb_init `(v  1 e 1 0 ]
+{
+"38
+[v ipdb_init@x_2936 x `uc  1 a 1 5 ]
+"36
+[v ipdb_init@x x `uc  1 a 1 4 ]
+"41
+} 0
+"335 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_Init ETH_Init `(v  1 e 1 0 ]
+{
+"409
+} 0
+"49 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"48 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.c
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v _MAC_getAddress MAC_getAddress `(*.39CS2968  1 e 2 0 ]
+{
+"51
+} 0
+"643 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SendSystemReset ETH_SendSystemReset `(v  1 e 1 0 ]
+{
+"648
+} 0
+"327
+[v _ETH_OpenSPI ETH_OpenSPI `(v  1 e 1 0 ]
+{
+"330
+} 0
+"53 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/drivers/spi_master.c
+[v _spi_master_open spi_master_open `(a  1 e 1 0 ]
+{
+[v spi_master_open@config config `E377  1 a 1 wreg ]
+[v spi_master_open@config config `E377  1 a 1 wreg ]
+[v spi_master_open@config config `E377  1 a 1 8 ]
+"60
+} 0
+"40
+[v _MAC_open MAC_open `(a  1 e 1 0 ]
+{
+"42
+} 0
+"78 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 wreg ]
+"80
+[v SPI1_Open@spi1UniqueConfiguration spi1UniqueConfiguration `E355  1 a 1 5 ]
+"91
+} 0
+"613 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ENC28_PhyWrite ENC28_PhyWrite `(v  1 s 1 ENC28_PhyWrite ]
+{
+[v ENC28_PhyWrite@a a `E10153  1 a 1 wreg ]
+"615
+[v ENC28_PhyWrite@v v `uc  1 a 1 13 ]
+"613
+[v ENC28_PhyWrite@a a `E10153  1 a 1 wreg ]
+[v ENC28_PhyWrite@d d `us  1 p 2 10 ]
+"615
+[v ENC28_PhyWrite@a a `E10153  1 a 1 12 ]
+"623
+} 0
+"205 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[v _DHCP_init DHCP_init `(v  1 e 1 0 ]
+{
+"208
+} 0
+"129 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_Init COAP_Init `(v  1 e 1 0 ]
+{
+"133
+} 0
+"141
+[v _COAP_TransmitInit COAP_TransmitInit `(v  1 s 1 COAP_TransmitInit ]
+{
+"143
+[v COAP_TransmitInit@i i `uc  1 a 1 28 ]
+"152
+} 0
+"420 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _COAP_ConfigDefaultBlockParams COAP_ConfigDefaultBlockParams `(v  1 e 1 0 ]
+{
+"422
+[v COAP_ConfigDefaultBlockParams@i i `uc  1 a 1 29 ]
+"429
+} 0
+"443
+[v _COAP_ResetDiscoveryParams COAP_ResetDiscoveryParams `(v  1 s 1 COAP_ResetDiscoveryParams ]
+{
+[v COAP_ResetDiscoveryParams@i i `uc  1 a 1 wreg ]
+[v COAP_ResetDiscoveryParams@i i `uc  1 a 1 wreg ]
+"445
+[v COAP_ResetDiscoveryParams@i i `uc  1 a 1 28 ]
+"454
+} 0
+"431
+[v _COAP_ResetBlockParams COAP_ResetBlockParams `(v  1 s 1 COAP_ResetBlockParams ]
+{
+[v COAP_ResetBlockParams@i i `uc  1 a 1 wreg ]
+[v COAP_ResetBlockParams@i i `uc  1 a 1 wreg ]
+"433
+[v COAP_ResetBlockParams@i i `uc  1 a 1 5 ]
+"441
+} 0
+"87 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Init ARPV4_Init `(v  1 e 1 0 ]
+{
+"89
+[v ARPV4_Init@x x `uc  1 a 1 11 ]
+"94
+} 0
+"1225 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_GetMAC ETH_GetMAC `(v  1 e 1 0 ]
+{
+[v ETH_GetMAC@macAddr macAddr `*.39uc  1 p 2 9 ]
+"1233
+} 0
+"52 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"66 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"170
+[v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 4 ]
+"172
+} 0
+"166
+[v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 4 ]
+"168
+} 0
+"174
+[v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 4 ]
+"176
+} 0
+"101 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_Manage Network_Manage `(v  1 e 1 0 ]
+{
+"103
+[v Network_Manage@now now `o  1 a 8 173 ]
+"104
+[v Network_Manage@nowPv nowPv `o  1 s 8 nowPv ]
+"123
+} 0
+"125
+[v _Network_Read Network_Read `(v  1 e 1 0 ]
+{
+"154
+[v Network_Read@t t `l  1 a 4 80 ]
+"128
+[v Network_Read@debug_str debug_str `[80]uc  1 a 80 0 ]
+[u S1389 . 2 `us 1 type 2 0 `us 1 length 2 0 `us 1 tpid 2 0 ]
+"127
+[s S1393 . 14 `[6]uc 1 destinationMAC 6 0 `[6]uc 1 sourceMAC 6 6 `S1389 1 id 2 12 ]
+[v Network_Read@header header `S1393  1 a 14 84 ]
+"168
+} 0
+"170
+[v _Network_SaveStartPosition Network_SaveStartPosition `(v  1 s 1 Network_SaveStartPosition ]
+{
+"173
+} 0
+"114 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Packet IPV4_Packet `(E10466  1 e 1 0 ]
+{
+"118
+[v IPV4_Packet@msg msg `[40]uc  1 a 40 124 ]
+"116
+[v IPV4_Packet@cksm cksm `us  1 a 2 167 ]
+"117
+[v IPV4_Packet@length length `us  1 a 2 164 ]
+"119
+[v IPV4_Packet@hdrLen hdrLen `uc  1 a 1 166 ]
+"205
+} 0
+"103
+[v _getHeaderLen getHeaderLen `(uc  1 s 1 getHeaderLen ]
+{
+"105
+[v getHeaderLen@rxptr rxptr `us  1 a 2 14 ]
+"106
+[v getHeaderLen@header_len header_len `uc  1 a 1 16 ]
+"113
+} 0
+"1289 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SetRxByteCount ETH_SetRxByteCount `(v  1 e 1 0 ]
+{
+[v ETH_SetRxByteCount@count count `us  1 p 2 6 ]
+"1292
+} 0
+"1284
+[v _ETH_GetRxByteCount ETH_GetRxByteCount `(us  1 e 2 0 ]
+{
+"1287
+} 0
+"1254
+[v _ETH_GetReadPtr ETH_GetReadPtr `(us  1 e 2 0 ]
+{
+"1257
+} 0
+"124 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4.c
+[v _UDP_Receive UDP_Receive `(E627  1 e 1 0 ]
+{
+[s S4355 . 4 `us 1 portNumber 2 0 `*.37(v 1 callBack 2 2 ]
+"127
+[v UDP_Receive@hptr hptr `*.32S4355  1 a 2 90 ]
+"126
+[v UDP_Receive@ret ret `E627  1 a 1 89 ]
+"124
+[v UDP_Receive@udpcksm udpcksm `us  1 p 2 152 ]
+"166
+} 0
+"47 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.h
+[s S4355 . 4 `us 1 portNumber 2 0 `*.37(v 1 callBack 2 2 ]
+"61 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.c
+[v _udp_table_nextEntry udp_table_nextEntry `(*.32S4355  1 e 2 0 ]
+{
+[v udp_table_nextEntry@i i `*.32S4355  1 p 2 4 ]
+"70
+} 0
+"47 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.h
+[s S4355 . 4 `us 1 portNumber 2 0 `*.37(v 1 callBack 2 2 ]
+"56 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4_port_handler_table.c
+[v _udp_table_getIterator udp_table_getIterator `(*.32S4355  1 e 2 0 ]
+{
+"59
+} 0
+"283 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_GetDatagramLength IPV4_GetDatagramLength `(us  1 e 2 0 ]
+{
+"286
+} 0
+"137 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _ICMP_PortUnreachable ICMP_PortUnreachable `(E627  1 e 1 0 ]
+{
+"140
+[v ICMP_PortUnreachable@cksm cksm `us  1 a 2 81 ]
+"139
+[v ICMP_PortUnreachable@ret ret `E614  1 a 1 83 ]
+"137
+[v ICMP_PortUnreachable@srcIPAddress srcIPAddress `ul  1 p 4 44 ]
+[v ICMP_PortUnreachable@destIPAddress destIPAddress `ul  1 p 4 48 ]
+[v ICMP_PortUnreachable@length length `us  1 p 2 52 ]
+"162
+} 0
+"175 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/network.c
+[v _Network_GetStartPosition Network_GetStartPosition `(us  1 e 2 0 ]
+{
+"178
+} 0
+"1259 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SetReadPtr ETH_SetReadPtr `(v  1 e 1 0 ]
+{
+[v ETH_SetReadPtr@rdptr rdptr `us  1 p 2 10 ]
+"1262
+} 0
+"236 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _COAP_Receive COAP_Receive `(v  1 e 1 0 ]
+{
+"239
+[v COAP_Receive@len len `s  1 a 2 149 ]
+"238
+[v COAP_Receive@ret ret `a  1 a 1 151 ]
+"236
+[v COAP_Receive@length length `s  1 p 2 145 ]
+"285
+} 0
+"273 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[v _DHCP_Handler DHCP_Handler `(v  1 e 1 0 ]
+{
+"390
+[v DHCP_Handler@a_5405 a `ul  1 a 4 20 ]
+"376
+[v DHCP_Handler@a a `ul  1 a 4 16 ]
+"402
+[v DHCP_Handler@origLeaseTime origLeaseTime `ul  1 a 4 36 ]
+"386
+[v DHCP_Handler@count_5404 count `uc  1 a 1 32 ]
+"372
+[v DHCP_Handler@count count `uc  1 a 1 31 ]
+"356
+[v DHCP_Handler@optionLength optionLength `uc  1 a 1 40 ]
+[v DHCP_Handler@option option `uc  1 a 1 24 ]
+[s S5217 . 48 `ul 1 dhcpIPAddress 4 0 `ul 1 subnetMask 4 4 `ul 1 routerAddress 4 8 `[2]ul 1 dnsAddress 8 12 `[2]ul 1 ntpAddress 8 20 `ul 1 gatewayAddress 4 28 `ul 1 xidValue 4 32 `ul 1 t1 4 36 `ul 1 t2 4 40 `ul 1 dhcpServerIdentifier 4 44 ]
+"322
+[v DHCP_Handler@localData localData `S5217  1 a 48 41 ]
+"276
+[v DHCP_Handler@chaddr chaddr `[16]uc  1 a 16 0 ]
+"284
+[v DHCP_Handler@siaddr siaddr `ul  1 a 4 26 ]
+"282
+[v DHCP_Handler@acceptACK acceptACK `a  1 a 1 35 ]
+"281
+[v DHCP_Handler@acceptNACK acceptNACK `a  1 a 1 34 ]
+"279
+[v DHCP_Handler@acceptOffers acceptOffers `a  1 a 1 33 ]
+"280
+[v DHCP_Handler@declineOffers declineOffers `a  1 a 1 30 ]
+"277
+[v DHCP_Handler@messageType messageType `uc  1 a 1 25 ]
+"273
+[v DHCP_Handler@length length `s  1 p 2 145 ]
+"321
+[v DHCP_Handler@F1301 F1301 `S5217  1 s 48 F1301 ]
+"522
+} 0
+"143
+[v _sendDHCPDECLINE sendDHCPDECLINE `(a  1 e 1 0 ]
+{
+"146
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcmp.c
+[v _memcmp memcmp `(i  1 e 2 0 ]
+{
+"5
+[v memcmp@r r `*.34Cuc  1 a 2 14 ]
+[v memcmp@l l `*.39Cuc  1 a 2 12 ]
+"3
+[v memcmp@vl vl `*.39Cv  1 p 2 4 ]
+[v memcmp@vr vr `*.34Cv  1 p 2 6 ]
+[v memcmp@n n `ui  1 p 2 8 ]
+"8
+} 0
+"171 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _COAP_ReceiveRSTMessage COAP_ReceiveRSTMessage `(a  1 s 1 COAP_ReceiveRSTMessage ]
+{
+"173
+[v COAP_ReceiveRSTMessage@ret ret `a  1 a 1 144 ]
+"171
+[v COAP_ReceiveRSTMessage@length length `s  1 p 2 142 ]
+"194
+} 0
+"126
+[v _COAP_ReceiveNONMessage COAP_ReceiveNONMessage `(a  1 s 1 COAP_ReceiveNONMessage ]
+{
+"128
+[v COAP_ReceiveNONMessage@ret ret `a  1 a 1 144 ]
+"126
+[v COAP_ReceiveNONMessage@length length `s  1 p 2 142 ]
+"144
+} 0
+"105
+[v _COAP_ReceiveCONMessage COAP_ReceiveCONMessage `(a  1 s 1 COAP_ReceiveCONMessage ]
+{
+"107
+[v COAP_ReceiveCONMessage@ret ret `a  1 a 1 144 ]
+"105
+[v COAP_ReceiveCONMessage@length length `s  1 p 2 142 ]
+"124
+} 0
+"146
+[v _COAP_ReceiveACKMessage COAP_ReceiveACKMessage `(a  1 s 1 COAP_ReceiveACKMessage ]
+{
+"148
+[v COAP_ReceiveACKMessage@ret ret `a  1 a 1 144 ]
+"146
+[v COAP_ReceiveACKMessage@length length `s  1 p 2 142 ]
+"169
+} 0
+"489 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_TraverseToResource COAP_TraverseToResource `(a  1 e 1 0 ]
+{
+"491
+[v COAP_TraverseToResource@ret ret `a  1 a 1 141 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"489
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_TraverseToResource@ptr ptr `*.39S373  1 p 2 139 ]
+"507
+} 0
+"142 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _isURIPathValid isURIPathValid `(a  1 e 1 0 ]
+{
+"156
+[v isURIPathValid@i i `uc  1 a 1 39 ]
+[s S2446 . 6 `[4]uc 1 validPath 4 0 `E1471 1 type 1 4 `uc 1 dataID 1 5 ]
+"145
+[v isURIPathValid@hptr hptr `*.32S2446  1 a 2 41 ]
+"154
+[v isURIPathValid@pch pch `*.34uc  1 a 2 37 ]
+"148
+[v isURIPathValid@temp temp `*.39c  1 a 2 33 ]
+"144
+[v isURIPathValid@ret ret `a  1 a 1 40 ]
+"146
+[v isURIPathValid@path path `uc  1 a 1 36 ]
+"150
+[v isURIPathValid@temp_count temp_count `uc  1 a 1 35 ]
+"142
+[v isURIPathValid@uri_path uri_path `*.39c  1 p 2 26 ]
+[v isURIPathValid@count count `uc  1 p 1 28 ]
+"188
+} 0
+"322
+[v _setResourceDataID setResourceDataID `(v  1 e 1 0 ]
+{
+[v setResourceDataID@id id `uc  1 a 1 wreg ]
+[v setResourceDataID@id id `uc  1 a 1 wreg ]
+"324
+[v setResourceDataID@id id `uc  1 a 1 4 ]
+"325
+} 0
+"72 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_resources.c
+[v _coapwellknownHandler coapwellknownHandler `(a  1 e 1 0 ]
+{
+"75
+[v coapwellknownHandler@ret ret `E1252  1 a 1 138 ]
+"77
+[v coapwellknownHandler@idx idx `uc  1 a 1 137 ]
+"76
+[v coapwellknownHandler@rootLeafCount rootLeafCount `uc  1 a 1 136 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"72
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v coapwellknownHandler@ptr ptr `*.39S373  1 p 2 132 ]
+"122
+} 0
+"529 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _isBlockOptionRequired isBlockOptionRequired `(a  1 e 1 0 ]
+{
+"536
+} 0
+"315 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _getDiscoveryLength getDiscoveryLength `(ul  1 e 4 0 ]
+{
+"318
+} 0
+"277
+[v _getPathLength getPathLength `(uc  1 e 1 0 ]
+{
+[v getPathLength@idx idx `uc  1 a 1 wreg ]
+[v getPathLength@idx idx `uc  1 a 1 wreg ]
+"279
+[v getPathLength@idx idx `uc  1 a 1 14 ]
+"281
+} 0
+"205
+[v _getDiscoveryPath getDiscoveryPath `(*.39uc  1 e 2 0 ]
+{
+[v getDiscoveryPath@idx idx `uc  1 a 1 wreg ]
+"208
+[v getDiscoveryPath@pch pch `*.34uc  1 a 2 32 ]
+"207
+[v getDiscoveryPath@strIdx strIdx `uc  1 a 1 30 ]
+"205
+[v getDiscoveryPath@idx idx `uc  1 a 1 wreg ]
+[v getDiscoveryPath@idx idx `uc  1 a 1 31 ]
+"223
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+{
+[v strcat@dest dest `*.39uc  1 p 2 22 ]
+[v strcat@src src `*.32Cuc  1 p 2 24 ]
+"7
+} 0
+"119 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _COAP_DiscoveryBlockTransmit COAP_DiscoveryBlockTransmit `(v  1 e 1 0 ]
+{
+"136
+[v COAP_DiscoveryBlockTransmit@str str `[35]uc  1 a 35 85 ]
+"122
+[v COAP_DiscoveryBlockTransmit@block2OptionValue block2OptionValue `ul  1 a 4 126 ]
+"123
+[v COAP_DiscoveryBlockTransmit@block2OptionLength block2OptionLength `us  1 a 2 124 ]
+"125
+[v COAP_DiscoveryBlockTransmit@byteToWrite byteToWrite `uc  1 a 1 123 ]
+"124
+[v COAP_DiscoveryBlockTransmit@lenOfStr lenOfStr `uc  1 a 1 122 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"119
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_DiscoveryBlockTransmit@ptr ptr `*.39S373  1 p 2 67 ]
+"248
+} 0
+"96
+[v _writeBlockOfBody writeBlockOfBody `(a  1 s 1 writeBlockOfBody ]
+{
+[v writeBlockOfBody@str str `*.34uc  1 p 2 40 ]
+[v writeBlockOfBody@len len `us  1 p 2 42 ]
+"114
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncat.c
+[v _strncat strncat `(*.39uc  1 e 2 0 ]
+{
+[v strncat@d d `*.39uc  1 p 2 14 ]
+[v strncat@s s `*.32Cuc  1 p 2 16 ]
+[v strncat@n n `ui  1 p 2 18 ]
+"10
+} 0
+"350 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _setMBit setMBit `(v  1 s 1 setMBit ]
+{
+[v setMBit@M M `a  1 a 1 wreg ]
+[v setMBit@M M `a  1 a 1 wreg ]
+"352
+[v setMBit@M M `a  1 a 1 10 ]
+"353
+} 0
+"271 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _resetLeafAndPathResourceIdices resetLeafAndPathResourceIdices `(v  1 e 1 0 ]
+{
+"275
+} 0
+"284
+[v _getStingFromIdx getStingFromIdx `(*.32uc  1 e 2 0 ]
+{
+[v getStingFromIdx@idx idx `uc  1 a 1 wreg ]
+"290
+[v getStingFromIdx@i i `uc  1 a 1 9 ]
+[s S2443 . 33 `uc 1 strIdx 1 0 `[32]uc 1 String 32 1 ]
+"286
+[v getStingFromIdx@hptr hptr `*.32S2443  1 a 2 7 ]
+"284
+[v getStingFromIdx@idx idx `uc  1 a 1 wreg ]
+"288
+[v getStingFromIdx@idx idx `uc  1 a 1 6 ]
+"296
+} 0
+"233
+[v _getPathResourceIdx getPathResourceIdx `(c  1 e 1 0 ]
+{
+"243
+[v getPathResourceIdx@i i `uc  1 a 1 27 ]
+"236
+[v getPathResourceIdx@pch pch `*.34uc  1 a 2 28 ]
+"235
+[v getPathResourceIdx@pathResourceIdx pathResourceIdx `c  1 a 1 26 ]
+"269
+} 0
+"196
+[v _getRootToLeafPathCount getRootToLeafPathCount `(uc  1 e 1 0 ]
+{
+"203
+} 0
+"225
+[v _getLeafResourceIdx getLeafResourceIdx `(c  1 e 1 0 ]
+{
+"231
+} 0
+"378 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _getCoAPBlockOptionValue getCoAPBlockOptionValue `(ul  1 s 4 getCoAPBlockOptionValue ]
+{
+[v getCoAPBlockOptionValue@szx szx `uc  1 a 1 wreg ]
+"380
+[v getCoAPBlockOptionValue@value value `ul  1 a 4 18 ]
+"381
+[v getCoAPBlockOptionValue@last4Bits last4Bits `i  1 a 2 16 ]
+"378
+[v getCoAPBlockOptionValue@szx szx `uc  1 a 1 wreg ]
+[v getCoAPBlockOptionValue@m m `a  1 p 1 10 ]
+[v getCoAPBlockOptionValue@num num `uc  1 p 1 11 ]
+[v getCoAPBlockOptionValue@szx szx `uc  1 a 1 24 ]
+"395
+} 0
+"293 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _COAP_InsertLastOptionValue COAP_InsertLastOptionValue `(v  1 e 1 0 ]
+{
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_InsertLastOptionValue@ptr ptr `*.39S373  1 p 2 24 ]
+[v COAP_InsertLastOptionValue@optionValue optionValue `*.39uc  1 p 2 26 ]
+[v COAP_InsertLastOptionValue@optionLength optionLength `us  1 p 2 28 ]
+"296
+} 0
+"463 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_GetNumberOfOptionsAdded COAP_GetNumberOfOptionsAdded `(uc  1 e 1 0 ]
+{
+"466
+} 0
+"468
+[v _COAP_GetLengthOfIntegerOptionValue COAP_GetLengthOfIntegerOptionValue `(uc  1 e 1 0 ]
+{
+[v COAP_GetLengthOfIntegerOptionValue@val val `ul  1 p 4 4 ]
+"486
+} 0
+"399 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _COAP_ConvertBlockOptionToNetworkOrder COAP_ConvertBlockOptionToNetworkOrder `(ul  1 s 4 COAP_ConvertBlockOptionToNetworkOrder ]
+{
+[v COAP_ConvertBlockOptionToNetworkOrder@val val `ul  1 p 4 4 ]
+[v COAP_ConvertBlockOptionToNetworkOrder@byteLength byteLength `uc  1 p 1 8 ]
+"418
+} 0
+"242 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_AddBlock2Options COAP_AddBlock2Options `(v  1 e 1 0 ]
+{
+[v COAP_AddBlock2Options@str str `*.39uc  1 p 2 50 ]
+"245
+} 0
+"125 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_resources.c
+[v _COAP_ResourceHandler COAP_ResourceHandler `(a  1 e 1 0 ]
+{
+"129
+[v COAP_ResourceHandler@remainingPayloadLength remainingPayloadLength `s  1 a 2 120 ]
+"127
+[v COAP_ResourceHandler@ret ret `a  1 a 1 123 ]
+"128
+[v COAP_ResourceHandler@type type `uc  1 a 1 122 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"125
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_ResourceHandler@ptr ptr `*.39S373  1 p 2 116 ]
+"237
+} 0
+"345 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _processPayloadOverHead processPayloadOverHead `(s  1 e 2 0 ]
+{
+[v processPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 wreg ]
+[v processPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 wreg ]
+[v processPayloadOverHead@cfType cfType `E669  1 p 1 5 ]
+[v processPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 9 ]
+"360
+} 0
+"362
+[v _TEXT_PLAINProcessPayloadOverHead TEXT_PLAINProcessPayloadOverHead `(uc  1 s 1 TEXT_PLAINProcessPayloadOverHead ]
+{
+[v TEXT_PLAINProcessPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 wreg ]
+[v TEXT_PLAINProcessPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 wreg ]
+"365
+[v TEXT_PLAINProcessPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 4 ]
+"366
+} 0
+"367
+[v _CBORProcessPayloadOverHead CBORProcessPayloadOverHead `(uc  1 s 1 CBORProcessPayloadOverHead ]
+{
+[v CBORProcessPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 wreg ]
+[v CBORProcessPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 wreg ]
+"370
+[v CBORProcessPayloadOverHead@receivedPayloadLength receivedPayloadLength `uc  1 a 1 4 ]
+"371
+} 0
+"31 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _iscfMatched iscfMatched `(a  1 e 1 0 ]
+{
+[v iscfMatched@cfType cfType `E213  1 a 1 wreg ]
+"37
+[v iscfMatched@i i `uc  1 a 1 8 ]
+[s S2315 . 1 `E213 1 contentFormatType 1 0 ]
+"33
+[v iscfMatched@hptr hptr `*.32CS2315  1 a 2 6 ]
+"31
+[v iscfMatched@cfType cfType `E213  1 a 1 wreg ]
+"35
+[v iscfMatched@cfType cfType `E213  1 a 1 5 ]
+"47
+} 0
+"49
+[v _setContentFormatDataHandlers setContentFormatDataHandlers `(v  1 e 1 0 ]
+{
+[v setContentFormatDataHandlers@index index `uc  1 a 1 wreg ]
+[v setContentFormatDataHandlers@index index `uc  1 a 1 wreg ]
+"51
+[v setContentFormatDataHandlers@index index `uc  1 a 1 4 ]
+"52
+} 0
+"191 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _isURIQueryValid isURIQueryValid `(a  1 e 1 0 ]
+{
+"194
+} 0
+"121
+[v _getResourceType getResourceType `(uc  1 e 1 0 ]
+{
+"124
+} 0
+"327
+[v _getResourceDataID getResourceDataID `(uc  1 e 1 0 ]
+{
+"330
+} 0
+"340
+[v _addPayloadOverHead addPayloadOverHead `(v  1 e 1 0 ]
+{
+[v addPayloadOverHead@numOfResources numOfResources `uc  1 p 1 85 ]
+"343
+} 0
+"76 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _writeAuxData writeAuxData `(v  1 e 1 0 ]
+{
+[v writeAuxData@data data `*.39v  1 p 2 81 ]
+[v writeAuxData@items items `E219  1 p 1 83 ]
+"79
+} 0
+"115 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[v _TEXT_PLAINWriteData TEXT_PLAINWriteData `(v  1 e 1 0 ]
+{
+"117
+[v TEXT_PLAINWriteData@str_val str_val `[11]uc  1 a 11 70 ]
+"115
+[v TEXT_PLAINWriteData@data data `*.39uc  1 p 2 67 ]
+"124
+} 0
+"84 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[v _CBORWriteData CBORWriteData `(v  1 e 1 0 ]
+{
+"87
+[v CBORWriteData@value value `*.39uc  1 a 2 12 ]
+"86
+[v CBORWriteData@x x `VEuc  1 a 1 11 ]
+"84
+[v CBORWriteData@data data `*.39v  1 p 2 6 ]
+[v CBORWriteData@items items `E1111  1 p 1 8 ]
+"100
+} 0
+"89 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[v _LedPutter LedPutter `(a  1 e 1 0 ]
+{
+[v LedPutter@idx idx `uc  1 a 1 wreg ]
+"91
+[v LedPutter@led led `[32]uc  1 a 32 83 ]
+"89
+[v LedPutter@idx idx `uc  1 a 1 wreg ]
+[v LedPutter@idx idx `uc  1 a 1 115 ]
+"154
+} 0
+"64 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _parseData parseData `(uc  1 e 1 0 ]
+{
+[v parseData@data data `*.39uc  1 p 2 42 ]
+[v parseData@sizeOfData sizeOfData `uc  1 p 1 44 ]
+"74
+} 0
+"66 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[v _CBORParseData CBORParseData `(uc  1 e 1 0 ]
+{
+"68
+[v CBORParseData@len len `uc  1 a 1 38 ]
+"66
+[v CBORParseData@data data `*.39uc  1 p 2 36 ]
+"82
+} 0
+"73 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[v _TEXT_PLAINParseData TEXT_PLAINParseData `(uc  1 e 1 0 ]
+{
+"77
+[v TEXT_PLAINParseData@x x `*.39uc  1 a 2 38 ]
+"76
+[v TEXT_PLAINParseData@str str `uc  1 a 1 41 ]
+"75
+[v TEXT_PLAINParseData@len len `uc  1 a 1 40 ]
+"73
+[v TEXT_PLAINParseData@data data `*.39uc  1 p 2 36 ]
+"113
+} 0
+"617 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[v _cbor_elements cbor_elements `(uc  1 e 1 0 ]
+{
+"620
+} 0
+"467
+[v _CBOR_Decode_Read_Data CBOR_Decode_Read_Data `(uc  1 e 1 0 ]
+{
+"470
+[v CBOR_Decode_Read_Data@len len `uc  1 a 1 34 ]
+"469
+[v CBOR_Decode_Read_Data@infoByte infoByte `VEuc  1 a 1 35 ]
+"467
+[v CBOR_Decode_Read_Data@readPtr readPtr `*.39uc  1 p 2 30 ]
+"503
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+{
+"6
+[v strcpy@d d `*.39uc  1 a 2 20 ]
+"5
+[v strcpy@s s `*.32Cuc  1 a 2 18 ]
+"3
+[v strcpy@dest dest `*.39uc  1 p 2 14 ]
+[v strcpy@src src `*.32Cuc  1 p 2 16 ]
+"9
+} 0
+"622 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[v _cbor_decode_tags cbor_decode_tags `(uc  1 e 1 0 ]
+{
+"624
+[v cbor_decode_tags@length length `uc  1 a 1 29 ]
+"622
+[v cbor_decode_tags@readPtr readPtr `*.39uc  1 p 2 25 ]
+"656
+} 0
+"557
+[v _cbor_decode_read_string cbor_decode_read_string `(uc  1 e 1 0 ]
+{
+"559
+[v cbor_decode_read_string@i i `l  1 a 4 21 ]
+"560
+[v cbor_decode_read_string@bytesToRead bytesToRead `ul  1 a 4 17 ]
+"557
+[v cbor_decode_read_string@readPtr readPtr `*.39uc  1 p 2 13 ]
+"616
+} 0
+"689 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_Read32 ETH_Read32 `(ul  1 e 4 0 ]
+{
+"691
+[v ETH_Read32@b b `ul  1 a 4 9 ]
+"702
+} 0
+"505 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[v _cbor_decode_read_int cbor_decode_read_int `(uc  1 e 1 0 ]
+{
+"507
+[v cbor_decode_read_int@i i `c  1 a 1 11 ]
+"508
+[v cbor_decode_read_int@bytesRead bytesRead `uc  1 a 1 10 ]
+"505
+[v cbor_decode_read_int@readPtr readPtr `*.39uc  1 p 2 6 ]
+"555
+} 0
+"658
+[v _cbor_decode_bool cbor_decode_bool `(uc  1 e 1 0 ]
+{
+[v cbor_decode_bool@readPtr readPtr `*.39uc  1 p 2 4 ]
+"663
+} 0
+"59 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _Put_ToResource Put_ToResource `(v  1 e 1 0 ]
+{
+[v Put_ToResource@data data `*.39uc  1 p 2 49 ]
+[v Put_ToResource@variable variable `*.39v  1 p 2 51 ]
+[v Put_ToResource@type type `E206  1 p 1 53 ]
+"62
+} 0
+"46 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[v _CBORDecoder CBORDecoder `(v  1 e 1 0 ]
+{
+"49
+[v CBORDecoder@x x `*.39uc  1 a 2 43 ]
+"46
+[v CBORDecoder@data data `*.39uc  1 p 2 36 ]
+[v CBORDecoder@variable variable `*.39v  1 p 2 38 ]
+[v CBORDecoder@type type `E1098  1 p 1 40 ]
+"64
+} 0
+"51 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[v _TEXT_PLAINDecoder TEXT_PLAINDecoder `(v  1 e 1 0 ]
+{
+"54
+[v TEXT_PLAINDecoder@temp temp `ul  1 a 4 43 ]
+"53
+[v TEXT_PLAINDecoder@x x `*.39ul  1 a 2 47 ]
+"51
+[v TEXT_PLAINDecoder@data data `*.39uc  1 p 2 36 ]
+[v TEXT_PLAINDecoder@variable variable `*.39v  1 p 2 38 ]
+[v TEXT_PLAINDecoder@type type `E1098  1 p 1 40 ]
+"71
+} 0
+"164 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[v _LedPoster LedPoster `(a  1 e 1 0 ]
+{
+"169
+} 0
+"156
+[v _LedPatcher LedPatcher `(a  1 e 1 0 ]
+{
+"161
+} 0
+"51
+[v _LedGetter LedGetter `(a  1 e 1 0 ]
+{
+[v LedGetter@idx idx `uc  1 a 1 wreg ]
+[v LedGetter@idx idx `uc  1 a 1 wreg ]
+[v LedGetter@idx idx `uc  1 a 1 88 ]
+"87
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 80 ]
+"5
+[v printf@fmt fmt `*.34Cuc  1 p 2 47 ]
+"13
+} 0
+"54 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/contentFormat.c
+[v _Get_ToEthernet Get_ToEthernet `(v  1 e 1 0 ]
+{
+[v Get_ToEthernet@data data `l  1 p 4 83 ]
+[v Get_ToEthernet@type type `E206  1 p 1 87 ]
+"57
+} 0
+"17 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/cborCF.c
+[v _CBOREncoder CBOREncoder `(v  1 e 1 0 ]
+{
+"20
+[v CBOREncoder@str_val str_val `[11]uc  1 a 11 72 ]
+"17
+[v CBOREncoder@data data `l  1 p 4 67 ]
+[v CBOREncoder@type type `E1098  1 p 1 71 ]
+"44
+} 0
+"17 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/content_type/textPlainCF.c
+[v _TEXT_PLAINEncoder TEXT_PLAINEncoder `(v  1 e 1 0 ]
+{
+"20
+[v TEXT_PLAINEncoder@str_val str_val `[11]uc  1 a 11 72 ]
+"17
+[v TEXT_PLAINEncoder@data data `l  1 p 4 67 ]
+[v TEXT_PLAINEncoder@type type `E1098  1 p 1 71 ]
+"49
+} 0
+"187 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/cbor/cbor.c
+[v _CBOR_Encode_Unsigned_Int CBOR_Encode_Unsigned_Int `(v  1 e 1 0 ]
+{
+[v CBOR_Encode_Unsigned_Int@val val `ul  1 p 4 13 ]
+"196
+} 0
+"229
+[v _CBOR_Encode_Text_String CBOR_Encode_Text_String `(v  1 e 1 0 ]
+{
+"231
+[v CBOR_Encode_Text_String@len len `ul  1 a 4 22 ]
+[v CBOR_Encode_Text_String@length length `ul  1 a 4 18 ]
+"229
+[v CBOR_Encode_Text_String@textString textString `*.39Cuc  1 p 2 14 ]
+"258
+} 0
+"166
+[v _CBOR_Encode_Signed_Int CBOR_Encode_Signed_Int `(v  1 e 1 0 ]
+{
+[v CBOR_Encode_Signed_Int@val val `l  1 p 4 13 ]
+"185
+} 0
+"151
+[v _uint32_encodehandler uint32_encodehandler `(v  1 s 1 uint32_encodehandler ]
+{
+[v uint32_encodehandler@val val `ul  1 p 4 9 ]
+"154
+} 0
+"146
+[v _uint16_encodehandler uint16_encodehandler `(v  1 s 1 uint16_encodehandler ]
+{
+[v uint16_encodehandler@val val `ul  1 p 4 9 ]
+"149
+} 0
+"142
+[v _uint8_encodehandler uint8_encodehandler `(v  1 s 1 uint8_encodehandler ]
+{
+[v uint8_encodehandler@val val `ul  1 p 4 9 ]
+"145
+} 0
+"137
+[v _int32_encodehandler int32_encodehandler `(v  1 s 1 int32_encodehandler ]
+{
+[v int32_encodehandler@val val `l  1 p 4 9 ]
+"140
+} 0
+"132
+[v _int16_encodehandler int16_encodehandler `(v  1 s 1 int16_encodehandler ]
+{
+[v int16_encodehandler@val val `l  1 p 4 9 ]
+"135
+} 0
+"128
+[v _int8_encodehandler int8_encodehandler `(v  1 s 1 int8_encodehandler ]
+{
+[v int8_encodehandler@val val `l  1 p 4 9 ]
+"131
+} 0
+"109
+[v _encode_byte_follows_helper encode_byte_follows_helper `(uc  1 s 1 encode_byte_follows_helper ]
+{
+[v encode_byte_follows_helper@val val `uc  1 a 1 wreg ]
+[v encode_byte_follows_helper@val val `uc  1 a 1 wreg ]
+"111
+[v encode_byte_follows_helper@val val `uc  1 a 1 4 ]
+"115
+} 0
+"198
+[v _CBOR_Encode_Byte_String CBOR_Encode_Byte_String `(v  1 e 1 0 ]
+{
+"200
+[v CBOR_Encode_Byte_String@len len `ul  1 a 4 22 ]
+"201
+[v CBOR_Encode_Byte_String@length length `ul  1 a 4 18 ]
+"198
+[v CBOR_Encode_Byte_String@byteString byteString `*.39uc  1 p 2 14 ]
+"227
+} 0
+"101
+[v _cbor_uint_additional_info cbor_uint_additional_info `(uc  1 s 1 cbor_uint_additional_info ]
+{
+[v cbor_uint_additional_info@val val `ul  1 p 4 4 ]
+"108
+} 0
+"442
+[v _CBOR_Encode_Bool CBOR_Encode_Bool `(v  1 e 1 0 ]
+{
+[v CBOR_Encode_Bool@boolvalue boolvalue `a  1 a 1 wreg ]
+[v CBOR_Encode_Bool@boolvalue boolvalue `a  1 a 1 wreg ]
+"444
+[v CBOR_Encode_Bool@boolvalue boolvalue `a  1 a 1 6 ]
+"448
+} 0
+"172 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/Led.c
+[v _LedDeleter LedDeleter `(a  1 e 1 0 ]
+{
+"178
+} 0
+"1330 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_TxReset ETH_TxReset `(v  1 e 1 0 ]
+{
+"1332
+[v ETH_TxReset@econ1 econ1 `uc  1 a 1 12 ]
+"1343
+} 0
+"240
+[v _ETH_PacketListReset ETH_PacketListReset `(v  1 e 1 0 ]
+{
+"242
+[v ETH_PacketListReset@index index `us  1 a 2 6 ]
+"243
+[v ETH_PacketListReset@ptr ptr `*.39uc  1 a 2 4 ]
+"254
+} 0
+"239 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_resources.c
+[v _COAP_StartGetResponse COAP_StartGetResponse `(a  1 s 1 COAP_StartGetResponse ]
+{
+"241
+[v COAP_StartGetResponse@ret ret `E930  1 a 1 69 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"239
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_StartGetResponse@ptr ptr `*.39S373  1 p 2 67 ]
+"251
+} 0
+"196 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _COAP_MessageResponse COAP_MessageResponse `(a  1 e 1 0 ]
+{
+"198
+[v COAP_MessageResponse@ret ret `E1070  1 a 1 85 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"196
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_MessageResponse@ptr ptr `*.39S373  1 p 2 82 ]
+"218
+} 0
+"255 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_AddContentFormatOption COAP_AddContentFormatOption `(v  1 e 1 0 ]
+{
+[v COAP_AddContentFormatOption@contentFormat contentFormat `E1341  1 a 1 wreg ]
+[v COAP_AddContentFormatOption@contentFormat contentFormat `E1341  1 a 1 wreg ]
+"257
+[v COAP_AddContentFormatOption@contentFormat contentFormat `E1341  1 a 1 80 ]
+"260
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S7395 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S7395  1 a 6 59 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 65 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 47 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 49 ]
+"23
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1393
+[v vfprintf@cfmt cfmt `*.34uc  1 a 2 78 ]
+[s S7421 _IO_FILE 0 ]
+"1390
+[v vfprintf@fp fp `*.39S7421  1 p 2 41 ]
+[v vfprintf@fmt fmt `*.34Cuc  1 p 2 43 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 45 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+"697
+[v vfpfcnvrt@llu llu `uo  1 a 8 33 ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 22 ]
+"699
+[v vfpfcnvrt@vp vp `*.34v  1 a 2 30 ]
+"695
+[v vfpfcnvrt@done done `i  1 a 2 16 ]
+"694
+[v vfpfcnvrt@cp cp `*.34uc  1 a 2 14 ]
+[v vfpfcnvrt@c c `uc  1 a 1 32 ]
+[s S7421 _IO_FILE 0 ]
+"692
+[v vfpfcnvrt@fp fp `*.39S7421  1 p 2 72 ]
+[v vfpfcnvrt@fmt fmt `*.39*.34uc  1 p 2 74 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 76 ]
+"1387
+} 0
+"645
+[v _xtoa xtoa `(i  1 s 2 xtoa ]
+{
+"648
+[v xtoa@n n `uo  1 a 8 60 ]
+"647
+[v xtoa@c c `i  1 a 2 70 ]
+[v xtoa@i i `i  1 a 2 68 ]
+[v xtoa@w w `i  1 a 2 58 ]
+[v xtoa@p p `i  1 a 2 56 ]
+[s S7421 _IO_FILE 0 ]
+"645
+[v xtoa@fp fp `*.39S7421  1 p 2 33 ]
+[v xtoa@d d `uo  1 p 8 35 ]
+[v xtoa@x x `uc  1 p 1 43 ]
+"687
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+[v _toupper toupper `(i  1 e 2 0 ]
+{
+[v toupper@c c `i  1 p 2 10 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+[v _islower islower `(i  1 e 2 0 ]
+{
+[v islower@c c `i  1 p 2 4 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+[v _isupper isupper `(i  1 e 2 0 ]
+{
+[v isupper@c c `i  1 p 2 4 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+[v _isalpha isalpha `(i  1 e 2 0 ]
+{
+[v isalpha@c c `i  1 p 2 4 ]
+"8
+} 0
+"615 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _utoa utoa `(i  1 s 2 utoa ]
+{
+"618
+[v utoa@n n `uo  1 a 8 55 ]
+"617
+[v utoa@i i `i  1 a 2 63 ]
+[v utoa@w w `i  1 a 2 53 ]
+[v utoa@p p `i  1 a 2 51 ]
+[s S7421 _IO_FILE 0 ]
+"615
+[v utoa@fp fp `*.39S7421  1 p 2 33 ]
+[v utoa@d d `uo  1 p 8 35 ]
+"641
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 20 ]
+"9
+[v ___lomod@dividend dividend `uo  1 p 8 4 ]
+[v ___lomod@divisor divisor `uo  1 p 8 12 ]
+"27
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 20 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 28 ]
+"9
+[v ___lodiv@dividend dividend `uo  1 p 8 4 ]
+[v ___lodiv@divisor divisor `uo  1 p 8 12 ]
+"32
+} 0
+"568 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _stoa stoa `(i  1 s 2 stoa ]
+{
+"570
+[v stoa@nuls nuls `[7]uc  1 a 7 20 ]
+"571
+[v stoa@l l `i  1 a 2 35 ]
+[v stoa@p p `i  1 a 2 33 ]
+"570
+[v stoa@cp cp `*.34uc  1 a 2 31 ]
+"571
+[v stoa@w w `i  1 a 2 29 ]
+[v stoa@i i `i  1 a 2 27 ]
+[s S7421 _IO_FILE 0 ]
+"568
+[v stoa@fp fp `*.39S7421  1 p 2 15 ]
+[v stoa@s s `*.34uc  1 p 2 17 ]
+"570
+[v stoa@F1141 F1141 `[7]uc  1 s 7 F1141 ]
+"611
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+"290
+[v dtoa@n n `o  1 a 8 59 ]
+"289
+[v dtoa@i i `i  1 a 2 67 ]
+[v dtoa@s s `i  1 a 2 57 ]
+[v dtoa@w w `i  1 a 2 55 ]
+[v dtoa@p p `i  1 a 2 53 ]
+[s S7421 _IO_FILE 0 ]
+"287
+[v dtoa@fp fp `*.39S7421  1 p 2 33 ]
+[v dtoa@d d `o  1 p 8 35 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+"74
+[v pad@w w `i  1 a 2 31 ]
+[v pad@i i `i  1 a 2 29 ]
+[s S7421 _IO_FILE 0 ]
+"72
+[v pad@fp fp `*.39S7421  1 p 2 22 ]
+[v pad@buf buf `*.39uc  1 p 2 24 ]
+[v pad@p p `i  1 p 2 26 ]
+"95
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 20 ]
+"10
+[v fputs@c c `uc  1 a 1 19 ]
+"8
+[v fputs@s s `*.39Cuc  1 p 2 15 ]
+[s S7395 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S7395  1 p 2 17 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 6 ]
+[s S7395 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S7395  1 p 2 8 ]
+"24
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 22 ]
+"4
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 21 ]
+[v ___aomod@counter counter `uc  1 a 1 20 ]
+"9
+[v ___aomod@dividend dividend `o  1 p 8 4 ]
+[v ___aomod@divisor divisor `o  1 p 8 12 ]
+"36
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 22 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 21 ]
+[v ___aodiv@counter counter `uc  1 a 1 20 ]
+"9
+[v ___aodiv@dividend dividend `o  1 p 8 4 ]
+[v ___aodiv@divisor divisor `o  1 p 8 12 ]
+"43
+} 0
+"359 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_ParseOptions COAP_ParseOptions `(a  1 e 1 0 ]
+{
+"367
+[v COAP_ParseOptions@temp_opt_length_ext_16 temp_opt_length_ext_16 `us  1 a 2 71 ]
+"362
+[v COAP_ParseOptions@next_byte next_byte `uc  1 a 1 75 ]
+"361
+[v COAP_ParseOptions@ret ret `a  1 a 1 74 ]
+"368
+[v COAP_ParseOptions@temp_opt_length_ext_8 temp_opt_length_ext_8 `uc  1 a 1 73 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+"359
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_ParseOptions@ptr ptr `*.39S373  1 p 2 64 ]
+[v COAP_ParseOptions@length length `s  1 p 2 66 ]
+"453
+} 0
+"116 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _resetOptions resetOptions `(v  1 e 1 0 ]
+{
+"119
+} 0
+"274 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_DecodeOptions COAP_DecodeOptions `(a  1 s 1 COAP_DecodeOptions ]
+{
+"278
+[v COAP_DecodeOptions@value value `[32]uc  1 a 32 0 ]
+"277
+[v COAP_DecodeOptions@length length `us  1 a 2 35 ]
+"280
+[v COAP_DecodeOptions@val val `i  1 a 2 33 ]
+"279
+[v COAP_DecodeOptions@ret ret `a  1 a 1 37 ]
+"276
+[v COAP_DecodeOptions@type type `uc  1 a 1 32 ]
+[u S284 . 2 `uc 1 length_8 1 0 `us 1 length_16 2 0 ]
+"274
+[s S287 . 35 `uc 1 type 1 0 `S284 1 len 2 1 `[32]uc 1 opt_value 32 3 ]
+[v COAP_DecodeOptions@opt_ptr opt_ptr `*.39S287  1 p 2 57 ]
+[s S356 . 5 `uc 1 name 1 0 `ul 1 value 4 1 ]
+[s S359 . 48 `[7]uc 1 uri_host 7 0 `[10]uc 1 uri_path 10 7 `us 1 uri_port 2 17 `E1341 1 content_format 1 19 `E1341 1 accept_format 1 20 `[5]S356 1 queryList 25 21 `uc 1 uripath_count 1 46 `uc 1 uriquery_count 1 47 ]
+[s S373 . 73 `us 1 messageID 2 0 `[8]uc 1 token 8 2 `ul 1 destIP 4 10 `uc 1 code 1 14 `uc 1 type 1 15 `us 1 destPort 2 16 `us 1 srcPort 2 18 `S359 1 optlist 48 20 `uc 1 opt_count 1 68 `a 1 payload_waiting 1 69 `s 1 payload_length 2 70 `E1472 1 retCode 1 72 ]
+[v COAP_DecodeOptions@ptr ptr `*.39S373  1 p 2 59 ]
+"357
+} 0
+"132 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/datamodel/datamodel.c
+[v _setURIQuery setURIQuery `(v  1 e 1 0 ]
+{
+[v setURIQuery@uriQuery uriQuery `*.39uc  1 p 2 10 ]
+"139
+} 0
+"127
+[v _setURIPath setURIPath `(i  1 e 2 0 ]
+{
+[v setURIPath@uriPath uriPath `*.39uc  1 p 2 15 ]
+"130
+} 0
+"298
+[v _getIdxFromString getIdxFromString `(i  1 e 2 0 ]
+{
+"304
+[v getIdxFromString@i i `uc  1 a 1 14 ]
+[s S2443 . 33 `uc 1 strIdx 1 0 `[32]uc 1 String 32 1 ]
+"300
+[v getIdxFromString@hptr hptr `*.32S2443  1 a 2 12 ]
+"298
+[v getIdxFromString@str str `*.39uc  1 p 2 10 ]
+"311
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@l l `*.34Cuc  1 p 2 4 ]
+[v strcmp@r r `*.34Cuc  1 p 2 6 ]
+"7
+} 0
+"43 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ip_database.c
+[v _makeStrToIpv4Address makeStrToIpv4Address `(ul  1 e 4 0 ]
+{
+"45
+[v makeStrToIpv4Address@ip_addr ip_addr `ul  1 a 4 31 ]
+"46
+[v makeStrToIpv4Address@pch pch `*.34uc  1 a 2 35 ]
+"47
+[v makeStrToIpv4Address@x x `uc  1 a 1 30 ]
+"43
+[v makeStrToIpv4Address@str str `*.39uc  1 p 2 26 ]
+"56
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strtok.c
+[v _strtok strtok `(*.34uc  1 e 2 0 ]
+{
+[v strtok@s s `*.34uc  1 p 2 15 ]
+[v strtok@sep sep `*.32Cuc  1 p 2 17 ]
+"5
+[v strtok@p p `*.34uc  1 s 2 p ]
+"13
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strspn.c
+[v _strspn strspn `(ui  1 e 2 0 ]
+{
+"5
+[v strspn@i i `ui  1 a 2 13 ]
+"3
+[v strspn@s s `*.34Cuc  1 p 2 8 ]
+[v strspn@c c `*.32Cuc  1 p 2 10 ]
+"13
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcspn.c
+[v _strcspn strcspn `(ui  1 e 2 0 ]
+{
+"5
+[v strcspn@i i `ui  1 a 2 13 ]
+"3
+[v strcspn@s s `*.34Cuc  1 p 2 8 ]
+[v strcspn@c c `*.32Cuc  1 p 2 10 ]
+"13
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.32uc  1 e 2 0 ]
+{
+[v strchr@s s `*.32Cuc  1 p 2 4 ]
+[v strchr@c c `i  1 p 2 6 ]
+"11
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 24 ]
+[v atoi@neg neg `i  1 a 2 17 ]
+"4
+[v atoi@s s `*.34Cuc  1 p 2 11 ]
+"16
+} 0
+"252 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _COAP_ProcessBlock2Option COAP_ProcessBlock2Option `(a  1 e 1 0 ]
+{
+"255
+[v COAP_ProcessBlock2Option@block2OptionValue block2OptionValue `ul  1 a 4 53 ]
+"257
+[v COAP_ProcessBlock2Option@blockNum blockNum `ul  1 a 4 43 ]
+"259
+[v COAP_ProcessBlock2Option@szx szx `uc  1 a 1 52 ]
+"258
+[v COAP_ProcessBlock2Option@mBit mBit `a  1 a 1 51 ]
+"256
+[v COAP_ProcessBlock2Option@last4Bits last4Bits `uc  1 a 1 50 ]
+"254
+[v COAP_ProcessBlock2Option@ret ret `a  1 a 1 49 ]
+"252
+[v COAP_ProcessBlock2Option@destinationAddress destinationAddress `ul  1 p 4 31 ]
+[v COAP_ProcessBlock2Option@value value `*.39uc  1 p 2 35 ]
+[v COAP_ProcessBlock2Option@block2Length block2Length `us  1 p 2 37 ]
+"283
+} 0
+"285
+[v _COAP_FindClientIdxOrAddBlockClient COAP_FindClientIdxOrAddBlockClient `(i  1 s 2 COAP_FindClientIdxOrAddBlockClient ]
+{
+"289
+[v COAP_FindClientIdxOrAddBlockClient@i i `uc  1 a 1 15 ]
+"287
+[v COAP_FindClientIdxOrAddBlockClient@ret ret `i  1 a 2 12 ]
+"288
+[v COAP_FindClientIdxOrAddBlockClient@emptyIdx emptyIdx `uc  1 a 1 14 ]
+"285
+[v COAP_FindClientIdxOrAddBlockClient@destinationAddress destinationAddress `ul  1 p 4 4 ]
+"307
+} 0
+"458
+[v _COAP_ConfigBlockParams COAP_ConfigBlockParams `(a  1 s 1 COAP_ConfigBlockParams ]
+{
+[v COAP_ConfigBlockParams@szx szx `uc  1 a 1 wreg ]
+"460
+[v COAP_ConfigBlockParams@expectedBlock expectedBlock `ul  1 a 4 26 ]
+"458
+[v COAP_ConfigBlockParams@szx szx `uc  1 a 1 wreg ]
+[v COAP_ConfigBlockParams@blockNum blockNum `ul  1 p 4 14 ]
+"462
+[v COAP_ConfigBlockParams@szx szx `uc  1 a 1 30 ]
+"522
+} 0
+"340
+[v _setBlockSzx setBlockSzx `(v  1 s 1 setBlockSzx ]
+{
+[v setBlockSzx@szx szx `E1634  1 a 1 wreg ]
+[v setBlockSzx@szx szx `E1634  1 a 1 wreg ]
+"342
+[v setBlockSzx@szx szx `E1634  1 a 1 10 ]
+"343
+} 0
+"345
+[v _setBlockNum setBlockNum `(v  1 s 1 setBlockNum ]
+{
+[v setBlockNum@blockNum blockNum `ul  1 p 4 10 ]
+"348
+} 0
+"355
+[v _setBlockInBytes setBlockInBytes `(v  1 s 1 setBlockInBytes ]
+{
+[v setBlockInBytes@blockBytes blockBytes `us  1 p 2 10 ]
+"358
+} 0
+"373
+[v _getMBit getMBit `(a  1 s 1 getMBit ]
+{
+"376
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+"30
+} 0
+"62 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_receive.c
+[v _COAP_ReadRecivedHeaderAndToken COAP_ReadRecivedHeaderAndToken `(c  1 s 1 COAP_ReadRecivedHeaderAndToken ]
+{
+"64
+[v COAP_ReadRecivedHeaderAndToken@ret ret `c  1 a 1 32 ]
+"97
+} 0
+"99
+[v _COAP_setReceivedClientToken COAP_setReceivedClientToken `(v  1 s 1 COAP_setReceivedClientToken ]
+{
+[v COAP_setReceivedClientToken@tkn tkn `*.39uc  1 p 2 28 ]
+[v COAP_setReceivedClientToken@tkl tkl `uc  1 p 1 30 ]
+"103
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncpy.c
+[v _strncpy strncpy `(*.39uc  1 e 2 0 ]
+{
+"5
+[v strncpy@cp cp `*.39uc  1 a 2 22 ]
+"3
+[v strncpy@d d `*.39uc  1 p 2 14 ]
+[v strncpy@s s `*.34Cuc  1 p 2 16 ]
+[v strncpy@n n `ui  1 p 2 18 ]
+"15
+} 0
+"198 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_FreeEndpointMessageIDTokenPairIfMatched COAP_FreeEndpointMessageIDTokenPairIfMatched `(a  1 e 1 0 ]
+{
+"202
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@i i `uc  1 a 1 45 ]
+"200
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@ret ret `a  1 a 1 44 ]
+"198
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@receviedIPAddress receviedIPAddress `ul  1 p 4 30 ]
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@messageID messageID `us  1 p 2 34 ]
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@token token `*.39uc  1 p 2 36 ]
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@tokenLength tokenLength `uc  1 p 1 38 ]
+[v COAP_FreeEndpointMessageIDTokenPairIfMatched@type type `E1399  1 p 1 39 ]
+"240
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+"5
+[v strncmp@r r `*.34Cuc  1 a 2 24 ]
+[v strncmp@l l `*.34Cuc  1 a 2 22 ]
+"3
+[v strncmp@_l _l `*.34Cuc  1 p 2 14 ]
+[v strncmp@_r _r `*.34Cuc  1 p 2 16 ]
+[v strncmp@n n `ui  1 p 2 18 ]
+"9
+} 0
+"70 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_PseudoHeaderChecksum IPV4_PseudoHeaderChecksum `(us  1 e 2 0 ]
+{
+[s S4425 . 12 `ul 1 srcIpAddress 4 0 `ul 1 dstIpAddress 4 4 `uc 1 protocol 1 8 `uc 1 z 1 9 `us 1 length 2 10 ]
+"72
+[v IPV4_PseudoHeaderChecksum@tmp tmp `S4425  1 a 12 21 ]
+"74
+[v IPV4_PseudoHeaderChecksum@cksm cksm `ul  1 a 4 17 ]
+"75
+[v IPV4_PseudoHeaderChecksum@v v `*.39us  1 a 2 14 ]
+"73
+[v IPV4_PseudoHeaderChecksum@len len `uc  1 a 1 16 ]
+"70
+[v IPV4_PseudoHeaderChecksum@payloadLen payloadLen `us  1 p 2 4 ]
+"100
+} 0
+"58 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/icmp.c
+[v _ICMP_Receive ICMP_Receive `(E614  1 e 1 0 ]
+{
+[s S4844 . 2 `uc 1 code 1 0 `uc 1 type 1 1 ]
+"60
+[u S4847 . 2 `us 1 typeCode 2 0 `S4844 1 . 2 0 ]
+[s S4850 . 4 `S4847 1 . 2 0 `us 1 checksum 2 2 ]
+[v ICMP_Receive@icmpHdr icmpHdr `S4850  1 a 4 63 ]
+[s S1248 . 20 `uc 1 ihl 1 0 :4:0 
+`uc 1 version 1 0 :4:4 
+`uc 1 ecn 1 1 :2:0 
+`uc 1 dscp 1 1 :6:2 
+`us 1 length 2 2 `us 1 identifcation 2 4 `uc 1 fragmentOffsetHigh 1 6 :5:0 
+`uc 1 . 1 6 :1:5 
+`uc 1 dontFragment 1 6 :1:6 
+`uc 1 moreFragments 1 6 :1:7 
+`uc 1 fragmentOffsetLow 1 7 `uc 1 timeToLive 1 8 `uc 1 protocol 1 9 `us 1 headerCksm 2 10 `ul 1 srcIpAddress 4 12 `ul 1 dstIpAddress 4 16 ]
+"58
+[v ICMP_Receive@ipv4Hdr ipv4Hdr `*.39S1248  1 p 2 83 ]
+"88
+} 0
+"99
+[v _ICMP_EchoReply ICMP_EchoReply `(E614  1 e 1 0 ]
+{
+"112
+[v ICMP_EchoReply@ipv4PayloadLength ipv4PayloadLength `us  1 a 2 56 ]
+"111
+[v ICMP_EchoReply@icmp_cksm_start icmp_cksm_start `us  1 a 2 52 ]
+"101
+[v ICMP_EchoReply@cksm cksm `us  1 a 2 54 ]
+"104
+[v ICMP_EchoReply@sequence sequence `us  1 a 2 50 ]
+"103
+[v ICMP_EchoReply@identifier identifier `us  1 a 2 48 ]
+"102
+[v ICMP_EchoReply@ret ret `E614  1 a 1 58 ]
+[s S1248 . 20 `uc 1 ihl 1 0 :4:0 
+`uc 1 version 1 0 :4:4 
+`uc 1 ecn 1 1 :2:0 
+`uc 1 dscp 1 1 :6:2 
+`us 1 length 2 2 `us 1 identifcation 2 4 `uc 1 fragmentOffsetHigh 1 6 :5:0 
+`uc 1 . 1 6 :1:5 
+`uc 1 dontFragment 1 6 :1:6 
+`uc 1 moreFragments 1 6 :1:7 
+`uc 1 fragmentOffsetLow 1 7 `uc 1 timeToLive 1 8 `uc 1 protocol 1 9 `us 1 headerCksm 2 10 `ul 1 srcIpAddress 4 12 `ul 1 dstIpAddress 4 16 ]
+"99
+[v ICMP_EchoReply@ipv4Hdr ipv4Hdr `*.39S1248  1 p 2 81 ]
+"135
+} 0
+"1249 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_SaveRDPT ETH_SaveRDPT `(v  1 e 1 0 ]
+{
+"1252
+} 0
+"672
+[v _ETH_Read16 ETH_Read16 `(us  1 e 2 0 ]
+{
+"674
+[v ETH_Read16@b b `us  1 a 2 8 ]
+"683
+} 0
+"1020
+[v _ETH_Copy ETH_Copy `(E9844  1 e 1 0 ]
+{
+"1024
+[v ETH_Copy@temp_len temp_len `us  1 a 2 19 ]
+"1023
+[v ETH_Copy@timer timer `us  1 a 2 17 ]
+"1022
+[v ETH_Copy@tx_buffer_address tx_buffer_address `us  1 a 2 15 ]
+"1020
+[v ETH_Copy@len len `us  1 p 2 12 ]
+"1066
+} 0
+"964
+[v _ETH_Dump ETH_Dump `(v  1 e 1 0 ]
+{
+"966
+[v ETH_Dump@newRXTail newRXTail `us  1 a 2 14 ]
+"964
+[v ETH_Dump@length length `us  1 p 2 12 ]
+"977
+} 0
+"1204
+[v _ETH_RxComputeChecksum ETH_RxComputeChecksum `(us  1 e 2 0 ]
+{
+"1207
+[v ETH_RxComputeChecksum@cksm cksm `ul  1 a 4 34 ]
+"1206
+[v ETH_RxComputeChecksum@rxptr rxptr `us  1 a 2 32 ]
+"1204
+[v ETH_RxComputeChecksum@len len `us  1 p 2 24 ]
+[v ETH_RxComputeChecksum@seed seed `us  1 p 2 26 ]
+"1219
+} 0
+"1121
+[v _ETH_ComputeChecksum ETH_ComputeChecksum `(us  1 s 2 ETH_ComputeChecksum ]
+{
+"1123
+[v ETH_ComputeChecksum@cksm cksm `ul  1 a 4 18 ]
+"1124
+[v ETH_ComputeChecksum@v v `us  1 a 2 22 ]
+"1121
+[v ETH_ComputeChecksum@len len `us  1 p 2 6 ]
+[v ETH_ComputeChecksum@seed seed `us  1 p 2 8 ]
+"1156
+} 0
+"656
+[v _ETH_Read8 ETH_Read8 `(uc  1 e 1 0 ]
+{
+"658
+[v ETH_Read8@b b `uc  1 a 1 5 ]
+"666
+} 0
+"470
+[v _ETH_NextPacketUpdate ETH_NextPacketUpdate `(v  1 e 1 0 ]
+{
+"492
+} 0
+"982
+[v _ETH_Flush ETH_Flush `(v  1 e 1 0 ]
+{
+"990
+} 0
+"101 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Packet ARPV4_Packet `(E10466  1 e 1 0 ]
+{
+"141
+[v ARPV4_Packet@x_3887 x `uc  1 a 1 7 ]
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"140
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[s S3753 . 13 `S2968 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Packet@arpPtr arpPtr `*.39S3753  1 a 2 4 ]
+"122
+[v ARPV4_Packet@x x `uc  1 a 1 6 ]
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"103
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[s S3789 . 28 `us 1 htype 2 0 `us 1 ptype 2 2 `uc 1 hlen 1 4 `uc 1 plen 1 5 `us 1 oper 2 6 `S2968 1 sha 6 8 `ul 1 spa 4 14 `S2968 1 tha 6 18 `ul 1 tpa 4 24 ]
+[v ARPV4_Packet@header header `S3789  1 a 28 10 ]
+"104
+[s S3753 . 13 `S2968 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Packet@entryPointer entryPointer `*.39S3753  1 a 2 8 ]
+"106
+[v ARPV4_Packet@length length `us  1 a 2 0 ]
+"107
+[v ARPV4_Packet@ret ret `E779  1 a 1 3 ]
+"105
+[v ARPV4_Packet@mergeFlag mergeFlag `a  1 a 1 2 ]
+"181
+} 0
+"710 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_ReadBlock ETH_ReadBlock `(us  1 e 2 0 ]
+{
+"712
+[v ETH_ReadBlock@readCount readCount `us  1 a 2 11 ]
+"713
+[v ETH_ReadBlock@p p `*.39uc  1 a 2 9 ]
+"710
+[v ETH_ReadBlock@buffer buffer `*.39v  1 p 2 5 ]
+[v ETH_ReadBlock@length length `us  1 p 2 7 ]
+"724
+} 0
+"414
+[v _ETH_EventHandler ETH_EventHandler `(v  1 e 1 0 ]
+{
+[s S3206 . 3 `uc 1 . 1 0 :5:0 
+`uc 1 PLRITY 1 0 :1:5 
+`uc 1 . 1 1 :3:0 
+`uc 1 DPXSTAT 1 1 :1:3 
+`uc 1 LSTAT 1 1 :1:4 
+`uc 1 COLSTAT 1 1 :1:5 
+`uc 1 RXSTAT 1 1 :1:6 
+`uc 1 TXSTAT 1 1 :1:7 
+`uc 1 . 1 2 :2:0 
+]
+"417
+[u S3216 . 3 `ui 1 val 2 0 `S3206 1 . 3 0 ]
+[v ETH_EventHandler@phstat2_val phstat2_val `S3216  1 a 3 23 ]
+[s S3194 . 1 `uc 1 RXERIF 1 0 :1:0 
+`uc 1 TXERIF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TXIF 1 0 :1:3 
+`uc 1 LINKIF 1 0 :1:4 
+`uc 1 DMAIF 1 0 :1:5 
+`uc 1 PKTIF 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+"416
+[u S3203 . 1 `uc 1 val 1 0 `S3194 1 . 1 0 ]
+[v ETH_EventHandler@eir_val eir_val `S3203  1 a 1 26 ]
+"465
+} 0
+"261
+[v _ETH_RemovePacket ETH_RemovePacket `(v  1 e 1 0 ]
+{
+[s S2998 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+[v ETH_RemovePacket@pPacket pPacket `*.39S2998  1 p 2 4 ]
+"314
+} 0
+"210 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[v _DHCP_Manage DHCP_Manage `(v  1 e 1 0 ]
+{
+"213
+[v DHCP_Manage@now now `o  1 a 8 54 ]
+"212
+[v DHCP_Manage@managementTimer managementTimer `o  1 s 8 managementTimer ]
+"271
+} 0
+"137
+[v _sendDHCPREQUEST sendDHCPREQUEST `(a  1 e 1 0 ]
+{
+"141
+} 0
+"124
+[v _sendDHCPDISCOVER sendDHCPDISCOVER `(a  1 e 1 0 ]
+{
+"135
+} 0
+"148
+[v _sendRequest sendRequest `(a  1 e 1 0 ]
+{
+[v sendRequest@type type `E1233  1 a 1 wreg ]
+"151
+[v sendRequest@started started `E978  1 a 1 82 ]
+"148
+[v sendRequest@type type `E1233  1 a 1 wreg ]
+"154
+[v sendRequest@type type `E1233  1 a 1 83 ]
+"203
+} 0
+"780 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_WriteString ETH_WriteString `(us  1 e 2 0 ]
+{
+"782
+[v ETH_WriteString@length length `us  1 a 2 7 ]
+"780
+[v ETH_WriteString@string string `*.34Cuc  1 p 2 5 ]
+"795
+} 0
+"524 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/dhcp_client.c
+[v _DHCP_WriteZeros DHCP_WriteZeros `(v  1 e 1 0 ]
+{
+[v DHCP_WriteZeros@length length `us  1 p 2 6 ]
+"530
+} 0
+"80 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/lfsr.c
+[v _lfsrWithSeed lfsrWithSeed `(uc  1 e 1 0 ]
+{
+[v lfsrWithSeed@lfsrSeed lfsrSeed `uc  1 a 1 wreg ]
+"83
+[v lfsrWithSeed@lsb lsb `uc  1 a 1 5 ]
+"80
+[v lfsrWithSeed@lfsrSeed lfsrSeed `uc  1 a 1 wreg ]
+"82
+[v lfsrWithSeed@lfsrSeed lfsrSeed `uc  1 a 1 4 ]
+"88
+} 0
+"165 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_CheckLinkUp ETH_CheckLinkUp `(a  1 e 1 0 ]
+{
+"167
+[v ETH_CheckLinkUp@phstat2 phstat2 `us  1 a 2 16 ]
+"178
+} 0
+"630
+[v _ENC28_PhyRead ENC28_PhyRead `(us  1 s 2 ENC28_PhyRead ]
+{
+[v ENC28_PhyRead@a a `E10153  1 a 1 wreg ]
+[v ENC28_PhyRead@a a `E10153  1 a 1 wreg ]
+"632
+[v ENC28_PhyRead@a a `E10153  1 a 1 15 ]
+"638
+} 0
+"135 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_Manage COAP_Manage `(v  1 e 1 0 ]
+{
+"139
+} 0
+"305
+[v _COAP_TransmitMessageManage COAP_TransmitMessageManage `(v  1 s 1 COAP_TransmitMessageManage ]
+{
+"307
+[v COAP_TransmitMessageManage@now now `o  1 a 8 52 ]
+"308
+[v COAP_TransmitMessageManage@i i `uc  1 a 1 60 ]
+"336
+} 0
+"496
+[v _CoAP_Payload CoAP_Payload `(v  1 s 1 CoAP_Payload ]
+{
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+"498
+[v CoAP_Payload@hptr hptr `*.2S1539  1 a 2 10 ]
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+"496
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v CoAP_Payload@ptr ptr `*.39S1571  1 p 2 6 ]
+"510
+} 0
+"527
+[v _COAP_EndofOptions COAP_EndofOptions `(v  1 e 1 0 ]
+{
+"530
+} 0
+"512
+[v _CoAP_ObservePayload CoAP_ObservePayload `(v  1 s 1 CoAP_ObservePayload ]
+{
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v CoAP_ObservePayload@ptr ptr `*.39S1571  1 p 2 4 ]
+"525
+} 0
+"532
+[v _COAP_Send COAP_Send `(E930  1 e 1 0 ]
+{
+"538
+} 0
+"97 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4.c
+[v _UDP_Send UDP_Send `(E1070  1 e 1 0 ]
+{
+"99
+[v UDP_Send@udpLength udpLength `us  1 a 2 48 ]
+"100
+[v UDP_Send@cksm cksm `us  1 a 2 46 ]
+"101
+[v UDP_Send@ret ret `E627  1 a 1 45 ]
+"122
+} 0
+"263 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPV4_Send IPV4_Send `(E627  1 e 1 0 ]
+{
+"265
+[v IPV4_Send@totalLength totalLength `us  1 a 2 39 ]
+"266
+[v IPV4_Send@cksm cksm `us  1 a 2 37 ]
+"267
+[v IPV4_Send@ret ret `E614  1 a 1 36 ]
+"263
+[v IPV4_Send@payloadLength payloadLength `us  1 p 2 30 ]
+"281
+} 0
+"1164 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_TxComputeChecksum ETH_TxComputeChecksum `(us  1 e 2 0 ]
+{
+"1166
+[v ETH_TxComputeChecksum@cksm cksm `ul  1 a 4 26 ]
+"1164
+[v ETH_TxComputeChecksum@position position `us  1 p 2 12 ]
+[v ETH_TxComputeChecksum@length length `us  1 p 2 14 ]
+[v ETH_TxComputeChecksum@seed seed `us  1 p 2 16 ]
+"1196
+} 0
+"585
+[v _ENC28_Bfs ENC28_Bfs `(v  1 s 1 ENC28_Bfs ]
+{
+[v ENC28_Bfs@a a `E10038  1 a 1 wreg ]
+[v ENC28_Bfs@a a `E10038  1 a 1 wreg ]
+[v ENC28_Bfs@bits bits `uc  1 p 1 7 ]
+"587
+[v ENC28_Bfs@a a `E10038  1 a 1 8 ]
+"592
+} 0
+"599
+[v _ENC28_Bfc ENC28_Bfc `(v  1 s 1 ENC28_Bfc ]
+{
+[v ENC28_Bfc@a a `E10038  1 a 1 wreg ]
+[v ENC28_Bfc@a a `E10038  1 a 1 wreg ]
+[v ENC28_Bfc@bits bits `uc  1 p 1 7 ]
+"601
+[v ENC28_Bfc@a a `E10038  1 a 1 8 ]
+"606
+} 0
+"998
+[v _ETH_Insert ETH_Insert `(v  1 e 1 0 ]
+{
+"1000
+[v ETH_Insert@current_tx_pointer current_tx_pointer `us  1 a 2 22 ]
+"998
+[v ETH_Insert@data data `*.39uc  1 p 2 14 ]
+[v ETH_Insert@len len `us  1 p 2 16 ]
+[v ETH_Insert@offset offset `us  1 p 2 18 ]
+"1013
+} 0
+"1299
+[v _ETH_GetByteCount ETH_GetByteCount `(us  1 e 2 0 ]
+{
+"1301
+[v ETH_GetByteCount@wptr wptr `us  1 a 2 14 ]
+"1306
+} 0
+"460 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_Request COAP_Request `(E1070  1 s 1 COAP_Request ]
+{
+"462
+[v COAP_Request@ret ret `E1070  1 a 1 84 ]
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+"460
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v COAP_Request@ptr ptr `*.39S1571  1 p 2 82 ]
+"479
+} 0
+"69 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/udpv4.c
+[v _UDP_Start UDP_Start `(E1070  1 e 1 0 ]
+{
+"72
+[v UDP_Start@ret ret `E627  1 a 1 81 ]
+"69
+[v UDP_Start@destIP destIP `ul  1 p 4 44 ]
+[v UDP_Start@srcPort srcPort `us  1 p 2 48 ]
+[v UDP_Start@dstPort dstPort `us  1 p 2 50 ]
+"95
+} 0
+"207 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ipv4.c
+[v _IPv4_Start IPv4_Start `(E627  1 e 1 0 ]
+{
+"212
+[v IPv4_Start@targetAddress targetAddress `ul  1 a 4 37 ]
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"211
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v IPv4_Start@destMacAddress destMacAddress `*.34CS2968  1 a 2 41 ]
+"209
+[v IPv4_Start@ret ret `E614  1 a 1 43 ]
+"207
+[v IPv4_Start@destAddress destAddress `ul  1 p 4 76 ]
+[v IPv4_Start@protocol protocol `E471  1 p 1 80 ]
+"261
+} 0
+"202 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Request ARPV4_Request `(E779  1 e 1 0 ]
+{
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"208
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[s S3789 . 28 `us 1 htype 2 0 `us 1 ptype 2 2 `uc 1 hlen 1 4 `uc 1 plen 1 5 `us 1 oper 2 6 `S2968 1 sha 6 8 `ul 1 spa 4 14 `S2968 1 tha 6 18 `ul 1 tpa 4 24 ]
+[v ARPV4_Request@header header `S3789  1 a 28 1 ]
+"204
+[v ARPV4_Request@ret ret `E779  1 a 1 0 ]
+"202
+[v ARPV4_Request@destAddress destAddress `ul  1 p 4 40 ]
+"235
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+{
+"8
+[v memcpy@s s `*.39Cuc  1 a 2 13 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 11 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 10 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 4 ]
+[v memcpy@s1 s1 `*.39Cv  1 p 2 6 ]
+[v memcpy@n n `ui  1 p 2 8 ]
+"18
+} 0
+"833 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_WriteStart ETH_WriteStart `(E9844  1 e 1 0 ]
+{
+[s S2998 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"835
+[v ETH_WriteStart@ethPacket ethPacket `*.39S2998  1 a 2 29 ]
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"833
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v ETH_WriteStart@dest_mac dest_mac `*.34CS2968  1 p 2 23 ]
+[v ETH_WriteStart@type type `us  1 p 2 25 ]
+"896
+} 0
+"1074
+[v _ETH_Shift_Tx_Packets ETH_Shift_Tx_Packets `(E9844  1 e 1 0 ]
+{
+[s S2998 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"1100
+[v ETH_Shift_Tx_Packets@pElem pElem `*.39S2998  1 a 2 21 ]
+"1101
+[v ETH_Shift_Tx_Packets@shiftOffset shiftOffset `us  1 a 2 14 ]
+"1078
+[v ETH_Shift_Tx_Packets@len len `us  1 a 2 19 ]
+"1077
+[v ETH_Shift_Tx_Packets@timer timer `us  1 a 2 16 ]
+"1076
+[v ETH_Shift_Tx_Packets@econ1 econ1 `uc  1 a 1 18 ]
+"1119
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 8 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 4 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
+"53
+} 0
+"1294 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_ResetByteCount ETH_ResetByteCount `(v  1 e 1 0 ]
+{
+"1297
+} 0
+"90 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[s S2998 . 10 `us 1 flags 2 0 `us 1 packetStart 2 2 `us 1 packetEnd 2 4 `*.39v 1 prevPacket 2 6 `*.39v 1 nextPacket 2 8 ]
+"185 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_NewPacket ETH_NewPacket `(*.39S2998  1 e 2 0 ]
+{
+"187
+[v ETH_NewPacket@index index `uc  1 a 1 8 ]
+"233
+} 0
+"932
+[v _ETH_Send ETH_Send `(E9844  1 e 1 0 ]
+{
+"934
+[v ETH_Send@packetEnd packetEnd `us  1 a 2 19 ]
+"957
+} 0
+"902
+[v _ETH_SendQueued ETH_SendQueued `(E9844  1 e 1 0 ]
+{
+"904
+[v ETH_SendQueued@econ1 econ1 `uc  1 a 1 14 ]
+"926
+} 0
+"146 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/eusart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"148
+[v putch@txData txData `uc  1 a 1 5 ]
+"149
+} 0
+"132
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 4 ]
+"139
+} 0
+"550 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ENC28_Wcr8 ENC28_Wcr8 `(v  1 s 1 ENC28_Wcr8 ]
+{
+[v ENC28_Wcr8@a a `E10038  1 a 1 wreg ]
+[v ENC28_Wcr8@a a `E10038  1 a 1 wreg ]
+[v ENC28_Wcr8@v v `uc  1 p 1 7 ]
+"552
+[v ENC28_Wcr8@a a `E10038  1 a 1 8 ]
+"557
+} 0
+"564
+[v _ENC28_Wcr16 ENC28_Wcr16 `(v  1 s 1 ENC28_Wcr16 ]
+{
+[v ENC28_Wcr16@a a `E10038  1 a 1 wreg ]
+[v ENC28_Wcr16@a a `E10038  1 a 1 wreg ]
+[v ENC28_Wcr16@v v `us  1 p 2 7 ]
+"566
+[v ENC28_Wcr16@a a `E10038  1 a 1 9 ]
+"578
+} 0
+"507
+[v _ENC28_Rcr8 ENC28_Rcr8 `(uc  1 s 1 ENC28_Rcr8 ]
+{
+[v ENC28_Rcr8@a a `E10038  1 a 1 wreg ]
+"509
+[v ENC28_Rcr8@v v `uc  1 a 1 7 ]
+"507
+[v ENC28_Rcr8@a a `E10038  1 a 1 wreg ]
+"511
+[v ENC28_Rcr8@a a `E10038  1 a 1 8 ]
+"518
+} 0
+"525
+[v _ENC28_Rcr16 ENC28_Rcr16 `(us  1 s 2 ENC28_Rcr16 ]
+{
+[v ENC28_Rcr16@a a `E10038  1 a 1 wreg ]
+"527
+[v ENC28_Rcr16@v v `us  1 a 2 9 ]
+"525
+[v ENC28_Rcr16@a a `E10038  1 a 1 wreg ]
+"529
+[v ENC28_Rcr16@a a `E10038  1 a 1 11 ]
+"543
+} 0
+"139
+[v _ENC28_BankSel ENC28_BankSel `(v  1 s 1 ENC28_BankSel ]
+{
+[v ENC28_BankSel@r r `E10038  1 a 1 wreg ]
+"141
+[v ENC28_BankSel@a a `uc  1 a 1 6 ]
+"139
+[v ENC28_BankSel@r r `E10038  1 a 1 wreg ]
+"141
+[v ENC28_BankSel@r r `E10038  1 a 1 5 ]
+"159
+} 0
+"49 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/mac_address.h
+"51
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"242 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[v _ARPV4_Lookup ARPV4_Lookup `(*.39S2968  1 e 2 0 ]
+{
+"244
+[s S3753 . 13 `S2968 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Lookup@entry_pointer entry_pointer `*.39S3753  1 a 2 12 ]
+"245
+[v ARPV4_Lookup@x x `uc  1 a 1 14 ]
+"242
+[v ARPV4_Lookup@ip_address ip_address `ul  1 p 4 4 ]
+"254
+} 0
+"481 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_Options COAP_Options `(v  1 s 1 COAP_Options ]
+{
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+"483
+[v COAP_Options@hptr hptr `*.32S1536  1 a 2 54 ]
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+"481
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v COAP_Options@ptr ptr `*.39S1571  1 p 2 50 ]
+"494
+} 0
+"457 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_ResetLastOptionNumber COAP_ResetLastOptionNumber `(v  1 e 1 0 ]
+{
+"461
+} 0
+"236
+[v _COAP_AddWellKnownURIPathOptions COAP_AddWellKnownURIPathOptions `(v  1 e 1 0 ]
+{
+"240
+} 0
+"185
+[v _COAP_AddOptions COAP_AddOptions `(v  1 s 1 COAP_AddOptions ]
+{
+[v COAP_AddOptions@type type `E1706  1 a 1 wreg ]
+"187
+[v COAP_AddOptions@integerFormatOptionValue integerFormatOptionValue `ul  1 a 4 46 ]
+"185
+[v COAP_AddOptions@type type `E1706  1 a 1 wreg ]
+[v COAP_AddOptions@value value `*.34Cuc  1 p 2 40 ]
+[v COAP_AddOptions@format format `E1726  1 p 1 42 ]
+[v COAP_AddOptions@type type `E1706  1 a 1 45 ]
+"234
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.34Cuc  1 a 2 12 ]
+"5
+[v strlen@s s `*.34Cuc  1 p 2 10 ]
+"12
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atol.c
+[v _atol atol `(l  1 e 4 0 ]
+{
+"6
+[v atol@n n `l  1 a 4 32 ]
+"7
+[v atol@neg neg `i  1 a 2 25 ]
+"4
+[v atol@s s `*.34Cuc  1 p 2 16 ]
+"17
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 4 ]
+"8
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 4 ]
+"8
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 12 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 4 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 8 ]
+"129
+} 0
+"802 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_WriteBlock ETH_WriteBlock `(us  1 e 2 0 ]
+{
+"804
+[v ETH_WriteBlock@p p `*.34Cuc  1 a 2 38 ]
+"802
+[v ETH_WriteBlock@data data `*.34Cuc  1 p 2 34 ]
+[v ETH_WriteBlock@length length `us  1 p 2 36 ]
+"814
+} 0
+"757
+[v _ETH_Write32 ETH_Write32 `(v  1 e 1 0 ]
+{
+[v ETH_Write32@data data `ul  1 p 4 5 ]
+"767
+} 0
+"769
+[v _ETH_Write24 ETH_Write24 `(v  1 e 1 0 ]
+{
+[v ETH_Write24@data data `ul  1 p 4 5 ]
+"778
+} 0
+"142 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_options.c
+[v _COAP_DeltaLength COAP_DeltaLength `(v  1 s 1 COAP_DeltaLength ]
+{
+"169
+} 0
+"172
+[v _getOptionNibble getOptionNibble `(uc  1 s 1 getOptionNibble ]
+{
+[v getOptionNibble@optionValue optionValue `ul  1 p 4 4 ]
+"183
+} 0
+"730 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[v _ETH_Write8 ETH_Write8 `(v  1 e 1 0 ]
+{
+[v ETH_Write8@data data `uc  1 a 1 wreg ]
+[v ETH_Write8@data data `uc  1 a 1 wreg ]
+"732
+[v ETH_Write8@data data `uc  1 a 1 5 ]
+"737
+} 0
+"743
+[v _ETH_Write16 ETH_Write16 `(v  1 e 1 0 ]
+{
+[v ETH_Write16@data data `us  1 p 2 5 ]
+"751
+} 0
+"98 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/spi1.c
+[v _SPI1_ExchangeByte SPI1_ExchangeByte `(uc  1 e 1 0 ]
+{
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+[v SPI1_ExchangeByte@data data `uc  1 a 1 wreg ]
+"100
+[v SPI1_ExchangeByte@data data `uc  1 a 1 4 ]
+"104
+} 0
+"249 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_transmit.c
+[v _COAP_InitTimers COAP_InitTimers `(a  1 s 1 COAP_InitTimers ]
+{
+"251
+[v COAP_InitTimers@ret ret `a  1 a 1 64 ]
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+"249
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v COAP_InitTimers@ptr ptr `*.39S1571  1 p 2 30 ]
+[v COAP_InitTimers@now now `o  1 p 8 32 ]
+"303
+} 0
+"190
+[v _COAP_FreeClient COAP_FreeClient `(v  1 s 1 COAP_FreeClient ]
+{
+[s S1205 . 2 `uc 1 tkl 1 0 :4:0 
+`uc 1 t 1 0 :2:4 
+`uc 1 ver 1 0 :2:6 
+`uc 1 code 1 1 ]
+[s S1536 . 2 `*.37(v 1 addOptions 2 0 ]
+[s S1539 . 2 `*.37(v 1 addPayload 2 0 ]
+[s S1547 . 2 `*.37(v 1 addObservePayload 2 0 ]
+[s S1554 . 48 `o 1 init_time 8 0 `o 1 COAP_Timeout 8 8 `o 1 COAP_MaxRetransmit 8 16 `o 1 COAP_Lifetime 8 24 `o 1 ret_counter 8 32 `o 1 init_retcounter 8 40 ]
+[s S1567 . 4 `a 1 isObserveServerFlag 1 0 `s 1 observedVertexIndex 2 1 `E1268 1 observedAcceptFormat 1 3 ]
+[s S1571 . 83 `S1205 1 coapHeader 2 0 `*.32S1536 1 option 2 2 `*.2S1539 1 payload 2 4 `*.2S1547 1 observePayload 2 6 `us 1 messageID 2 8 `[8]uc 1 token 8 10 `ul 1 destIP 4 18 `S1554 1 coapTime 48 22 `E1611 1 coapTimerState 1 70 `us 1 destPort 2 71 `us 1 srcPort 2 73 `S1567 1 observeNotifiers 4 75 `uc 1 retransmission 1 79 `uc 1 ackReceived 1 80 `uc 1 rstReceived 1 81 `uc 1 isMaxAge 1 82 ]
+[v COAP_FreeClient@ptr ptr `*.39S1571  1 p 2 28 ]
+"196
+} 0
+"524 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/CoAP/coap_blockwise.c
+[v _COAP_BlockClientManage COAP_BlockClientManage `(v  1 e 1 0 ]
+{
+"527
+} 0
+"309
+[v _COAP_FreeBlockClient COAP_FreeBlockClient `(v  1 s 1 COAP_FreeBlockClient ]
+{
+"311
+[v COAP_FreeBlockClient@i i `uc  1 a 1 44 ]
+"336
+} 0
+"161 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _time time `(o  1 e 8 0 ]
+{
+"164
+[v time@the_time the_time `o  1 a 8 13 ]
+"163
+[v time@gie_val gie_val `a  1 a 1 12 ]
+"161
+[v time@t t `*.39o  1 p 2 4 ]
+"177
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\memset.c
+[v _memset memset `(*.34v  1 e 2 0 ]
+{
+"6
+[v memset@s s `*.34uc  1 a 2 26 ]
+"7
+[v memset@k k `ui  1 a 2 24 ]
+"4
+[v memset@dest dest `*.34v  1 p 2 14 ]
+[v memset@c c `i  1 p 2 16 ]
+[v memset@n n `ui  1 p 2 18 ]
+"90
+} 0
+"187 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/arpv4.c
+[v _ARPV4_Update ARPV4_Update `(v  1 e 1 0 ]
+{
+"190
+[v ARPV4_Update@x x `uc  1 a 1 6 ]
+[s S2961 . 6 `uc 1 byte1 1 0 `uc 1 byte2 1 1 `uc 1 byte3 1 2 `uc 1 byte4 1 3 `uc 1 byte5 1 4 `uc 1 byte6 1 5 ]
+"189
+[u S2968 . 6 `[6]uc 1 mac_array 6 0 `S2961 1 s 6 0 ]
+[s S3753 . 13 `S2968 1 macAddress 6 0 `ul 1 ipAddress 4 6 `us 1 protocolType 2 10 `uc 1 age 1 12 ]
+[v ARPV4_Update@entryPointer entryPointer `*.39S3753  1 a 2 4 ]
+"195
+} 0
+"58 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"80
+} 0
+"164 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"174
+} 0
+"127
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"147
+} 0
+"176
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+{
+"183
+} 0
+"189
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"192
+} 0
+"93 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/TCPIPLibrary/rtcc.c
+[v _rtcc_handler rtcc_handler `(v  1 e 1 0 ]
+{
+"96
+} 0
+"162 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"184
+} 0
+"279
+[v _IOCBF5_ISR IOCBF5_ISR `(v  1 e 1 0 ]
+{
+"289
+} 0
+"301
+[v _IOCBF5_DefaultInterruptHandler IOCBF5_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"304
+} 0
+"173 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _btnB5Interrupt btnB5Interrupt `(v  1 e 1 0 ]
+{
+"178
+} 0
+"249 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _IOCBF4_ISR IOCBF4_ISR `(v  1 e 1 0 ]
+{
+"259
+} 0
+"271
+[v _IOCBF4_DefaultInterruptHandler IOCBF4_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"274
+} 0
+"153 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _movInterrupt movInterrupt `(v  1 e 1 0 ]
+{
+"166
+} 0
+"219 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _IOCBF3_ISR IOCBF3_ISR `(v  1 e 1 0 ]
+{
+"229
+} 0
+"241
+[v _IOCBF3_DefaultInterruptHandler IOCBF3_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"244
+} 0
+"180 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _btnB3Interrupt btnB3Interrupt `(v  1 e 1 0 ]
+{
+"185
+} 0
+"189 C:\micro\SEIC_prj_v2_backup.X\mcc_generated_files/pin_manager.c
+[v _IOCAF0_ISR IOCAF0_ISR `(v  1 e 1 0 ]
+{
+"199
+} 0
+"211
+[v _IOCAF0_DefaultInterruptHandler IOCAF0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"214
+} 0
+"187 C:\micro\SEIC_prj_v2_backup.X\main.c
+[v _btnA0Interrupt btnA0Interrupt `(v  1 e 1 0 ]
+{
+"189
+} 0

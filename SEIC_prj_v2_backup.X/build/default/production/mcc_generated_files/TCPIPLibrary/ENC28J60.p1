@@ -1,0 +1,4555 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"77 mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 77: {
+[s S1462 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 `us 1 `us 1 ]
+[n S1462 . error pktReady up idle linkChange bufferBusy . saveRDPT saveWRPT ]
+"51 mcc_generated_files/TCPIPLibrary/mac_address.h
+[; ;mcc_generated_files/TCPIPLibrary/mac_address.h: 51:     struct { uint8_t byte1,byte2,byte3,byte4,byte5,byte6; } s;
+[s S1457 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1457 . byte1 byte2 byte3 byte4 byte5 byte6 ]
+"49
+[; ;mcc_generated_files/TCPIPLibrary/mac_address.h: 49: {
+[u S1456 `uc -> 6 `i `S1457 1 ]
+[n S1456 . mac_array s ]
+"54 mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 54:     {
+[s S1461 `us 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1461 . byteCount long_drop_event . excessCarrierEvent . crcError lengthCheckError lengthLongError rxOK rxMulticast rxBroadcast dribbleNibble controlFrame pauseControlFrame unknownContrlFrame vlanTagPresent zero ]
+"51
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 51: {
+[u S1460 `uc -> 4 `i `S1461 1 ]
+[n S1460 . v . ]
+"63 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 63: sfr_bank_t lastBank;
+[c E10031 0 64 128 192 224 .. ]
+[n E10031 . sfr_bank0 sfr_bank1 sfr_bank2 sfr_bank3 sfr_common  ]
+"90 mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 90: {
+[s S1463 `us 1 `us 1 `us 1 `*v 1 `*v 1 ]
+[n S1463 . flags packetStart packetEnd prevPacket nextPacket ]
+"139 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 139: static void ENC28_BankSel(enc28j60_registers_t r)
+[c E10038 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 251 252 253 254 255 .. ]
+[n E10038 . J60_ERDPTL J60_ERDPTH J60_EWRPTL J60_EWRPTH J60_ETXSTL J60_ETXSTH J60_ETXNDL J60_ETXNDH J60_ERXSTL J60_ERXSTH J60_ERXNDL J60_ERXNDH J60_ERXRDPTL J60_ERXRDPTH J60_ERXWRPTL J60_ERXWRPTH J60_EDMASTL J60_EDMASTH J60_EDMANDL J60_EDMANDH J60_EDMADSTL J60_EDMADSTH J60_EDMACSL J60_EDMACSH RSRV_018 RSRV_019 RSRV_01A J60_EHT0 J60_EHT1 J60_EHT2 J60_EHT3 J60_EHT4 J60_EHT5 J60_EHT6 J60_EHT7 J60_EPMM0 J60_EPMM1 J60_EPMM2 J60_EPMM3 J60_EPMM4 J60_EPMM5 J60_EPMM6 J60_EPMM7 J60_EPMCSL J60_EPMCSH RSRV_112 RSRV_113 J60_EPMOL J60_EPMOH RSRV_116 RSRV_117 J60_ERXFCON J60_EPKTCNT RSRV_11A J60_MACON1 RSRV_201 J60_MACON3 J60_MACON4 J60_MABBIPG RSRV_205 J60_MAIPGL J60_MAIPGH J60_MACLCON1 J60_MACLCON2 J60_MAMXFLL J60_MAMXFLH RSRV_20C RSRV_20D RSRV_20E RSRV_20F RSRV_210 RSRV_211 J60_MICMD RSRV_213 J60_MIREGADR RSRV_215 J60_MIWRL J60_MIWRH J60_MIRDL J60_MIRDH RSRV_21A J60_MAADR5 J60_MAADR6 J60_MAADR3 J60_MAADR4 J60_MAADR1 J60_MAADR2 J60_EBSTSD J60_EBSTCON J60_EBSTCSL J60_EBSTCSH J60_MISTAT RSRV_30B RSRV_30C RSRV_30D RSRV_30E RSRV_30F RSRV_310 RSRV_311 J60_EREVID RSRV_313 RSRV_314 J60_ECOCON RSRV_316 J60_EFLOCON J60_EPAUSL J60_EPAUSH RSRV_31A J60_EIE J60_EIR J60_ESTAT J60_ECON2 J60_ECON1  ]
+"29431 C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 29431: extern volatile __bit LATC1 __attribute__((address(0x7C29)));
+[v _LATC1 `Vb ~T0 @X0 0 e@31785 ]
+"67 mcc_generated_files/TCPIPLibrary/../drivers/../spi1.h
+[v _SPI1_ExchangeByte `(uc ~T0 @X0 0 ef1`uc ]
+"148 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 148:         SPI1_ExchangeByte(bfc_inst | 0x1F);
+[c E10022 0 58 64 122 128 160 255 .. ]
+[n E10022 . rcr_inst rbm_inst wcr_inst wbm_inst bfs_inst bfc_inst src_inst  ]
+"50 C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"169 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 169:     phstat2 = ENC28_PhyRead(J60_PHSTAT2);
+[c E10153 0 1 2 3 16 17 18 19 20 .. ]
+[n E10153 . J60_PHCON1 J60_PHSTAT1 J60_PHID1 J60_PHID2 J60_PHCON2 J60_PHSTAT2 J60_PHIE J60_PHIR J60_PHLCON  ]
+"124
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 124: static uint16_t ENC28_PhyRead(enc28j60_phy_registers_t a);
+[v _ENC28_PhyRead `(us ~T0 @X0 0 sf1`E10153 ]
+"66 mcc_generated_files/TCPIPLibrary/../drivers/../spi1.h
+[v _SPI1_Close `(v ~T0 @X0 0 ef ]
+"329 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 329:     while (!spi_master_open(MAC));
+[c E10620 0 .. ]
+[n E10620 . MAC  ]
+"62 mcc_generated_files/TCPIPLibrary/../drivers/spi_master.h
+[; ;mcc_generated_files/TCPIPLibrary/../drivers/spi_master.h: 62: _Bool spi_master_open(spi_master_configurations_t config);
+[v _spi_master_open `(a ~T0 @X0 0 ef1`E10620 ]
+[v F9533 `(v ~T0 @X0 1 tf1`ul ]
+"187 C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18.h
+[v __delay `JF9533 ~T0 @X0 0 e ]
+[p i __delay ]
+"112 mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 112: void ETH_SendSystemReset(void);
+[v _ETH_SendSystemReset `(v ~T0 @X0 0 ef ]
+"115 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 115: static uint8_t ENC28_Rcr8(enc28j60_registers_t);
+[v _ENC28_Rcr8 `(uc ~T0 @X0 0 sf1`E10038 ]
+"121
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 121: static void ENC28_Bfs(enc28j60_registers_t, char);
+[v _ENC28_Bfs `(v ~T0 @X0 0 sf2`E10038`uc ]
+"119
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 119: static void ENC28_Wcr16(enc28j60_registers_t, uint16_t);
+[v _ENC28_Wcr16 `(v ~T0 @X0 0 sf2`E10038`us ]
+"118
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 118: static void ENC28_Wcr8(enc28j60_registers_t, uint8_t);
+[v _ENC28_Wcr8 `(v ~T0 @X0 0 sf2`E10038`uc ]
+"63 mcc_generated_files/TCPIPLibrary/mac_address.h
+[; ;mcc_generated_files/TCPIPLibrary/mac_address.h: 63: const mac48Address_t *MAC_getAddress(void);
+[v _MAC_getAddress `(*CS1456 ~T0 @X0 0 ef ]
+"125 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 125: static void ENC28_PhyWrite(enc28j60_phy_registers_t a, uint16_t d);
+[v _ENC28_PhyWrite `(v ~T0 @X0 0 sf2`E10153`us ]
+"216 mcc_generated_files/TCPIPLibrary/ENC28J60.h
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.h: 216:     {
+[s S1465 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1465 . RXERIF TXERIF . TXIF LINKIF DMAIF PKTIF . ]
+"213
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.h: 213: {
+[u S1464 `uc 1 `S1465 1 ]
+[n S1464 . val . ]
+"233
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.h: 233:     {
+[s S1467 :5 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 ]
+[n S1467 . . PLRITY . DPXSTAT LSTAT COLSTAT RXSTAT TXSTAT . ]
+"230
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.h: 230: {
+[u S1466 `ui 1 `S1467 1 ]
+[n S1466 . val . ]
+"116 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 116: static uint16_t ENC28_Rcr16(enc28j60_registers_t);
+[v _ENC28_Rcr16 `(us ~T0 @X0 0 sf1`E10038 ]
+"122
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 122: static void ENC28_Bfc(enc28j60_registers_t, char);
+[v _ENC28_Bfc `(v ~T0 @X0 0 sf2`E10038`uc ]
+"452
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 452:                 ETH_Shift_Tx_Packets();
+[c E9844 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 .. ]
+[n E9844 . ERROR SUCCESS LINK_NOT_FOUND BUFFER_BUSY TX_LOGIC_NOT_IDLE MAC_NOT_FOUND IP_WRONG_VERSION IPV4_CHECKSUM_FAILS DEST_IP_NOT_MATCHED ICMP_CHECKSUM_FAILS UDP_CHECKSUM_FAILS TCP_CHECKSUM_FAILS DMA_TIMEOUT PORT_NOT_AVAILABLE ARP_IP_NOT_MATCHED EAPoL_PACKET_FAILURE INCORRECT_IPV4_HLEN IPV4_NO_OPTIONS TX_QUEUED IPV6_CHECKSUM_FAILS IPV6_LOCAL_ADDR_RESOLVE IPV6_LOCAL_ADDR_INVALID NO_GATEWAY ADDRESS_RESOLUTION GLOBAL_DESTINATION ARP_WRONG_HARDWARE_ADDR_TYPE ARP_WRONG_PROTOCOL_TYPE ARP_WRONG_HARDWARE_ADDR_LEN ARP_WRONG_PROTOCOL_LEN  ]
+"108
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 108: error_msg ETH_Shift_Tx_Packets(void);
+[v _ETH_Shift_Tx_Packets `(E9844 ~T0 @X0 0 ef ]
+"107
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 107: error_msg ETH_SendQueued(void);
+[v _ETH_SendQueued `(E9844 ~T0 @X0 0 ef ]
+"149 mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 149: void ETH_ResetByteCount(void);
+[v _ETH_ResetByteCount `(v ~T0 @X0 0 ef ]
+"16 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h: 16: extern void putch(char);
+[v _putch `(v ~T0 @X0 0 ef1`uc ]
+"154 mcc_generated_files/TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/TCPIPLibrary/ethernet_driver.h: 154: void ETH_SetRxByteCount(uint16_t count);
+[v _ETH_SetRxByteCount `(v ~T0 @X0 0 ef1`us ]
+"54 C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 54: __asm("RX2PPS equ 0E8Dh");
+[; <" RX2PPS equ 0E8Dh ;# ">
+"88
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 88: __asm("CK2PPS equ 0E8Eh");
+[; <" CK2PPS equ 0E8Eh ;# ">
+"93
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 93: __asm("TX2PPS equ 0E8Eh");
+[; <" TX2PPS equ 0E8Eh ;# ">
+"154
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 154: __asm("SSP2CLKPPS equ 0E8Fh");
+[; <" SSP2CLKPPS equ 0E8Fh ;# ">
+"188
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 188: __asm("SSP2DATPPS equ 0E90h");
+[; <" SSP2DATPPS equ 0E90h ;# ">
+"222
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 222: __asm("SSP2SSPPS equ 0E91h");
+[; <" SSP2SSPPS equ 0E91h ;# ">
+"256
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 256: __asm("SSP2BUF equ 0E92h");
+[; <" SSP2BUF equ 0E92h ;# ">
+"276
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 276: __asm("SSP2ADD equ 0E93h");
+[; <" SSP2ADD equ 0E93h ;# ">
+"396
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 396: __asm("SSP2MSK equ 0E94h");
+[; <" SSP2MSK equ 0E94h ;# ">
+"466
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 466: __asm("SSP2STAT equ 0E95h");
+[; <" SSP2STAT equ 0E95h ;# ">
+"920
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 920: __asm("SSP2CON1 equ 0E96h");
+[; <" SSP2CON1 equ 0E96h ;# ">
+"1040
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1040: __asm("SSP2CON2 equ 0E97h");
+[; <" SSP2CON2 equ 0E97h ;# ">
+"1227
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1227: __asm("SSP2CON3 equ 0E98h");
+[; <" SSP2CON3 equ 0E98h ;# ">
+"1289
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1289: __asm("RC2REG equ 0E99h");
+[; <" RC2REG equ 0E99h ;# ">
+"1294
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1294: __asm("RCREG2 equ 0E99h");
+[; <" RCREG2 equ 0E99h ;# ">
+"1327
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1327: __asm("TX2REG equ 0E9Ah");
+[; <" TX2REG equ 0E9Ah ;# ">
+"1332
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1332: __asm("TXREG2 equ 0E9Ah");
+[; <" TXREG2 equ 0E9Ah ;# ">
+"1365
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1365: __asm("SP2BRG equ 0E9Bh");
+[; <" SP2BRG equ 0E9Bh ;# ">
+"1372
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1372: __asm("SP2BRGL equ 0E9Bh");
+[; <" SP2BRGL equ 0E9Bh ;# ">
+"1377
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1377: __asm("SPBRG2 equ 0E9Bh");
+[; <" SPBRG2 equ 0E9Bh ;# ">
+"1410
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1410: __asm("SP2BRGH equ 0E9Ch");
+[; <" SP2BRGH equ 0E9Ch ;# ">
+"1415
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1415: __asm("SPBRGH2 equ 0E9Ch");
+[; <" SPBRGH2 equ 0E9Ch ;# ">
+"1448
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1448: __asm("RC2STA equ 0E9Dh");
+[; <" RC2STA equ 0E9Dh ;# ">
+"1453
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1453: __asm("RCSTA2 equ 0E9Dh");
+[; <" RCSTA2 equ 0E9Dh ;# ">
+"1622
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1622: __asm("TX2STA equ 0E9Eh");
+[; <" TX2STA equ 0E9Eh ;# ">
+"1627
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1627: __asm("TXSTA2 equ 0E9Eh");
+[; <" TXSTA2 equ 0E9Eh ;# ">
+"1778
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1778: __asm("BAUD2CON equ 0E9Fh");
+[; <" BAUD2CON equ 0E9Fh ;# ">
+"1783
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1783: __asm("BAUDCON2 equ 0E9Fh");
+[; <" BAUDCON2 equ 0E9Fh ;# ">
+"1787
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 1787: __asm("BAUDCTL2 equ 0E9Fh");
+[; <" BAUDCTL2 equ 0E9Fh ;# ">
+"2141
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2141: __asm("PPSLOCK equ 0EA0h");
+[; <" PPSLOCK equ 0EA0h ;# ">
+"2161
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2161: __asm("INT0PPS equ 0EA1h");
+[; <" INT0PPS equ 0EA1h ;# ">
+"2221
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2221: __asm("INT1PPS equ 0EA2h");
+[; <" INT1PPS equ 0EA2h ;# ">
+"2281
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2281: __asm("INT2PPS equ 0EA3h");
+[; <" INT2PPS equ 0EA3h ;# ">
+"2341
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2341: __asm("T0CKIPPS equ 0EA4h");
+[; <" T0CKIPPS equ 0EA4h ;# ">
+"2401
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2401: __asm("T1CKIPPS equ 0EA5h");
+[; <" T1CKIPPS equ 0EA5h ;# ">
+"2467
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2467: __asm("T1GPPS equ 0EA6h");
+[; <" T1GPPS equ 0EA6h ;# ">
+"2533
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2533: __asm("T3CKIPPS equ 0EA7h");
+[; <" T3CKIPPS equ 0EA7h ;# ">
+"2599
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2599: __asm("T3GPPS equ 0EA8h");
+[; <" T3GPPS equ 0EA8h ;# ">
+"2665
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2665: __asm("T5CKIPPS equ 0EA9h");
+[; <" T5CKIPPS equ 0EA9h ;# ">
+"2731
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2731: __asm("T5GPPS equ 0EAAh");
+[; <" T5GPPS equ 0EAAh ;# ">
+"2797
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2797: __asm("T2INPPS equ 0EABh");
+[; <" T2INPPS equ 0EABh ;# ">
+"2863
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2863: __asm("T4INPPS equ 0EACh");
+[; <" T4INPPS equ 0EACh ;# ">
+"2929
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2929: __asm("T6INPPS equ 0EADh");
+[; <" T6INPPS equ 0EADh ;# ">
+"2995
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 2995: __asm("ADACTPPS equ 0EAEh");
+[; <" ADACTPPS equ 0EAEh ;# ">
+"3061
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3061: __asm("CCP1PPS equ 0EAFh");
+[; <" CCP1PPS equ 0EAFh ;# ">
+"3127
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3127: __asm("CCP2PPS equ 0EB0h");
+[; <" CCP2PPS equ 0EB0h ;# ">
+"3193
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3193: __asm("CWG1PPS equ 0EB1h");
+[; <" CWG1PPS equ 0EB1h ;# ">
+"3198
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3198: __asm("CWGINPPS equ 0EB1h");
+[; <" CWGINPPS equ 0EB1h ;# ">
+"3403
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3403: __asm("MDCARLPPS equ 0EB2h");
+[; <" MDCARLPPS equ 0EB2h ;# ">
+"3469
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3469: __asm("MDCARHPPS equ 0EB3h");
+[; <" MDCARHPPS equ 0EB3h ;# ">
+"3535
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3535: __asm("MDSRCPPS equ 0EB4h");
+[; <" MDSRCPPS equ 0EB4h ;# ">
+"3601
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3601: __asm("RX1PPS equ 0EB5h");
+[; <" RX1PPS equ 0EB5h ;# ">
+"3606
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3606: __asm("RXPPS equ 0EB5h");
+[; <" RXPPS equ 0EB5h ;# ">
+"3667
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3667: __asm("CK1PPS equ 0EB6h");
+[; <" CK1PPS equ 0EB6h ;# ">
+"3672
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3672: __asm("TX1PPS equ 0EB6h");
+[; <" TX1PPS equ 0EB6h ;# ">
+"3676
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3676: __asm("CKPPS equ 0EB6h");
+[; <" CKPPS equ 0EB6h ;# ">
+"3680
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3680: __asm("TXPPS equ 0EB6h");
+[; <" TXPPS equ 0EB6h ;# ">
+"3793
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3793: __asm("SSP1CLKPPS equ 0EB7h");
+[; <" SSP1CLKPPS equ 0EB7h ;# ">
+"3798
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3798: __asm("SSPCLKPPS equ 0EB7h");
+[; <" SSPCLKPPS equ 0EB7h ;# ">
+"3859
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3859: __asm("SSP1DATPPS equ 0EB8h");
+[; <" SSP1DATPPS equ 0EB8h ;# ">
+"3864
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3864: __asm("SSPDATPPS equ 0EB8h");
+[; <" SSPDATPPS equ 0EB8h ;# ">
+"3925
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3925: __asm("SSP1SSPPS equ 0EB9h");
+[; <" SSP1SSPPS equ 0EB9h ;# ">
+"3930
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3930: __asm("SSPSSPPS equ 0EB9h");
+[; <" SSPSSPPS equ 0EB9h ;# ">
+"3991
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 3991: __asm("IPR0 equ 0EBAh");
+[; <" IPR0 equ 0EBAh ;# ">
+"4036
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4036: __asm("IPR1 equ 0EBBh");
+[; <" IPR1 equ 0EBBh ;# ">
+"4084
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4084: __asm("IPR2 equ 0EBCh");
+[; <" IPR2 equ 0EBCh ;# ">
+"4132
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4132: __asm("IPR3 equ 0EBDh");
+[; <" IPR3 equ 0EBDh ;# ">
+"4210
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4210: __asm("IPR4 equ 0EBEh");
+[; <" IPR4 equ 0EBEh ;# ">
+"4268
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4268: __asm("IPR5 equ 0EBFh");
+[; <" IPR5 equ 0EBFh ;# ">
+"4314
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4314: __asm("IPR6 equ 0EC0h");
+[; <" IPR6 equ 0EC0h ;# ">
+"4340
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4340: __asm("IPR7 equ 0EC1h");
+[; <" IPR7 equ 0EC1h ;# ">
+"4387
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4387: __asm("PIE0 equ 0EC2h");
+[; <" PIE0 equ 0EC2h ;# ">
+"4432
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4432: __asm("PIE1 equ 0EC3h");
+[; <" PIE1 equ 0EC3h ;# ">
+"4480
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4480: __asm("PIE2 equ 0EC4h");
+[; <" PIE2 equ 0EC4h ;# ">
+"4528
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4528: __asm("PIE3 equ 0EC5h");
+[; <" PIE3 equ 0EC5h ;# ">
+"4638
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4638: __asm("PIE4 equ 0EC6h");
+[; <" PIE4 equ 0EC6h ;# ">
+"4688
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4688: __asm("PIE5 equ 0EC7h");
+[; <" PIE5 equ 0EC7h ;# ">
+"4720
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4720: __asm("PIE6 equ 0EC8h");
+[; <" PIE6 equ 0EC8h ;# ">
+"4746
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4746: __asm("PIE7 equ 0EC9h");
+[; <" PIE7 equ 0EC9h ;# ">
+"4793
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4793: __asm("PIR0 equ 0ECAh");
+[; <" PIR0 equ 0ECAh ;# ">
+"4838
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4838: __asm("PIR1 equ 0ECBh");
+[; <" PIR1 equ 0ECBh ;# ">
+"4886
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4886: __asm("PIR2 equ 0ECCh");
+[; <" PIR2 equ 0ECCh ;# ">
+"4934
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 4934: __asm("PIR3 equ 0ECDh");
+[; <" PIR3 equ 0ECDh ;# ">
+"5012
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5012: __asm("PIR4 equ 0ECEh");
+[; <" PIR4 equ 0ECEh ;# ">
+"5062
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5062: __asm("PIR5 equ 0ECFh");
+[; <" PIR5 equ 0ECFh ;# ">
+"5094
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5094: __asm("PIR6 equ 0ED0h");
+[; <" PIR6 equ 0ED0h ;# ">
+"5120
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5120: __asm("PIR7 equ 0ED1h");
+[; <" PIR7 equ 0ED1h ;# ">
+"5167
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5167: __asm("WDTCON0 equ 0ED2h");
+[; <" WDTCON0 equ 0ED2h ;# ">
+"5242
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5242: __asm("WDTCON1 equ 0ED3h");
+[; <" WDTCON1 equ 0ED3h ;# ">
+"5336
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5336: __asm("WDTPSL equ 0ED4h");
+[; <" WDTPSL equ 0ED4h ;# ">
+"5464
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5464: __asm("WDTPSH equ 0ED5h");
+[; <" WDTPSH equ 0ED5h ;# ">
+"5592
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5592: __asm("WDTTMR equ 0ED6h");
+[; <" WDTTMR equ 0ED6h ;# ">
+"5680
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5680: __asm("CPUDOZE equ 0ED7h");
+[; <" CPUDOZE equ 0ED7h ;# ">
+"5745
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5745: __asm("OSCCON1 equ 0ED8h");
+[; <" OSCCON1 equ 0ED8h ;# ">
+"5815
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5815: __asm("OSCCON2 equ 0ED9h");
+[; <" OSCCON2 equ 0ED9h ;# ">
+"5885
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5885: __asm("OSCCON3 equ 0EDAh");
+[; <" OSCCON3 equ 0EDAh ;# ">
+"5925
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5925: __asm("OSCSTAT equ 0EDBh");
+[; <" OSCSTAT equ 0EDBh ;# ">
+"5930
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 5930: __asm("OSCSTAT1 equ 0EDBh");
+[; <" OSCSTAT1 equ 0EDBh ;# ">
+"6037
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6037: __asm("OSCEN equ 0EDCh");
+[; <" OSCEN equ 0EDCh ;# ">
+"6088
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6088: __asm("OSCTUNE equ 0EDDh");
+[; <" OSCTUNE equ 0EDDh ;# ">
+"6146
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6146: __asm("OSCFRQ equ 0EDEh");
+[; <" OSCFRQ equ 0EDEh ;# ">
+"6192
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6192: __asm("VREGCON equ 0EDFh");
+[; <" VREGCON equ 0EDFh ;# ">
+"6226
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6226: __asm("BORCON equ 0EE0h");
+[; <" BORCON equ 0EE0h ;# ">
+"6253
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6253: __asm("PMD0 equ 0EE1h");
+[; <" PMD0 equ 0EE1h ;# ">
+"6330
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6330: __asm("PMD1 equ 0EE2h");
+[; <" PMD1 equ 0EE2h ;# ">
+"6394
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6394: __asm("PMD2 equ 0EE3h");
+[; <" PMD2 equ 0EE3h ;# ">
+"6439
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6439: __asm("PMD3 equ 0EE4h");
+[; <" PMD3 equ 0EE4h ;# ">
+"6477
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6477: __asm("PMD4 equ 0EE5h");
+[; <" PMD4 equ 0EE5h ;# ">
+"6530
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6530: __asm("PMD5 equ 0EE6h");
+[; <" PMD5 equ 0EE6h ;# ">
+"6550
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6550: __asm("RA0PPS equ 0EE7h");
+[; <" RA0PPS equ 0EE7h ;# ">
+"6594
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6594: __asm("RA1PPS equ 0EE8h");
+[; <" RA1PPS equ 0EE8h ;# ">
+"6638
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6638: __asm("RA2PPS equ 0EE9h");
+[; <" RA2PPS equ 0EE9h ;# ">
+"6682
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6682: __asm("RA3PPS equ 0EEAh");
+[; <" RA3PPS equ 0EEAh ;# ">
+"6726
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6726: __asm("RA4PPS equ 0EEBh");
+[; <" RA4PPS equ 0EEBh ;# ">
+"6770
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6770: __asm("RA5PPS equ 0EECh");
+[; <" RA5PPS equ 0EECh ;# ">
+"6814
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6814: __asm("RA6PPS equ 0EEDh");
+[; <" RA6PPS equ 0EEDh ;# ">
+"6858
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6858: __asm("RA7PPS equ 0EEEh");
+[; <" RA7PPS equ 0EEEh ;# ">
+"6902
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6902: __asm("RB0PPS equ 0EEFh");
+[; <" RB0PPS equ 0EEFh ;# ">
+"6946
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6946: __asm("RB1PPS equ 0EF0h");
+[; <" RB1PPS equ 0EF0h ;# ">
+"6990
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 6990: __asm("RB2PPS equ 0EF1h");
+[; <" RB2PPS equ 0EF1h ;# ">
+"7034
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7034: __asm("RB3PPS equ 0EF2h");
+[; <" RB3PPS equ 0EF2h ;# ">
+"7078
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7078: __asm("RB4PPS equ 0EF3h");
+[; <" RB4PPS equ 0EF3h ;# ">
+"7122
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7122: __asm("RB5PPS equ 0EF4h");
+[; <" RB5PPS equ 0EF4h ;# ">
+"7166
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7166: __asm("RB6PPS equ 0EF5h");
+[; <" RB6PPS equ 0EF5h ;# ">
+"7210
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7210: __asm("RB7PPS equ 0EF6h");
+[; <" RB7PPS equ 0EF6h ;# ">
+"7254
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7254: __asm("RC0PPS equ 0EF7h");
+[; <" RC0PPS equ 0EF7h ;# ">
+"7298
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7298: __asm("RC1PPS equ 0EF8h");
+[; <" RC1PPS equ 0EF8h ;# ">
+"7342
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7342: __asm("RC2PPS equ 0EF9h");
+[; <" RC2PPS equ 0EF9h ;# ">
+"7386
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7386: __asm("RC3PPS equ 0EFAh");
+[; <" RC3PPS equ 0EFAh ;# ">
+"7430
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7430: __asm("RC4PPS equ 0EFBh");
+[; <" RC4PPS equ 0EFBh ;# ">
+"7474
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7474: __asm("RC5PPS equ 0EFCh");
+[; <" RC5PPS equ 0EFCh ;# ">
+"7518
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7518: __asm("RC6PPS equ 0EFDh");
+[; <" RC6PPS equ 0EFDh ;# ">
+"7562
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7562: __asm("RC7PPS equ 0EFEh");
+[; <" RC7PPS equ 0EFEh ;# ">
+"7606
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7606: __asm("IOCAF equ 0F0Ah");
+[; <" IOCAF equ 0F0Ah ;# ">
+"7668
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7668: __asm("IOCAN equ 0F0Bh");
+[; <" IOCAN equ 0F0Bh ;# ">
+"7730
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7730: __asm("IOCAP equ 0F0Ch");
+[; <" IOCAP equ 0F0Ch ;# ">
+"7792
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7792: __asm("INLVLA equ 0F0Dh");
+[; <" INLVLA equ 0F0Dh ;# ">
+"7854
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7854: __asm("SLRCONA equ 0F0Eh");
+[; <" SLRCONA equ 0F0Eh ;# ">
+"7916
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7916: __asm("ODCONA equ 0F0Fh");
+[; <" ODCONA equ 0F0Fh ;# ">
+"7978
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 7978: __asm("WPUA equ 0F10h");
+[; <" WPUA equ 0F10h ;# ">
+"8040
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8040: __asm("ANSELA equ 0F11h");
+[; <" ANSELA equ 0F11h ;# ">
+"8102
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8102: __asm("IOCBF equ 0F12h");
+[; <" IOCBF equ 0F12h ;# ">
+"8164
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8164: __asm("IOCBN equ 0F13h");
+[; <" IOCBN equ 0F13h ;# ">
+"8226
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8226: __asm("IOCBP equ 0F14h");
+[; <" IOCBP equ 0F14h ;# ">
+"8288
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8288: __asm("INLVLB equ 0F15h");
+[; <" INLVLB equ 0F15h ;# ">
+"8350
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8350: __asm("SLRCONB equ 0F16h");
+[; <" SLRCONB equ 0F16h ;# ">
+"8412
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8412: __asm("ODCONB equ 0F17h");
+[; <" ODCONB equ 0F17h ;# ">
+"8474
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8474: __asm("WPUB equ 0F18h");
+[; <" WPUB equ 0F18h ;# ">
+"8536
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8536: __asm("ANSELB equ 0F19h");
+[; <" ANSELB equ 0F19h ;# ">
+"8598
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8598: __asm("IOCCF equ 0F1Ah");
+[; <" IOCCF equ 0F1Ah ;# ">
+"8660
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8660: __asm("IOCCN equ 0F1Bh");
+[; <" IOCCN equ 0F1Bh ;# ">
+"8722
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8722: __asm("IOCCP equ 0F1Ch");
+[; <" IOCCP equ 0F1Ch ;# ">
+"8784
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8784: __asm("INLVLC equ 0F1Dh");
+[; <" INLVLC equ 0F1Dh ;# ">
+"8846
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8846: __asm("SLRCONC equ 0F1Eh");
+[; <" SLRCONC equ 0F1Eh ;# ">
+"8908
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8908: __asm("ODCONC equ 0F1Fh");
+[; <" ODCONC equ 0F1Fh ;# ">
+"8970
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 8970: __asm("WPUC equ 0F20h");
+[; <" WPUC equ 0F20h ;# ">
+"9032
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9032: __asm("ANSELC equ 0F21h");
+[; <" ANSELC equ 0F21h ;# ">
+"9094
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9094: __asm("IOCEF equ 0F27h");
+[; <" IOCEF equ 0F27h ;# ">
+"9115
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9115: __asm("IOCEN equ 0F28h");
+[; <" IOCEN equ 0F28h ;# ">
+"9136
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9136: __asm("IOCEP equ 0F29h");
+[; <" IOCEP equ 0F29h ;# ">
+"9157
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9157: __asm("INLVLE equ 0F2Ah");
+[; <" INLVLE equ 0F2Ah ;# ">
+"9178
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9178: __asm("WPUE equ 0F2Dh");
+[; <" WPUE equ 0F2Dh ;# ">
+"9199
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9199: __asm("HLVDCON0 equ 0F2Fh");
+[; <" HLVDCON0 equ 0F2Fh ;# ">
+"9279
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9279: __asm("HLVDCON1 equ 0F30h");
+[; <" HLVDCON1 equ 0F30h ;# ">
+"9351
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9351: __asm("FVRCON equ 0F31h");
+[; <" FVRCON equ 0F31h ;# ">
+"9440
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9440: __asm("ZCDCON equ 0F32h");
+[; <" ZCDCON equ 0F32h ;# ">
+"9520
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9520: __asm("DAC1CON0 equ 0F33h");
+[; <" DAC1CON0 equ 0F33h ;# ">
+"9621
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9621: __asm("DAC1CON1 equ 0F34h");
+[; <" DAC1CON1 equ 0F34h ;# ">
+"9673
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9673: __asm("CM2CON0 equ 0F35h");
+[; <" CM2CON0 equ 0F35h ;# ">
+"9753
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9753: __asm("CM2CON1 equ 0F36h");
+[; <" CM2CON1 equ 0F36h ;# ">
+"9793
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9793: __asm("CM2NCH equ 0F37h");
+[; <" CM2NCH equ 0F37h ;# ">
+"9853
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9853: __asm("CM2PCH equ 0F38h");
+[; <" CM2PCH equ 0F38h ;# ">
+"9913
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9913: __asm("CM1CON0 equ 0F39h");
+[; <" CM1CON0 equ 0F39h ;# ">
+"9993
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 9993: __asm("CM1CON1 equ 0F3Ah");
+[; <" CM1CON1 equ 0F3Ah ;# ">
+"10033
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10033: __asm("CM1NCH equ 0F3Bh");
+[; <" CM1NCH equ 0F3Bh ;# ">
+"10093
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10093: __asm("CM1PCH equ 0F3Ch");
+[; <" CM1PCH equ 0F3Ch ;# ">
+"10153
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10153: __asm("CMOUT equ 0F3Dh");
+[; <" CMOUT equ 0F3Dh ;# ">
+"10179
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10179: __asm("CLKRCON equ 0F3Eh");
+[; <" CLKRCON equ 0F3Eh ;# ">
+"10283
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10283: __asm("CLKRCLK equ 0F3Fh");
+[; <" CLKRCLK equ 0F3Fh ;# ">
+"10343
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10343: __asm("CWG1CLK equ 0F40h");
+[; <" CWG1CLK equ 0F40h ;# ">
+"10348
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10348: __asm("CWG1CLKCON equ 0F40h");
+[; <" CWG1CLKCON equ 0F40h ;# ">
+"10397
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10397: __asm("CWG1ISM equ 0F41h");
+[; <" CWG1ISM equ 0F41h ;# ">
+"10443
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10443: __asm("CWG1DBR equ 0F42h");
+[; <" CWG1DBR equ 0F42h ;# ">
+"10547
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10547: __asm("CWG1DBF equ 0F43h");
+[; <" CWG1DBF equ 0F43h ;# ">
+"10651
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10651: __asm("CWG1CON0 equ 0F44h");
+[; <" CWG1CON0 equ 0F44h ;# ">
+"10752
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10752: __asm("CWG1CON1 equ 0F45h");
+[; <" CWG1CON1 equ 0F45h ;# ">
+"10830
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10830: __asm("CWG1AS0 equ 0F46h");
+[; <" CWG1AS0 equ 0F46h ;# ">
+"10950
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 10950: __asm("CWG1AS1 equ 0F47h");
+[; <" CWG1AS1 equ 0F47h ;# ">
+"11000
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11000: __asm("CWG1STR equ 0F48h");
+[; <" CWG1STR equ 0F48h ;# ">
+"11114
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11114: __asm("SCANLADR equ 0F49h");
+[; <" SCANLADR equ 0F49h ;# ">
+"11121
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11121: __asm("SCANLADRL equ 0F49h");
+[; <" SCANLADRL equ 0F49h ;# ">
+"11249
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11249: __asm("SCANLADRH equ 0F4Ah");
+[; <" SCANLADRH equ 0F4Ah ;# ">
+"11377
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11377: __asm("SCANLADRU equ 0F4Bh");
+[; <" SCANLADRU equ 0F4Bh ;# ">
+"11483
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11483: __asm("SCANHADR equ 0F4Ch");
+[; <" SCANHADR equ 0F4Ch ;# ">
+"11490
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11490: __asm("SCANHADRL equ 0F4Ch");
+[; <" SCANHADRL equ 0F4Ch ;# ">
+"11618
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11618: __asm("SCANHADRH equ 0F4Dh");
+[; <" SCANHADRH equ 0F4Dh ;# ">
+"11746
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11746: __asm("SCANHADRU equ 0F4Eh");
+[; <" SCANHADRU equ 0F4Eh ;# ">
+"11850
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11850: __asm("SCANCON0 equ 0F4Fh");
+[; <" SCANCON0 equ 0F4Fh ;# ">
+"11977
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 11977: __asm("SCANTRIG equ 0F50h");
+[; <" SCANTRIG equ 0F50h ;# ">
+"12057
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12057: __asm("MDCON0 equ 0F51h");
+[; <" MDCON0 equ 0F51h ;# ">
+"12125
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12125: __asm("MDCON1 equ 0F52h");
+[; <" MDCON1 equ 0F52h ;# ">
+"12191
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12191: __asm("MDSRC equ 0F53h");
+[; <" MDSRC equ 0F53h ;# ">
+"12271
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12271: __asm("MDCARL equ 0F54h");
+[; <" MDCARL equ 0F54h ;# ">
+"12339
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12339: __asm("MDCARH equ 0F55h");
+[; <" MDCARH equ 0F55h ;# ">
+"12407
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12407: __asm("ADACT equ 0F56h");
+[; <" ADACT equ 0F56h ;# ">
+"12459
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12459: __asm("ADCLK equ 0F57h");
+[; <" ADCLK equ 0F57h ;# ">
+"12517
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12517: __asm("ADREF equ 0F58h");
+[; <" ADREF equ 0F58h ;# ">
+"12558
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12558: __asm("ADCON1 equ 0F59h");
+[; <" ADCON1 equ 0F59h ;# ">
+"12597
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12597: __asm("ADCON2 equ 0F5Ah");
+[; <" ADCON2 equ 0F5Ah ;# ">
+"12674
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12674: __asm("ADCON3 equ 0F5Bh");
+[; <" ADCON3 equ 0F5Bh ;# ">
+"12745
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12745: __asm("ADACQ equ 0F5Ch");
+[; <" ADACQ equ 0F5Ch ;# ">
+"12815
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12815: __asm("ADCAP equ 0F5Dh");
+[; <" ADCAP equ 0F5Dh ;# ">
+"12867
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12867: __asm("ADPRE equ 0F5Eh");
+[; <" ADPRE equ 0F5Eh ;# ">
+"12937
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12937: __asm("ADPCH equ 0F5Fh");
+[; <" ADPCH equ 0F5Fh ;# ">
+"12995
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 12995: __asm("ADCON0 equ 0F60h");
+[; <" ADCON0 equ 0F60h ;# ">
+"13090
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13090: __asm("ADPREV equ 0F61h");
+[; <" ADPREV equ 0F61h ;# ">
+"13097
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13097: __asm("ADPREVL equ 0F61h");
+[; <" ADPREVL equ 0F61h ;# ">
+"13167
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13167: __asm("ADPREVH equ 0F62h");
+[; <" ADPREVH equ 0F62h ;# ">
+"13237
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13237: __asm("ADRES equ 0F63h");
+[; <" ADRES equ 0F63h ;# ">
+"13244
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13244: __asm("ADRESL equ 0F63h");
+[; <" ADRESL equ 0F63h ;# ">
+"13314
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13314: __asm("ADRESH equ 0F64h");
+[; <" ADRESH equ 0F64h ;# ">
+"13376
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13376: __asm("ADSTAT equ 0F65h");
+[; <" ADSTAT equ 0F65h ;# ">
+"13441
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13441: __asm("ADRPT equ 0F66h");
+[; <" ADRPT equ 0F66h ;# ">
+"13511
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13511: __asm("ADCNT equ 0F67h");
+[; <" ADCNT equ 0F67h ;# ">
+"13581
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13581: __asm("ADSTPT equ 0F68h");
+[; <" ADSTPT equ 0F68h ;# ">
+"13588
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13588: __asm("ADSTPTL equ 0F68h");
+[; <" ADSTPTL equ 0F68h ;# ">
+"13658
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13658: __asm("ADSTPTH equ 0F69h");
+[; <" ADSTPTH equ 0F69h ;# ">
+"13728
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13728: __asm("ADLTH equ 0F6Ah");
+[; <" ADLTH equ 0F6Ah ;# ">
+"13735
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13735: __asm("ADLTHL equ 0F6Ah");
+[; <" ADLTHL equ 0F6Ah ;# ">
+"13805
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13805: __asm("ADLTHH equ 0F6Bh");
+[; <" ADLTHH equ 0F6Bh ;# ">
+"13875
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13875: __asm("ADUTH equ 0F6Ch");
+[; <" ADUTH equ 0F6Ch ;# ">
+"13882
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13882: __asm("ADUTHL equ 0F6Ch");
+[; <" ADUTHL equ 0F6Ch ;# ">
+"13952
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 13952: __asm("ADUTHH equ 0F6Dh");
+[; <" ADUTHH equ 0F6Dh ;# ">
+"14022
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14022: __asm("ADERR equ 0F6Eh");
+[; <" ADERR equ 0F6Eh ;# ">
+"14029
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14029: __asm("ADERRL equ 0F6Eh");
+[; <" ADERRL equ 0F6Eh ;# ">
+"14099
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14099: __asm("ADERRH equ 0F6Fh");
+[; <" ADERRH equ 0F6Fh ;# ">
+"14169
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14169: __asm("ADACC equ 0F70h");
+[; <" ADACC equ 0F70h ;# ">
+"14176
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14176: __asm("ADACCL equ 0F70h");
+[; <" ADACCL equ 0F70h ;# ">
+"14246
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14246: __asm("ADACCH equ 0F71h");
+[; <" ADACCH equ 0F71h ;# ">
+"14316
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14316: __asm("ADFLTR equ 0F72h");
+[; <" ADFLTR equ 0F72h ;# ">
+"14323
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14323: __asm("ADFLTRL equ 0F72h");
+[; <" ADFLTRL equ 0F72h ;# ">
+"14393
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14393: __asm("ADFLTRH equ 0F73h");
+[; <" ADFLTRH equ 0F73h ;# ">
+"14463
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14463: __asm("CRCDATA equ 0F74h");
+[; <" CRCDATA equ 0F74h ;# ">
+"14470
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14470: __asm("CRCDATL equ 0F74h");
+[; <" CRCDATL equ 0F74h ;# ">
+"14532
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14532: __asm("CRCDATH equ 0F75h");
+[; <" CRCDATH equ 0F75h ;# ">
+"14594
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14594: __asm("CRCACC equ 0F76h");
+[; <" CRCACC equ 0F76h ;# ">
+"14601
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14601: __asm("CRCACCL equ 0F76h");
+[; <" CRCACCL equ 0F76h ;# ">
+"14663
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14663: __asm("CRCACCH equ 0F77h");
+[; <" CRCACCH equ 0F77h ;# ">
+"14725
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14725: __asm("CRCSHFT equ 0F78h");
+[; <" CRCSHFT equ 0F78h ;# ">
+"14732
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14732: __asm("CRCSHIFTL equ 0F78h");
+[; <" CRCSHIFTL equ 0F78h ;# ">
+"14794
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14794: __asm("CRCSHIFTH equ 0F79h");
+[; <" CRCSHIFTH equ 0F79h ;# ">
+"14856
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14856: __asm("CRCXOR equ 0F7Ah");
+[; <" CRCXOR equ 0F7Ah ;# ">
+"14863
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14863: __asm("CRCXORL equ 0F7Ah");
+[; <" CRCXORL equ 0F7Ah ;# ">
+"14920
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14920: __asm("CRCXORH equ 0F7Bh");
+[; <" CRCXORH equ 0F7Bh ;# ">
+"14982
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 14982: __asm("CRCCON0 equ 0F7Ch");
+[; <" CRCCON0 equ 0F7Ch ;# ">
+"15042
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15042: __asm("CRCCON1 equ 0F7Dh");
+[; <" CRCCON1 equ 0F7Dh ;# ">
+"15118
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15118: __asm("NVMADR equ 0F7Eh");
+[; <" NVMADR equ 0F7Eh ;# ">
+"15125
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15125: __asm("NVMADRL equ 0F7Eh");
+[; <" NVMADRL equ 0F7Eh ;# ">
+"15253
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15253: __asm("NVMADRH equ 0F7Fh");
+[; <" NVMADRH equ 0F7Fh ;# ">
+"15309
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15309: __asm("NVMDAT equ 0F80h");
+[; <" NVMDAT equ 0F80h ;# ">
+"15379
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15379: __asm("NVMCON1 equ 0F81h");
+[; <" NVMCON1 equ 0F81h ;# ">
+"15445
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15445: __asm("NVMCON2 equ 0F82h");
+[; <" NVMCON2 equ 0F82h ;# ">
+"15465
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15465: __asm("LATA equ 0F83h");
+[; <" LATA equ 0F83h ;# ">
+"15577
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15577: __asm("LATB equ 0F84h");
+[; <" LATB equ 0F84h ;# ">
+"15689
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15689: __asm("LATC equ 0F85h");
+[; <" LATC equ 0F85h ;# ">
+"15801
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15801: __asm("TRISA equ 0F88h");
+[; <" TRISA equ 0F88h ;# ">
+"15806
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15806: __asm("DDRA equ 0F88h");
+[; <" DDRA equ 0F88h ;# ">
+"15923
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15923: __asm("TRISB equ 0F89h");
+[; <" TRISB equ 0F89h ;# ">
+"15928
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 15928: __asm("DDRB equ 0F89h");
+[; <" DDRB equ 0F89h ;# ">
+"16045
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16045: __asm("TRISC equ 0F8Ah");
+[; <" TRISC equ 0F8Ah ;# ">
+"16050
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16050: __asm("DDRC equ 0F8Ah");
+[; <" DDRC equ 0F8Ah ;# ">
+"16167
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16167: __asm("PORTA equ 0F8Dh");
+[; <" PORTA equ 0F8Dh ;# ">
+"16251
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16251: __asm("PORTB equ 0F8Eh");
+[; <" PORTB equ 0F8Eh ;# ">
+"16322
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16322: __asm("PORTC equ 0F8Fh");
+[; <" PORTC equ 0F8Fh ;# ">
+"16408
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16408: __asm("PORTE equ 0F91h");
+[; <" PORTE equ 0F91h ;# ">
+"16642
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16642: __asm("SSP1BUF equ 0F92h");
+[; <" SSP1BUF equ 0F92h ;# ">
+"16662
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16662: __asm("SSP1ADD equ 0F93h");
+[; <" SSP1ADD equ 0F93h ;# ">
+"16782
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16782: __asm("SSP1MSK equ 0F94h");
+[; <" SSP1MSK equ 0F94h ;# ">
+"16852
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 16852: __asm("SSP1STAT equ 0F95h");
+[; <" SSP1STAT equ 0F95h ;# ">
+"17306
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17306: __asm("SSP1CON1 equ 0F96h");
+[; <" SSP1CON1 equ 0F96h ;# ">
+"17426
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17426: __asm("SSP1CON2 equ 0F97h");
+[; <" SSP1CON2 equ 0F97h ;# ">
+"17613
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17613: __asm("SSP1CON3 equ 0F98h");
+[; <" SSP1CON3 equ 0F98h ;# ">
+"17675
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17675: __asm("RC1REG equ 0F99h");
+[; <" RC1REG equ 0F99h ;# ">
+"17680
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17680: __asm("RCREG equ 0F99h");
+[; <" RCREG equ 0F99h ;# ">
+"17684
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17684: __asm("RCREG1 equ 0F99h");
+[; <" RCREG1 equ 0F99h ;# ">
+"17729
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17729: __asm("TX1REG equ 0F9Ah");
+[; <" TX1REG equ 0F9Ah ;# ">
+"17734
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17734: __asm("TXREG1 equ 0F9Ah");
+[; <" TXREG1 equ 0F9Ah ;# ">
+"17738
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17738: __asm("TXREG equ 0F9Ah");
+[; <" TXREG equ 0F9Ah ;# ">
+"17783
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17783: __asm("SP1BRG equ 0F9Bh");
+[; <" SP1BRG equ 0F9Bh ;# ">
+"17790
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17790: __asm("SP1BRGL equ 0F9Bh");
+[; <" SP1BRGL equ 0F9Bh ;# ">
+"17795
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17795: __asm("SPBRG equ 0F9Bh");
+[; <" SPBRG equ 0F9Bh ;# ">
+"17799
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17799: __asm("SPBRG1 equ 0F9Bh");
+[; <" SPBRG1 equ 0F9Bh ;# ">
+"17803
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17803: __asm("SPBRGL equ 0F9Bh");
+[; <" SPBRGL equ 0F9Bh ;# ">
+"17860
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17860: __asm("SP1BRGH equ 0F9Ch");
+[; <" SP1BRGH equ 0F9Ch ;# ">
+"17865
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17865: __asm("SPBRGH equ 0F9Ch");
+[; <" SPBRGH equ 0F9Ch ;# ">
+"17869
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17869: __asm("SPBRGH1 equ 0F9Ch");
+[; <" SPBRGH1 equ 0F9Ch ;# ">
+"17914
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17914: __asm("RC1STA equ 0F9Dh");
+[; <" RC1STA equ 0F9Dh ;# ">
+"17919
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17919: __asm("RCSTA1 equ 0F9Dh");
+[; <" RCSTA1 equ 0F9Dh ;# ">
+"17923
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 17923: __asm("RCSTA equ 0F9Dh");
+[; <" RCSTA equ 0F9Dh ;# ">
+"18199
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18199: __asm("TX1STA equ 0F9Eh");
+[; <" TX1STA equ 0F9Eh ;# ">
+"18204
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18204: __asm("TXSTA1 equ 0F9Eh");
+[; <" TXSTA1 equ 0F9Eh ;# ">
+"18208
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18208: __asm("TXSTA equ 0F9Eh");
+[; <" TXSTA equ 0F9Eh ;# ">
+"18643
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18643: __asm("BAUD1CON equ 0F9Fh");
+[; <" BAUD1CON equ 0F9Fh ;# ">
+"18648
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18648: __asm("BAUDCON1 equ 0F9Fh");
+[; <" BAUDCON1 equ 0F9Fh ;# ">
+"18652
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18652: __asm("BAUDCTL1 equ 0F9Fh");
+[; <" BAUDCTL1 equ 0F9Fh ;# ">
+"18656
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18656: __asm("BAUDCON equ 0F9Fh");
+[; <" BAUDCON equ 0F9Fh ;# ">
+"18660
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 18660: __asm("BAUDCTL equ 0F9Fh");
+[; <" BAUDCTL equ 0F9Fh ;# ">
+"19424
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19424: __asm("PWM4DC equ 0FA0h");
+[; <" PWM4DC equ 0FA0h ;# ">
+"19431
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19431: __asm("PWM4DCL equ 0FA0h");
+[; <" PWM4DCL equ 0FA0h ;# ">
+"19497
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19497: __asm("PWM4DCH equ 0FA1h");
+[; <" PWM4DCH equ 0FA1h ;# ">
+"19667
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19667: __asm("PWM4CON equ 0FA2h");
+[; <" PWM4CON equ 0FA2h ;# ">
+"19723
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19723: __asm("PWM3DC equ 0FA3h");
+[; <" PWM3DC equ 0FA3h ;# ">
+"19730
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19730: __asm("PWM3DCL equ 0FA3h");
+[; <" PWM3DCL equ 0FA3h ;# ">
+"19796
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19796: __asm("PWM3DCH equ 0FA4h");
+[; <" PWM3DCH equ 0FA4h ;# ">
+"19966
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 19966: __asm("PWM3CON equ 0FA5h");
+[; <" PWM3CON equ 0FA5h ;# ">
+"20022
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20022: __asm("CCPR2 equ 0FA6h");
+[; <" CCPR2 equ 0FA6h ;# ">
+"20029
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20029: __asm("CCPR2L equ 0FA6h");
+[; <" CCPR2L equ 0FA6h ;# ">
+"20049
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20049: __asm("CCPR2H equ 0FA7h");
+[; <" CCPR2H equ 0FA7h ;# ">
+"20069
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20069: __asm("CCP2CON equ 0FA8h");
+[; <" CCP2CON equ 0FA8h ;# ">
+"20196
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20196: __asm("CCP2CAP equ 0FA9h");
+[; <" CCP2CAP equ 0FA9h ;# ">
+"20252
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20252: __asm("CCPR1 equ 0FAAh");
+[; <" CCPR1 equ 0FAAh ;# ">
+"20259
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20259: __asm("CCPR1L equ 0FAAh");
+[; <" CCPR1L equ 0FAAh ;# ">
+"20279
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20279: __asm("CCPR1H equ 0FABh");
+[; <" CCPR1H equ 0FABh ;# ">
+"20299
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20299: __asm("CCP1CON equ 0FACh");
+[; <" CCP1CON equ 0FACh ;# ">
+"20426
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20426: __asm("CCP1CAP equ 0FADh");
+[; <" CCP1CAP equ 0FADh ;# ">
+"20482
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20482: __asm("CCPTMRS equ 0FAEh");
+[; <" CCPTMRS equ 0FAEh ;# ">
+"20570
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20570: __asm("T6TMR equ 0FAFh");
+[; <" T6TMR equ 0FAFh ;# ">
+"20575
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20575: __asm("TMR6 equ 0FAFh");
+[; <" TMR6 equ 0FAFh ;# ">
+"20608
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20608: __asm("T6PR equ 0FB0h");
+[; <" T6PR equ 0FB0h ;# ">
+"20613
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20613: __asm("PR6 equ 0FB0h");
+[; <" PR6 equ 0FB0h ;# ">
+"20646
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20646: __asm("T6CON equ 0FB1h");
+[; <" T6CON equ 0FB1h ;# ">
+"20792
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20792: __asm("T6HLT equ 0FB2h");
+[; <" T6HLT equ 0FB2h ;# ">
+"20920
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20920: __asm("T6CLKCON equ 0FB3h");
+[; <" T6CLKCON equ 0FB3h ;# ">
+"20925
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 20925: __asm("T6CLK equ 0FB3h");
+[; <" T6CLK equ 0FB3h ;# ">
+"21078
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21078: __asm("T6RST equ 0FB4h");
+[; <" T6RST equ 0FB4h ;# ">
+"21158
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21158: __asm("T4TMR equ 0FB5h");
+[; <" T4TMR equ 0FB5h ;# ">
+"21163
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21163: __asm("TMR4 equ 0FB5h");
+[; <" TMR4 equ 0FB5h ;# ">
+"21196
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21196: __asm("T4PR equ 0FB6h");
+[; <" T4PR equ 0FB6h ;# ">
+"21201
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21201: __asm("PR4 equ 0FB6h");
+[; <" PR4 equ 0FB6h ;# ">
+"21234
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21234: __asm("T4CON equ 0FB7h");
+[; <" T4CON equ 0FB7h ;# ">
+"21380
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21380: __asm("T4HLT equ 0FB8h");
+[; <" T4HLT equ 0FB8h ;# ">
+"21508
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21508: __asm("T4CLKCON equ 0FB9h");
+[; <" T4CLKCON equ 0FB9h ;# ">
+"21513
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21513: __asm("T4CLK equ 0FB9h");
+[; <" T4CLK equ 0FB9h ;# ">
+"21666
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21666: __asm("T4RST equ 0FBAh");
+[; <" T4RST equ 0FBAh ;# ">
+"21746
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21746: __asm("T2TMR equ 0FBBh");
+[; <" T2TMR equ 0FBBh ;# ">
+"21751
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21751: __asm("TMR2 equ 0FBBh");
+[; <" TMR2 equ 0FBBh ;# ">
+"21784
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21784: __asm("T2PR equ 0FBCh");
+[; <" T2PR equ 0FBCh ;# ">
+"21789
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21789: __asm("PR2 equ 0FBCh");
+[; <" PR2 equ 0FBCh ;# ">
+"21822
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21822: __asm("T2CON equ 0FBDh");
+[; <" T2CON equ 0FBDh ;# ">
+"21968
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 21968: __asm("T2HLT equ 0FBEh");
+[; <" T2HLT equ 0FBEh ;# ">
+"22096
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22096: __asm("T2CLKCON equ 0FBFh");
+[; <" T2CLKCON equ 0FBFh ;# ">
+"22101
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22101: __asm("T2CLK equ 0FBFh");
+[; <" T2CLK equ 0FBFh ;# ">
+"22254
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22254: __asm("T2RST equ 0FC0h");
+[; <" T2RST equ 0FC0h ;# ">
+"22334
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22334: __asm("TMR5 equ 0FC1h");
+[; <" TMR5 equ 0FC1h ;# ">
+"22341
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22341: __asm("TMR5L equ 0FC1h");
+[; <" TMR5L equ 0FC1h ;# ">
+"22511
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22511: __asm("TMR5H equ 0FC2h");
+[; <" TMR5H equ 0FC2h ;# ">
+"22631
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22631: __asm("T5CON equ 0FC3h");
+[; <" T5CON equ 0FC3h ;# ">
+"22745
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22745: __asm("T5GCON equ 0FC4h");
+[; <" T5GCON equ 0FC4h ;# ">
+"22750
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22750: __asm("PR5 equ 0FC4h");
+[; <" PR5 equ 0FC4h ;# ">
+"22977
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22977: __asm("T5GATE equ 0FC5h");
+[; <" T5GATE equ 0FC5h ;# ">
+"22982
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 22982: __asm("TMR5GATE equ 0FC5h");
+[; <" TMR5GATE equ 0FC5h ;# ">
+"23119
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23119: __asm("T5CLK equ 0FC6h");
+[; <" T5CLK equ 0FC6h ;# ">
+"23124
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23124: __asm("TMR5CLK equ 0FC6h");
+[; <" TMR5CLK equ 0FC6h ;# ">
+"23261
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23261: __asm("TMR3 equ 0FC7h");
+[; <" TMR3 equ 0FC7h ;# ">
+"23268
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23268: __asm("TMR3L equ 0FC7h");
+[; <" TMR3L equ 0FC7h ;# ">
+"23438
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23438: __asm("TMR3H equ 0FC8h");
+[; <" TMR3H equ 0FC8h ;# ">
+"23558
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23558: __asm("T3CON equ 0FC9h");
+[; <" T3CON equ 0FC9h ;# ">
+"23672
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23672: __asm("T3GCON equ 0FCAh");
+[; <" T3GCON equ 0FCAh ;# ">
+"23677
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23677: __asm("PR3 equ 0FCAh");
+[; <" PR3 equ 0FCAh ;# ">
+"23904
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23904: __asm("T3GATE equ 0FCBh");
+[; <" T3GATE equ 0FCBh ;# ">
+"23909
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 23909: __asm("TMR3GATE equ 0FCBh");
+[; <" TMR3GATE equ 0FCBh ;# ">
+"24046
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24046: __asm("T3CLK equ 0FCCh");
+[; <" T3CLK equ 0FCCh ;# ">
+"24051
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24051: __asm("TMR3CLK equ 0FCCh");
+[; <" TMR3CLK equ 0FCCh ;# ">
+"24188
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24188: __asm("TMR1 equ 0FCDh");
+[; <" TMR1 equ 0FCDh ;# ">
+"24195
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24195: __asm("TMR1L equ 0FCDh");
+[; <" TMR1L equ 0FCDh ;# ">
+"24365
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24365: __asm("TMR1H equ 0FCEh");
+[; <" TMR1H equ 0FCEh ;# ">
+"24485
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24485: __asm("T1CON equ 0FCFh");
+[; <" T1CON equ 0FCFh ;# ">
+"24599
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24599: __asm("T1GCON equ 0FD0h");
+[; <" T1GCON equ 0FD0h ;# ">
+"24604
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24604: __asm("PR1 equ 0FD0h");
+[; <" PR1 equ 0FD0h ;# ">
+"24831
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24831: __asm("T1GATE equ 0FD1h");
+[; <" T1GATE equ 0FD1h ;# ">
+"24836
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24836: __asm("TMR1GATE equ 0FD1h");
+[; <" TMR1GATE equ 0FD1h ;# ">
+"24973
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24973: __asm("T1CLK equ 0FD2h");
+[; <" T1CLK equ 0FD2h ;# ">
+"24978
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 24978: __asm("TMR1CLK equ 0FD2h");
+[; <" TMR1CLK equ 0FD2h ;# ">
+"25115
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25115: __asm("TMR0L equ 0FD3h");
+[; <" TMR0L equ 0FD3h ;# ">
+"25120
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25120: __asm("TMR0 equ 0FD3h");
+[; <" TMR0 equ 0FD3h ;# ">
+"25253
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25253: __asm("TMR0H equ 0FD4h");
+[; <" TMR0H equ 0FD4h ;# ">
+"25258
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25258: __asm("PR0 equ 0FD4h");
+[; <" PR0 equ 0FD4h ;# ">
+"25507
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25507: __asm("T0CON0 equ 0FD5h");
+[; <" T0CON0 equ 0FD5h ;# ">
+"25572
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25572: __asm("T0CON1 equ 0FD6h");
+[; <" T0CON1 equ 0FD6h ;# ">
+"25683
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25683: __asm("PCON0 equ 0FD7h");
+[; <" PCON0 equ 0FD7h ;# ">
+"25836
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25836: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"25952
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25952: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"25959
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25959: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"25979
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25979: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"25986
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 25986: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"26006
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26006: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"26026
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26026: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"26046
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26046: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"26066
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26066: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"26086
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26086: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"26093
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26093: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"26100
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26100: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"26120
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26120: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"26127
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26127: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"26147
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26147: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"26167
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26167: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"26187
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26187: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"26207
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26207: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"26227
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26227: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"26265
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26265: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"26272
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26272: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"26292
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26292: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"26299
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26299: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"26319
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26319: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"26339
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26339: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"26359
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26359: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"26379
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26379: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"26399
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26399: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"26480
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26480: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"26487
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26487: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"26507
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26507: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"26527
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26527: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"26549
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26549: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"26556
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26556: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"26576
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26576: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"26596
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26596: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"26627
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26627: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"26634
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26634: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"26641
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26641: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"26661
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26661: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"26681
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26681: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"26701
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26701: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"26799
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26799: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"26806
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26806: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"26826
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26826: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"26846
+[; ;C:/Users/Mateo/.mchp_packs/Microchip/PIC18F-K_DFP/1.1.58/xc8\pic\include\pic18f26k40.h: 26846: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"246 mcc_generated_files/TCPIPLibrary/ENC28J60.h
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.h: 246: uint8_t Control_Byte;
+[v _Control_Byte `uc ~T0 @X0 1 e ]
+"59 mcc_generated_files/TCPIPLibrary/ENC28J60.c
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 59: volatile ethernetDriver_t ethData;
+[v _ethData `VS1462 ~T0 @X0 1 e ]
+"60
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 60: const mac48Address_t *eth_MAC;
+[v _eth_MAC `*CS1456 ~T0 @X0 1 e ]
+"61
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 61: static uint16_t nextPacketPointer;
+[v _nextPacketPointer `us ~T0 @X0 1 s ]
+"62
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 62: static receiveStatusVector_t rxPacketStatusVector;
+[v _rxPacketStatusVector `S1460 ~T0 @X0 1 s ]
+"63
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 63: sfr_bank_t lastBank;
+[v _lastBank `E10031 ~T0 @X0 1 e ]
+"100
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 100: uint8_t ethListSize;
+[v _ethListSize `uc ~T0 @X0 1 e ]
+"102
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 102: static txPacket_t txData[(20)];
+[v _txData `S1463 ~T0 @X0 -> 20 `i s ]
+"104
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 104: static txPacket_t *pHead;
+[v _pHead `*S1463 ~T0 @X0 1 s ]
+"105
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 105: static txPacket_t *pTail;
+[v _pTail `*S1463 ~T0 @X0 1 s ]
+"131
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 131: uint16_t TXPacketSize;
+[v _TXPacketSize `us ~T0 @X0 1 e ]
+"139
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 139: static void ENC28_BankSel(enc28j60_registers_t r)
+[v _ENC28_BankSel `(v ~T0 @X0 1 sf1`E10038 ]
+"140
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 140: {
+{
+[e :U _ENC28_BankSel ]
+"139
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 139: static void ENC28_BankSel(enc28j60_registers_t r)
+[v _r `E10038 ~T0 @X0 1 r1 ]
+"140
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 140: {
+[f ]
+"141
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 141:     uint8_t a = r & 0xE0;
+[v _a `uc ~T0 @X0 1 a ]
+[e = _a -> & -> _r `ui -> -> 224 `i `ui `uc ]
+"143
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 143:     if (a != sfr_common && a != lastBank)
+[e $ ! && != -> _a `i -> . `E10031 4 `i != -> _a `ui -> _lastBank `ui 1493  ]
+"144
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 144:     {
+{
+"145
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 145:         lastBank = a;
+[e = _lastBank -> _a `E10031 ]
+"147
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 147:         do{LATC1 = 0;} while(0);
+[e :U 1496 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1495 ]
+"148
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 148:         SPI1_ExchangeByte(bfc_inst | 0x1F);
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 5 `i -> 31 `i `uc ]
+"149
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 149:         SPI1_ExchangeByte(0x03);
+[e ( _SPI1_ExchangeByte (1 -> -> 3 `i `uc ]
+"150
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 150:         do{LATC1 = 1;} while(0);
+[e :U 1499 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1498 ]
+"151
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 151:         __nop();
+[e ( ___nop ..  ]
+"152
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 152:         __nop();
+[e ( ___nop ..  ]
+"154
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 154:         do{LATC1 = 0;} while(0);
+[e :U 1502 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1501 ]
+"155
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 155:         SPI1_ExchangeByte(bfs_inst | 0x1F);
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 4 `i -> 31 `i `uc ]
+"156
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 156:         SPI1_ExchangeByte(a >> 6);
+[e ( _SPI1_ExchangeByte (1 -> >> -> _a `i -> 6 `i `uc ]
+"157
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 157:         do{LATC1 = 1;} while(0);
+[e :U 1505 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1504 ]
+"158
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 158:     }
+}
+[e :U 1493 ]
+"159
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 159: }
+[e :UE 1492 ]
+}
+"165
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 165: _Bool ETH_CheckLinkUp(void)
+[v _ETH_CheckLinkUp `(a ~T0 @X0 1 ef ]
+"166
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 166: {
+{
+[e :U _ETH_CheckLinkUp ]
+[f ]
+"167
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 167:     uint16_t phstat2;
+[v _phstat2 `us ~T0 @X0 1 a ]
+"169
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 169:     phstat2 = ENC28_PhyRead(J60_PHSTAT2);
+[e = _phstat2 ( _ENC28_PhyRead (1 . `E10153 5 ]
+"171
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 171:     if(phstat2 & 0x0400)
+[e $ ! != & -> _phstat2 `ui -> -> 1024 `i `ui -> -> 0 `i `ui 1507  ]
+"172
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 172:     {
+{
+"173
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 173:         ethData.up = 1;
+[e = . _ethData 2 -> -> 1 `i `uc ]
+"174
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 174:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 1506  ]
+"175
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 175:     }
+}
+[e $U 1508  ]
+"176
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 176:     else
+[e :U 1507 ]
+"177
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 177:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 1506  ]
+[e :U 1508 ]
+"178
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 178: }
+[e :UE 1506 ]
+}
+"185
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 185: txPacket_t* ETH_NewPacket(void)
+[v _ETH_NewPacket `(*S1463 ~T0 @X0 1 ef ]
+"186
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 186: {
+{
+[e :U _ETH_NewPacket ]
+[f ]
+"187
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 187:     uint8_t index = 0;
+[v _index `uc ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `uc ]
+"189
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 189:     if( ethListSize == (20) )
+[e $ ! == -> _ethListSize `i -> 20 `i 1510  ]
+"190
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 190:     {
+{
+"191
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 191:         return ((void*)0);
+[e ) -> -> -> 0 `i `*v `*S1463 ]
+[e $UE 1509  ]
+"192
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 192:     }
+}
+[e :U 1510 ]
+"194
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 194:     while( index < (20) )
+[e $U 1511  ]
+[e :U 1512 ]
+"195
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 195:     {
+{
+"196
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 196:         if( (_Bool)(txData[index].flags & (0x0001 << 2)) == 0 )
+[e $ ! == -> -> & -> . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 0 `ui -> << -> 1 `i -> 2 `i `ui `a `i -> 0 `i 1514  ]
+"197
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 197:         {
+{
+"198
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 198:             txData[index].flags = 0;
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 0 -> -> 0 `i `us ]
+"199
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 199:             do{ txData[index].flags = txData[index].flags | (0x0001 << 2); } while(0);
+[e :U 1517 ]
+{
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 0 -> | -> . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 0 `ui -> << -> 1 `i -> 2 `i `ui `us ]
+}
+[e :U 1516 ]
+"201
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 201:             txData[index].packetEnd = ((0x1FFF));
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 2 -> -> 8191 `i `us ]
+"203
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 203:             txData[index].prevPacket = ((void*)0);
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 3 -> -> 0 `i `*v ]
+"204
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 204:             txData[index].nextPacket = pHead;
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 4 -> _pHead `*v ]
+"206
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 206:             if( pHead != ((void*)0) )
+[e $ ! != _pHead -> -> -> 0 `i `*v `*S1463 1518  ]
+"207
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 207:             {
+{
+"208
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 208:                 pHead->prevPacket = &txData[index];
+[e = . *U _pHead 3 -> &U *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux `*v ]
+"209
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 209:                 txData[index].packetStart = pHead->packetEnd + (7);
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 1 -> + -> . *U _pHead 2 `ui -> -> 7 `i `ui `us ]
+"212
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 212:                 if( txData[index].packetStart & 0x0001 )
+[e $ ! != & -> . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 1 `ui -> -> 1 `i `ui -> -> 0 `i `ui 1519  ]
+"213
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 213:                 {
+{
+"215
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 215:                     ++ txData[index].packetStart;
+[e =+ . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 1 -> -> 1 `i `us ]
+"216
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 216:                 }
+}
+[e :U 1519 ]
+"217
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 217:             }
+}
+[e $U 1520  ]
+"218
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 218:             else
+[e :U 1518 ]
+"219
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 219:             {
+{
+"220
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 220:                 txData[index].packetStart = ((0x1FFF) - (((1518) + (7)) << 1));
+[e = . *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux 1 -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `us ]
+"221
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 221:                 pTail = (txPacket_t*)&txData[index];
+[e = _pTail &U *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux ]
+"222
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 222:             }
+}
+[e :U 1520 ]
+"224
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 224:             pHead = (txPacket_t*)&txData[index];
+[e = _pHead &U *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux ]
+"226
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 226:             ethListSize ++;
+[e ++ _ethListSize -> -> 1 `i `uc ]
+"227
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 227:             return (&txData[index]);
+[e ) &U *U + &U _txData * -> _index `ux -> -> # *U &U _txData `ui `ux ]
+[e $UE 1509  ]
+"228
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 228:         }
+}
+[e :U 1514 ]
+"229
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 229:         index ++;
+[e ++ _index -> -> 1 `i `uc ]
+"230
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 230:     }
+}
+[e :U 1511 ]
+"194
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 194:     while( index < (20) )
+[e $ < -> _index `i -> 20 `i 1512  ]
+[e :U 1513 ]
+"232
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 232:     return ((void*)0);
+[e ) -> -> -> 0 `i `*v `*S1463 ]
+[e $UE 1509  ]
+"233
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 233: }
+[e :UE 1509 ]
+}
+"240
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 240: void ETH_PacketListReset(void)
+[v _ETH_PacketListReset `(v ~T0 @X0 1 ef ]
+"241
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 241: {
+{
+[e :U _ETH_PacketListReset ]
+[f ]
+"242
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 242:     uint16_t index = 0;
+[v _index `us ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `us ]
+"243
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 243:     uint8_t* ptr = (uint8_t*)&txData;
+[v _ptr `*uc ~T0 @X0 1 a ]
+[e = _ptr -> &U _txData `*uc ]
+"244
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 244:     ethListSize = 0;
+[e = _ethListSize -> -> 0 `i `uc ]
+"246
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 246:     pHead = ((void*)0);
+[e = _pHead -> -> -> 0 `i `*v `*S1463 ]
+"247
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 247:     pTail = ((void*)0);
+[e = _pTail -> -> -> 0 `i `*v `*S1463 ]
+"249
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 249:     while( index < ((20) * sizeof(txPacket_t)) )
+[e $U 1522  ]
+[e :U 1523 ]
+"250
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 250:     {
+{
+"251
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 251:         ptr[index] = 0;
+[e = *U + _ptr * -> _index `ux -> -> # *U _ptr `ui `ux -> -> 0 `i `uc ]
+"252
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 252:         index++;
+[e ++ _index -> -> 1 `i `us ]
+"253
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 253:     }
+}
+[e :U 1522 ]
+"249
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 249:     while( index < ((20) * sizeof(txPacket_t)) )
+[e $ < -> _index `ui * -> -> 20 `i `ui -> # `S1463 `ui 1523  ]
+[e :U 1524 ]
+"254
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 254: }
+[e :UE 1521 ]
+}
+"261
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 261: void ETH_RemovePacket(txPacket_t* pPacket)
+[v _ETH_RemovePacket `(v ~T0 @X0 1 ef1`*S1463 ]
+"262
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 262: {
+{
+[e :U _ETH_RemovePacket ]
+"261
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 261: void ETH_RemovePacket(txPacket_t* pPacket)
+[v _pPacket `*S1463 ~T0 @X0 1 r1 ]
+"262
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 262: {
+[f ]
+"267
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 267:     if( (pPacket == ((void*)0)) || (ethListSize == 0) )
+[e $ ! || == _pPacket -> -> -> 0 `i `*v `*S1463 == -> _ethListSize `i -> 0 `i 1526  ]
+"268
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 268:     {
+{
+"269
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 269:         return;
+[e $UE 1525  ]
+"270
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 270:     }
+}
+[e :U 1526 ]
+"288
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 288:     if( pPacket->nextPacket == ((void*)0) )
+[e $ ! == . *U _pPacket 4 -> -> 0 `i `*v 1527  ]
+"289
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 289:     {
+{
+"290
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 290:         pTail = pPacket->prevPacket;
+[e = _pTail -> . *U _pPacket 3 `*S1463 ]
+"291
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 291:         if( pTail != ((void*)0) )
+[e $ ! != _pTail -> -> -> 0 `i `*v `*S1463 1528  ]
+"292
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 292:         {
+{
+"293
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 293:             pTail->nextPacket = ((void*)0);
+[e = . *U _pTail 4 -> -> 0 `i `*v ]
+"294
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 294:         }
+}
+[e :U 1528 ]
+"295
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 295:     }
+}
+[e :U 1527 ]
+"297
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 297:     if( pPacket->prevPacket == ((void*)0) )
+[e $ ! == . *U _pPacket 3 -> -> 0 `i `*v 1529  ]
+"298
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 298:     {
+{
+"299
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 299:         pHead = pPacket->nextPacket;
+[e = _pHead -> . *U _pPacket 4 `*S1463 ]
+"300
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 300:         if( pHead != ((void*)0) )
+[e $ ! != _pHead -> -> -> 0 `i `*v `*S1463 1530  ]
+"301
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 301:         {
+{
+"302
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 302:             pHead->prevPacket = ((void*)0);
+[e = . *U _pHead 3 -> -> 0 `i `*v ]
+"303
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 303:         }
+}
+[e :U 1530 ]
+"304
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 304:     }
+}
+[e :U 1529 ]
+"307
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 307:     pPacket->flags = 0;
+[e = . *U _pPacket 0 -> -> 0 `i `us ]
+"308
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 308:     pPacket->prevPacket = ((void*)0);
+[e = . *U _pPacket 3 -> -> 0 `i `*v ]
+"309
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 309:     pPacket->nextPacket = ((void*)0);
+[e = . *U _pPacket 4 -> -> 0 `i `*v ]
+"311
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 311:     ethListSize --;
+[e -- _ethListSize -> -> 1 `i `uc ]
+"313
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 313:     return;
+[e $UE 1525  ]
+"314
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 314: }
+[e :UE 1525 ]
+}
+"319
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 319: void ETH_CloseSPI(void)
+[v _ETH_CloseSPI `(v ~T0 @X0 1 ef ]
+"320
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 320: {
+{
+[e :U _ETH_CloseSPI ]
+[f ]
+"321
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 321:     SPI1_Close();
+[e ( _SPI1_Close ..  ]
+"322
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 322: }
+[e :UE 1531 ]
+}
+"327
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 327: void ETH_OpenSPI(void)
+[v _ETH_OpenSPI `(v ~T0 @X0 1 ef ]
+"328
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 328: {
+{
+[e :U _ETH_OpenSPI ]
+[f ]
+"329
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 329:     while (!spi_master_open(MAC));
+[e $U 1533  ]
+[e :U 1534 ]
+[e :U 1533 ]
+[e $ ! != -> ( _spi_master_open (1 . `E10620 0 `i -> 0 `i 1534  ]
+[e :U 1535 ]
+"330
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 330: }
+[e :UE 1532 ]
+}
+"335
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 335: void ETH_Init(void)
+[v _ETH_Init `(v ~T0 @X0 1 ef ]
+"336
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 336: {
+{
+[e :U _ETH_Init ]
+[f ]
+"337
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 337:     ETH_OpenSPI();
+[e ( _ETH_OpenSPI ..  ]
+"339
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 339:     Control_Byte = 0x00;
+[e = _Control_Byte -> -> 0 `i `uc ]
+"341
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 341:     ethData.error = 0;
+[e = . _ethData 0 -> -> 0 `i `uc ]
+"342
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 342:     ethData.up = 0;
+[e = . _ethData 2 -> -> 0 `i `uc ]
+"343
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 343:     ethData.linkChange = 0;
+[e = . _ethData 4 -> -> 0 `i `uc ]
+"345
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 345:     ETH_PacketListReset();
+[e ( _ETH_PacketListReset ..  ]
+"347
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 347:     ethData.saveRDPT = 0;
+[e = . _ethData 7 -> -> 0 `i `us ]
+"349
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 349:     lastBank = sfr_bank0;
+[e = _lastBank . `E10031 0 ]
+"351
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 351:     _delay((unsigned long)((100)*(8000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
+"353
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 353:     ETH_SendSystemReset();
+[e ( _ETH_SendSystemReset ..  ]
+"354
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 354:     _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"357
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 357:     while (!(ENC28_Rcr8(J60_ESTAT) & 0x01));
+[e $U 1537  ]
+[e :U 1538 ]
+[e :U 1537 ]
+[e $ ! != & -> ( _ENC28_Rcr8 (1 . `E10038 110 `i -> 1 `i -> 0 `i 1538  ]
+[e :U 1539 ]
+"360
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 360:     nextPacketPointer = (0);
+[e = _nextPacketPointer -> -> 0 `i `us ]
+"362
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 362:     ENC28_Bfs (J60_ECON2, 0x80);
+[e ( _ENC28_Bfs (2 , . `E10038 111 -> -> 128 `i `uc ]
+"365
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 365:     ENC28_Wcr16(J60_ETXSTL, ((0x1FFF) - (((1518) + (7)) << 1)));
+[e ( _ENC28_Wcr16 (2 , . `E10038 4 -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `us ]
+"366
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 366:     ENC28_Wcr16(J60_ETXNDL, ((0x1FFF)));
+[e ( _ENC28_Wcr16 (2 , . `E10038 6 -> -> 8191 `i `us ]
+"367
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 367:     ENC28_Wcr16(J60_ERXSTL, (0));
+[e ( _ENC28_Wcr16 (2 , . `E10038 8 -> -> 0 `i `us ]
+"368
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 368:     ENC28_Wcr16(J60_ERXNDL, (((0x1FFF) - (((1518) + (7)) << 1)) - 2));
+[e ( _ENC28_Wcr16 (2 , . `E10038 10 -> - - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i -> 2 `i `us ]
+"369
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 369:     ENC28_Wcr16(J60_ERDPTL,nextPacketPointer);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 _nextPacketPointer ]
+"371
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 371:     ENC28_Wcr16(J60_ERDPTL, (0));
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 -> -> 0 `i `us ]
+"372
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 372:     ENC28_Wcr16(J60_EWRPTL, ((0x1FFF) - (((1518) + (7)) << 1)));
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `us ]
+"375
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 375:     ENC28_Wcr8(J60_ERXFCON, 0b10101001);
+[e ( _ENC28_Wcr8 (2 , . `E10038 51 -> -> 169 `i `uc ]
+"378
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 378:     eth_MAC = MAC_getAddress();
+[e = _eth_MAC ( _MAC_getAddress ..  ]
+"381
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 381:     ENC28_Wcr8(J60_MACON1, 0x0D);
+[e ( _ENC28_Wcr8 (2 , . `E10038 54 -> -> 13 `i `uc ]
+"382
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 382:     ENC28_Wcr8(J60_MACON3, 0x23);
+[e ( _ENC28_Wcr8 (2 , . `E10038 56 -> -> 35 `i `uc ]
+"383
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 383:     ENC28_Wcr8(J60_MACON4, 0x40);
+[e ( _ENC28_Wcr8 (2 , . `E10038 57 -> -> 64 `i `uc ]
+"384
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 384:     ENC28_Wcr16(J60_MAIPGL, 0x0c12);
+[e ( _ENC28_Wcr16 (2 , . `E10038 60 -> -> 3090 `i `us ]
+"385
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 385:     ENC28_Wcr8(J60_MABBIPG, 0x12);
+[e ( _ENC28_Wcr8 (2 , . `E10038 58 -> -> 18 `i `uc ]
+"386
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 386:     ENC28_Wcr16(J60_MAMXFLL, (1518));
+[e ( _ENC28_Wcr16 (2 , . `E10038 64 -> -> 1518 `i `us ]
+"387
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 387:     ENC28_Wcr8(J60_MAADR1, eth_MAC->mac_array[0]); __nop();
+[e ( _ENC28_Wcr8 (2 , . `E10038 85 *U + &U . *U _eth_MAC 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+[e ( ___nop ..  ]
+"388
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 388:     ENC28_Wcr8(J60_MAADR2, eth_MAC->mac_array[1]); __nop();
+[e ( _ENC28_Wcr8 (2 , . `E10038 86 *U + &U . *U _eth_MAC 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+[e ( ___nop ..  ]
+"389
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 389:     ENC28_Wcr8(J60_MAADR3, eth_MAC->mac_array[2]); __nop();
+[e ( _ENC28_Wcr8 (2 , . `E10038 83 *U + &U . *U _eth_MAC 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+[e ( ___nop ..  ]
+"390
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 390:     ENC28_Wcr8(J60_MAADR4, eth_MAC->mac_array[3]); __nop();
+[e ( _ENC28_Wcr8 (2 , . `E10038 84 *U + &U . *U _eth_MAC 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+[e ( ___nop ..  ]
+"391
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 391:     ENC28_Wcr8(J60_MAADR5, eth_MAC->mac_array[4]); __nop();
+[e ( _ENC28_Wcr8 (2 , . `E10038 81 *U + &U . *U _eth_MAC 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+[e ( ___nop ..  ]
+"392
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 392:     ENC28_Wcr8(J60_MAADR6, eth_MAC->mac_array[5]); __nop();
+[e ( _ENC28_Wcr8 (2 , . `E10038 82 *U + &U . *U _eth_MAC 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+[e ( ___nop ..  ]
+"394
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 394:     ENC28_Wcr8(J60_ECON1, 0x04);
+[e ( _ENC28_Wcr8 (2 , . `E10038 112 -> -> 4 `i `uc ]
+"397
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 397:     ENC28_PhyWrite(J60_PHCON1, 0x0100);
+[e ( _ENC28_PhyWrite (2 , . `E10153 0 -> -> 256 `i `us ]
+"398
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 398:     ENC28_PhyWrite(J60_PHCON2, 0x0100);
+[e ( _ENC28_PhyWrite (2 , . `E10153 4 -> -> 256 `i `us ]
+"399
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 399:     ENC28_PhyWrite(J60_PHLCON, 0x0472);
+[e ( _ENC28_PhyWrite (2 , . `E10153 8 -> -> 1138 `i `us ]
+"403
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 403:     ENC28_Wcr8(J60_EIE, 0xDB);
+[e ( _ENC28_Wcr8 (2 , . `E10038 108 -> -> 219 `i `uc ]
+"404
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 404:     ENC28_Wcr16(((enc28j60_registers_t)J60_PHIE), 0x12);
+[e ( _ENC28_Wcr16 (2 , -> . `E10153 6 `E10038 -> -> 18 `i `us ]
+"407
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 407:     ETH_CheckLinkUp();
+[e ( _ETH_CheckLinkUp ..  ]
+"409
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 409: }
+[e :UE 1536 ]
+}
+"414
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 414: void ETH_EventHandler(void)
+[v _ETH_EventHandler `(v ~T0 @X0 1 ef ]
+"415
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 415: {
+{
+[e :U _ETH_EventHandler ]
+[f ]
+"416
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 416:     eir_t eir_val;
+[v _eir_val `S1464 ~T0 @X0 1 a ]
+"417
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 417:     phstat2_t phstat2_val;
+[v _phstat2_val `S1466 ~T0 @X0 1 a ]
+"421
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 421:  eir_val.val = ENC28_Rcr8(J60_EIR);
+[e = . _eir_val 0 -> ( _ENC28_Rcr8 (1 . `E10038 109 `uc ]
+"422
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 422:  phstat2_val.val = ENC28_Rcr16((enc28j60_registers_t)J60_PHSTAT2);
+[e = . _phstat2_val 0 -> ( _ENC28_Rcr16 (1 -> . `E10153 5 `E10038 `ui ]
+"424
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 424:  if (eir_val.LINKIF)
+[e $ ! != -> . . _eir_val 1 4 `i -> 0 `i 1541  ]
+"425
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 425:  {
+{
+"426
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 426:         ENC28_Bfc(J60_EIR,0x01);
+[e ( _ENC28_Bfc (2 , . `E10038 109 -> -> 1 `i `uc ]
+"427
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 427:   ethData.linkChange = 1;
+[e = . _ethData 4 -> -> 1 `i `uc ]
+"428
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 428:   ethData.up = 0;
+[e = . _ethData 2 -> -> 0 `i `uc ]
+"429
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 429:   if(ETH_CheckLinkUp())
+[e $ ! != -> ( _ETH_CheckLinkUp ..  `i -> 0 `i 1542  ]
+"430
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 430:   {
+{
+"431
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 431:   }
+}
+[e :U 1542 ]
+"432
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 432:   if (phstat2_val.DPXSTAT)
+[e $ ! != -> . . _phstat2_val 1 3 `i -> 0 `i 1543  ]
+"433
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 433:   {
+{
+"434
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 434:    ENC28_Wcr16(J60_MABBIPG, 0x15);
+[e ( _ENC28_Wcr16 (2 , . `E10038 58 -> -> 21 `i `us ]
+"435
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 435:    ENC28_Bfs(((enc28j60_registers_t)J60_PHSTAT2),0x01);
+[e ( _ENC28_Bfs (2 , -> . `E10153 5 `E10038 -> -> 1 `i `uc ]
+"436
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 436:   }
+}
+[e $U 1544  ]
+"437
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 437:         else
+[e :U 1543 ]
+"438
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 438:   {
+{
+"439
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 439:    ENC28_Wcr16(J60_MABBIPG, 0x12);
+[e ( _ENC28_Wcr16 (2 , . `E10038 58 -> -> 18 `i `us ]
+"440
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 440:             ENC28_Bfc(((enc28j60_registers_t)J60_PHSTAT2),0x01);
+[e ( _ENC28_Bfc (2 , -> . `E10153 5 `E10038 -> -> 1 `i `uc ]
+"441
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 441:         }
+}
+[e :U 1544 ]
+"442
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 442:     }
+}
+[e :U 1541 ]
+"443
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 443:  if(eir_val.TXIF)
+[e $ ! != -> . . _eir_val 1 3 `i -> 0 `i 1545  ]
+"444
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 444:  {
+{
+"445
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 445:   ENC28_Bfc(J60_EIR,0x08);
+[e ( _ENC28_Bfc (2 , . `E10038 109 -> -> 8 `i `uc ]
+"446
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 446:   ETH_RemovePacket(pTail);
+[e ( _ETH_RemovePacket (1 _pTail ]
+"447
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 447:   if( ethListSize > 0 )
+[e $ ! > -> _ethListSize `i -> 0 `i 1546  ]
+"448
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 448:   {
+{
+"449
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 449:    if( ENC28_Rcr16(J60_EWRPTL) > ((((0x1FFF) - (((1518) + (7)) << 1))) + (((((1518) + (7)) << 1)) >> 1) ) )
+[e $ ! > -> ( _ENC28_Rcr16 (1 . `E10038 2 `ui -> + - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i >> << + -> 1518 `i -> 7 `i -> 1 `i -> 1 `i `ui 1547  ]
+"450
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 450:    {
+{
+"452
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 452:                 ETH_Shift_Tx_Packets();
+[e ( _ETH_Shift_Tx_Packets ..  ]
+"453
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 453:             }
+}
+[e :U 1547 ]
+"456
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 456:             ETH_SendQueued();
+[e ( _ETH_SendQueued ..  ]
+"457
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 457:         }
+}
+[e :U 1546 ]
+"458
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 458:     }
+}
+[e :U 1545 ]
+"459
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 459:     if (eir_val.PKTIF || ENC28_Rcr8(J60_EPKTCNT))
+[e $ ! || != -> . . _eir_val 1 6 `i -> 0 `i != -> ( _ENC28_Rcr8 (1 . `E10038 52 `i -> 0 `i 1548  ]
+"460
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 460:     {
+{
+"461
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 461:   ethData.pktReady = 1;
+[e = . _ethData 1 -> -> 1 `i `uc ]
+"462
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 462:         ENC28_Bfc(J60_EIR,0x04);
+[e ( _ENC28_Bfc (2 , . `E10038 109 -> -> 4 `i `uc ]
+"463
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 463:     }
+}
+[e :U 1548 ]
+"465
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 465: }
+[e :UE 1540 ]
+}
+"470
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 470: void ETH_NextPacketUpdate(void)
+[v _ETH_NextPacketUpdate `(v ~T0 @X0 1 ef ]
+"471
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 471: {
+{
+[e :U _ETH_NextPacketUpdate ]
+[f ]
+"474
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 474:     if (nextPacketPointer == (0))
+[e $ ! == -> _nextPacketPointer `ui -> -> 0 `i `ui 1550  ]
+"475
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 475:         ENC28_Wcr16(J60_ERXRDPTL, (((0x1FFF) - (((1518) + (7)) << 1)) - 2));
+[e ( _ENC28_Wcr16 (2 , . `E10038 12 -> - - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i -> 2 `i `us ]
+[e $U 1551  ]
+"476
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 476:     else
+[e :U 1550 ]
+"477
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 477:         ENC28_Wcr16(J60_ERXRDPTL, nextPacketPointer-1);
+[e ( _ENC28_Wcr16 (2 , . `E10038 12 -> - -> _nextPacketPointer `ui -> -> 1 `i `ui `us ]
+[e :U 1551 ]
+"479
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 479:     ENC28_Wcr16(J60_ERDPTL, nextPacketPointer);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 _nextPacketPointer ]
+"481
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 481:     do{LATC1 = 0;} while(0);
+[e :U 1554 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1553 ]
+"482
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 482:     SPI1_ExchangeByte(rbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 1 `uc ]
+"483
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 483:     ((char *) &nextPacketPointer)[0] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _nextPacketPointer `*uc * -> -> 0 `i `x -> -> # *U -> &U _nextPacketPointer `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"484
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 484:     ((char *) &nextPacketPointer)[1] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _nextPacketPointer `*uc * -> -> 1 `i `x -> -> # *U -> &U _nextPacketPointer `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"485
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 485:     ((char *) &rxPacketStatusVector)[0] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _rxPacketStatusVector `*uc * -> -> 0 `i `x -> -> # *U -> &U _rxPacketStatusVector `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"486
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 486:     ((char *) &rxPacketStatusVector)[1] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _rxPacketStatusVector `*uc * -> -> 1 `i `x -> -> # *U -> &U _rxPacketStatusVector `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"487
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 487:     ((char *) &rxPacketStatusVector)[2] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _rxPacketStatusVector `*uc * -> -> 2 `i `x -> -> # *U -> &U _rxPacketStatusVector `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"488
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 488:     ((char *) &rxPacketStatusVector)[3] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _rxPacketStatusVector `*uc * -> -> 3 `i `x -> -> # *U -> &U _rxPacketStatusVector `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"489
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 489:     do{LATC1 = 1;} while(0);
+[e :U 1557 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1556 ]
+"490
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 490:     rxPacketStatusVector.byteCount -= 4;
+[e =- . . _rxPacketStatusVector 1 0 -> -> 4 `i `us ]
+"492
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 492: }
+[e :UE 1549 ]
+}
+"494
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 494: void ETH_ResetReceiver(void)
+[v _ETH_ResetReceiver `(v ~T0 @X0 1 ef ]
+"495
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 495: {
+{
+[e :U _ETH_ResetReceiver ]
+[f ]
+"496
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 496:     uint8_t econ1;
+[v _econ1 `uc ~T0 @X0 1 a ]
+"497
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 497:     econ1 = ENC28_Rcr8(J60_ECON1);
+[e = _econ1 ( _ENC28_Rcr8 (1 . `E10038 112 ]
+"498
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 498:     ENC28_Wcr8(J60_ECON1,(econ1 | 0x40));
+[e ( _ENC28_Wcr8 (2 , . `E10038 112 -> | -> _econ1 `i -> 64 `i `uc ]
+"499
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 499: }
+[e :UE 1558 ]
+}
+"507
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 507: static uint8_t ENC28_Rcr8(enc28j60_registers_t a)
+[v _ENC28_Rcr8 `(uc ~T0 @X0 1 sf1`E10038 ]
+"508
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 508: {
+{
+[e :U _ENC28_Rcr8 ]
+"507
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 507: static uint8_t ENC28_Rcr8(enc28j60_registers_t a)
+[v _a `E10038 ~T0 @X0 1 r1 ]
+"508
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 508: {
+[f ]
+"509
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 509:     uint8_t v;
+[v _v `uc ~T0 @X0 1 a ]
+"511
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 511:     ENC28_BankSel(a);
+[e ( _ENC28_BankSel (1 _a ]
+"512
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 512:     do{LATC1 = 0;} while(0);
+[e :U 1562 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1561 ]
+"513
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 513:     SPI1_ExchangeByte(rcr_inst | (a & 0x1F));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 0 `ui & -> _a `ui -> -> 31 `i `ui `uc ]
+"514
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 514:     v = SPI1_ExchangeByte(0);
+[e = _v ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc ]
+"515
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 515:     do{LATC1 = 1;} while(0);
+[e :U 1565 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1564 ]
+"517
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 517:     return v;
+[e ) _v ]
+[e $UE 1559  ]
+"518
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 518: }
+[e :UE 1559 ]
+}
+"525
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 525: static uint16_t ENC28_Rcr16(enc28j60_registers_t a)
+[v _ENC28_Rcr16 `(us ~T0 @X0 1 sf1`E10038 ]
+"526
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 526: {
+{
+[e :U _ENC28_Rcr16 ]
+"525
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 525: static uint16_t ENC28_Rcr16(enc28j60_registers_t a)
+[v _a `E10038 ~T0 @X0 1 r1 ]
+"526
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 526: {
+[f ]
+"527
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 527:     uint16_t v;
+[v _v `us ~T0 @X0 1 a ]
+"529
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 529:     ENC28_BankSel(a);
+[e ( _ENC28_BankSel (1 _a ]
+"530
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 530:     a &= 0x1F;
+[e =& _a -> -> 31 `i `E10038 ]
+"531
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 531:     do{LATC1 = 0;} while(0);
+[e :U 1569 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1568 ]
+"532
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 532:     SPI1_ExchangeByte(rcr_inst | (a));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 0 `ui -> _a `ui `uc ]
+"533
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 533:     ((char *) &v)[0] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _v `*uc * -> -> 0 `i `x -> -> # *U -> &U _v `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"534
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 534:     do{LATC1 = 1;} while(0);
+[e :U 1572 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1571 ]
+"535
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 535:     __nop();
+[e ( ___nop ..  ]
+"536
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 536:     __nop();
+[e ( ___nop ..  ]
+"537
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 537:     do{LATC1 = 0;} while(0);
+[e :U 1575 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1574 ]
+"538
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 538:     SPI1_ExchangeByte(rcr_inst | (a + 1));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 0 `ui + -> _a `ui -> -> 1 `i `ui `uc ]
+"539
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 539:     ((char *) &v)[1] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _v `*uc * -> -> 1 `i `x -> -> # *U -> &U _v `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"540
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 540:     do{LATC1 = 1;} while(0);
+[e :U 1578 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1577 ]
+"542
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 542:     return v;
+[e ) _v ]
+[e $UE 1566  ]
+"543
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 543: }
+[e :UE 1566 ]
+}
+"550
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 550: static void ENC28_Wcr8(enc28j60_registers_t a, uint8_t v)
+[v _ENC28_Wcr8 `(v ~T0 @X0 1 sf2`E10038`uc ]
+"551
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 551: {
+{
+[e :U _ENC28_Wcr8 ]
+"550
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 550: static void ENC28_Wcr8(enc28j60_registers_t a, uint8_t v)
+[v _a `E10038 ~T0 @X0 1 r1 ]
+[v _v `uc ~T0 @X0 1 r2 ]
+"551
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 551: {
+[f ]
+"552
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 552:     ENC28_BankSel(a);
+[e ( _ENC28_BankSel (1 _a ]
+"553
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 553:     do{LATC1 = 0;} while(0);
+[e :U 1582 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1581 ]
+"554
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 554:     SPI1_ExchangeByte(wcr_inst | (a & 0x1F));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 2 `ui & -> _a `ui -> -> 31 `i `ui `uc ]
+"555
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 555:     SPI1_ExchangeByte(v);
+[e ( _SPI1_ExchangeByte (1 _v ]
+"556
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 556:     do{LATC1 = 1;} while(0);
+[e :U 1585 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1584 ]
+"557
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 557: }
+[e :UE 1579 ]
+}
+"564
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 564: static void ENC28_Wcr16(enc28j60_registers_t a, uint16_t v)
+[v _ENC28_Wcr16 `(v ~T0 @X0 1 sf2`E10038`us ]
+"565
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 565: {
+{
+[e :U _ENC28_Wcr16 ]
+"564
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 564: static void ENC28_Wcr16(enc28j60_registers_t a, uint16_t v)
+[v _a `E10038 ~T0 @X0 1 r1 ]
+[v _v `us ~T0 @X0 1 r2 ]
+"565
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 565: {
+[f ]
+"566
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 566:     ENC28_BankSel(a);
+[e ( _ENC28_BankSel (1 _a ]
+"567
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 567:     a &= 0x1F;
+[e =& _a -> -> 31 `i `E10038 ]
+"568
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 568:     do{LATC1 = 0;} while(0);
+[e :U 1589 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1588 ]
+"569
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 569:     SPI1_ExchangeByte(wcr_inst | (a));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 2 `ui -> _a `ui `uc ]
+"570
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 570:     SPI1_ExchangeByte(((char *) &v)[0]);
+[e ( _SPI1_ExchangeByte (1 -> *U + -> &U _v `*uc * -> -> 0 `i `x -> -> # *U -> &U _v `*uc `i `x `uc ]
+"571
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 571:     do{LATC1 = 1;} while(0);
+[e :U 1592 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1591 ]
+"572
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 572:     __nop();
+[e ( ___nop ..  ]
+"573
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 573:     __nop();
+[e ( ___nop ..  ]
+"574
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 574:     do{LATC1 = 0;} while(0);
+[e :U 1595 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1594 ]
+"575
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 575:     SPI1_ExchangeByte(wcr_inst | (a + 1));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 2 `ui + -> _a `ui -> -> 1 `i `ui `uc ]
+"576
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 576:     SPI1_ExchangeByte(((char *) &v)[1]);
+[e ( _SPI1_ExchangeByte (1 -> *U + -> &U _v `*uc * -> -> 1 `i `x -> -> # *U -> &U _v `*uc `i `x `uc ]
+"577
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 577:     do{LATC1 = 1;} while(0);
+[e :U 1598 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1597 ]
+"578
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 578: }
+[e :UE 1586 ]
+}
+"585
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 585: static void ENC28_Bfs(enc28j60_registers_t a, char bits)
+[v _ENC28_Bfs `(v ~T0 @X0 1 sf2`E10038`uc ]
+"586
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 586: {
+{
+[e :U _ENC28_Bfs ]
+"585
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 585: static void ENC28_Bfs(enc28j60_registers_t a, char bits)
+[v _a `E10038 ~T0 @X0 1 r1 ]
+[v _bits `uc ~T0 @X0 1 r2 ]
+"586
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 586: {
+[f ]
+"587
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 587:     ENC28_BankSel(a);
+[e ( _ENC28_BankSel (1 _a ]
+"588
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 588:     do{LATC1 = 0;} while(0);
+[e :U 1602 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1601 ]
+"589
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 589:     SPI1_ExchangeByte(bfs_inst | (a & 0x1F));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 4 `ui & -> _a `ui -> -> 31 `i `ui `uc ]
+"590
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 590:     SPI1_ExchangeByte(bits);
+[e ( _SPI1_ExchangeByte (1 -> _bits `uc ]
+"591
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 591:     do{LATC1 = 1;} while(0);
+[e :U 1605 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1604 ]
+"592
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 592: }
+[e :UE 1599 ]
+}
+"599
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 599: static void ENC28_Bfc(enc28j60_registers_t a, char bits)
+[v _ENC28_Bfc `(v ~T0 @X0 1 sf2`E10038`uc ]
+"600
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 600: {
+{
+[e :U _ENC28_Bfc ]
+"599
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 599: static void ENC28_Bfc(enc28j60_registers_t a, char bits)
+[v _a `E10038 ~T0 @X0 1 r1 ]
+[v _bits `uc ~T0 @X0 1 r2 ]
+"600
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 600: {
+[f ]
+"601
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 601:     ENC28_BankSel(a);
+[e ( _ENC28_BankSel (1 _a ]
+"602
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 602:     do{LATC1 = 0;} while(0);
+[e :U 1609 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1608 ]
+"603
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 603:     SPI1_ExchangeByte(bfc_inst | (a & 0x1F));
+[e ( _SPI1_ExchangeByte (1 -> | -> . `E10022 5 `ui & -> _a `ui -> -> 31 `i `ui `uc ]
+"604
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 604:     SPI1_ExchangeByte(bits);
+[e ( _SPI1_ExchangeByte (1 -> _bits `uc ]
+"605
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 605:     do{LATC1 = 1;} while(0);
+[e :U 1612 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1611 ]
+"606
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 606: }
+[e :UE 1606 ]
+}
+"613
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 613: static void ENC28_PhyWrite(enc28j60_phy_registers_t a, uint16_t d)
+[v _ENC28_PhyWrite `(v ~T0 @X0 1 sf2`E10153`us ]
+"614
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 614: {
+{
+[e :U _ENC28_PhyWrite ]
+"613
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 613: static void ENC28_PhyWrite(enc28j60_phy_registers_t a, uint16_t d)
+[v _a `E10153 ~T0 @X0 1 r1 ]
+[v _d `us ~T0 @X0 1 r2 ]
+"614
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 614: {
+[f ]
+"615
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 615:     uint8_t v=1;
+[v _v `uc ~T0 @X0 1 a ]
+[e = _v -> -> 1 `i `uc ]
+"617
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 617:     ENC28_Wcr8(J60_MIREGADR, a);
+[e ( _ENC28_Wcr8 (2 , . `E10038 74 -> _a `uc ]
+"618
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 618:     ENC28_Wcr16(J60_MIWRL, d);
+[e ( _ENC28_Wcr16 (2 , . `E10038 76 _d ]
+"619
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 619:     while(v & 0x01)
+[e $U 1614  ]
+[e :U 1615 ]
+"620
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 620:     {
+{
+"621
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 621:         v = ENC28_Rcr8(J60_MISTAT);
+[e = _v ( _ENC28_Rcr8 (1 . `E10038 91 ]
+"622
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 622:     }
+}
+[e :U 1614 ]
+"619
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 619:     while(v & 0x01)
+[e $ != & -> _v `i -> 1 `i -> 0 `i 1615  ]
+[e :U 1616 ]
+"623
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 623: }
+[e :UE 1613 ]
+}
+"630
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 630: static uint16_t ENC28_PhyRead(enc28j60_phy_registers_t a)
+[v _ENC28_PhyRead `(us ~T0 @X0 1 sf1`E10153 ]
+"631
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 631: {
+{
+[e :U _ENC28_PhyRead ]
+"630
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 630: static uint16_t ENC28_PhyRead(enc28j60_phy_registers_t a)
+[v _a `E10153 ~T0 @X0 1 r1 ]
+"631
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 631: {
+[f ]
+"632
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 632:     ENC28_Wcr8(J60_MIREGADR, a);
+[e ( _ENC28_Wcr8 (2 , . `E10038 74 -> _a `uc ]
+"633
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 633:     ENC28_Bfs(J60_MICMD, 0x01);
+[e ( _ENC28_Bfs (2 , . `E10038 72 -> -> 1 `i `uc ]
+"634
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 634:     while (ENC28_Rcr8(J60_MISTAT) & 0x01);
+[e $U 1618  ]
+[e :U 1619 ]
+[e :U 1618 ]
+[e $ != & -> ( _ENC28_Rcr8 (1 . `E10038 91 `i -> 1 `i -> 0 `i 1619  ]
+[e :U 1620 ]
+"635
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 635:     ENC28_Bfc(J60_MICMD, 0x01);
+[e ( _ENC28_Bfc (2 , . `E10038 72 -> -> 1 `i `uc ]
+"637
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 637:     return ENC28_Rcr16(J60_MIRDL);
+[e ) ( _ENC28_Rcr16 (1 . `E10038 78 ]
+[e $UE 1617  ]
+"638
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 638: }
+[e :UE 1617 ]
+}
+"643
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 643: void ETH_SendSystemReset(void)
+[v _ETH_SendSystemReset `(v ~T0 @X0 1 ef ]
+"644
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 644: {
+{
+[e :U _ETH_SendSystemReset ]
+[f ]
+"645
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 645:     do{LATC1 = 0;} while(0);
+[e :U 1624 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1623 ]
+"646
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 646:     SPI1_ExchangeByte(src_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 6 `uc ]
+"647
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 647:     do{LATC1 = 1;} while(0);
+[e :U 1627 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1626 ]
+"648
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 648: }
+[e :UE 1621 ]
+}
+"656
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 656: uint8_t ETH_Read8(void)
+[v _ETH_Read8 `(uc ~T0 @X0 1 ef ]
+"657
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 657: {
+{
+[e :U _ETH_Read8 ]
+[f ]
+"658
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 658:     uint8_t b;
+[v _b `uc ~T0 @X0 1 a ]
+"660
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 660:     do{LATC1 = 0;} while(0);
+[e :U 1631 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1630 ]
+"661
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 661:     SPI1_ExchangeByte(rbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 1 `uc ]
+"662
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 662:     b = SPI1_ExchangeByte(0);
+[e = _b ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc ]
+"663
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 663:     do{LATC1 = 1;} while(0);
+[e :U 1634 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1633 ]
+"665
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 665:     return b;
+[e ) _b ]
+[e $UE 1628  ]
+"666
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 666: }
+[e :UE 1628 ]
+}
+"672
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 672: uint16_t ETH_Read16(void)
+[v _ETH_Read16 `(us ~T0 @X0 1 ef ]
+"673
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 673: {
+{
+[e :U _ETH_Read16 ]
+[f ]
+"674
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 674:     uint16_t b;
+[v _b `us ~T0 @X0 1 a ]
+"676
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 676:     do{LATC1 = 0;} while(0);
+[e :U 1638 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1637 ]
+"677
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 677:     SPI1_ExchangeByte(rbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 1 `uc ]
+"678
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 678:     b = SPI1_ExchangeByte(0)<< 8;
+[e = _b -> << -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `i -> 8 `i `us ]
+"679
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 679:     b |= SPI1_ExchangeByte(0);
+[e =| _b -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `us ]
+"680
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 680:     do{LATC1 = 1;} while(0);
+[e :U 1641 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1640 ]
+"682
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 682:     return b;
+[e ) _b ]
+[e $UE 1635  ]
+"683
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 683: }
+[e :UE 1635 ]
+}
+"689
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 689: uint32_t ETH_Read32(void)
+[v _ETH_Read32 `(ul ~T0 @X0 1 ef ]
+"690
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 690: {
+{
+[e :U _ETH_Read32 ]
+[f ]
+"691
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 691:     uint32_t b;
+[v _b `ul ~T0 @X0 1 a ]
+"693
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 693:     do{LATC1 = 0;} while(0);
+[e :U 1645 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1644 ]
+"694
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 694:     SPI1_ExchangeByte(rbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 1 `uc ]
+"695
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 695:     ((char *) &b)[3] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _b `*uc * -> -> 3 `i `x -> -> # *U -> &U _b `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"696
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 696:     ((char *) &b)[2] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _b `*uc * -> -> 2 `i `x -> -> # *U -> &U _b `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"697
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 697:     ((char *) &b)[1] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _b `*uc * -> -> 1 `i `x -> -> # *U -> &U _b `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"698
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 698:     ((char *) &b)[0] = SPI1_ExchangeByte(0);
+[e = *U + -> &U _b `*uc * -> -> 0 `i `x -> -> # *U -> &U _b `*uc `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+"699
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 699:     do{LATC1 = 1;} while(0);
+[e :U 1648 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1647 ]
+"701
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 701:     return b;
+[e ) _b ]
+[e $UE 1642  ]
+"702
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 702: }
+[e :UE 1642 ]
+}
+"710
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 710: uint16_t ETH_ReadBlock(void *buffer, uint16_t length)
+[v _ETH_ReadBlock `(us ~T0 @X0 1 ef2`*v`us ]
+"711
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 711: {
+{
+[e :U _ETH_ReadBlock ]
+"710
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 710: uint16_t ETH_ReadBlock(void *buffer, uint16_t length)
+[v _buffer `*v ~T0 @X0 1 r1 ]
+[v _length `us ~T0 @X0 1 r2 ]
+"711
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 711: {
+[f ]
+"712
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 712:     uint16_t readCount = length;
+[v _readCount `us ~T0 @X0 1 a ]
+[e = _readCount _length ]
+"713
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 713:     char *p = buffer;
+[v _p `*uc ~T0 @X0 1 a ]
+[e = _p -> _buffer `*uc ]
+"715
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 715:     if (rxPacketStatusVector.byteCount < length)
+[e $ ! < -> . . _rxPacketStatusVector 1 0 `ui -> _length `ui 1650  ]
+"716
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 716:         readCount = rxPacketStatusVector.byteCount;
+[e = _readCount . . _rxPacketStatusVector 1 0 ]
+[e :U 1650 ]
+"717
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 717:     length = readCount;
+[e = _length _readCount ]
+"718
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 718:     do{LATC1 = 0;} while(0);
+[e :U 1653 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1652 ]
+"719
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 719:     SPI1_ExchangeByte(rbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 1 `uc ]
+"720
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 720:     while (length--) *p++ = SPI1_ExchangeByte(0);
+[e $U 1654  ]
+[e :U 1655 ]
+[e = *U ++ _p * -> -> 1 `i `x -> -> # *U _p `i `x -> ( _SPI1_ExchangeByte (1 -> -> 0 `i `uc `uc ]
+[e :U 1654 ]
+[e $ != -> -- _length -> -> 1 `i `us `ui -> -> 0 `i `ui 1655  ]
+[e :U 1656 ]
+"721
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 721:     do{LATC1 = 1;} while(0);
+[e :U 1659 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1658 ]
+"723
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 723:     return readCount;
+[e ) _readCount ]
+[e $UE 1649  ]
+"724
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 724: }
+[e :UE 1649 ]
+}
+"730
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 730: void ETH_Write8(uint8_t data)
+[v _ETH_Write8 `(v ~T0 @X0 1 ef1`uc ]
+"731
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 731: {
+{
+[e :U _ETH_Write8 ]
+"730
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 730: void ETH_Write8(uint8_t data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"731
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 731: {
+[f ]
+"732
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 732:     TXPacketSize += 1;
+[e =+ _TXPacketSize -> -> 1 `i `us ]
+"733
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 733:     do{LATC1 = 0;} while(0);
+[e :U 1663 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1662 ]
+"734
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 734:     SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"735
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 735:     SPI1_ExchangeByte(data);
+[e ( _SPI1_ExchangeByte (1 _data ]
+"736
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 736:     do{LATC1 = 1;} while(0);
+[e :U 1666 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1665 ]
+"737
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 737: }
+[e :UE 1660 ]
+}
+"743
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 743: void ETH_Write16(uint16_t data)
+[v _ETH_Write16 `(v ~T0 @X0 1 ef1`us ]
+"744
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 744: {
+{
+[e :U _ETH_Write16 ]
+"743
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 743: void ETH_Write16(uint16_t data)
+[v _data `us ~T0 @X0 1 r1 ]
+"744
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 744: {
+[f ]
+"745
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 745:     TXPacketSize += 2;
+[e =+ _TXPacketSize -> -> 2 `i `us ]
+"746
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 746:     do{LATC1 = 0;} while(0);
+[e :U 1670 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1669 ]
+"747
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 747:     SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"748
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 748:     SPI1_ExchangeByte(data >> 8);
+[e ( _SPI1_ExchangeByte (1 -> >> -> _data `ui -> 8 `i `uc ]
+"749
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 749:     SPI1_ExchangeByte(data);
+[e ( _SPI1_ExchangeByte (1 -> _data `uc ]
+"750
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 750:     do{LATC1 = 1;} while(0);
+[e :U 1673 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1672 ]
+"751
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 751: }
+[e :UE 1667 ]
+}
+"757
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 757: void ETH_Write32(uint32_t data)
+[v _ETH_Write32 `(v ~T0 @X0 1 ef1`ul ]
+"758
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 758: {
+{
+[e :U _ETH_Write32 ]
+"757
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 757: void ETH_Write32(uint32_t data)
+[v _data `ul ~T0 @X0 1 r1 ]
+"758
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 758: {
+[f ]
+"759
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 759:     TXPacketSize += 4;
+[e =+ _TXPacketSize -> -> 4 `i `us ]
+"760
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 760:     do{LATC1 = 0;} while(0);
+[e :U 1677 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1676 ]
+"761
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 761:     SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"762
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 762:     SPI1_ExchangeByte(data >> 24);
+[e ( _SPI1_ExchangeByte (1 -> >> _data -> 24 `i `uc ]
+"763
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 763:     SPI1_ExchangeByte(data >> 16);
+[e ( _SPI1_ExchangeByte (1 -> >> _data -> 16 `i `uc ]
+"764
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 764:     SPI1_ExchangeByte(data >> 8);
+[e ( _SPI1_ExchangeByte (1 -> >> _data -> 8 `i `uc ]
+"765
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 765:     SPI1_ExchangeByte(data);
+[e ( _SPI1_ExchangeByte (1 -> _data `uc ]
+"766
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 766:     do{LATC1 = 1;} while(0);
+[e :U 1680 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1679 ]
+"767
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 767: }
+[e :UE 1674 ]
+}
+"769
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 769: void ETH_Write24(uint32_t data)
+[v _ETH_Write24 `(v ~T0 @X0 1 ef1`ul ]
+"770
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 770: {
+{
+[e :U _ETH_Write24 ]
+"769
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 769: void ETH_Write24(uint32_t data)
+[v _data `ul ~T0 @X0 1 r1 ]
+"770
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 770: {
+[f ]
+"771
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 771:  TXPacketSize += 2;
+[e =+ _TXPacketSize -> -> 2 `i `us ]
+"772
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 772:  do{LATC1 = 0;} while(0);
+[e :U 1684 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1683 ]
+"773
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 773:  SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"774
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 774:  SPI1_ExchangeByte(data >> 16);
+[e ( _SPI1_ExchangeByte (1 -> >> _data -> 16 `i `uc ]
+"775
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 775:  SPI1_ExchangeByte(data >> 8);
+[e ( _SPI1_ExchangeByte (1 -> >> _data -> 8 `i `uc ]
+"776
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 776:  SPI1_ExchangeByte(data);
+[e ( _SPI1_ExchangeByte (1 -> _data `uc ]
+"777
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 777:  do{LATC1 = 1;} while(0);
+[e :U 1687 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1686 ]
+"778
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 778: }
+[e :UE 1681 ]
+}
+"780
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 780: uint16_t ETH_WriteString(const char *string)
+[v _ETH_WriteString `(us ~T0 @X0 1 ef1`*Cuc ]
+"781
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 781: {
+{
+[e :U _ETH_WriteString ]
+"780
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 780: uint16_t ETH_WriteString(const char *string)
+[v _string `*Cuc ~T0 @X0 1 r1 ]
+"781
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 781: {
+[f ]
+"782
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 782:     uint16_t length = 0;
+[v _length `us ~T0 @X0 1 a ]
+[e = _length -> -> 0 `i `us ]
+"784
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 784:     do{LATC1 = 0;} while(0);
+[e :U 1691 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1690 ]
+"785
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 785:     SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"786
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 786:     while(*string)
+[e $U 1692  ]
+[e :U 1693 ]
+"787
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 787:     {
+{
+"788
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 788:         SPI1_ExchangeByte(*string++);
+[e ( _SPI1_ExchangeByte (1 -> *U ++ _string * -> -> 1 `i `x -> -> # *U _string `i `x `uc ]
+"789
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 789:         length ++;
+[e ++ _length -> -> 1 `i `us ]
+"790
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 790:     }
+}
+[e :U 1692 ]
+"786
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 786:     while(*string)
+[e $ != -> *U _string `i -> 0 `i 1693  ]
+[e :U 1694 ]
+"791
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 791:     do{LATC1 = 1;} while(0);
+[e :U 1697 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1696 ]
+"792
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 792:     TXPacketSize += length;
+[e =+ _TXPacketSize -> _length `us ]
+"794
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 794:     return length;
+[e ) _length ]
+[e $UE 1688  ]
+"795
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 795: }
+[e :UE 1688 ]
+}
+"802
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 802: uint16_t ETH_WriteBlock(const char* data, uint16_t length)
+[v _ETH_WriteBlock `(us ~T0 @X0 1 ef2`*Cuc`us ]
+"803
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 803: {
+{
+[e :U _ETH_WriteBlock ]
+"802
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 802: uint16_t ETH_WriteBlock(const char* data, uint16_t length)
+[v _data `*Cuc ~T0 @X0 1 r1 ]
+[v _length `us ~T0 @X0 1 r2 ]
+"803
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 803: {
+[f ]
+"804
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 804:     const char *p = data;
+[v _p `*Cuc ~T0 @X0 1 a ]
+[e = _p _data ]
+"805
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 805:     TXPacketSize += length;
+[e =+ _TXPacketSize -> _length `us ]
+"806
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 806:     do{LATC1 = 0;} while(0);
+[e :U 1701 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1700 ]
+"807
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 807:     SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"808
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 808:     while (length--) {
+[e $U 1702  ]
+[e :U 1703 ]
+{
+"809
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 809:         SPI1_ExchangeByte(*p++);
+[e ( _SPI1_ExchangeByte (1 -> *U ++ _p * -> -> 1 `i `x -> -> # *U _p `i `x `uc ]
+"810
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 810:     }
+}
+[e :U 1702 ]
+"808
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 808:     while (length--) {
+[e $ != -> -- _length -> -> 1 `i `us `ui -> -> 0 `i `ui 1703  ]
+[e :U 1704 ]
+"811
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 811:     do{LATC1 = 1;} while(0);
+[e :U 1707 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1706 ]
+"813
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 813:     return length;
+[e ) _length ]
+[e $UE 1698  ]
+"814
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 814: }
+[e :UE 1698 ]
+}
+"821
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 821: uint16_t ETH_GetFreeTxBufferSize(void)
+[v _ETH_GetFreeTxBufferSize `(us ~T0 @X0 1 ef ]
+"822
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 822: {
+{
+[e :U _ETH_GetFreeTxBufferSize ]
+[f ]
+"823
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 823:     return (uint16_t)(((0x1FFF)) - (ENC28_Rcr16(J60_EWRPTL)));
+[e ) -> - -> -> 8191 `i `ui -> ( _ENC28_Rcr16 (1 . `E10038 2 `ui `us ]
+[e $UE 1708  ]
+"824
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 824: }
+[e :UE 1708 ]
+}
+"833
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 833: error_msg ETH_WriteStart(const mac48Address_t *dest_mac, uint16_t type)
+[v _ETH_WriteStart `(E9844 ~T0 @X0 1 ef2`*CS1456`us ]
+"834
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 834: {
+{
+[e :U _ETH_WriteStart ]
+"833
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 833: error_msg ETH_WriteStart(const mac48Address_t *dest_mac, uint16_t type)
+[v _dest_mac `*CS1456 ~T0 @X0 1 r1 ]
+[v _type `us ~T0 @X0 1 r2 ]
+"834
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 834: {
+[f ]
+"835
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 835:     txPacket_t* ethPacket = ((void*)0);
+[v _ethPacket `*S1463 ~T0 @X0 1 a ]
+[e = _ethPacket -> -> -> 0 `i `*v `*S1463 ]
+"837
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 837:     if( ENC28_Rcr16(J60_EWRPTL) > ((((0x1FFF) - (((1518) + (7)) << 1))) + (((((1518) + (7)) << 1)) >> 1) ) )
+[e $ ! > -> ( _ENC28_Rcr16 (1 . `E10038 2 `ui -> + - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i >> << + -> 1518 `i -> 7 `i -> 1 `i -> 1 `i `ui 1710  ]
+"838
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 838:     {
+{
+"842
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 842:         if((ENC28_Rcr8(J60_ECON1) & 0x08))
+[e $ ! != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 8 `i -> 0 `i 1711  ]
+"843
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 843:         {
+{
+"844
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 844:             return TX_LOGIC_NOT_IDLE;
+[e ) . `E9844 4 ]
+[e $UE 1709  ]
+"845
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 845:         }
+}
+[e :U 1711 ]
+"848
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 848:         ETH_Shift_Tx_Packets();
+[e ( _ETH_Shift_Tx_Packets ..  ]
+"851
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 851:         if( ENC28_Rcr16(J60_EWRPTL) > ((((0x1FFF) - (((1518) + (7)) << 1))) + (((((1518) + (7)) << 1)) >> 1) ) )
+[e $ ! > -> ( _ENC28_Rcr16 (1 . `E10038 2 `ui -> + - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i >> << + -> 1518 `i -> 7 `i -> 1 `i -> 1 `i `ui 1712  ]
+"852
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 852:         {
+{
+"853
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 853:             return BUFFER_BUSY;
+[e ) . `E9844 3 ]
+[e $UE 1709  ]
+"854
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 854:         }
+}
+[e :U 1712 ]
+"855
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 855:     }
+}
+[e :U 1710 ]
+"860
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 860:     ethPacket = ETH_NewPacket();
+[e = _ethPacket ( _ETH_NewPacket ..  ]
+"862
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 862:     if( ethPacket == ((void*)0) )
+[e $ ! == _ethPacket -> -> -> 0 `i `*v `*S1463 1713  ]
+"863
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 863:     {
+{
+"865
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 865:         return BUFFER_BUSY;
+[e ) . `E9844 3 ]
+[e $UE 1709  ]
+"866
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 866:     }
+}
+[e :U 1713 ]
+"868
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 868:     do{ ethPacket->flags = ethPacket->flags | (0x0001 << 0); } while(0);
+[e :U 1716 ]
+{
+[e = . *U _ethPacket 0 -> | -> . *U _ethPacket 0 `ui -> << -> 1 `i -> 0 `i `ui `us ]
+}
+[e :U 1715 ]
+"870
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 870:     ENC28_Wcr16(J60_EWRPTL, ethPacket->packetStart);
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 . *U _ethPacket 1 ]
+"872
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 872:     ETH_ResetByteCount();
+[e ( _ETH_ResetByteCount ..  ]
+"874
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 874:     TXPacketSize = 0;
+[e = _TXPacketSize -> -> 0 `i `us ]
+"875
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 875:     do{LATC1 = 0;} while(0);
+[e :U 1719 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1718 ]
+"876
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 876:     SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"877
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 877:     SPI1_ExchangeByte(Control_Byte);
+[e ( _SPI1_ExchangeByte (1 _Control_Byte ]
+"878
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 878:     SPI1_ExchangeByte(dest_mac->mac_array[0]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _dest_mac 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _dest_mac 0 `ui `ux ]
+"879
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 879:     SPI1_ExchangeByte(dest_mac->mac_array[1]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _dest_mac 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _dest_mac 0 `ui `ux ]
+"880
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 880:     SPI1_ExchangeByte(dest_mac->mac_array[2]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _dest_mac 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _dest_mac 0 `ui `ux ]
+"881
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 881:     SPI1_ExchangeByte(dest_mac->mac_array[3]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _dest_mac 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _dest_mac 0 `ui `ux ]
+"882
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 882:     SPI1_ExchangeByte(dest_mac->mac_array[4]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _dest_mac 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _dest_mac 0 `ui `ux ]
+"883
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 883:     SPI1_ExchangeByte(dest_mac->mac_array[5]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _dest_mac 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _dest_mac 0 `ui `ux ]
+"884
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 884:     SPI1_ExchangeByte(eth_MAC->mac_array[0]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _eth_MAC 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+"885
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 885:     SPI1_ExchangeByte(eth_MAC->mac_array[1]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _eth_MAC 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+"886
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 886:     SPI1_ExchangeByte(eth_MAC->mac_array[2]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _eth_MAC 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+"887
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 887:     SPI1_ExchangeByte(eth_MAC->mac_array[3]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _eth_MAC 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+"888
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 888:     SPI1_ExchangeByte(eth_MAC->mac_array[4]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _eth_MAC 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+"889
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 889:     SPI1_ExchangeByte(eth_MAC->mac_array[5]);
+[e ( _SPI1_ExchangeByte (1 *U + &U . *U _eth_MAC 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _eth_MAC 0 `ui `ux ]
+"890
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 890:     SPI1_ExchangeByte(type >> 8);
+[e ( _SPI1_ExchangeByte (1 -> >> -> _type `ui -> 8 `i `uc ]
+"891
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 891:     SPI1_ExchangeByte(type & 0x0FF);
+[e ( _SPI1_ExchangeByte (1 -> & -> _type `ui -> -> 255 `i `ui `uc ]
+"892
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 892:     do{LATC1 = 1;} while(0);
+[e :U 1722 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1721 ]
+"893
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 893:     TXPacketSize += 15;
+[e =+ _TXPacketSize -> -> 15 `i `us ]
+"895
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 895:     return (1);
+[e ) -> -> 1 `i `E9844 ]
+[e $UE 1709  ]
+"896
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 896: }
+[e :UE 1709 ]
+}
+"902
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 902: error_msg ETH_SendQueued(void)
+[v _ETH_SendQueued `(E9844 ~T0 @X0 1 ef ]
+"903
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 903: {
+{
+[e :U _ETH_SendQueued ]
+[f ]
+"904
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 904:     uint8_t econ1;
+[v _econ1 `uc ~T0 @X0 1 a ]
+"906
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 906:     if( pHead->flags & (0x0001 << 1) )
+[e $ ! != & -> . *U _pHead 0 `ui -> << -> 1 `i -> 1 `i `ui -> -> 0 `i `ui 1724  ]
+"907
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 907:     {
+{
+"909
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 909:         do{ pHead->flags = pHead->flags & (~(0x0001 << 1)); } while(0);
+[e :U 1727 ]
+{
+[e = . *U _pHead 0 -> & -> . *U _pHead 0 `ui -> ~ << -> 1 `i -> 1 `i `ui `us ]
+}
+[e :U 1726 ]
+"912
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 912:         ENC28_Wcr16(J60_ETXSTL, pTail->packetStart);
+[e ( _ENC28_Wcr16 (2 , . `E10038 4 . *U _pTail 1 ]
+"913
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 913:         ENC28_Wcr16(J60_ETXNDL, pTail->packetEnd);
+[e ( _ENC28_Wcr16 (2 , . `E10038 6 . *U _pTail 2 ]
+"915
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 915:         __nop(); __nop();
+[e ( ___nop ..  ]
+[e ( ___nop ..  ]
+"916
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 916:         econ1 = ENC28_Rcr8(J60_ECON1);
+[e = _econ1 ( _ENC28_Rcr8 (1 . `E10038 112 ]
+"917
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 917:         ENC28_Wcr8(J60_ECON1,(econ1 | 0x08));
+[e ( _ENC28_Wcr8 (2 , . `E10038 112 -> | -> _econ1 `i -> 8 `i `uc ]
+"919
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 919:         putch('-');
+[e ( _putch (1 -> -> 45 `ui `uc ]
+"920
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 920:         return (1);
+[e ) -> -> 1 `i `E9844 ]
+[e $UE 1723  ]
+"921
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 921:     }
+}
+[e $U 1728  ]
+"922
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 922:     else
+[e :U 1724 ]
+"923
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 923:     {
+{
+"924
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 924:         return BUFFER_BUSY;
+[e ) . `E9844 3 ]
+[e $UE 1723  ]
+"925
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 925:     }
+}
+[e :U 1728 ]
+"926
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 926: }
+[e :UE 1723 ]
+}
+"932
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 932: error_msg ETH_Send(void)
+[v _ETH_Send `(E9844 ~T0 @X0 1 ef ]
+"933
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 933: {
+{
+[e :U _ETH_Send ]
+[f ]
+"934
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 934:     uint16_t packetEnd = (ENC28_Rcr16(J60_EWRPTL)) - 1;
+[v _packetEnd `us ~T0 @X0 1 a ]
+[e = _packetEnd -> - -> ( _ENC28_Rcr16 (1 . `E10038 2 `ui -> -> 1 `i `ui `us ]
+"936
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 936:     ENC28_Wcr16(J60_ETXNDL,((0x1FFF) - (((1518) + (7)) << 1))+TXPacketSize);
+[e ( _ENC28_Wcr16 (2 , . `E10038 6 -> + -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `ui -> _TXPacketSize `ui `us ]
+"937
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 937:     if (!ethData.up)
+[e $ ! ! != -> . _ethData 2 `i -> 0 `i 1730  ]
+"938
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 938:     {
+{
+"939
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 939:         return LINK_NOT_FOUND;
+[e ) . `E9844 2 ]
+[e $UE 1729  ]
+"940
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 940:     }
+}
+[e :U 1730 ]
+"942
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 942:     if( ethListSize == 0 )
+[e $ ! == -> _ethListSize `i -> 0 `i 1731  ]
+"943
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 943:     {
+{
+"944
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 944:         return BUFFER_BUSY;
+[e ) . `E9844 3 ]
+[e $UE 1729  ]
+"945
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 945:     }
+}
+[e :U 1731 ]
+"947
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 947:     do{ pHead->flags = pHead->flags & (~(0x0001 << 0)); } while(0);
+[e :U 1734 ]
+{
+[e = . *U _pHead 0 -> & -> . *U _pHead 0 `ui -> ~ << -> 1 `i -> 0 `i `ui `us ]
+}
+[e :U 1733 ]
+"948
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 948:     pHead->packetEnd = packetEnd;
+[e = . *U _pHead 2 _packetEnd ]
+"949
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 949:     do{ pHead->flags = pHead->flags | (0x0001 << 1); } while(0);
+[e :U 1737 ]
+{
+[e = . *U _pHead 0 -> | -> . *U _pHead 0 `ui -> << -> 1 `i -> 1 `i `ui `us ]
+}
+[e :U 1736 ]
+"952
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 952:     if( (ENC28_Rcr16(J60_ECON1) & 0x08)|| (ethListSize > 1) )
+[e $ ! || != & -> ( _ENC28_Rcr16 (1 . `E10038 112 `ui -> -> 8 `i `ui -> -> 0 `i `ui > -> _ethListSize `i -> 1 `i 1738  ]
+"953
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 953:     {
+{
+"954
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 954:         return TX_QUEUED;
+[e ) . `E9844 18 ]
+[e $UE 1729  ]
+"955
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 955:     }
+}
+[e :U 1738 ]
+"956
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 956:     return ETH_SendQueued();
+[e ) ( _ETH_SendQueued ..  ]
+[e $UE 1729  ]
+"957
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 957: }
+[e :UE 1729 ]
+}
+"964
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 964: void ETH_Dump(uint16_t length)
+[v _ETH_Dump `(v ~T0 @X0 1 ef1`us ]
+"965
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 965: {
+{
+[e :U _ETH_Dump ]
+"964
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 964: void ETH_Dump(uint16_t length)
+[v _length `us ~T0 @X0 1 r1 ]
+"965
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 965: {
+[f ]
+"966
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 966:     uint16_t newRXTail;
+[v _newRXTail `us ~T0 @X0 1 a ]
+"968
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 968:     length = (rxPacketStatusVector.byteCount <= length) ? rxPacketStatusVector.byteCount : length;
+[e = _length -> ? <= -> . . _rxPacketStatusVector 1 0 `ui -> _length `ui : -> . . _rxPacketStatusVector 1 0 `ui -> _length `ui `us ]
+"969
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 969:     if (length) {;
+[e $ ! != -> _length `ui -> -> 0 `i `ui 1740  ]
+{
+"970
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 970:         newRXTail = ENC28_Rcr16(J60_ERDPTL);
+[e = _newRXTail ( _ENC28_Rcr16 (1 . `E10038 0 ]
+"971
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 971:         newRXTail += length;
+[e =+ _newRXTail -> _length `us ]
+"973
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 973:         ENC28_Wcr16(J60_ERDPTL, newRXTail);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 _newRXTail ]
+"975
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 975:         rxPacketStatusVector.byteCount -= length;
+[e =- . . _rxPacketStatusVector 1 0 -> _length `us ]
+"976
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 976:     }
+}
+[e :U 1740 ]
+"977
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 977: }
+[e :UE 1739 ]
+}
+"982
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 982: void ETH_Flush(void)
+[v _ETH_Flush `(v ~T0 @X0 1 ef ]
+"983
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 983: {
+{
+[e :U _ETH_Flush ]
+[f ]
+"984
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 984:     ethData.pktReady = 0;
+[e = . _ethData 1 -> -> 0 `i `uc ]
+"985
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 985:     if (nextPacketPointer == (0))ENC28_Wcr16(J60_ERXRDPTL, (((0x1FFF) - (((1518) + (7)) << 1)) - 2));
+[e $ ! == -> _nextPacketPointer `ui -> -> 0 `i `ui 1742  ]
+[e ( _ENC28_Wcr16 (2 , . `E10038 12 -> - - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i -> 2 `i `us ]
+[e $U 1743  ]
+"986
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 986:             else ENC28_Wcr16(J60_ERXRDPTL,nextPacketPointer-1);
+[e :U 1742 ]
+[e ( _ENC28_Wcr16 (2 , . `E10038 12 -> - -> _nextPacketPointer `ui -> -> 1 `i `ui `us ]
+[e :U 1743 ]
+"987
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 987:     ENC28_Wcr16(J60_ERDPTL, nextPacketPointer);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 _nextPacketPointer ]
+"989
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 989:     ENC28_Bfs(J60_ECON2, 0x40);
+[e ( _ENC28_Bfs (2 , . `E10038 111 -> -> 64 `i `uc ]
+"990
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 990: }
+[e :UE 1741 ]
+}
+"998
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 998: void ETH_Insert(char *data, uint16_t len, uint16_t offset)
+[v _ETH_Insert `(v ~T0 @X0 1 ef3`*uc`us`us ]
+"999
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 999: {
+{
+[e :U _ETH_Insert ]
+"998
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 998: void ETH_Insert(char *data, uint16_t len, uint16_t offset)
+[v _data `*uc ~T0 @X0 1 r1 ]
+[v _len `us ~T0 @X0 1 r2 ]
+[v _offset `us ~T0 @X0 1 r3 ]
+"999
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 999: {
+[f ]
+"1000
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1000:     uint16_t current_tx_pointer = 0;
+[v _current_tx_pointer `us ~T0 @X0 1 a ]
+[e = _current_tx_pointer -> -> 0 `i `us ]
+"1001
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1001:     offset+=sizeof(Control_Byte);
+[e =+ _offset -> -> # _Control_Byte `ui `us ]
+"1003
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1003:     current_tx_pointer = ENC28_Rcr16(J60_EWRPTL);
+[e = _current_tx_pointer ( _ENC28_Rcr16 (1 . `E10038 2 ]
+"1004
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1004:     ENC28_Wcr16(J60_EWRPTL, pHead->packetStart+offset);
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 -> + -> . *U _pHead 1 `ui -> _offset `ui `us ]
+"1005
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1005:     while (len--)
+[e $U 1745  ]
+[e :U 1746 ]
+"1006
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1006:     {
+{
+"1007
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1007:          do{LATC1 = 0;} while(0);
+[e :U 1750 ]
+{
+[e = _LATC1 -> -> 0 `i `b ]
+}
+[e :U 1749 ]
+"1008
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1008:          SPI1_ExchangeByte(wbm_inst);
+[e ( _SPI1_ExchangeByte (1 -> . `E10022 3 `uc ]
+"1009
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1009:          SPI1_ExchangeByte(*data++);
+[e ( _SPI1_ExchangeByte (1 -> *U ++ _data * -> -> 1 `i `x -> -> # *U _data `i `x `uc ]
+"1010
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1010:          do{LATC1 = 1;} while(0);
+[e :U 1753 ]
+{
+[e = _LATC1 -> -> 1 `i `b ]
+}
+[e :U 1752 ]
+"1011
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1011:     }
+}
+[e :U 1745 ]
+"1005
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1005:     while (len--)
+[e $ != -> -- _len -> -> 1 `i `us `ui -> -> 0 `i `ui 1746  ]
+[e :U 1747 ]
+"1012
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1012:     ENC28_Wcr16(J60_EWRPTL, current_tx_pointer);
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 _current_tx_pointer ]
+"1013
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1013: }
+[e :UE 1744 ]
+}
+"1020
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1020: error_msg ETH_Copy(uint16_t len)
+[v _ETH_Copy `(E9844 ~T0 @X0 1 ef1`us ]
+"1021
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1021: {
+{
+[e :U _ETH_Copy ]
+"1020
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1020: error_msg ETH_Copy(uint16_t len)
+[v _len `us ~T0 @X0 1 r1 ]
+"1021
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1021: {
+[f ]
+"1022
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1022:     uint16_t tx_buffer_address;
+[v _tx_buffer_address `us ~T0 @X0 1 a ]
+"1023
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1023:     uint16_t timer;
+[v _timer `us ~T0 @X0 1 a ]
+"1024
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1024:     uint16_t temp_len;
+[v _temp_len `us ~T0 @X0 1 a ]
+"1026
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1026:     timer = 2 * len;
+[e = _timer -> * -> -> 2 `i `ui -> _len `ui `us ]
+"1028
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1028:     while ((ENC28_Rcr8(J60_ECON1) & 0x20) != 0 && --timer) __nop();
+[e $U 1755  ]
+[e :U 1756 ]
+[e ( ___nop ..  ]
+[e :U 1755 ]
+[e $ && != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i != -> =- _timer -> -> 1 `i `us `ui -> -> 0 `i `ui 1756  ]
+[e :U 1757 ]
+"1030
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1030:     if((ENC28_Rcr8(J60_ECON1) & 0x20) == 0)
+[e $ ! == & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i 1758  ]
+"1031
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1031:     {
+{
+"1032
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1032:         tx_buffer_address = ENC28_Rcr16(J60_EWRPTL);
+[e = _tx_buffer_address ( _ENC28_Rcr16 (1 . `E10038 2 ]
+"1034
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1034:         ENC28_Wcr16(J60_EDMADSTL, tx_buffer_address);
+[e ( _ENC28_Wcr16 (2 , . `E10038 20 _tx_buffer_address ]
+"1035
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1035:         ENC28_Wcr16(J60_EDMASTL, ethData.saveRDPT);
+[e ( _ENC28_Wcr16 (2 , . `E10038 16 . _ethData 7 ]
+"1037
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1037:         tx_buffer_address += len;
+[e =+ _tx_buffer_address -> _len `us ]
+"1038
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1038:         temp_len = ethData.saveRDPT + len;
+[e = _temp_len -> + -> . _ethData 7 `ui -> _len `ui `us ]
+"1040
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1040:         if(temp_len > (((0x1FFF) - (((1518) + (7)) << 1)) - 2))
+[e $ ! > -> _temp_len `ui -> - - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i -> 2 `i `ui 1759  ]
+"1041
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1041:         {
+{
+"1042
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1042:             temp_len = temp_len - ((((0x1FFF) - (((1518) + (7)) << 1)) - 2)) + (0);
+[e = _temp_len -> + - -> _temp_len `ui -> - - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i -> 2 `i `ui -> -> 0 `i `ui `us ]
+"1043
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1043:             ENC28_Wcr16(J60_EDMANDL, temp_len);
+[e ( _ENC28_Wcr16 (2 , . `E10038 18 _temp_len ]
+"1044
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1044:         }else
+}
+[e $U 1760  ]
+[e :U 1759 ]
+"1045
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1045:         {
+{
+"1046
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1046:             ENC28_Wcr16(J60_EDMANDL, temp_len);
+[e ( _ENC28_Wcr16 (2 , . `E10038 18 _temp_len ]
+"1047
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1047:         }
+}
+[e :U 1760 ]
+"1050
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1050:         ENC28_Bfc(J60_ECON1, 0x10);
+[e ( _ENC28_Bfc (2 , . `E10038 112 -> -> 16 `i `uc ]
+"1052
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1052:         ENC28_Bfs(J60_ECON1, 0x20);
+[e ( _ENC28_Bfs (2 , . `E10038 112 -> -> 32 `i `uc ]
+"1053
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1053:         timer = 40 * len;
+[e = _timer -> * -> -> 40 `i `ui -> _len `ui `us ]
+"1054
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1054:         while ((ENC28_Rcr8(J60_ECON1) & 0x20)!=0 && --timer) __nop();
+[e $U 1761  ]
+[e :U 1762 ]
+[e ( ___nop ..  ]
+[e :U 1761 ]
+[e $ && != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i != -> =- _timer -> -> 1 `i `us `ui -> -> 0 `i `ui 1762  ]
+[e :U 1763 ]
+"1055
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1055:         if((ENC28_Rcr8(J60_ECON1) & 0x20)==0)
+[e $ ! == & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i 1764  ]
+"1056
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1056:         {
+{
+"1058
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1058:             ENC28_Wcr16(J60_EWRPTL, tx_buffer_address);
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 _tx_buffer_address ]
+"1060
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1060:             TXPacketSize += len;
+[e =+ _TXPacketSize -> _len `us ]
+"1061
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1061:             return (1);
+[e ) -> -> 1 `i `E9844 ]
+[e $UE 1754  ]
+"1062
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1062:         }
+}
+[e :U 1764 ]
+"1063
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1063:     }
+}
+[e :U 1758 ]
+"1064
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1064:     __asm("reset");
+[; <" reset ;# ">
+"1065
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1065:     return DMA_TIMEOUT;
+[e ) . `E9844 12 ]
+[e $UE 1754  ]
+"1066
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1066: }
+[e :UE 1754 ]
+}
+"1074
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1074: error_msg ETH_Shift_Tx_Packets(void)
+[v _ETH_Shift_Tx_Packets `(E9844 ~T0 @X0 1 ef ]
+"1075
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1075: {
+{
+[e :U _ETH_Shift_Tx_Packets ]
+[f ]
+"1076
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1076:     uint8_t econ1;
+[v _econ1 `uc ~T0 @X0 1 a ]
+"1077
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1077:     uint16_t timer;
+[v _timer `us ~T0 @X0 1 a ]
+"1078
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1078:     uint16_t len = pHead->packetEnd - pTail->packetStart;
+[v _len `us ~T0 @X0 1 a ]
+[e = _len -> - -> . *U _pHead 2 `ui -> . *U _pTail 1 `ui `us ]
+"1080
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1080:     timer = 2 * len;
+[e = _timer -> * -> -> 2 `i `ui -> _len `ui `us ]
+"1081
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1081:     while((ENC28_Rcr8(J60_ECON1) & 0x20)!=0 && --timer) __nop();
+[e $U 1766  ]
+[e :U 1767 ]
+[e ( ___nop ..  ]
+[e :U 1766 ]
+[e $ && != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i != -> =- _timer -> -> 1 `i `us `ui -> -> 0 `i `ui 1767  ]
+[e :U 1768 ]
+"1082
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1082:     if((ENC28_Rcr8(J60_ECON1) & 0x20)==0)
+[e $ ! == & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i 1769  ]
+"1083
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1083:     {
+{
+"1084
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1084:         ENC28_Wcr16(J60_EDMADSTL,((0x1FFF) - (((1518) + (7)) << 1)));
+[e ( _ENC28_Wcr16 (2 , . `E10038 20 -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `us ]
+"1086
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1086:         ENC28_Wcr16(J60_EDMASTL,pTail->packetStart);
+[e ( _ENC28_Wcr16 (2 , . `E10038 16 . *U _pTail 1 ]
+"1087
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1087:         ENC28_Wcr16(J60_EDMANDL,pTail->packetStart);
+[e ( _ENC28_Wcr16 (2 , . `E10038 18 . *U _pTail 1 ]
+"1089
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1089:         econ1 = ENC28_Rcr8(J60_ECON1);
+[e = _econ1 ( _ENC28_Rcr8 (1 . `E10038 112 ]
+"1090
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1090:         ENC28_Wcr8(J60_ECON1,(econ1 | 0x10));
+[e ( _ENC28_Wcr8 (2 , . `E10038 112 -> | -> _econ1 `i -> 16 `i `uc ]
+"1091
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1091:         econ1 = ENC28_Rcr8(J60_ECON1);
+[e = _econ1 ( _ENC28_Rcr8 (1 . `E10038 112 ]
+"1092
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1092:         ENC28_Wcr8(J60_ECON1,(econ1 | 0x20));
+[e ( _ENC28_Wcr8 (2 , . `E10038 112 -> | -> _econ1 `i -> 32 `i `uc ]
+"1095
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1095:         timer = 40 * len;
+[e = _timer -> * -> -> 40 `i `ui -> _len `ui `us ]
+"1096
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1096:         while((ENC28_Rcr8(J60_ECON1) & 0x20)!=0 && --timer) __nop();
+[e $U 1770  ]
+[e :U 1771 ]
+[e ( ___nop ..  ]
+[e :U 1770 ]
+[e $ && != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i != -> =- _timer -> -> 1 `i `us `ui -> -> 0 `i `ui 1771  ]
+[e :U 1772 ]
+"1097
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1097:         if((ENC28_Rcr8(J60_ECON1) & 0x20)== 0)
+[e $ ! == & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i 1773  ]
+"1098
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1098:         {
+{
+"1100
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1100:             txPacket_t *pElem = pHead;
+[v _pElem `*S1463 ~T0 @X0 1 a ]
+[e = _pElem _pHead ]
+"1101
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1101:             uint16_t shiftOffset = pTail->packetStart;
+[v _shiftOffset `us ~T0 @X0 1 a ]
+[e = _shiftOffset . *U _pTail 1 ]
+"1103
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1103:             while( pElem != ((void*)0) )
+[e $U 1774  ]
+[e :U 1775 ]
+"1104
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1104:             {
+{
+"1105
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1105:                 pElem->packetStart = pElem->packetStart - shiftOffset;
+[e = . *U _pElem 1 -> - -> . *U _pElem 1 `ui -> _shiftOffset `ui `us ]
+"1106
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1106:                 pElem->packetEnd = pElem->packetEnd - shiftOffset;
+[e = . *U _pElem 2 -> - -> . *U _pElem 2 `ui -> _shiftOffset `ui `us ]
+"1107
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1107:                 pElem = pElem->nextPacket;
+[e = _pElem -> . *U _pElem 4 `*S1463 ]
+"1108
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1108:             }
+}
+[e :U 1774 ]
+"1103
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1103:             while( pElem != ((void*)0) )
+[e $ != _pElem -> -> -> 0 `i `*v `*S1463 1775  ]
+[e :U 1776 ]
+"1111
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1111:             ENC28_Wcr16(J60_EWRPTL,((0x1FFF) - (((1518) + (7)) << 1)) + len);
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 -> + -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `ui -> _len `ui `us ]
+"1112
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1112:             return (1);
+[e ) -> -> 1 `i `E9844 ]
+[e $UE 1765  ]
+"1113
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1113:         }
+}
+[e :U 1773 ]
+"1114
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1114:     }
+}
+[e :U 1769 ]
+"1117
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1117:     __asm("reset");
+[; <" reset ;# ">
+"1118
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1118:     return DMA_TIMEOUT;
+[e ) . `E9844 12 ]
+[e $UE 1765  ]
+"1119
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1119: }
+[e :UE 1765 ]
+}
+"1121
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1121: static uint16_t ETH_ComputeChecksum(uint16_t len, uint16_t seed)
+[v _ETH_ComputeChecksum `(us ~T0 @X0 1 sf2`us`us ]
+"1122
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1122: {
+{
+[e :U _ETH_ComputeChecksum ]
+"1121
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1121: static uint16_t ETH_ComputeChecksum(uint16_t len, uint16_t seed)
+[v _len `us ~T0 @X0 1 r1 ]
+[v _seed `us ~T0 @X0 1 r2 ]
+"1122
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1122: {
+[f ]
+"1123
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1123:     uint32_t cksm;
+[v _cksm `ul ~T0 @X0 1 a ]
+"1124
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1124:     uint16_t v;
+[v _v `us ~T0 @X0 1 a ]
+"1126
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1126:     cksm = seed;
+[e = _cksm -> _seed `ul ]
+"1128
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1128:     while(len > 1)
+[e $U 1778  ]
+[e :U 1779 ]
+"1129
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1129:     {
+{
+"1130
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1130:         v = 0;
+[e = _v -> -> 0 `i `us ]
+"1131
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1131:         ((char *)&v)[1] = ETH_Read8();
+[e = *U + -> &U _v `*uc * -> -> 1 `i `x -> -> # *U -> &U _v `*uc `i `x -> ( _ETH_Read8 ..  `uc ]
+"1132
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1132:         ((char *)&v)[0] = ETH_Read8();
+[e = *U + -> &U _v `*uc * -> -> 0 `i `x -> -> # *U -> &U _v `*uc `i `x -> ( _ETH_Read8 ..  `uc ]
+"1133
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1133:         cksm += v;
+[e =+ _cksm -> _v `ul ]
+"1134
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1134:         len -= 2;
+[e =- _len -> -> 2 `i `us ]
+"1135
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1135:     }
+}
+[e :U 1778 ]
+"1128
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1128:     while(len > 1)
+[e $ > -> _len `ui -> -> 1 `i `ui 1779  ]
+[e :U 1780 ]
+"1137
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1137:     if(len)
+[e $ ! != -> _len `ui -> -> 0 `i `ui 1781  ]
+"1138
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1138:     {
+{
+"1139
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1139:         v = 0;
+[e = _v -> -> 0 `i `us ]
+"1140
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1140:         ((char *)&v)[1] = ETH_Read8();
+[e = *U + -> &U _v `*uc * -> -> 1 `i `x -> -> # *U -> &U _v `*uc `i `x -> ( _ETH_Read8 ..  `uc ]
+"1141
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1141:         ((char *)&v)[0] = 0;
+[e = *U + -> &U _v `*uc * -> -> 0 `i `x -> -> # *U -> &U _v `*uc `i `x -> -> 0 `i `uc ]
+"1142
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1142:         cksm += v;
+[e =+ _cksm -> _v `ul ]
+"1143
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1143:     }
+}
+[e :U 1781 ]
+"1146
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1146:     while(cksm >> 16)
+[e $U 1782  ]
+[e :U 1783 ]
+"1147
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1147:     {
+{
+"1148
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1148:         cksm = (cksm & 0x0FFFF) + (cksm>>16);
+[e = _cksm + & _cksm -> -> 65535 `ui `ul >> _cksm -> 16 `i ]
+"1149
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1149:     }
+}
+[e :U 1782 ]
+"1146
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1146:     while(cksm >> 16)
+[e $ != >> _cksm -> 16 `i -> -> -> 0 `i `l `ul 1783  ]
+[e :U 1784 ]
+"1152
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1152:     cksm = ~cksm;
+[e = _cksm ~ _cksm ]
+"1155
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1155:     return (uint16_t)cksm;
+[e ) -> _cksm `us ]
+[e $UE 1777  ]
+"1156
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1156: }
+[e :UE 1777 ]
+}
+"1164
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1164: uint16_t ETH_TxComputeChecksum(uint16_t position, uint16_t length, uint16_t seed)
+[v _ETH_TxComputeChecksum `(us ~T0 @X0 1 ef3`us`us`us ]
+"1165
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1165: {
+{
+[e :U _ETH_TxComputeChecksum ]
+"1164
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1164: uint16_t ETH_TxComputeChecksum(uint16_t position, uint16_t length, uint16_t seed)
+[v _position `us ~T0 @X0 1 r1 ]
+[v _length `us ~T0 @X0 1 r2 ]
+[v _seed `us ~T0 @X0 1 r3 ]
+"1165
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1165: {
+[f ]
+"1166
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1166:     uint32_t cksm;
+[v _cksm `ul ~T0 @X0 1 a ]
+"1169
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1169:     position+= sizeof(Control_Byte);
+[e =+ _position -> -> # _Control_Byte `ui `us ]
+"1171
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1171:     while ((ENC28_Rcr8(J60_ECON1) & 0x20) != 0);
+[e $U 1786  ]
+[e :U 1787 ]
+[e :U 1786 ]
+[e $ != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i 1787  ]
+[e :U 1788 ]
+"1173
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1173:     ENC28_Wcr16(J60_EDMASTL, (pHead->packetStart + position));
+[e ( _ENC28_Wcr16 (2 , . `E10038 16 -> + -> . *U _pHead 1 `ui -> _position `ui `us ]
+"1174
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1174:     ENC28_Wcr16(J60_EDMANDL, pHead->packetStart + position + (length-1));
+[e ( _ENC28_Wcr16 (2 , . `E10038 18 -> + + -> . *U _pHead 1 `ui -> _position `ui - -> _length `ui -> -> 1 `i `ui `us ]
+"1176
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1176:     if (!(ENC28_Rcr8(J60_ECON1) & 0x10))
+[e $ ! ! != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 16 `i -> 0 `i 1789  ]
+"1177
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1177:     {
+{
+"1179
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1179:         ENC28_Bfs(J60_ECON1, 0x30);
+[e ( _ENC28_Bfs (2 , . `E10038 112 -> -> 48 `i `uc ]
+"1180
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1180:         while ((ENC28_Rcr8(J60_ECON1) & 0x20) != 0);
+[e $U 1790  ]
+[e :U 1791 ]
+[e :U 1790 ]
+[e $ != & -> ( _ENC28_Rcr8 (1 . `E10038 112 `i -> 32 `i -> 0 `i 1791  ]
+[e :U 1792 ]
+"1181
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1181:         ENC28_Bfc(J60_ECON1,0x10);
+[e ( _ENC28_Bfc (2 , . `E10038 112 -> -> 16 `i `uc ]
+"1183
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1183:         cksm = ENC28_Rcr16(J60_EDMACSL);
+[e = _cksm -> ( _ENC28_Rcr16 (1 . `E10038 22 `ul ]
+"1184
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1184:         if (seed)
+[e $ ! != -> _seed `ui -> -> 0 `i `ui 1793  ]
+"1185
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1185:         {
+{
+"1186
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1186:             seed=~(seed);
+[e = _seed -> ~ -> _seed `ui `us ]
+"1187
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1187:             cksm+=seed;
+[e =+ _cksm -> _seed `ul ]
+"1188
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1188:             while(cksm >> 16)
+[e $U 1794  ]
+[e :U 1795 ]
+"1189
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1189:             {
+{
+"1190
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1190:                 cksm = (cksm & 0x0FFFF) + (cksm>>16);
+[e = _cksm + & _cksm -> -> 65535 `ui `ul >> _cksm -> 16 `i ]
+"1191
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1191:             }
+}
+[e :U 1794 ]
+"1188
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1188:             while(cksm >> 16)
+[e $ != >> _cksm -> 16 `i -> -> -> 0 `i `l `ul 1795  ]
+[e :U 1796 ]
+"1192
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1192:         }
+}
+[e :U 1793 ]
+"1193
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1193:         cksm = ((((uint16_t)cksm & (uint16_t)0xFF00) >> 8) | (((uint16_t)cksm & (uint16_t)0x00FF) << 8));
+[e = _cksm -> | >> & -> -> _cksm `us `ui -> -> -> 65280 `ui `us `ui -> 8 `i << & -> -> _cksm `us `ui -> -> -> 255 `i `us `ui -> 8 `i `ul ]
+"1194
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1194:     }
+}
+[e :U 1789 ]
+"1195
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1195:     return (uint16_t)cksm;
+[e ) -> _cksm `us ]
+[e $UE 1785  ]
+"1196
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1196: }
+[e :UE 1785 ]
+}
+"1204
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1204: uint16_t ETH_RxComputeChecksum(uint16_t len, uint16_t seed)
+[v _ETH_RxComputeChecksum `(us ~T0 @X0 1 ef2`us`us ]
+"1205
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1205: {
+{
+[e :U _ETH_RxComputeChecksum ]
+"1204
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1204: uint16_t ETH_RxComputeChecksum(uint16_t len, uint16_t seed)
+[v _len `us ~T0 @X0 1 r1 ]
+[v _seed `us ~T0 @X0 1 r2 ]
+"1205
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1205: {
+[f ]
+"1206
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1206:     uint16_t rxptr;
+[v _rxptr `us ~T0 @X0 1 a ]
+"1207
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1207:     uint32_t cksm;
+[v _cksm `ul ~T0 @X0 1 a ]
+"1210
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1210:     rxptr = ENC28_Rcr16(J60_ERDPTL);;
+[e = _rxptr ( _ENC28_Rcr16 (1 . `E10038 0 ]
+"1212
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1212:     cksm = ETH_ComputeChecksum( len, seed);
+[e = _cksm -> ( _ETH_ComputeChecksum (2 , _len _seed `ul ]
+"1215
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1215:      ENC28_Wcr16(J60_ERDPTL,rxptr);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 _rxptr ]
+"1218
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1218:     return (uint16_t)((cksm & 0xFF00) >> 8) | ((cksm & 0x00FF) << 8);
+[e ) -> | -> -> >> & _cksm -> -> 65280 `ui `ul -> 8 `i `us `ul << & _cksm -> -> -> 255 `i `l `ul -> 8 `i `us ]
+[e $UE 1797  ]
+"1219
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1219: }
+[e :UE 1797 ]
+}
+"1225
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1225: void ETH_GetMAC(uint8_t *macAddr)
+[v _ETH_GetMAC `(v ~T0 @X0 1 ef1`*uc ]
+"1226
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1226: {
+{
+[e :U _ETH_GetMAC ]
+"1225
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1225: void ETH_GetMAC(uint8_t *macAddr)
+[v _macAddr `*uc ~T0 @X0 1 r1 ]
+"1226
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1226: {
+[f ]
+"1227
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1227:    *macAddr++ = ENC28_Rcr8(J60_MAADR1);
+[e = *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ( _ENC28_Rcr8 (1 . `E10038 85 ]
+"1228
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1228:     *macAddr++ = ENC28_Rcr8(J60_MAADR2);
+[e = *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ( _ENC28_Rcr8 (1 . `E10038 86 ]
+"1229
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1229:     *macAddr++ = ENC28_Rcr8(J60_MAADR3);
+[e = *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ( _ENC28_Rcr8 (1 . `E10038 83 ]
+"1230
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1230:     *macAddr++ = ENC28_Rcr8(J60_MAADR4);
+[e = *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ( _ENC28_Rcr8 (1 . `E10038 84 ]
+"1231
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1231:     *macAddr++ = ENC28_Rcr8(J60_MAADR5);
+[e = *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ( _ENC28_Rcr8 (1 . `E10038 81 ]
+"1232
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1232:     *macAddr++ = ENC28_Rcr8(J60_MAADR6);
+[e = *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ( _ENC28_Rcr8 (1 . `E10038 82 ]
+"1233
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1233: }
+[e :UE 1798 ]
+}
+"1239
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1239: void ETH_SetMAC(uint8_t *macAddr)
+[v _ETH_SetMAC `(v ~T0 @X0 1 ef1`*uc ]
+"1240
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1240: {
+{
+[e :U _ETH_SetMAC ]
+"1239
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1239: void ETH_SetMAC(uint8_t *macAddr)
+[v _macAddr `*uc ~T0 @X0 1 r1 ]
+"1240
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1240: {
+[f ]
+"1241
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1241:     ENC28_Wcr8(J60_MAADR1, *macAddr++ );
+[e ( _ENC28_Wcr8 (2 , . `E10038 85 *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ]
+"1242
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1242:     ENC28_Wcr8(J60_MAADR2, *macAddr++ );
+[e ( _ENC28_Wcr8 (2 , . `E10038 86 *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ]
+"1243
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1243:     ENC28_Wcr8(J60_MAADR3, *macAddr++ );
+[e ( _ENC28_Wcr8 (2 , . `E10038 83 *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ]
+"1244
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1244:     ENC28_Wcr8(J60_MAADR4, *macAddr++ );
+[e ( _ENC28_Wcr8 (2 , . `E10038 84 *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ]
+"1245
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1245:     ENC28_Wcr8(J60_MAADR5, *macAddr++ );
+[e ( _ENC28_Wcr8 (2 , . `E10038 81 *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ]
+"1246
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1246:     ENC28_Wcr8(J60_MAADR6, *macAddr++ );
+[e ( _ENC28_Wcr8 (2 , . `E10038 82 *U ++ _macAddr * -> -> 1 `i `x -> -> # *U _macAddr `i `x ]
+"1247
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1247: }
+[e :UE 1799 ]
+}
+"1249
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1249: void ETH_SaveRDPT(void)
+[v _ETH_SaveRDPT `(v ~T0 @X0 1 ef ]
+"1250
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1250: {
+{
+[e :U _ETH_SaveRDPT ]
+[f ]
+"1251
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1251:     ethData.saveRDPT = ENC28_Rcr16(J60_ERDPTL);
+[e = . _ethData 7 ( _ENC28_Rcr16 (1 . `E10038 0 ]
+"1252
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1252: }
+[e :UE 1800 ]
+}
+"1254
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1254: uint16_t ETH_GetReadPtr(void)
+[v _ETH_GetReadPtr `(us ~T0 @X0 1 ef ]
+"1255
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1255: {
+{
+[e :U _ETH_GetReadPtr ]
+[f ]
+"1256
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1256:     return ENC28_Rcr16(J60_ERDPTL);
+[e ) ( _ENC28_Rcr16 (1 . `E10038 0 ]
+[e $UE 1801  ]
+"1257
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1257: }
+[e :UE 1801 ]
+}
+"1259
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1259: void ETH_SetReadPtr(uint16_t rdptr)
+[v _ETH_SetReadPtr `(v ~T0 @X0 1 ef1`us ]
+"1260
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1260: {
+{
+[e :U _ETH_SetReadPtr ]
+"1259
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1259: void ETH_SetReadPtr(uint16_t rdptr)
+[v _rdptr `us ~T0 @X0 1 r1 ]
+"1260
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1260: {
+[f ]
+"1261
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1261:    ENC28_Wcr16(J60_ERDPTL, rdptr);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 _rdptr ]
+"1262
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1262: }
+[e :UE 1802 ]
+}
+"1264
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1264: void ETH_MoveBackReadPtr(uint16_t offset)
+[v _ETH_MoveBackReadPtr `(v ~T0 @X0 1 ef1`us ]
+"1265
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1265: {
+{
+[e :U _ETH_MoveBackReadPtr ]
+"1264
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1264: void ETH_MoveBackReadPtr(uint16_t offset)
+[v _offset `us ~T0 @X0 1 r1 ]
+"1265
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1265: {
+[f ]
+"1266
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1266:     uint16_t rdptr;
+[v _rdptr `us ~T0 @X0 1 a ]
+"1268
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1268:     rdptr = ENC28_Rcr16(J60_ERDPTL);
+[e = _rdptr ( _ENC28_Rcr16 (1 . `E10038 0 ]
+"1269
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1269:     ENC28_Wcr16(J60_ERDPTL, rdptr-offset);
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 -> - -> _rdptr `ui -> _offset `ui `us ]
+"1270
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1270:     ETH_SetRxByteCount(offset);
+[e ( _ETH_SetRxByteCount (1 _offset ]
+"1272
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1272: }
+[e :UE 1803 ]
+}
+"1274
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1274: void ETH_ResetReadPtr()
+[v _ETH_ResetReadPtr `(v ~T0 @X0 1 ef ]
+"1275
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1275: {
+{
+[e :U _ETH_ResetReadPtr ]
+[f ]
+"1276
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1276:     ENC28_Wcr16(J60_ERDPTL, (0));
+[e ( _ENC28_Wcr16 (2 , . `E10038 0 -> -> 0 `i `us ]
+"1277
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1277: }
+[e :UE 1804 ]
+}
+"1279
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1279: uint16_t ETH_GetWritePtr()
+[v _ETH_GetWritePtr `(us ~T0 @X0 1 ef ]
+"1280
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1280: {
+{
+[e :U _ETH_GetWritePtr ]
+[f ]
+"1281
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1281:     return ENC28_Rcr16(J60_EWRPTL);
+[e ) ( _ENC28_Rcr16 (1 . `E10038 2 ]
+[e $UE 1805  ]
+"1282
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1282: }
+[e :UE 1805 ]
+}
+"1284
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1284: uint16_t ETH_GetRxByteCount()
+[v _ETH_GetRxByteCount `(us ~T0 @X0 1 ef ]
+"1285
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1285: {
+{
+[e :U _ETH_GetRxByteCount ]
+[f ]
+"1286
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1286:     return (rxPacketStatusVector.byteCount);
+[e ) . . _rxPacketStatusVector 1 0 ]
+[e $UE 1806  ]
+"1287
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1287: }
+[e :UE 1806 ]
+}
+"1289
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1289: void ETH_SetRxByteCount(uint16_t count)
+[v _ETH_SetRxByteCount `(v ~T0 @X0 1 ef1`us ]
+"1290
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1290: {
+{
+[e :U _ETH_SetRxByteCount ]
+"1289
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1289: void ETH_SetRxByteCount(uint16_t count)
+[v _count `us ~T0 @X0 1 r1 ]
+"1290
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1290: {
+[f ]
+"1291
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1291:     rxPacketStatusVector.byteCount += count;
+[e =+ . . _rxPacketStatusVector 1 0 -> _count `us ]
+"1292
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1292: }
+[e :UE 1807 ]
+}
+"1294
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1294: void ETH_ResetByteCount(void)
+[v _ETH_ResetByteCount `(v ~T0 @X0 1 ef ]
+"1295
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1295: {
+{
+[e :U _ETH_ResetByteCount ]
+[f ]
+"1296
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1296:     ethData.saveWRPT = ENC28_Rcr16(J60_EWRPTL);
+[e = . _ethData 8 ( _ENC28_Rcr16 (1 . `E10038 2 ]
+"1297
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1297: }
+[e :UE 1808 ]
+}
+"1299
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1299: uint16_t ETH_GetByteCount(void)
+[v _ETH_GetByteCount `(us ~T0 @X0 1 ef ]
+"1300
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1300: {
+{
+[e :U _ETH_GetByteCount ]
+[f ]
+"1301
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1301:      uint16_t wptr;
+[v _wptr `us ~T0 @X0 1 a ]
+"1303
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1303:     wptr = ENC28_Rcr16(J60_EWRPTL);
+[e = _wptr ( _ENC28_Rcr16 (1 . `E10038 2 ]
+"1305
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1305:     return (wptr - ethData.saveWRPT);
+[e ) -> - -> _wptr `ui -> . _ethData 8 `ui `us ]
+[e $UE 1809  ]
+"1306
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1306: }
+[e :UE 1809 ]
+}
+"1308
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1308: void ETH_SaveWRPT(void)
+[v _ETH_SaveWRPT `(v ~T0 @X0 1 ef ]
+"1309
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1309: {
+{
+[e :U _ETH_SaveWRPT ]
+[f ]
+"1310
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1310:     ethData.saveWRPT = ENC28_Rcr16(J60_EWRPTL);
+[e = . _ethData 8 ( _ENC28_Rcr16 (1 . `E10038 2 ]
+"1311
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1311: }
+[e :UE 1810 ]
+}
+"1314
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1314: uint16_t ETH_ReadSavedWRPT(void)
+[v _ETH_ReadSavedWRPT `(us ~T0 @X0 1 ef ]
+"1315
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1315: {
+{
+[e :U _ETH_ReadSavedWRPT ]
+[f ]
+"1316
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1316:     return ethData.saveWRPT;
+[e ) . _ethData 8 ]
+[e $UE 1811  ]
+"1317
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1317: }
+[e :UE 1811 ]
+}
+"1319
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1319: uint16_t ETH_GetStatusVectorByteCount(void)
+[v _ETH_GetStatusVectorByteCount `(us ~T0 @X0 1 ef ]
+"1320
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1320: {
+{
+[e :U _ETH_GetStatusVectorByteCount ]
+[f ]
+"1321
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1321:     return(rxPacketStatusVector.byteCount);
+[e ) . . _rxPacketStatusVector 1 0 ]
+[e $UE 1812  ]
+"1322
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1322: }
+[e :UE 1812 ]
+}
+"1324
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1324: void ETH_SetStatusVectorByteCount(uint16_t bc)
+[v _ETH_SetStatusVectorByteCount `(v ~T0 @X0 1 ef1`us ]
+"1325
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1325: {
+{
+[e :U _ETH_SetStatusVectorByteCount ]
+"1324
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1324: void ETH_SetStatusVectorByteCount(uint16_t bc)
+[v _bc `us ~T0 @X0 1 r1 ]
+"1325
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1325: {
+[f ]
+"1326
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1326:     rxPacketStatusVector.byteCount=bc;
+[e = . . _rxPacketStatusVector 1 0 _bc ]
+"1327
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1327: }
+[e :UE 1813 ]
+}
+"1330
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1330: void ETH_TxReset(void)
+[v _ETH_TxReset `(v ~T0 @X0 1 ef ]
+"1331
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1331: {
+{
+[e :U _ETH_TxReset ]
+[f ]
+"1332
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1332:     uint8_t econ1;
+[v _econ1 `uc ~T0 @X0 1 a ]
+"1333
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1333:     econ1 = ENC28_Rcr8(J60_ECON1);
+[e = _econ1 ( _ENC28_Rcr8 (1 . `E10038 112 ]
+"1335
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1335:     ENC28_Wcr8(J60_ECON1,(econ1 | 0x80));
+[e ( _ENC28_Wcr8 (2 , . `E10038 112 -> | -> _econ1 `i -> 128 `i `uc ]
+"1337
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1337:     ETH_ResetByteCount();
+[e ( _ETH_ResetByteCount ..  ]
+"1339
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1339:     ENC28_Wcr16(J60_ETXSTL, ((0x1FFF) - (((1518) + (7)) << 1)));
+[e ( _ENC28_Wcr16 (2 , . `E10038 4 -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `us ]
+"1340
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1340:     ENC28_Wcr16(J60_EWRPTL, ((0x1FFF) - (((1518) + (7)) << 1)));
+[e ( _ENC28_Wcr16 (2 , . `E10038 2 -> - -> 8191 `i << + -> 1518 `i -> 7 `i -> 1 `i `us ]
+"1342
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1342:     ETH_PacketListReset();
+[e ( _ETH_PacketListReset ..  ]
+"1343
+[; ;mcc_generated_files/TCPIPLibrary/ENC28J60.c: 1343: }
+[e :UE 1814 ]
+}

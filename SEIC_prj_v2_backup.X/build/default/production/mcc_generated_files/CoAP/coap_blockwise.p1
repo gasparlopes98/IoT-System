@@ -1,0 +1,1549 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"37 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 37: {
+[s S52 `c 1 `c 1 `c 1 `c 1 `a 1 `us 1 ]
+[n S52 . lastLeafVertex lastPathVertex leafVertex pathVertex endflag discoveryOffset ]
+"67
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 67: static BlockOptionParameters_t blockOptionParams[2];
+[c E1634 0 1 2 3 4 5 6 .. ]
+[n E1634 . COAP_BLOCK_SIZE_16_BYTE COAP_BLOCK_SIZE_32_BYTE COAP_BLOCK_SIZE_64_BYTE COAP_BLOCK_SIZE_128_BYTE COAP_BLOCK_SIZE_256_BYTE COAP_BLOCK_SIZE_512_BYTE COAP_BLOCK_SIZE_1024_BYTE  ]
+"47
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 47: {
+[s S53 `ul 1 `us 1 `E1634 1 `a 1 `ul 1 `us 1 `us 1 `o 1 `a 1 `us 1 `*v 1 `*v 1 ]
+[n S53 . destinationIpAddress blockSizeInBytes szx mBit blockNum totalLength lengthToBeTransmitted packetTimeout retransmission offset prev now ]
+"127 mcc_generated_files/CoAP/../TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/CoAP/../TCPIPLibrary/ethernet_driver.h: 127: uint16_t ETH_WriteBlock(const char *, uint16_t);
+[v _ETH_WriteBlock `(us ~T0 @X0 0 ef2`*Cuc`us ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\time.h: 55: time_t time (time_t *);
+[v _time `(o ~T0 @X0 0 ef1`*o ]
+"29 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 29: void *memset (void *, int, size_t);
+[v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
+"54
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 54: size_t strlen (const char *);
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+"119 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 119: void COAP_DiscoveryBlockTransmit(coapReceive_t *ptr)
+[c E1116 0 40 50 60 .. ]
+[n E1116 . TEXT_PLAIN LINK_FORMAT APPLICATION_JSON CBOR  ]
+"164 mcc_generated_files/CoAP/coap.h
+[; ;mcc_generated_files/CoAP/coap.h: 164: {
+[s S38 `uc 1 `ul 1 ]
+[n S38 . name value ]
+"177
+[; ;mcc_generated_files/CoAP/coap.h: 177: {
+[s S40 `uc -> 7 `i `uc -> 10 `i `us 1 `E1116 1 `E1116 1 `S38 -> 5 `i `uc 1 `uc 1 ]
+[n S40 . uri_host uri_path uri_port content_format accept_format queryList uripath_count uriquery_count ]
+"119 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 119: void COAP_DiscoveryBlockTransmit(coapReceive_t *ptr)
+[c E1247 0 1 2 3 .. ]
+[n E1247 . CON_TYPE NON_TYPE ACK_TYPE RST_TYPE  ]
+"201 mcc_generated_files/CoAP/coap.h
+[; ;mcc_generated_files/CoAP/coap.h: 201: {
+[s S42 `us 1 `uc -> 8 `i `ul 1 `uc 1 `uc 1 `us 1 `us 1 `S40 1 `uc 1 `a 1 `s 1 `E1247 1 ]
+[n S42 . messageID token destIP code type destPort srcPort optlist opt_count payload_waiting payload_length retCode ]
+"79 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 79: static int COAP_FindClientIdxOrAddBlockClient(uint32_t destinationAddress);
+[v _COAP_FindClientIdxOrAddBlockClient `(i ~T0 @X0 0 sf1`ul ]
+"83
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 83: static void setMBit(_Bool M);
+[v _setMBit `(v ~T0 @X0 0 sf1`a ]
+"91
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 91: static uint32_t getCoAPBlockOptionValue(uint8_t szx, _Bool m,uint8_t num);
+[v _getCoAPBlockOptionValue `(ul ~T0 @X0 0 sf3`uc`a`uc ]
+"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"54 mcc_generated_files/CoAP/coap_options.h
+[; ;mcc_generated_files/CoAP/coap_options.h: 54: void COAP_AddBlock2Options(char *str);
+[v _COAP_AddBlock2Options `(v ~T0 @X0 0 ef1`*uc ]
+"128 mcc_generated_files/CoAP/../TCPIPLibrary/ethernet_driver.h
+[; ;mcc_generated_files/CoAP/../TCPIPLibrary/ethernet_driver.h: 128: void ETH_Write8(uint8_t);
+[v _ETH_Write8 `(v ~T0 @X0 0 ef1`uc ]
+"34 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 34: char *strncpy (char *restrict, const char *restrict, size_t);
+[v _strncpy `(*uc ~T0 @X0 0 ef3`*uc`*Cuc`ui ]
+"7 mcc_generated_files/CoAP/../datamodel/datamodel.h
+[; ;mcc_generated_files/CoAP/../datamodel/datamodel.h: 7: char *getStingFromIdx(uint8_t idx);
+[v _getStingFromIdx `(*uc ~T0 @X0 0 ef1`uc ]
+"37 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\string.h: 37: char *strncat (char *restrict, const char *restrict, size_t);
+[v _strncat `(*uc ~T0 @X0 0 ef3`*uc`*Cuc`ui ]
+"83 mcc_generated_files/CoAP/coap_dataInterface.h
+[; ;mcc_generated_files/CoAP/coap_dataInterface.h: 83: int8_t getPathResourceIdx(void);
+[v _getPathResourceIdx `(c ~T0 @X0 0 ef ]
+"85
+[; ;mcc_generated_files/CoAP/coap_dataInterface.h: 85: int8_t getLeafResourceIdx(void);
+[v _getLeafResourceIdx `(c ~T0 @X0 0 ef ]
+"62 mcc_generated_files/CoAP/coap_options.h
+[; ;mcc_generated_files/CoAP/coap_options.h: 62: uint8_t COAP_GetLengthOfIntegerOptionValue(uint32_t val);
+[v _COAP_GetLengthOfIntegerOptionValue `(uc ~T0 @X0 0 ef1`ul ]
+"73 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 73: static uint32_t COAP_ConvertBlockOptionToNetworkOrder(uint32_t val,uint8_t byteLength);
+[v _COAP_ConvertBlockOptionToNetworkOrder `(ul ~T0 @X0 0 sf2`ul`uc ]
+"228 mcc_generated_files/CoAP/coap.h
+[; ;mcc_generated_files/CoAP/coap.h: 228: void COAP_InsertLastOptionValue(coapReceive_t *ptr,char *optionValue,uint16_t optionLength);
+[v _COAP_InsertLastOptionValue `(v ~T0 @X0 0 ef3`*S42`*uc`us ]
+"87 mcc_generated_files/CoAP/coap_dataInterface.h
+[; ;mcc_generated_files/CoAP/coap_dataInterface.h: 87: void resetLeafAndPathResourceIdices(void);
+[v _resetLeafAndPathResourceIdices `(v ~T0 @X0 0 ef ]
+"78 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 78: static _Bool COAP_ConfigBlockParams(uint8_t szx, uint32_t blockNum);
+[v _COAP_ConfigBlockParams `(a ~T0 @X0 0 sf2`uc`ul ]
+"74
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 74: static void COAP_ResetBlockParams(uint8_t i);
+[v _COAP_ResetBlockParams `(v ~T0 @X0 0 sf1`uc ]
+"75
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 75: static void COAP_ResetDiscoveryParams(uint8_t i);
+[v _COAP_ResetDiscoveryParams `(v ~T0 @X0 0 sf1`uc ]
+"81 mcc_generated_files/CoAP/coap_dataInterface.h
+[; ;mcc_generated_files/CoAP/coap_dataInterface.h: 81: uint32_t getDiscoveryLength(void);
+[v _getDiscoveryLength `(ul ~T0 @X0 0 ef ]
+"22 mcc_generated_files/CoAP/coap_blockwise.c
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 22: const uint16_t COAP_BlockMapSzxToBlockInBytes[7] ={16,32,64,128,256,512,1024};
+[v _COAP_BlockMapSzxToBlockInBytes `Cus ~T0 @X0 -> 7 `i e ]
+[i _COAP_BlockMapSzxToBlockInBytes
+:U ..
+-> -> 16 `i `us
+-> -> 32 `i `us
+-> -> 64 `i `us
+-> -> 128 `i `us
+-> -> 256 `i `us
+-> -> 512 `i `us
+-> -> 1024 `i `us
+..
+]
+"23
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 23: const uint8_t COAP_BlockMapSzxToPowerOf2[7] ={4,5,6,7,8,9,10};
+[v _COAP_BlockMapSzxToPowerOf2 `Cuc ~T0 @X0 -> 7 `i e ]
+[i _COAP_BlockMapSzxToPowerOf2
+:U ..
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+..
+]
+"63
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 63: DiscoveryAttributes_t prevDisc[2];
+[v _prevDisc `S52 ~T0 @X0 -> 2 `i e ]
+"64
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 64: DiscoveryAttributes_t nowDisc[2];
+[v _nowDisc `S52 ~T0 @X0 -> 2 `i e ]
+"65
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 65: DiscoveryAttributes_t *now, *prev;
+[v _now `*S52 ~T0 @X0 1 e ]
+[v _prev `*S52 ~T0 @X0 1 e ]
+"67
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 67: static BlockOptionParameters_t blockOptionParams[2];
+[v _blockOptionParams `S53 ~T0 @X0 -> 2 `i s ]
+"68
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 68: static int blockClientIndex =0;
+[v _blockClientIndex `i ~T0 @X0 1 s ]
+[i _blockClientIndex
+-> 0 `i
+]
+"69
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 69: static time_t currentTime;
+[v _currentTime `o ~T0 @X0 1 s ]
+"70
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 70: static uint16_t rsrcDirtyFlag = 0;
+[v _rsrcDirtyFlag `us ~T0 @X0 1 s ]
+[i _rsrcDirtyFlag
+-> -> 0 `i `us
+]
+"96
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 96: static _Bool writeBlockOfBody(char * str,uint16_t len)
+[v _writeBlockOfBody `(a ~T0 @X0 1 sf2`*uc`us ]
+"97
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 97: {
+{
+[e :U _writeBlockOfBody ]
+"96
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 96: static _Bool writeBlockOfBody(char * str,uint16_t len)
+[v _str `*uc ~T0 @X0 1 r1 ]
+[v _len `us ~T0 @X0 1 r2 ]
+"97
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 97: {
+[f ]
+"98
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 98:    blockOptionParams[blockClientIndex].lengthToBeTransmitted = 0;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 6 -> -> 0 `i `us ]
+"99
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 99:    blockOptionParams[blockClientIndex].offset = 0;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 9 -> -> 0 `i `us ]
+"100
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 100:      blockOptionParams[blockClientIndex].totalLength +=len;
+[e =+ . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 5 -> _len `us ]
+"101
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 101:      if(blockOptionParams[blockClientIndex].totalLength >= blockOptionParams[blockClientIndex].blockSizeInBytes)
+[e $ ! >= -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 5 `ui -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 1 `ui 55  ]
+"102
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 102:      {
+{
+"103
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 103:         blockOptionParams[blockClientIndex].offset = blockOptionParams[blockClientIndex].totalLength - blockOptionParams[blockClientIndex].blockSizeInBytes;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 9 -> - -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 5 `ui -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 1 `ui `us ]
+"104
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 104:         blockOptionParams[blockClientIndex].lengthToBeTransmitted = len - blockOptionParams[blockClientIndex].offset;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 6 -> - -> _len `ui -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 9 `ui `us ]
+"105
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 105:         ETH_WriteBlock(str,blockOptionParams[blockClientIndex].lengthToBeTransmitted);
+[e ( _ETH_WriteBlock (2 , -> _str `*Cuc . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 6 ]
+"106
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 106:         blockOptionParams[blockClientIndex].totalLength = 0;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 5 -> -> 0 `i `us ]
+"107
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 107:         blockOptionParams[blockClientIndex].packetTimeout = (time(&currentTime) + (2));
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 7 + ( _time (1 &U _currentTime -> -> 2 `i `o ]
+"108
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 108:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 54  ]
+"109
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 109:      }
+}
+[e :U 55 ]
+"110
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 110:      blockOptionParams[blockClientIndex].lengthToBeTransmitted = len;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 6 _len ]
+"111
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 111:      ETH_WriteBlock(str,blockOptionParams[blockClientIndex].lengthToBeTransmitted);
+[e ( _ETH_WriteBlock (2 , -> _str `*Cuc . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 6 ]
+"112
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 112:      memset(str,0,strlen(str));
+[e ( _memset (3 , , -> _str `*v -> 0 `i ( _strlen (1 -> _str `*Cuc ]
+"113
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 113:      return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 54  ]
+"114
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 114: }
+[e :UE 54 ]
+}
+"119
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 119: void COAP_DiscoveryBlockTransmit(coapReceive_t *ptr)
+[v _COAP_DiscoveryBlockTransmit `(v ~T0 @X0 1 ef1`*S42 ]
+"120
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 120: {
+{
+[e :U _COAP_DiscoveryBlockTransmit ]
+"119
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 119: void COAP_DiscoveryBlockTransmit(coapReceive_t *ptr)
+[v _ptr `*S42 ~T0 @X0 1 r1 ]
+"120
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 120: {
+[f ]
+"122
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 122:     uint32_t block2OptionValue;
+[v _block2OptionValue `ul ~T0 @X0 1 a ]
+"123
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 123:     uint16_t block2OptionLength;
+[v _block2OptionLength `us ~T0 @X0 1 a ]
+"124
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 124:     uint8_t lenOfStr;
+[v _lenOfStr `uc ~T0 @X0 1 a ]
+"125
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 125:     uint8_t byteToWrite;
+[v _byteToWrite `uc ~T0 @X0 1 a ]
+"127
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 127:     blockClientIndex = COAP_FindClientIdxOrAddBlockClient(ptr->destIP);
+[e = _blockClientIndex ( _COAP_FindClientIdxOrAddBlockClient (1 . *U _ptr 2 ]
+"128
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 128:     blockOptionParams[blockClientIndex].prev = &prevDisc[blockClientIndex];
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 10 -> &U *U + &U _prevDisc * -> -> _blockClientIndex `ui `ux -> -> # *U &U _prevDisc `ui `ux `*v ]
+"129
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 129:     blockOptionParams[blockClientIndex].now = &nowDisc[blockClientIndex];
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 11 -> &U *U + &U _nowDisc * -> -> _blockClientIndex `ui `ux -> -> # *U &U _nowDisc `ui `ux `*v ]
+"130
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 130:     now = blockOptionParams[blockClientIndex].now;
+[e = _now -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 11 `*S52 ]
+"131
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 131:     prev = blockOptionParams[blockClientIndex].prev;
+[e = _prev -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 10 `*S52 ]
+"133
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 133:     blockOptionParams[blockClientIndex].totalLength = 0;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 5 -> -> 0 `i `us ]
+"135
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 135:     now->discoveryOffset = blockOptionParams[blockClientIndex].offset;
+[e = . *U _now 5 . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 9 ]
+"136
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 136:     char str[(32)+3];
+[v _str `uc ~T0 @X0 -> 35 `i a ]
+"138
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 138:     setMBit(1);
+[e ( _setMBit (1 -> -> 1 `i `a ]
+"139
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 139:     block2OptionValue = getCoAPBlockOptionValue(blockOptionParams[blockClientIndex].szx,1,blockOptionParams[blockClientIndex].blockNum);
+[e = _block2OptionValue ( _getCoAPBlockOptionValue (3 , , -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `uc -> -> 1 `i `a -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 `uc ]
+"140
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 140:     sprintf(str,"%u",block2OptionValue);
+[e ( _sprintf (1 , (. , &U _str :s 1C _block2OptionValue ]
+"141
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 141:     COAP_AddBlock2Options(str);
+[e ( _COAP_AddBlock2Options (1 &U _str ]
+"144
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 144:     ETH_Write8(0xFF);
+[e ( _ETH_Write8 (1 -> -> 255 `i `uc ]
+"145
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 145:     if(blockOptionParams[blockClientIndex].retransmission == 0 || blockOptionParams[blockClientIndex].blockNum == 0)
+[e $ ! || == -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 8 `i -> 0 `i == . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 -> -> -> 0 `i `l `ul 57  ]
+"146
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 146:     {
+{
+"147
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 147:         prev->endflag = now->endflag;
+[e = . *U _prev 4 . *U _now 4 ]
+"148
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 148:         prev->lastLeafVertex = now->lastLeafVertex;
+[e = . *U _prev 0 . *U _now 0 ]
+"149
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 149:         prev->lastPathVertex = now->lastPathVertex;
+[e = . *U _prev 1 . *U _now 1 ]
+"150
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 150:         prev->leafVertex = now->leafVertex;
+[e = . *U _prev 2 . *U _now 2 ]
+"151
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 151:         prev->pathVertex = now->pathVertex;
+[e = . *U _prev 3 . *U _now 3 ]
+"152
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 152:         prev->discoveryOffset = now->discoveryOffset;
+[e = . *U _prev 5 . *U _now 5 ]
+"154
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 154:     }
+}
+[e :U 57 ]
+"156
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 156:      memset(str,0,sizeof(str));
+[e ( _memset (3 , , -> &U _str `*v -> 0 `i -> # _str `ui ]
+"158
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 158:     if(blockOptionParams[blockClientIndex].retransmission == 1)
+[e $ ! == -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 8 `i -> 1 `i 58  ]
+"159
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 159:     {
+{
+"160
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 160:         now->endflag = prev->endflag;
+[e = . *U _now 4 . *U _prev 4 ]
+"161
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 161:         now->lastLeafVertex = prev->lastLeafVertex;
+[e = . *U _now 0 . *U _prev 0 ]
+"162
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 162:         now->lastPathVertex = prev->lastPathVertex;
+[e = . *U _now 1 . *U _prev 1 ]
+"163
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 163:         now->leafVertex = prev->leafVertex;
+[e = . *U _now 2 . *U _prev 2 ]
+"164
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 164:         now->pathVertex = prev->pathVertex;
+[e = . *U _now 3 . *U _prev 3 ]
+"165
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 165:         now->discoveryOffset = prev->discoveryOffset;
+[e = . *U _now 5 . *U _prev 5 ]
+"166
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 166:     }
+}
+[e :U 58 ]
+"168
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 168:      if(now->discoveryOffset > 0)
+[e $ ! > -> . *U _now 5 `ui -> -> 0 `i `ui 59  ]
+"169
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 169:      {
+{
+"170
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 170:          if(now->endflag == 0)
+[e $ ! == -> . *U _now 4 `i -> 0 `i 60  ]
+"171
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 171:          {
+{
+"173
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 173:              if(now->discoveryOffset > 1)
+[e $ ! > -> . *U _now 5 `ui -> -> 1 `i `ui 61  ]
+"174
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 174:              {
+{
+"175
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 175:                  strncpy(str,getStingFromIdx(now->pathVertex),(32));
+[e ( _strncpy (3 , , &U _str -> ( _getStingFromIdx (1 -> . *U _now 3 `uc `*Cuc -> -> 32 `i `ui ]
+"176
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 176:                  lenOfStr = strlen(str);
+[e = _lenOfStr -> ( _strlen (1 -> &U _str `*Cuc `uc ]
+"177
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 177:                  byteToWrite = lenOfStr + 1 - now->discoveryOffset;
+[e = _byteToWrite -> - -> + -> _lenOfStr `i -> 1 `i `ui -> . *U _now 5 `ui `uc ]
+"178
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 178:                  strncpy(str,&getStingFromIdx(now->pathVertex)[byteToWrite],now->discoveryOffset);
+[e ( _strncpy (3 , , &U _str -> &U *U + ( _getStingFromIdx (1 -> . *U _now 3 `uc * -> _byteToWrite `ux -> -> # *U ( _getStingFromIdx (1 -> . *U _now 3 `uc `ui `ux `*Cuc -> . *U _now 5 `ui ]
+"179
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 179:              }
+}
+[e :U 61 ]
+"180
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 180:              strncat(str,"/",1);
+[e ( _strncat (3 , , &U _str :s 2C -> -> 1 `i `ui ]
+"181
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 181:              writeBlockOfBody(str,strlen(str));
+[e ( _writeBlockOfBody (2 , &U _str -> ( _strlen (1 -> &U _str `*Cuc `us ]
+"182
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 182:          }
+}
+[e $U 62  ]
+"183
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 183:          else
+[e :U 60 ]
+"184
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 184:          {
+{
+"185
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 185:              writeBlockOfBody(">,",2);
+[e ( _writeBlockOfBody (2 , :s 3C -> -> 2 `i `us ]
+"186
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 186:          }
+}
+[e :U 62 ]
+"187
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 187:      }
+}
+[e :U 59 ]
+"189
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 189:     while((now->leafVertex = getLeafResourceIdx())!=-1)
+[e $U 63  ]
+[e :U 64 ]
+"190
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 190:     {
+{
+"191
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 191:         if(now->leafVertex >= now->lastLeafVertex)
+[e $ ! >= -> . *U _now 2 `i -> . *U _now 0 `i 66  ]
+"192
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 192:         {
+{
+"193
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 193:             if(now->leafVertex != now->lastLeafVertex)
+[e $ ! != -> . *U _now 2 `i -> . *U _now 0 `i 67  ]
+"194
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 194:             {
+{
+"195
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 195:                 strncpy(str,"<",1);
+[e ( _strncpy (3 , , &U _str :s 4C -> -> 1 `i `ui ]
+"196
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 196:             }
+}
+[e :U 67 ]
+"198
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 198:             while((now->pathVertex = getPathResourceIdx()) !=-1)
+[e $U 68  ]
+[e :U 69 ]
+"199
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 199:             {
+{
+"200
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 200:                 if(now->pathVertex != now->lastPathVertex)
+[e $ ! != -> . *U _now 3 `i -> . *U _now 1 `i 71  ]
+"201
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 201:                 {
+{
+"202
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 202:                     strncat(str,getStingFromIdx(now->pathVertex),strlen(getStingFromIdx(now->pathVertex)));
+[e ( _strncat (3 , , &U _str -> ( _getStingFromIdx (1 -> . *U _now 3 `uc `*Cuc ( _strlen (1 -> ( _getStingFromIdx (1 -> . *U _now 3 `uc `*Cuc ]
+"203
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 203:                     strncat(str,"/",1);
+[e ( _strncat (3 , , &U _str :s 5C -> -> 1 `i `ui ]
+"205
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 205:                     if(writeBlockOfBody(str,strlen(str)))
+[e $ ! != -> ( _writeBlockOfBody (2 , &U _str -> ( _strlen (1 -> &U _str `*Cuc `us `i -> 0 `i 72  ]
+"206
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 206:                     {
+{
+"207
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 207:                         now->lastLeafVertex = now->leafVertex;
+[e = . *U _now 0 . *U _now 2 ]
+"208
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 208:                         now->lastPathVertex = now->pathVertex;
+[e = . *U _now 1 . *U _now 3 ]
+"209
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 209:                         now->endflag = 0;
+[e = . *U _now 4 -> -> 0 `i `a ]
+"210
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 210:                         return;
+[e $UE 56  ]
+"211
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 211:                     }
+}
+[e :U 72 ]
+"212
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 212:                 }
+}
+[e :U 71 ]
+"213
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 213:             }
+}
+[e :U 68 ]
+"198
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 198:             while((now->pathVertex = getPathResourceIdx()) !=-1)
+[e $ != -> = . *U _now 3 ( _getPathResourceIdx ..  `i -U -> 1 `i 69  ]
+[e :U 70 ]
+"214
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 214:             now->endflag = 1;
+[e = . *U _now 4 -> -> 1 `i `a ]
+"215
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 215:             memset(str,0,sizeof(str));
+[e ( _memset (3 , , -> &U _str `*v -> 0 `i -> # _str `ui ]
+"216
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 216:             strncpy(str,">,",2);
+[e ( _strncpy (3 , , &U _str :s 6C -> -> 2 `i `ui ]
+"217
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 217:             if(writeBlockOfBody(str,strlen(str)))
+[e $ ! != -> ( _writeBlockOfBody (2 , &U _str -> ( _strlen (1 -> &U _str `*Cuc `us `i -> 0 `i 73  ]
+"218
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 218:             {
+{
+"219
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 219:                  now->lastLeafVertex = now->leafVertex;
+[e = . *U _now 0 . *U _now 2 ]
+"220
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 220:                  now->lastPathVertex = now->pathVertex;
+[e = . *U _now 1 . *U _now 3 ]
+"221
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 221:                 return;
+[e $UE 56  ]
+"222
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 222:             }
+}
+[e :U 73 ]
+"223
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 223:             now->lastLeafVertex = now->leafVertex = 0;
+[e = . *U _now 0 = . *U _now 2 -> -> 0 `i `c ]
+"224
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 224:             now->lastPathVertex = now->pathVertex = 0;
+[e = . *U _now 1 = . *U _now 3 -> -> 0 `i `c ]
+"225
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 225:         }
+}
+[e :U 66 ]
+"227
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 227:     }
+}
+[e :U 63 ]
+"189
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 189:     while((now->leafVertex = getLeafResourceIdx())!=-1)
+[e $ != -> = . *U _now 2 ( _getLeafResourceIdx ..  `i -U -> 1 `i 64  ]
+[e :U 65 ]
+"229
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 229:     if(now->leafVertex == -1)
+[e $ ! == -> . *U _now 2 `i -U -> 1 `i 74  ]
+"230
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 230:     {
+{
+"231
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 231:         if(now->endflag==0)
+[e $ ! == -> . *U _now 4 `i -> 0 `i 75  ]
+"232
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 232:         {
+{
+"233
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 233:             now->endflag=1;
+[e = . *U _now 4 -> -> 1 `i `a ]
+"234
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 234:             strncat(str,">,",2);
+[e ( _strncat (3 , , &U _str :s 7C -> -> 2 `i `ui ]
+"235
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 235:             if(writeBlockOfBody(str,strlen(str)))
+[e $ ! != -> ( _writeBlockOfBody (2 , &U _str -> ( _strlen (1 -> &U _str `*Cuc `us `i -> 0 `i 76  ]
+"236
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 236:             {
+{
+"237
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 237:                 return;
+[e $UE 56  ]
+"238
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 238:             }
+}
+[e :U 76 ]
+"239
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 239:         }
+}
+[e :U 75 ]
+"240
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 240:         setMBit(0);
+[e ( _setMBit (1 -> -> 0 `i `a ]
+"241
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 241:         block2OptionValue = getCoAPBlockOptionValue(blockOptionParams[blockClientIndex].szx,0,blockOptionParams[blockClientIndex].blockNum);
+[e = _block2OptionValue ( _getCoAPBlockOptionValue (3 , , -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `uc -> -> 0 `i `a -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 `uc ]
+"242
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 242:         block2OptionLength= COAP_GetLengthOfIntegerOptionValue(block2OptionValue);
+[e = _block2OptionLength -> ( _COAP_GetLengthOfIntegerOptionValue (1 _block2OptionValue `us ]
+"243
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 243:         block2OptionValue = COAP_ConvertBlockOptionToNetworkOrder(block2OptionValue,block2OptionLength);
+[e = _block2OptionValue ( _COAP_ConvertBlockOptionToNetworkOrder (2 , _block2OptionValue -> _block2OptionLength `uc ]
+"244
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 244:         COAP_InsertLastOptionValue(ptr,&block2OptionValue,block2OptionLength);
+[e ( _COAP_InsertLastOptionValue (3 , , _ptr -> &U _block2OptionValue `*uc _block2OptionLength ]
+"245
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 245:         blockOptionParams[blockClientIndex].packetTimeout = (time(&currentTime) +(2) );
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 7 + ( _time (1 &U _currentTime -> -> 2 `i `o ]
+"246
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 246:         resetLeafAndPathResourceIdices();
+[e ( _resetLeafAndPathResourceIdices ..  ]
+"247
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 247:     }
+}
+[e :U 74 ]
+"248
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 248: }
+[e :UE 56 ]
+}
+"252
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 252:  _Bool COAP_ProcessBlock2Option(uint32_t destinationAddress, char *value,uint16_t block2Length)
+[v _COAP_ProcessBlock2Option `(a ~T0 @X0 1 ef3`ul`*uc`us ]
+"253
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 253:  {
+{
+[e :U _COAP_ProcessBlock2Option ]
+"252
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 252:  _Bool COAP_ProcessBlock2Option(uint32_t destinationAddress, char *value,uint16_t block2Length)
+[v _destinationAddress `ul ~T0 @X0 1 r1 ]
+[v _value `*uc ~T0 @X0 1 r2 ]
+[v _block2Length `us ~T0 @X0 1 r3 ]
+"253
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 253:  {
+[f ]
+"254
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 254:     _Bool ret = 0;
+[v _ret `a ~T0 @X0 1 a ]
+[e = _ret -> -> 0 `i `a ]
+"255
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 255:     uint32_t block2OptionValue =0;
+[v _block2OptionValue `ul ~T0 @X0 1 a ]
+[e = _block2OptionValue -> -> -> 0 `i `l `ul ]
+"256
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 256:     uint8_t last4Bits =0;
+[v _last4Bits `uc ~T0 @X0 1 a ]
+[e = _last4Bits -> -> 0 `i `uc ]
+"257
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 257:     uint32_t blockNum =0;
+[v _blockNum `ul ~T0 @X0 1 a ]
+[e = _blockNum -> -> -> 0 `i `l `ul ]
+"258
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 258:     _Bool mBit = 0;
+[v _mBit `a ~T0 @X0 1 a ]
+[e = _mBit -> -> 0 `i `a ]
+"259
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 259:     uint8_t szx = 0;
+[v _szx `uc ~T0 @X0 1 a ]
+[e = _szx -> -> 0 `i `uc ]
+"262
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 262:     blockClientIndex = COAP_FindClientIdxOrAddBlockClient(destinationAddress);
+[e = _blockClientIndex ( _COAP_FindClientIdxOrAddBlockClient (1 _destinationAddress ]
+"265
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 265:     if(blockClientIndex == -1)
+[e $ ! == _blockClientIndex -U -> 1 `i 78  ]
+"266
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 266:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 77  ]
+[e :U 78 ]
+"268
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 268:      while(block2Length--)
+[e $U 79  ]
+[e :U 80 ]
+"269
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 269:      {
+{
+"270
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 270:          ((uint8_t *)&block2OptionValue)[block2Length] = *value++;
+[e = *U + -> &U _block2OptionValue `*uc * -> _block2Length `ux -> -> # *U -> &U _block2OptionValue `*uc `ui `ux -> *U ++ _value * -> -> 1 `i `x -> -> # *U _value `i `x `uc ]
+"271
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 271:      }
+}
+[e :U 79 ]
+"268
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 268:      while(block2Length--)
+[e $ != -> -- _block2Length -> -> 1 `i `us `ui -> -> 0 `i `ui 80  ]
+[e :U 81 ]
+"272
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 272:     last4Bits = (((uint8_t *)&block2OptionValue)[0] & 0x0F);
+[e = _last4Bits -> & -> *U + -> &U _block2OptionValue `*uc * -> -> 0 `i `x -> -> # *U -> &U _block2OptionValue `*uc `i `x `i -> 15 `i `uc ]
+"273
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 273:     mBit = (last4Bits & 0x08)?1 :0;
+[e = _mBit -> ? != & -> _last4Bits `i -> 8 `i -> 0 `i : -> 1 `i -> 0 `i `a ]
+"274
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 274:     szx = mBit ? 1 : last4Bits;
+[e = _szx -> ? != -> _mBit `i -> 0 `i : -> 1 `i -> _last4Bits `i `uc ]
+"275
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 275:     blockNum = block2OptionValue >> 4;
+[e = _blockNum >> _block2OptionValue -> 4 `i ]
+"276
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 276:     if(szx > 6 || mBit == 1)
+[e $ ! || > -> _szx `i -> 6 `i == -> _mBit `i -> 1 `i 82  ]
+"277
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 277:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 77  ]
+[e :U 82 ]
+"280
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 280:     ret = COAP_ConfigBlockParams(szx, blockNum);
+[e = _ret ( _COAP_ConfigBlockParams (2 , _szx _blockNum ]
+"282
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 282:     return ret;
+[e ) _ret ]
+[e $UE 77  ]
+"283
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 283:  }
+[e :UE 77 ]
+}
+"285
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 285:  static int COAP_FindClientIdxOrAddBlockClient(uint32_t destinationAddress)
+[v _COAP_FindClientIdxOrAddBlockClient `(i ~T0 @X0 1 sf1`ul ]
+"286
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 286:  {
+{
+[e :U _COAP_FindClientIdxOrAddBlockClient ]
+"285
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 285:  static int COAP_FindClientIdxOrAddBlockClient(uint32_t destinationAddress)
+[v _destinationAddress `ul ~T0 @X0 1 r1 ]
+"286
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 286:  {
+[f ]
+"287
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 287:      int ret = -1;
+[v _ret `i ~T0 @X0 1 a ]
+[e = _ret -U -> 1 `i ]
+"288
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 288:      uint8_t emptyIdx =0;
+[v _emptyIdx `uc ~T0 @X0 1 a ]
+[e = _emptyIdx -> -> 0 `i `uc ]
+"289
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 289:      for(uint8_t i =0; i < 2; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 84  ]
+[e $U 85  ]
+[e :U 84 ]
+"290
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 290:      {
+{
+"291
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 291:          if(blockOptionParams[i].destinationIpAddress == destinationAddress)
+[e $ ! == . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 0 _destinationAddress 87  ]
+"292
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 292:          {
+{
+"293
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 293:              ret = i;
+[e = _ret -> _i `i ]
+"294
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 294:              break;
+[e $U 85  ]
+"295
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 295:          }
+}
+[e $U 88  ]
+"296
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 296:          else if(blockOptionParams[i].destinationIpAddress == 0)
+[e :U 87 ]
+[e $ ! == . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 0 -> -> -> 0 `i `l `ul 89  ]
+"297
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 297:              emptyIdx = i;
+[e = _emptyIdx _i ]
+[e :U 89 ]
+[e :U 88 ]
+"298
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 298:      }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 84  ]
+[e :U 85 ]
+}
+"299
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 299:      if(ret == -1 && emptyIdx < 2)
+[e $ ! && == _ret -U -> 1 `i < -> _emptyIdx `i -> 2 `i 90  ]
+"300
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 300:      {
+{
+"301
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 301:         blockOptionParams[emptyIdx].destinationIpAddress = destinationAddress;
+[e = . *U + &U _blockOptionParams * -> _emptyIdx `ux -> -> # *U &U _blockOptionParams `ui `ux 0 _destinationAddress ]
+"302
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 302:         ret = emptyIdx;
+[e = _ret -> _emptyIdx `i ]
+"303
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 303:         rsrcDirtyFlag++;
+[e ++ _rsrcDirtyFlag -> -> 1 `i `us ]
+"304
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 304:      }
+}
+[e :U 90 ]
+"305
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 305:      return ret;
+[e ) _ret ]
+[e $UE 83  ]
+"307
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 307:  }
+[e :UE 83 ]
+}
+"309
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 309: static void COAP_FreeBlockClient(void)
+[v _COAP_FreeBlockClient `(v ~T0 @X0 1 sf ]
+"310
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 310:  {
+{
+[e :U _COAP_FreeBlockClient ]
+[f ]
+"311
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 311:      for(uint8_t i =0; i < 2; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 92  ]
+[e $U 93  ]
+[e :U 92 ]
+"312
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 312:      {
+{
+"313
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 313:          if(blockOptionParams[i].packetTimeout == time(&currentTime))
+[e $ ! == . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 7 ( _time (1 &U _currentTime 95  ]
+"314
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 314:          {
+{
+"315
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 315:              blockOptionParams[i].packetTimeout = 0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 7 -> -> 0 `i `o ]
+"316
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 316:              blockOptionParams[i].destinationIpAddress = 0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 0 -> -> -> 0 `i `l `ul ]
+"317
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 317:              blockOptionParams[i].blockNum = 0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 4 -> -> -> 0 `i `l `ul ]
+"318
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 318:              blockOptionParams[i].szx = COAP_BLOCK_SIZE_64_BYTE;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 2 . `E1634 2 ]
+"319
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 319:              blockOptionParams[i].mBit = 1;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 3 -> -> 1 `i `a ]
+"320
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 320:              blockOptionParams[i].blockSizeInBytes = COAP_BlockMapSzxToBlockInBytes[blockOptionParams[i].szx];
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 1 *U + &U _COAP_BlockMapSzxToBlockInBytes * -> . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux ]
+"321
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 321:              memset(&prevDisc[i],0,sizeof(prevDisc));
+[e ( _memset (3 , , -> &U *U + &U _prevDisc * -> _i `ux -> -> # *U &U _prevDisc `ui `ux `*v -> 0 `i -> # _prevDisc `ui ]
+"322
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 322:         memset(&nowDisc[i],0,sizeof(nowDisc));
+[e ( _memset (3 , , -> &U *U + &U _nowDisc * -> _i `ux -> -> # *U &U _nowDisc `ui `ux `*v -> 0 `i -> # _nowDisc `ui ]
+"328
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 328:         blockOptionParams[i].prev = &prevDisc[i];
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 10 -> &U *U + &U _prevDisc * -> _i `ux -> -> # *U &U _prevDisc `ui `ux `*v ]
+"329
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 329:         blockOptionParams[i].now = &nowDisc[i];
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 11 -> &U *U + &U _nowDisc * -> _i `ux -> -> # *U &U _nowDisc `ui `ux `*v ]
+"330
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 330:              blockOptionParams[i].totalLength =0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 5 -> -> 0 `i `us ]
+"331
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 331:              blockOptionParams[i].lengthToBeTransmitted =0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 6 -> -> 0 `i `us ]
+"332
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 332:              rsrcDirtyFlag--;
+[e -- _rsrcDirtyFlag -> -> 1 `i `us ]
+"333
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 333:           }
+}
+[e :U 95 ]
+"334
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 334:      }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 92  ]
+[e :U 93 ]
+}
+"336
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 336: }
+[e :UE 91 ]
+}
+"340
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 340:  static void setBlockSzx(coapBlockwiseSize_t szx)
+[v _setBlockSzx `(v ~T0 @X0 1 sf1`E1634 ]
+"341
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 341:  {
+{
+[e :U _setBlockSzx ]
+"340
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 340:  static void setBlockSzx(coapBlockwiseSize_t szx)
+[v _szx `E1634 ~T0 @X0 1 r1 ]
+"341
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 341:  {
+[f ]
+"342
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 342:      blockOptionParams[blockClientIndex].szx = szx;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 _szx ]
+"343
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 343:  }
+[e :UE 96 ]
+}
+"345
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 345:  static void setBlockNum(uint32_t blockNum)
+[v _setBlockNum `(v ~T0 @X0 1 sf1`ul ]
+"346
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 346:  {
+{
+[e :U _setBlockNum ]
+"345
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 345:  static void setBlockNum(uint32_t blockNum)
+[v _blockNum `ul ~T0 @X0 1 r1 ]
+"346
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 346:  {
+[f ]
+"347
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 347:      blockOptionParams[blockClientIndex].blockNum = blockNum;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 _blockNum ]
+"348
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 348:  }
+[e :UE 97 ]
+}
+"350
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 350:  static void setMBit(_Bool M)
+[v _setMBit `(v ~T0 @X0 1 sf1`a ]
+"351
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 351:  {
+{
+[e :U _setMBit ]
+"350
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 350:  static void setMBit(_Bool M)
+[v _M `a ~T0 @X0 1 r1 ]
+"351
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 351:  {
+[f ]
+"352
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 352:      blockOptionParams[blockClientIndex].mBit = M;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 3 _M ]
+"353
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 353:  }
+[e :UE 98 ]
+}
+"355
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 355:  static void setBlockInBytes(uint16_t blockBytes)
+[v _setBlockInBytes `(v ~T0 @X0 1 sf1`us ]
+"356
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 356:  {
+{
+[e :U _setBlockInBytes ]
+"355
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 355:  static void setBlockInBytes(uint16_t blockBytes)
+[v _blockBytes `us ~T0 @X0 1 r1 ]
+"356
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 356:  {
+[f ]
+"357
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 357:      blockOptionParams[blockClientIndex].blockSizeInBytes = blockBytes;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 1 _blockBytes ]
+"358
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 358:  }
+[e :UE 99 ]
+}
+"363
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 363:  static coapBlockwiseSize_t getBlockSzx(coapBlockwiseSize_t szx)
+[v _getBlockSzx `(E1634 ~T0 @X0 1 sf1`E1634 ]
+"364
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 364:  {
+{
+[e :U _getBlockSzx ]
+"363
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 363:  static coapBlockwiseSize_t getBlockSzx(coapBlockwiseSize_t szx)
+[v _szx `E1634 ~T0 @X0 1 r1 ]
+"364
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 364:  {
+[f ]
+"365
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 365:      return blockOptionParams[blockClientIndex].szx;
+[e ) . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 ]
+[e $UE 100  ]
+"366
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 366:  }
+[e :UE 100 ]
+}
+"368
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 368:  static uint32_t getBlockNum(void)
+[v _getBlockNum `(ul ~T0 @X0 1 sf ]
+"369
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 369:  {
+{
+[e :U _getBlockNum ]
+[f ]
+"370
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 370:      return blockOptionParams[blockClientIndex].blockNum;
+[e ) . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 ]
+[e $UE 101  ]
+"371
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 371:  }
+[e :UE 101 ]
+}
+"373
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 373:  static _Bool getMBit(void)
+[v _getMBit `(a ~T0 @X0 1 sf ]
+"374
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 374:  {
+{
+[e :U _getMBit ]
+[f ]
+"375
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 375:      return blockOptionParams[blockClientIndex].mBit;
+[e ) . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 3 ]
+[e $UE 102  ]
+"376
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 376:  }
+[e :UE 102 ]
+}
+"378
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 378: static uint32_t getCoAPBlockOptionValue(uint8_t szx, _Bool m,uint8_t num)
+[v _getCoAPBlockOptionValue `(ul ~T0 @X0 1 sf3`uc`a`uc ]
+"379
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 379: {
+{
+[e :U _getCoAPBlockOptionValue ]
+"378
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 378: static uint32_t getCoAPBlockOptionValue(uint8_t szx, _Bool m,uint8_t num)
+[v _szx `uc ~T0 @X0 1 r1 ]
+[v _m `a ~T0 @X0 1 r2 ]
+[v _num `uc ~T0 @X0 1 r3 ]
+"379
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 379: {
+[f ]
+"380
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 380:     uint32_t value = 0;
+[v _value `ul ~T0 @X0 1 a ]
+[e = _value -> -> -> 0 `i `l `ul ]
+"381
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 381:     int last4Bits;
+[v _last4Bits `i ~T0 @X0 1 a ]
+"383
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 383:     last4Bits= szx | (m ? 1<<3 : 0);
+[e = _last4Bits | -> _szx `i ? != -> _m `i -> 0 `i : << -> 1 `i -> 3 `i -> 0 `i ]
+"384
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 384:     if (num == 0 && !m && szx==0)
+[e $ ! && && == -> _num `i -> 0 `i ! != -> _m `i -> 0 `i == -> _szx `i -> 0 `i 104  ]
+"385
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 385:     {
+{
+"386
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 386:         return 0;
+[e ) -> -> -> 0 `i `l `ul ]
+[e $UE 103  ]
+"388
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 388:     }
+}
+[e $U 105  ]
+"389
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 389:     else{
+[e :U 104 ]
+{
+"390
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 390:         value = (last4Bits | (num << 4));
+[e = _value -> -> | _last4Bits << -> _num `i -> 4 `i `l `ul ]
+"391
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 391:         return value;
+[e ) _value ]
+[e $UE 103  ]
+"392
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 392:     }
+}
+[e :U 105 ]
+"395
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 395: }
+[e :UE 103 ]
+}
+"399
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 399: static uint32_t COAP_ConvertBlockOptionToNetworkOrder(uint32_t val,uint8_t byteLength)
+[v _COAP_ConvertBlockOptionToNetworkOrder `(ul ~T0 @X0 1 sf2`ul`uc ]
+"400
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 400: {
+{
+[e :U _COAP_ConvertBlockOptionToNetworkOrder ]
+"399
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 399: static uint32_t COAP_ConvertBlockOptionToNetworkOrder(uint32_t val,uint8_t byteLength)
+[v _val `ul ~T0 @X0 1 r1 ]
+[v _byteLength `uc ~T0 @X0 1 r2 ]
+"400
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 400: {
+[f ]
+"401
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 401:     switch(byteLength)
+[e $U 108  ]
+"402
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 402:     {
+{
+"403
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 403:         case 1:
+[e :U 109 ]
+"404
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 404:             break;
+[e $U 107  ]
+"405
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 405:         case 2:
+[e :U 110 ]
+"406
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 406:             val = ((((uint16_t)val & (uint16_t)0xFF00) >> 8) | (((uint16_t)val & (uint16_t)0x00FF) << 8));
+[e = _val -> | >> & -> -> _val `us `ui -> -> -> 65280 `ui `us `ui -> 8 `i << & -> -> _val `us `ui -> -> -> 255 `i `us `ui -> 8 `i `ul ]
+"407
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 407:             break;
+[e $U 107  ]
+"408
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 408:         case 3:
+[e :U 111 ]
+"410
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 410:             break;
+[e $U 107  ]
+"411
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 411:         case 4:
+[e :U 112 ]
+"412
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 412:             val = ((((uint32_t)val&(uint32_t)0xff000000) >> 24) | (((uint32_t)val&(uint32_t)0x00ff0000) >> 8) | (((uint32_t)val&(uint32_t)0x0000ff00) << 8) | (((uint32_t)val&(uint32_t)0x000000ff) << 24) );
+[e = _val | | | >> & _val -> 4278190080 `ul -> 24 `i >> & _val -> -> 16711680 `l `ul -> 8 `i << & _val -> -> 65280 `ui `ul -> 8 `i << & _val -> -> 255 `i `ul -> 24 `i ]
+"413
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 413:             break;
+[e $U 107  ]
+"414
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 414:         default:
+[e :U 113 ]
+"415
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 415:             break;
+[e $U 107  ]
+"416
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 416:     }
+}
+[e $U 107  ]
+[e :U 108 ]
+[e [\ -> _byteLength `i , $ -> 1 `i 109
+ , $ -> 2 `i 110
+ , $ -> 3 `i 111
+ , $ -> 4 `i 112
+ 113 ]
+[e :U 107 ]
+"417
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 417:     return val;
+[e ) _val ]
+[e $UE 106  ]
+"418
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 418: }
+[e :UE 106 ]
+}
+"420
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 420: void COAP_ConfigDefaultBlockParams(void)
+[v _COAP_ConfigDefaultBlockParams `(v ~T0 @X0 1 ef ]
+"421
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 421: {
+{
+[e :U _COAP_ConfigDefaultBlockParams ]
+[f ]
+"422
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 422:     for(uint8_t i =0; i < 2; i++)
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 115  ]
+[e $U 116  ]
+[e :U 115 ]
+"423
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 423:     {
+{
+"424
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 424:         COAP_ResetBlockParams(i);
+[e ( _COAP_ResetBlockParams (1 _i ]
+"425
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 425:         COAP_ResetDiscoveryParams(i);
+[e ( _COAP_ResetDiscoveryParams (1 _i ]
+"428
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 428:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 115  ]
+[e :U 116 ]
+}
+"429
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 429: }
+[e :UE 114 ]
+}
+"431
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 431: static void COAP_ResetBlockParams(uint8_t i)
+[v _COAP_ResetBlockParams `(v ~T0 @X0 1 sf1`uc ]
+"432
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 432: {
+{
+[e :U _COAP_ResetBlockParams ]
+"431
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 431: static void COAP_ResetBlockParams(uint8_t i)
+[v _i `uc ~T0 @X0 1 r1 ]
+"432
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 432: {
+[f ]
+"433
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 433:     blockOptionParams[i].packetTimeout = 0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 7 -> -> 0 `i `o ]
+"434
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 434:     blockOptionParams[i].blockNum = 0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 4 -> -> -> 0 `i `l `ul ]
+"435
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 435:     blockOptionParams[i].szx = COAP_BLOCK_SIZE_64_BYTE;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 2 . `E1634 2 ]
+"436
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 436:     blockOptionParams[i].mBit = 1;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 3 -> -> 1 `i `a ]
+"437
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 437:     blockOptionParams[i].blockSizeInBytes = COAP_BlockMapSzxToBlockInBytes[blockOptionParams[i].szx];
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 1 *U + &U _COAP_BlockMapSzxToBlockInBytes * -> . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux ]
+"438
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 438:     blockOptionParams[i].totalLength =0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 5 -> -> 0 `i `us ]
+"439
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 439:     blockOptionParams[i].lengthToBeTransmitted =0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 6 -> -> 0 `i `us ]
+"440
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 440:     blockOptionParams[i].retransmission = 0;
+[e = . *U + &U _blockOptionParams * -> _i `ux -> -> # *U &U _blockOptionParams `ui `ux 8 -> -> 0 `i `a ]
+"441
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 441: }
+[e :UE 118 ]
+}
+"443
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 443: static void COAP_ResetDiscoveryParams(uint8_t i)
+[v _COAP_ResetDiscoveryParams `(v ~T0 @X0 1 sf1`uc ]
+"444
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 444: {
+{
+[e :U _COAP_ResetDiscoveryParams ]
+"443
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 443: static void COAP_ResetDiscoveryParams(uint8_t i)
+[v _i `uc ~T0 @X0 1 r1 ]
+"444
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 444: {
+[f ]
+"445
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 445:     memset(&prevDisc[i],0,sizeof(prevDisc));
+[e ( _memset (3 , , -> &U *U + &U _prevDisc * -> _i `ux -> -> # *U &U _prevDisc `ui `ux `*v -> 0 `i -> # _prevDisc `ui ]
+"446
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 446:     memset(&nowDisc[i],0,sizeof(nowDisc));
+[e ( _memset (3 , , -> &U *U + &U _nowDisc * -> _i `ux -> -> # *U &U _nowDisc `ui `ux `*v -> 0 `i -> # _nowDisc `ui ]
+"447
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 447:     prevDisc[i].lastPathVertex = -1;
+[e = . *U + &U _prevDisc * -> _i `ux -> -> # *U &U _prevDisc `ui `ux 1 -> -U -> 1 `i `c ]
+"448
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 448:     prevDisc[i].endflag = 1;
+[e = . *U + &U _prevDisc * -> _i `ux -> -> # *U &U _prevDisc `ui `ux 4 -> -> 1 `i `a ]
+"449
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 449:     nowDisc[i].lastPathVertex = -1;
+[e = . *U + &U _nowDisc * -> _i `ux -> -> # *U &U _nowDisc `ui `ux 1 -> -U -> 1 `i `c ]
+"450
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 450:     nowDisc[i].endflag = 1;
+[e = . *U + &U _nowDisc * -> _i `ux -> -> # *U &U _nowDisc `ui `ux 4 -> -> 1 `i `a ]
+"451
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 451:     prevDisc[i].lastLeafVertex = -1;
+[e = . *U + &U _prevDisc * -> _i `ux -> -> # *U &U _prevDisc `ui `ux 0 -> -U -> 1 `i `c ]
+"452
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 452:     nowDisc[i].lastLeafVertex = -1;
+[e = . *U + &U _nowDisc * -> _i `ux -> -> # *U &U _nowDisc `ui `ux 0 -> -U -> 1 `i `c ]
+"454
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 454: }
+[e :UE 119 ]
+}
+"458
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 458: static _Bool COAP_ConfigBlockParams(uint8_t szx, uint32_t blockNum)
+[v _COAP_ConfigBlockParams `(a ~T0 @X0 1 sf2`uc`ul ]
+"459
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 459: {
+{
+[e :U _COAP_ConfigBlockParams ]
+"458
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 458: static _Bool COAP_ConfigBlockParams(uint8_t szx, uint32_t blockNum)
+[v _szx `uc ~T0 @X0 1 r1 ]
+[v _blockNum `ul ~T0 @X0 1 r2 ]
+"459
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 459: {
+[f ]
+"460
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 460:     uint32_t expectedBlock;
+[v _expectedBlock `ul ~T0 @X0 1 a ]
+"462
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 462:     if(blockOptionParams[blockClientIndex].szx <= szx)
+[e $ ! <= -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `ui -> _szx `ui 121  ]
+"463
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 463:     {
+{
+"464
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 464:         setBlockSzx(szx);
+[e ( _setBlockSzx (1 -> _szx `E1634 ]
+"465
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 465:         setBlockInBytes(COAP_BlockMapSzxToBlockInBytes[szx]);
+[e ( _setBlockInBytes (1 *U + &U _COAP_BlockMapSzxToBlockInBytes * -> _szx `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux ]
+"467
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 467:         if(blockNum == blockOptionParams[blockClientIndex].blockNum)
+[e $ ! == _blockNum . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 122  ]
+"468
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 468:         {
+{
+"469
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 469:             setBlockNum(blockNum);
+[e ( _setBlockNum (1 _blockNum ]
+"470
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 470:             blockOptionParams[blockClientIndex].retransmission = 1;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 8 -> -> 1 `i `a ]
+"471
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 471:             return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 120  ]
+"472
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 472:         }
+}
+[e $U 123  ]
+"473
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 473:         else if(blockNum == blockOptionParams[blockClientIndex].blockNum+1)
+[e :U 122 ]
+[e $ ! == _blockNum + . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 -> -> -> 1 `i `l `ul 124  ]
+"474
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 474:         {
+{
+"475
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 475:             if(getMBit() == 0)
+[e $ ! == -> ( _getMBit ..  `i -> 0 `i 125  ]
+"476
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 476:                 return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 120  ]
+[e :U 125 ]
+"477
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 477:             blockOptionParams[blockClientIndex].retransmission = 0;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 8 -> -> 0 `i `a ]
+"478
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 478:             setBlockNum(blockNum);
+[e ( _setBlockNum (1 _blockNum ]
+"479
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 479:             return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 120  ]
+"480
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 480:         }
+}
+[e $U 126  ]
+"481
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 481:         else
+[e :U 124 ]
+"482
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 482:         {
+{
+"483
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 483:             return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 120  ]
+"484
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 484:         }
+}
+[e :U 126 ]
+[e :U 123 ]
+"485
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 485:     }
+}
+[e $U 127  ]
+"486
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 486:     else if(blockOptionParams[blockClientIndex].szx > szx)
+[e :U 121 ]
+[e $ ! > -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `ui -> _szx `ui 128  ]
+"487
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 487:     {
+{
+"488
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 488:         if(blockOptionParams[blockClientIndex].blockNum == blockNum)
+[e $ ! == . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 _blockNum 129  ]
+"489
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 489:         {
+{
+"490
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 490:              setBlockNum(blockNum);
+[e ( _setBlockNum (1 _blockNum ]
+"491
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 491:              blockOptionParams[blockClientIndex].retransmission = 1;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 8 -> -> 1 `i `a ]
+"492
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 492:              setBlockSzx(szx);
+[e ( _setBlockSzx (1 -> _szx `E1634 ]
+"493
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 493:              setBlockInBytes(COAP_BlockMapSzxToBlockInBytes[szx]);
+[e ( _setBlockInBytes (1 *U + &U _COAP_BlockMapSzxToBlockInBytes * -> _szx `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux ]
+"494
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 494:              return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 120  ]
+"495
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 495:         }
+}
+[e $U 130  ]
+"497
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 497:         else if(blockOptionParams[blockClientIndex].blockNum < blockNum)
+[e :U 129 ]
+[e $ ! < . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 4 _blockNum 131  ]
+"498
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 498:         {
+{
+"500
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 500:             expectedBlock = (COAP_BlockMapSzxToBlockInBytes[blockOptionParams[blockClientIndex].szx]/COAP_BlockMapSzxToBlockInBytes[szx]);
+[e = _expectedBlock -> / -> *U + &U _COAP_BlockMapSzxToBlockInBytes * -> . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 2 `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux `ui -> *U + &U _COAP_BlockMapSzxToBlockInBytes * -> _szx `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux `ui `ul ]
+"502
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 502:             if( blockNum ==expectedBlock )
+[e $ ! == _blockNum _expectedBlock 132  ]
+"503
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 503:             {
+{
+"504
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 504:                 setBlockNum(blockNum);
+[e ( _setBlockNum (1 _blockNum ]
+"505
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 505:                 setBlockSzx(szx);
+[e ( _setBlockSzx (1 -> _szx `E1634 ]
+"506
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 506:                 setBlockInBytes(COAP_BlockMapSzxToBlockInBytes[szx]);
+[e ( _setBlockInBytes (1 *U + &U _COAP_BlockMapSzxToBlockInBytes * -> _szx `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux ]
+"507
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 507:                 blockOptionParams[blockClientIndex].retransmission = 0;
+[e = . *U + &U _blockOptionParams * -> -> _blockClientIndex `ui `ux -> -> # *U &U _blockOptionParams `ui `ux 8 -> -> 0 `i `a ]
+"508
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 508:                 return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 120  ]
+"509
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 509:             }
+}
+[e :U 132 ]
+"510
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 510:         }
+}
+[e $U 133  ]
+"511
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 511:         else
+[e :U 131 ]
+"512
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 512:         {
+{
+"513
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 513:             return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 120  ]
+"514
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 514:         }
+}
+[e :U 133 ]
+[e :U 130 ]
+"515
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 515:         setBlockSzx(szx);
+[e ( _setBlockSzx (1 -> _szx `E1634 ]
+"516
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 516:         setBlockInBytes(COAP_BlockMapSzxToBlockInBytes[szx]);
+[e ( _setBlockInBytes (1 *U + &U _COAP_BlockMapSzxToBlockInBytes * -> _szx `ux -> -> # *U &U _COAP_BlockMapSzxToBlockInBytes `ui `ux ]
+"517
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 517:     }
+}
+[e $U 134  ]
+"518
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 518:     else
+[e :U 128 ]
+"519
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 519:     {
+{
+"520
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 520:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 120  ]
+"521
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 521:     }
+}
+[e :U 134 ]
+[e :U 127 ]
+"522
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 522: }
+[e :UE 120 ]
+}
+"524
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 524: void COAP_BlockClientManage(void)
+[v _COAP_BlockClientManage `(v ~T0 @X0 1 ef ]
+"525
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 525: {
+{
+[e :U _COAP_BlockClientManage ]
+[f ]
+"526
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 526:     COAP_FreeBlockClient();
+[e ( _COAP_FreeBlockClient ..  ]
+"527
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 527: }
+[e :UE 135 ]
+}
+"529
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 529: _Bool isBlockOptionRequired(void)
+[v _isBlockOptionRequired `(a ~T0 @X0 1 ef ]
+"530
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 530: {
+{
+[e :U _isBlockOptionRequired ]
+[f ]
+"531
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 531:     if(getDiscoveryLength() > 1024)
+[e $ ! > ( _getDiscoveryLength ..  -> -> -> 1024 `i `l `ul 137  ]
+"532
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 532:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 136  ]
+[e $U 138  ]
+"533
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 533:     else
+[e :U 137 ]
+"534
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 534:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 136  ]
+[e :U 138 ]
+"535
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 535:       return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 136  ]
+"536
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 536: }
+[e :UE 136 ]
+}
+"538
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 538: _Bool isResourceDataDirty(void)
+[v _isResourceDataDirty `(a ~T0 @X0 1 ef ]
+"539
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 539: {
+{
+[e :U _isResourceDataDirty ]
+[f ]
+"540
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 540:     if(rsrcDirtyFlag == 0)
+[e $ ! == -> _rsrcDirtyFlag `ui -> -> 0 `i `ui 140  ]
+"541
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 541:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 139  ]
+[e $U 141  ]
+"542
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 542:     else
+[e :U 140 ]
+"543
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 543:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 139  ]
+[e :U 141 ]
+"544
+[; ;mcc_generated_files/CoAP/coap_blockwise.c: 544: }
+[e :UE 139 ]
+}
+[p f _sprintf 8389632 ]
+[a 1C 37 117 0 ]
+[a 4C 60 0 ]
+[a 2C 47 0 ]
+[a 5C 47 0 ]
+[a 3C 62 44 0 ]
+[a 6C 62 44 0 ]
+[a 7C 62 44 0 ]
